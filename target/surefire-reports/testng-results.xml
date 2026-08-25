@@ -1,56 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-17T17:21:17 IST" name="FDA Test Automation Suite" finished-at="2026-08-17T17:21:30 IST" duration-ms="13136">
+  <suite started-at="2026-08-25T11:23:53 IST" name="FDA Test Automation Suite" finished-at="2026-08-25T11:31:59 IST" duration-ms="486342">
     <groups>
+      <group name="fbs">
+        <method signature="TC_FBS_001_Test.verifyFbsOrderLifecycle()[pri:0, instance:com.fda.automation.tests.fbs.TC_FBS_001_Test@42530531]" name="verifyFbsOrderLifecycle" class="com.fda.automation.tests.fbs.TC_FBS_001_Test"/>
+      </group> <!-- fbs -->
       <group name="regression">
-        <method signature="LoginTest.testEmptyCredentialsShowsError()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" name="testEmptyCredentialsShowsError" class="com.fda.automation.tests.LoginTest"/>
+        <method signature="TC_FBS_001_Test.verifyFbsOrderLifecycle()[pri:0, instance:com.fda.automation.tests.fbs.TC_FBS_001_Test@42530531]" name="verifyFbsOrderLifecycle" class="com.fda.automation.tests.fbs.TC_FBS_001_Test"/>
       </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="LoginTest.testInvalidPasswordShowsError()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" name="testInvalidPasswordShowsError" class="com.fda.automation.tests.LoginTest"/>
-        <method signature="LoginTest.testSuccessfulLogin()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" name="testSuccessfulLogin" class="com.fda.automation.tests.LoginTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-08-17T17:21:17 IST" name="All Tests" finished-at="2026-08-17T17:21:30 IST" duration-ms="13136">
-      <class name="com.fda.automation.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" started-at="2026-08-17T17:21:17 IST" name="setUp" finished-at="2026-08-17T17:21:19 IST" duration-ms="1675" status="PASS">
+    <test started-at="2026-08-25T11:23:53 IST" name="All Tests" finished-at="2026-08-25T11:31:59 IST" duration-ms="486342">
+      <class name="com.fda.automation.tests.fbs.TC_FBS_001_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fda.automation.tests.fbs.TC_FBS_001_Test@42530531]" started-at="2026-08-25T11:23:53 IST" name="setUp" finished-at="2026-08-25T11:23:55 IST" duration-ms="1815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" started-at="2026-08-17T17:21:17 IST" name="setUp" finished-at="2026-08-17T17:21:19 IST" duration-ms="1669" status="PASS">
+        <test-method signature="verifyFbsOrderLifecycle()[pri:0, instance:com.fda.automation.tests.fbs.TC_FBS_001_Test@42530531]" started-at="2026-08-25T11:23:55 IST" name="verifyFbsOrderLifecycle" description="Verify the complete FBS order lifecycle across FDA, Mirakl and Kibo" finished-at="2026-08-25T11:31:57 IST" duration-ms="482806" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testInvalidPasswordShowsError()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" started-at="2026-08-17T17:21:19 IST" name="testInvalidPasswordShowsError" description="Invalid password shows error flash message" finished-at="2026-08-17T17:21:23 IST" duration-ms="4395" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidPasswordShowsError -->
-        <test-method signature="testEmptyCredentialsShowsError()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" started-at="2026-08-17T17:21:19 IST" name="testEmptyCredentialsShowsError" description="Empty credentials show error flash message" finished-at="2026-08-17T17:21:23 IST" duration-ms="4389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyCredentialsShowsError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" started-at="2026-08-17T17:21:23 IST" name="tearDown" finished-at="2026-08-17T17:21:24 IST" duration-ms="1099" status="PASS">
+        </test-method> <!-- verifyFbsOrderLifecycle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fda.automation.tests.fbs.TC_FBS_001_Test@42530531]" started-at="2026-08-25T11:31:57 IST" name="tearDown" finished-at="2026-08-25T11:31:59 IST" duration-ms="1663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" started-at="2026-08-17T17:21:23 IST" name="tearDown" finished-at="2026-08-17T17:21:24 IST" duration-ms="1095" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" started-at="2026-08-17T17:21:24 IST" name="setUp" finished-at="2026-08-17T17:21:25 IST" duration-ms="907" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulLogin()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" started-at="2026-08-17T17:21:25 IST" name="testSuccessfulLogin" description="Valid credentials redirect to secure area" finished-at="2026-08-17T17:21:29 IST" duration-ms="4148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSuccessfulLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fda.automation.tests.LoginTest@7f132176]" started-at="2026-08-17T17:21:29 IST" name="tearDown" finished-at="2026-08-17T17:21:30 IST" duration-ms="869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.fda.automation.tests.LoginTest -->
+      </class> <!-- com.fda.automation.tests.fbs.TC_FBS_001_Test -->
     </test> <!-- All Tests -->
   </suite> <!-- FDA Test Automation Suite -->
 </testng-results>
