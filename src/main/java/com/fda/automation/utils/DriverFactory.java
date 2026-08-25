@@ -33,6 +33,16 @@ public class DriverFactory {
         ChromeOptions opts = new ChromeOptions();
         if (headless) opts.addArguments("--headless=new");
         opts.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--window-size=1920,1080");
+
+        // Opt-in only: unset by default, so every other test keeps getting a fresh, isolated
+        // profile per run. Set chrome.user.data.dir to reuse a profile across runs - needed so a
+        // site's "remember this device" / MFA-skip cookie (e.g. Mirakl's email challenge) actually
+        // persists instead of requiring a fresh code on every single execution.
+        String userDataDir = ConfigManager.getInstance().get("chrome.user.data.dir", "");
+        if (!userDataDir.isBlank()) {
+            opts.addArguments("--user-data-dir=" + userDataDir);
+        }
+
         return new ChromeDriver(opts);
     }
 

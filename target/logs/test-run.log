@@ -1,26 +1,30 @@
-2026-08-17 17:21:17.743 [INFO ] [main] com.fda.automation.listeners.TestListener — === Suite started: All Tests ===
-2026-08-17 17:21:18.036 [INFO ] [TestNG-test-All Tests-2] io.github.bonigarcia.wdm.WebDriverManager — Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
-2026-08-17 17:21:18.036 [INFO ] [TestNG-test-All Tests-1] io.github.bonigarcia.wdm.WebDriverManager — Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
-2026-08-17 17:21:18.064 [INFO ] [TestNG-test-All Tests-1] io.github.bonigarcia.wdm.WebDriverManager — Exporting webdriver.chrome.driver as C:\Users\ShubhamKumarThakur\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
-2026-08-17 17:21:18.065 [INFO ] [TestNG-test-All Tests-2] io.github.bonigarcia.wdm.WebDriverManager — Exporting webdriver.chrome.driver as C:\Users\ShubhamKumarThakur\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
-2026-08-17 17:21:19.438 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BaseTest — Browser started [thread=38]
-2026-08-17 17:21:19.442 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.listeners.TestListener — >>> START: testInvalidPasswordShowsError
-2026-08-17 17:21:19.444 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BaseTest — Browser started [thread=37]
-2026-08-17 17:21:19.445 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.listeners.TestListener — >>> START: testEmptyCredentialsShowsError
-2026-08-17 17:21:19.453 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BasePage — Navigate to: https://the-internet.herokuapp.com/login
-2026-08-17 17:21:19.453 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Navigate to: https://the-internet.herokuapp.com/login
-2026-08-17 17:21:22.474 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BasePage — Logging in as: tomsmith
-2026-08-17 17:21:22.535 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Logging in as: 
-2026-08-17 17:21:23.836 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.listeners.TestListener — >>> PASS:  testInvalidPasswordShowsError
-2026-08-17 17:21:23.836 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.listeners.TestListener — >>> PASS:  testEmptyCredentialsShowsError
-2026-08-17 17:21:24.933 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BaseTest — Browser closed [thread=38]
-2026-08-17 17:21:24.937 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BaseTest — Browser closed [thread=37]
-2026-08-17 17:21:24.960 [INFO ] [TestNG-test-All Tests-2] io.github.bonigarcia.wdm.WebDriverManager — Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
-2026-08-17 17:21:24.986 [INFO ] [TestNG-test-All Tests-2] io.github.bonigarcia.wdm.WebDriverManager — Exporting webdriver.chrome.driver as C:\Users\ShubhamKumarThakur\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
-2026-08-17 17:21:25.843 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BaseTest — Browser started [thread=38]
-2026-08-17 17:21:25.844 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.listeners.TestListener — >>> START: testSuccessfulLogin
-2026-08-17 17:21:25.845 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BasePage — Navigate to: https://the-internet.herokuapp.com/login
-2026-08-17 17:21:28.775 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BasePage — Logging in as: tomsmith
-2026-08-17 17:21:29.992 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.listeners.TestListener — >>> PASS:  testSuccessfulLogin
-2026-08-17 17:21:30.861 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BaseTest — Browser closed [thread=38]
-2026-08-17 17:21:30.864 [INFO ] [main] com.fda.automation.listeners.TestListener — === Suite finished: All Tests | pass=3 fail=0 skip=0 ===
+2026-08-25 11:23:53.201 [INFO ] [main] com.fda.automation.listeners.TestListener — === Suite started: All Tests ===
+2026-08-25 11:23:53.702 [INFO ] [TestNG-test-All Tests-1] io.github.bonigarcia.wdm.WebDriverManager — Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-25 11:23:53.730 [INFO ] [TestNG-test-All Tests-1] io.github.bonigarcia.wdm.WebDriverManager — Exporting webdriver.chrome.driver as C:\Users\DarshanMK\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+2026-08-25 11:23:55.054 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BaseTest — Browser started [thread=39]
+2026-08-25 11:23:55.056 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.listeners.TestListener — >>> START: verifyFbsOrderLifecycle
+2026-08-25 11:24:03.122 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Logging into FDA as: darshanmk+1@kognivera.com
+2026-08-25 11:24:18.999 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Logging into Mirakl as: darshanmk@kognivera.com
+2026-08-25 11:24:24.480 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Mirakl MFA challenge displayed - waiting up to PT5M for the code to be entered manually in the browser window
+2026-08-25 11:24:51.950 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Searching FDA storefront for SKU: 3333226108
+2026-08-25 11:24:58.905 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Adding product to cart from PDP
+2026-08-25 11:25:41.863 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Submitting payment / placing order
+2026-08-25 11:25:51.039 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Completing Adyen 3D Secure test challenge
+2026-08-25 11:25:56.930 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Captured FDA order id: 4000292462
+2026-08-25 11:31:18.724 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.utils.PollingUtils — Polling condition met on attempt 16
+2026-08-25 11:31:20.280 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Accepting Mirakl order
+2026-08-25 11:31:22.123 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.utils.PollingUtils — Polling condition met on attempt 1
+2026-08-25 11:31:22.203 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.api.kibo.KiboAuthService — Requesting Kibo access token from https://t1000490-s1000992.sb.usc1.gcp.kibocommerce.com/api/platform/applications/authtickets/oauth
+2026-08-25 11:31:29.408 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.api.kibo.KiboAuthService — Kibo access token obtained successfully
+2026-08-25 11:31:31.198 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.api.kibo.KiboOrdersService — Matched Kibo order for FDA order 4000292462
+2026-08-25 11:31:31.198 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.utils.PollingUtils — Polling condition met on attempt 1
+2026-08-25 11:31:32.021 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.api.kibo.KiboShipmentService — Kibo shipment lookup for order 1b8d8d0a498d9800018ab061000f442a returned deliveryType=FBS
+2026-08-25 11:31:35.219 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Confirming invoice upload
+2026-08-25 11:31:40.304 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Saving DHL tracking information
+2026-08-25 11:31:43.387 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Marking Mirakl order as Shipped
+2026-08-25 11:31:49.748 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.utils.PollingUtils — Polling condition met on attempt 2
+2026-08-25 11:31:51.515 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Marking Mirakl order as Received
+2026-08-25 11:31:57.802 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.utils.PollingUtils — Polling condition met on attempt 2
+2026-08-25 11:31:57.862 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.listeners.TestListener — >>> PASS:  verifyFbsOrderLifecycle
+2026-08-25 11:31:59.525 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BaseTest — Browser closed [thread=39]
+2026-08-25 11:31:59.525 [INFO ] [main] com.fda.automation.listeners.TestListener — === Suite finished: All Tests | pass=1 fail=0 skip=0 ===

@@ -49,4 +49,99 @@ public class ConfigManager {
     public boolean isHeadless() {
         return Boolean.parseBoolean(get("headless", "false"));
     }
+
+    // --- FDA (Magento storefront) ---
+    public String getFdaBaseUrl() {
+        return get("fda.base.url");
+    }
+
+    public String getFdaUsername() {
+        return get("fda.username");
+    }
+
+    public String getFdaPassword() {
+        return get("fda.password");
+    }
+
+    public String getFdaProductSku() {
+        return get("fda.product.sku");
+    }
+
+    public String getFdaCardNumber() {
+        return get("fda.card.number");
+    }
+
+    public String getFdaCardExpiry() {
+        return get("fda.card.expiry");
+    }
+
+    public String getFdaCardCvv() {
+        return get("fda.card.cvv");
+    }
+
+    public String getFdaOrderInitialStatus() {
+        return get("fda.order.initial.status", "Pendiente");
+    }
+
+    // --- Mirakl (operator front office) ---
+    public String getMiraklBaseUrl() {
+        return get("mirakl.base.url");
+    }
+
+    public String getMiraklUsername() {
+        return get("mirakl.username");
+    }
+
+    public String getMiraklPassword() {
+        return get("mirakl.password");
+    }
+
+    public int getMiraklSyncTimeoutSeconds() {
+        return Integer.parseInt(get("mirakl.sync.timeout.seconds", "180"));
+    }
+
+    public int getMiraklSyncPollIntervalSeconds() {
+        return Integer.parseInt(get("mirakl.sync.poll.interval.seconds", "5"));
+    }
+
+    public String getInvoiceFilePath() {
+        return get("invoice.file.path");
+    }
+
+    public String getTrackingCarrier() {
+        return get("tracking.carrier", "DHL");
+    }
+
+    // --- Kibo Commerce API ---
+    public String getKiboAuthUrl() {
+        return get("kibo.auth.url");
+    }
+
+    public String getKiboOrdersUrl() {
+        return get("kibo.orders.url");
+    }
+
+    public String getKiboShipmentsUrl() {
+        return get("kibo.shipments.url");
+    }
+
+    public String getKiboClientId() {
+        return get("kibo.client.id");
+    }
+
+    public String getKiboClientSecret() {
+        return get("kibo.client.secret");
+    }
+
+    public String getKiboShipmentDeliveryTypeJsonPath() {
+        return get("kibo.shipment.deliveryType.jsonPath", "items[0].deliveryType");
+    }
+
+    public int getKiboSyncTimeoutSeconds() {
+        return Integer.parseInt(get("kibo.sync.timeout.seconds", "120"));
+    }
+
+    public int getKiboSyncPollIntervalSeconds() {
+        return Integer.parseInt(get("kibo.sync.poll.interval.seconds", "5"));
+    }
 }

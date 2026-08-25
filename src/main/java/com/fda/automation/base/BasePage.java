@@ -36,9 +36,21 @@ public abstract class BasePage {
         return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
+    /**
+     * CONFIRMED live on 2026-08-20 across several Mirakl pages: a sticky header or a panel
+     * expanded by a previous action can transiently overlap a target's click point, intercepting
+     * a native click - fall back to a JS click on interception rather than fixing this
+     * call-by-call at every affected locator.
+     */
     protected void click(By locator) {
         log.debug("Click: {}", locator);
-        waitForClickable(locator).click();
+        WebElement element = waitForClickable(locator);
+        try {
+            element.click();
+        } catch (ElementClickInterceptedException e) {
+            log.debug("Native click intercepted for {}, falling back to JS click", locator);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        }
     }
 
     protected void type(By locator, String text) {
