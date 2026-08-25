@@ -6,6 +6,7 @@ import com.fda.automation.api.kibo.KiboShipmentService;
 import com.fda.automation.base.BaseTest;
 import com.fda.automation.config.ConfigManager;
 import com.fda.automation.models.OrderContext;
+import com.fda.automation.reporting.StepLogger;
 import com.fda.automation.pages.fda.FdaCartPage;
 import com.fda.automation.pages.fda.FdaHomePage;
 import com.fda.automation.pages.fda.FdaLoginPage;
@@ -82,6 +83,7 @@ public class TC_FBS_001_Test extends BaseTest {
     // ------------------------------------------------------------------
 
     private void loginToFDA() {
+        StepLogger.step(1, "Login to FDA application");
         // Using a persistent Chrome profile (see chrome.user.data.dir) so Mirakl's MFA-skip
         // cookie survives across runs also carries over any existing FDA session on that same
         // profile. Log out first so the login flow below always starts from a known-logged-out
@@ -111,6 +113,7 @@ public class TC_FBS_001_Test extends BaseTest {
      * items behind.
      */
     private void ensureCartIsEmpty() {
+        StepLogger.step(2, "Ensure FDA cart is empty before test");
         getDriver().get(config.getFdaBaseUrl() + "/checkout/cart/");
         FdaCartPage cartPage = new FdaCartPage(getDriver());
         if (!cartPage.isEmpty()) {
@@ -119,6 +122,7 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void searchAndAddProductToCart() {
+        StepLogger.step(6, "Search product by SKU and add to cart");
         FdaProductDetailsPage pdp = fdaHomePage.searchProduct(config.getFdaProductSku());
 
         Assert.assertTrue(pdp.isDisplayed(), "PDP was not displayed for SKU " + config.getFdaProductSku());
@@ -138,6 +142,7 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void completeCheckoutAndPlaceOrder() {
+        StepLogger.step(7, "Complete checkout and place order (shipping -> payment -> 3DS -> success)");
         FdaShippingPage shippingPage = cartPage.proceedToCheckout();
         Assert.assertTrue(shippingPage.isDisplayed(), "FDA shipping step was not displayed");
 
@@ -162,6 +167,7 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void verifyOrderHistory() {
+        StepLogger.step(8, "Verify order appears in FDA order history with status 'Pendiente'");
         fdaHomePage.openMyAccountMenu();
         FdaOrderHistoryPage orderHistoryPage = fdaHomePage.openMyOrders();
 
@@ -181,20 +187,24 @@ public class TC_FBS_001_Test extends BaseTest {
 
     /** Opens Mirakl in a new tab in the same WebDriver session, per test-case requirement. */
     private void openMiraklInNewTab() {
+        StepLogger.step(3, "Open Mirakl operator front office in a new browser tab");
         getDriver().switchTo().newWindow(WindowType.TAB);
         miraklWindowHandle = getDriver().getWindowHandle();
         getDriver().get(config.getMiraklBaseUrl());
     }
 
     private void switchToFdaTab() {
+        StepLogger.step(5, "Switch browser focus back to FDA tab");
         getDriver().switchTo().window(fdaWindowHandle);
     }
 
     private void switchToMiraklTab() {
+        StepLogger.step(9, "Switch browser focus to Mirakl tab");
         getDriver().switchTo().window(miraklWindowHandle);
     }
 
     private void loginToMirakl() {
+        StepLogger.step(4, "Login to Mirakl operator front office (with MFA if prompted)");
         MiraklLoginPage loginPage = new MiraklLoginPage(getDriver());
 
         // With a persistent Chrome profile (chrome.user.data.dir), a previous run's authenticated
@@ -220,6 +230,7 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void verifyAndAcceptMiraklOrder() {
+        StepLogger.step(10, "Verify FDA order appears in Mirakl, verify totals match, and accept order");
         MiraklOrdersPage ordersPage = new MiraklOrdersPage(getDriver());
 
         // The Orders menu can lag briefly right after login while the dashboard finishes loading;
@@ -250,12 +261,14 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void verifyMiraklMoreActionsOptions() {
+        StepLogger.step(14, "Verify all expected options are present in Mirakl 'More actions' menu");
         miraklOrderDetailsPage.openMoreActions();
         List<String> missing = miraklOrderDetailsPage.getMissingMoreActionsOptions();
         Assert.assertTrue(missing.isEmpty(), "Missing Mirakl 'More actions' options: " + missing);
     }
 
     private void uploadInvoice() {
+        StepLogger.step(15, "Upload invoice document to Mirakl accounting documents");
         MiraklDocumentsPage documentsPage = miraklOrderDetailsPage.openDocuments();
 
         Assert.assertTrue(documentsPage.isAccountingDocumentsSectionDisplayed(), "Accounting Documents section was not displayed");
@@ -276,6 +289,7 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void addTrackingInformation() {
+        StepLogger.step(16, "Add DHL tracking information to Mirakl order");
         MiraklTrackingPage trackingPage = miraklOrderDetailsPage.openAddTrackingInformation();
         Assert.assertTrue(trackingPage.isPopupDisplayed(), "Add tracking information popup was not displayed");
 
@@ -298,6 +312,7 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void markOrderAsShipped() {
+        StepLogger.step(17, "Mark Mirakl order as shipped and wait for status change");
         miraklOrderDetailsPage.markAsShipped();
         Duration timeout = Duration.ofSeconds(config.getMiraklSyncTimeoutSeconds());
         miraklOrderDetailsPage.waitForStatus("Shipped", timeout);
@@ -306,6 +321,7 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void markOrderAsReceived() {
+        StepLogger.step(18, "Mark Mirakl order as received via custom field 'Entregado = Yes'");
         miraklOrderDetailsPage.openMoreActions();
         List<String> missing = miraklOrderDetailsPage.getMissingMoreActionsOptions();
         Assert.assertTrue(missing.isEmpty(), "Missing Mirakl 'More actions' options before Custom field: " + missing);
@@ -330,6 +346,7 @@ public class TC_FBS_001_Test extends BaseTest {
     // ------------------------------------------------------------------
 
     private void authenticateWithKibo() {
+        StepLogger.step(11, "Authenticate with Kibo Commerce API (OAuth client-credentials)");
         KiboAuthService authService = new KiboAuthService(config.getKiboAuthUrl());
         String accessToken = authService.generateAccessToken(config.getKiboClientId(), config.getKiboClientSecret());
         Assert.assertNotNull(accessToken, "Kibo access token was not generated");
@@ -337,6 +354,7 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void getKiboOrderDetails() {
+        StepLogger.step(12, "Find Kibo order by FDA externalId and retrieve Kibo order ID");
         KiboOrdersService ordersService = new KiboOrdersService(config.getKiboOrdersUrl());
 
         String kiboOrderId = PollingUtils.pollUntil(
@@ -351,6 +369,7 @@ public class TC_FBS_001_Test extends BaseTest {
     }
 
     private void verifyShipmentDeliveryType() {
+        StepLogger.step(13, "Verify Kibo shipment delivery type equals 'FBS'");
         KiboShipmentService shipmentService = new KiboShipmentService(config.getKiboShipmentsUrl());
         String deliveryType = shipmentService.getDeliveryType(
                 orderContext.getKiboAccessToken(), orderContext.getKiboOrderId(), config.getKiboShipmentDeliveryTypeJsonPath());
