@@ -1,8 +1,11 @@
 package com.fda.automation.tests;
 
 import com.fda.automation.base.BaseTest;
+import com.fda.automation.config.ConfigManager;
 import com.fda.automation.pages.HomePage;
 import com.fda.automation.pages.MarketplaceLandingPage;
+import com.fda.automation.pages.OutlookInboxPage;
+import com.fda.automation.pages.OutlookLoginPage;
 import com.fda.automation.pages.SellerRegistrationPage;
 import com.fda.automation.utils.SellerContextStore;
 import com.fda.automation.utils.TestDataGenerator;
@@ -11,16 +14,25 @@ import org.testng.annotations.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 import static com.fda.automation.pages.SellerRegistrationPage.*;
 
 /**
- * Stage 1 of TC_SOB_E2E_001 / TC_SOB_001 steps 1-40: submit the seller
- * onboarding wizard on the FDA storefront and confirm the success screen.
+ * Stage 1 of TC_SOB_E2E_001 / TC_SOB_001 steps 1-50: submit the seller onboarding wizard
+ * on the FDA storefront, confirm the success screen, then confirm the registration
+ * confirmation email arrives in Outlook.
  *
  * Run against the FDA staging site (not the demo base.url in config.properties):
  *   mvn test -DsuiteXmlFile=src/test/resources/testng_seller_onboarding.xml \
  *            -Dbase.url=https://mcstaging.fahorro.com
+ *
+ * The Outlook check (testSellerReceivesRegistrationConfirmationEmail) requires
+ * OUTLOOK_USERNAME / OUTLOOK_PASSWORD environment variables for the mailbox that receives
+ * mail for the seller email used during registration (TestDataGenerator.uniqueEmail uses
+ * plus-addressing under one base mailbox, e.g. fda.automation+123@kognivera.com routes to
+ * fda.automation@kognivera.com) - never pass credentials as -D system properties or commit
+ * them to config.properties.
  */
 public class SellerOnboardingTest extends BaseTest {
 
@@ -40,6 +52,24 @@ public class SellerOnboardingTest extends BaseTest {
 
         SellerContextStore.save(data.get(KEY_CORREO), data.get(KEY_NOMBRE_COMERCIAL));
         log.info("Persisted seller email and trade name to target/seller-context.properties for downstream stages");
+    }
+
+    @Test(groups = {"smoke"}, dependsOnMethods = "testSellerCanSubmitOnboardingWizard",
+            description = "Stage 1 continued (TC_SOB_001 steps 41-50): seller receives the registration confirmation email in Outlook")
+    public void testSellerReceivesRegistrationConfirmationEmail() {
+        String outlookUsername = ConfigManager.getInstance().getOutlookUsername();
+        String outlookPassword = ConfigManager.getInstance().getOutlookPassword();
+        Assert.assertNotNull(outlookUsername, "OUTLOOK_USERNAME environment variable must be set to run this test");
+        Assert.assertNotNull(outlookPassword, "OUTLOOK_PASSWORD environment variable must be set to run this test");
+
+        Properties sellerContext = SellerContextStore.load();
+        String sellerEmail = sellerContext.getProperty(SellerContextStore.KEY_EMAIL);
+
+        OutlookInboxPage inbox = new OutlookLoginPage(getDriver()).open().login(outlookUsername, outlookPassword);
+        inbox.openOtherTab();
+
+        Assert.assertTrue(inbox.hasEmailContaining("FDA"),
+                "Expected an FDA registration confirmation email in the Other tab for seller " + sellerEmail);
     }
 
     private Map<String, String> buildValidSellerData() {

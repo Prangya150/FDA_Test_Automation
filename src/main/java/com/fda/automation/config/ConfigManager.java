@@ -49,4 +49,16 @@ public class ConfigManager {
     public boolean isHeadless() {
         return Boolean.parseBoolean(get("headless", "false"));
     }
+
+    /**
+     * Outlook/Office 365 test-account credentials, read from environment variables only
+     * (never from config.properties) so they never end up committed to the repo.
+     */
+    public String getOutlookUsername() {
+        return System.getenv("OUTLOOK_USERNAME");
+    }
+
+    public String getOutlookPassword() {
+        return System.getenv("OUTLOOK_PASSWORD");
+    }
 }
