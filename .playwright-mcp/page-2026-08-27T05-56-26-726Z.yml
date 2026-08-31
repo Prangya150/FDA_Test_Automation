@@ -1,0 +1,6 @@
+- generic [ref=f12e7]:
+  - generic [ref=f12e8]: "404: Página no encontrada"
+  - generic [ref=f12e9]: "Lo sentimos: no se ha encontrado la página que has solicitado."
+  - generic [ref=f12e11] [cursor=pointer]:
+    - generic [ref=f12e12]: 
+    - generic [ref=f12e13]: Volver a la página anterior

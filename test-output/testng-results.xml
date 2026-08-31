@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-08-19T17:12:53 IST" name="Default suite" finished-at="2026-08-19T17:13:10 IST" duration-ms="16744">
+    <groups>
+      <group name="regression">
+        <method signature="LoginTest.testEmptyCredentialsShowsError()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" name="testEmptyCredentialsShowsError" class="com.fda.automation.tests.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTest.testInvalidPasswordShowsError()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" name="testInvalidPasswordShowsError" class="com.fda.automation.tests.LoginTest"/>
+        <method signature="LoginTest.testSuccessfulLogin()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" name="testSuccessfulLogin" class="com.fda.automation.tests.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-08-19T17:12:53 IST" name="Default test" finished-at="2026-08-19T17:13:10 IST" duration-ms="16744">
+      <class name="com.fda.automation.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" started-at="2026-08-19T17:12:53 IST" name="setUp" finished-at="2026-08-19T17:12:54 IST" duration-ms="1196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyCredentialsShowsError()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" started-at="2026-08-19T17:12:54 IST" name="testEmptyCredentialsShowsError" description="Empty credentials show error flash message" finished-at="2026-08-19T17:12:59 IST" duration-ms="4853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCredentialsShowsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" started-at="2026-08-19T17:12:59 IST" name="tearDown" finished-at="2026-08-19T17:12:59 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" started-at="2026-08-19T17:12:59 IST" name="setUp" finished-at="2026-08-19T17:13:00 IST" duration-ms="711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidPasswordShowsError()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" started-at="2026-08-19T17:13:00 IST" name="testInvalidPasswordShowsError" description="Invalid password shows error flash message" finished-at="2026-08-19T17:13:04 IST" duration-ms="4300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPasswordShowsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" started-at="2026-08-19T17:13:04 IST" name="tearDown" finished-at="2026-08-19T17:13:05 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" started-at="2026-08-19T17:13:05 IST" name="setUp" finished-at="2026-08-19T17:13:05 IST" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" started-at="2026-08-19T17:13:05 IST" name="testSuccessfulLogin" description="Valid credentials redirect to secure area" finished-at="2026-08-19T17:13:10 IST" duration-ms="4346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.fda.automation.tests.LoginTest@32193bea]" started-at="2026-08-19T17:13:10 IST" name="tearDown" finished-at="2026-08-19T17:13:10 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.fda.automation.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

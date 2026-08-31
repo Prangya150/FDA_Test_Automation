@@ -1,0 +1,283 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - button "Atrás" [ref=e293] [cursor=pointer]
+    - generic [ref=e5]:
+      - img "FDA Seller Onboarding logo featuring stylized text FDA Seller Onboarding in blue and green, set against a clean white background, conveying a professional and welcoming tone" [ref=e6]
+      - heading "Marketplace" [level=1] [ref=e7]
+    - button "Cerrar sesión" [ref=e27] [cursor=pointer]
+  - generic [ref=e298]:
+    - generic [ref=e299] [cursor=pointer]: "1"
+    - generic [ref=e416] [cursor=pointer]: "2"
+    - generic: "3"
+    - generic: "4"
+  - generic [ref=e419]:
+    - paragraph [ref=e421]: Información de Tienda/s
+    - generic [ref=e422]:
+      - paragraph [ref=e423]: Sobre la tienda
+      - generic [ref=e424]:
+        - paragraph [ref=e425]: ¿Tienes ecommerce propio?*
+        - generic [ref=e426]:
+          - generic [ref=e427]:
+            - radio "Sí" [checked] [disabled] [ref=e428]
+            - generic [ref=e429]: Sí
+          - generic [ref=e430]:
+            - radio "No" [disabled] [ref=e431]
+            - generic [ref=e432]: "No"
+      - generic [ref=e433]:
+        - generic [ref=e434]: ¿Cuál es tu sitio ecommerce?
+        - textbox "www.tusitio.com" [ref=e435]: https://example.com
+      - generic [ref=e436]:
+        - paragraph [ref=e437]: ¿Tu marca registrada está activa?*
+        - generic [ref=e438]:
+          - generic [ref=e439]:
+            - radio "Sí" [checked] [disabled] [ref=e440]
+            - generic [ref=e441]: Sí
+          - generic [ref=e442]:
+            - radio "No" [disabled] [ref=e443]
+            - generic [ref=e444]: "No"
+          - generic [ref=e445]:
+            - radio "Genérico" [disabled] [ref=e446]
+            - generic [ref=e447]: Genérico
+      - generic [ref=e448]:
+        - paragraph [ref=e449]: ¿Cuáles son las marcas que vendes?*
+        - generic [ref=e451]:
+          - generic [ref=e452]: Marca 1*
+          - textbox "Ingresa el nombre de marca" [ref=e453]: Bienestar Kognivera 1787808808797002
+      - generic [ref=e454]:
+        - paragraph [ref=e455]: ¿En qué sitios vendes? (Puedes elegir varias opciones)*
+        - generic [ref=e456]:
+          - generic [ref=e457]:
+            - generic [ref=e459]:
+              - checkbox "Amazon" [checked] [disabled] [ref=e460]
+              - text: Amazon
+            - generic [ref=e462]:
+              - checkbox "Mercado Libre" [disabled] [ref=e463]
+              - text: Mercado Libre
+            - generic [ref=e465]:
+              - checkbox "Liverpool" [disabled] [ref=e466]
+              - text: Liverpool
+            - generic [ref=e468]:
+              - checkbox "Walmart" [disabled] [ref=e469]
+              - text: Walmart
+            - generic [ref=e471]:
+              - checkbox "Coppel" [disabled] [ref=e472]
+              - text: Coppel
+          - generic [ref=e473]:
+            - generic [ref=e475]:
+              - checkbox "Farmacias San Pablo" [disabled] [ref=e476]
+              - text: Farmacias San Pablo
+            - generic [ref=e478]:
+              - checkbox "Farmacias Guadalajara" [disabled] [ref=e479]
+              - text: Farmacias Guadalajara
+            - generic [ref=e481]:
+              - checkbox "Farmacias Similares" [disabled] [ref=e482]
+              - text: Farmacias Similares
+            - generic [ref=e484]:
+              - checkbox "Farmacias Benavides" [disabled] [ref=e485]
+              - text: Farmacias Benavides
+            - generic [ref=e487]:
+              - checkbox "Prix" [disabled] [ref=e488]
+              - text: Prix
+          - generic [ref=e489]:
+            - generic [ref=e491]:
+              - checkbox "Ninguno" [disabled] [ref=e492]
+              - text: Ninguno
+            - generic [ref=e494]:
+              - checkbox "OTRO" [disabled] [ref=e495]
+              - text: OTRO
+    - generic [ref=e496]:
+      - generic [ref=e497]:
+        - paragraph [ref=e498]: ¿Qué tipo de categorías vendes?*
+        - paragraph [ref=e499]: Elige todas las opciones que consideres necesarias
+      - heading [level=3] [ref=e502]:
+        - button [ref=e503] [cursor=pointer]:
+          - paragraph [ref=e505]: Belleza Yamir
+      - heading [level=3] [ref=e511]:
+        - button [ref=e512] [cursor=pointer]:
+          - paragraph [ref=e514]: Electrónica
+      - heading [level=3] [ref=e520]:
+        - button [ref=e521] [cursor=pointer]:
+          - paragraph [ref=e523]: Juguetes
+      - heading [level=3] [ref=e529]:
+        - button [ref=e530] [cursor=pointer]:
+          - paragraph [ref=e532]: Óptica
+      - heading [level=3] [ref=e538]:
+        - button [ref=e539] [cursor=pointer]:
+          - paragraph [ref=e541]: Bebé
+      - heading [level=3] [ref=e547]:
+        - button [ref=e548] [cursor=pointer]:
+          - paragraph [ref=e550]: Cuidado de la Piel
+      - heading [level=3] [ref=e556]:
+        - button [ref=e557] [cursor=pointer]:
+          - paragraph [ref=e559]: Nutrición y Deporte
+      - heading [level=3] [ref=e565]:
+        - button [ref=e566] [cursor=pointer]:
+          - paragraph [ref=e568]: Diabetes
+      - heading [level=3] [ref=e574]:
+        - button [ref=e575] [cursor=pointer]:
+          - paragraph [ref=e577]: Conveniencia
+      - heading [level=3] [ref=e583]:
+        - button [ref=e584] [cursor=pointer]:
+          - paragraph [ref=e586]: Higiene y Cuidado Personal
+      - heading [level=3] [ref=e592]:
+        - button [ref=e593] [cursor=pointer]:
+          - paragraph [ref=e595]: Vitaminas
+      - heading [level=3] [ref=e601]:
+        - button [ref=e602] [cursor=pointer]:
+          - paragraph [ref=e604]: Mascotas
+      - heading [level=3] [ref=e610]:
+        - button [ref=e611] [cursor=pointer]:
+          - paragraph [ref=e613]: Moda
+      - heading [level=3] [ref=e619]:
+        - button [ref=e620] [cursor=pointer]:
+          - paragraph [ref=e622]: Perfumes
+      - heading [level=3] [ref=e628]:
+        - button [ref=e629] [cursor=pointer]:
+          - paragraph [ref=e631]: Equipo Médico
+      - heading [level=3] [ref=e637]:
+        - button [ref=e638] [cursor=pointer]:
+          - paragraph [ref=e640]: Farmacia
+      - generic [ref=e645]:
+        - heading [level=3] [ref=e646]:
+          - button [expanded] [ref=e647] [cursor=pointer]:
+            - paragraph [ref=e649]: Marca del Ahorro
+        - region [ref=e656]:
+          - generic [ref=e657]:
+            - generic [ref=e658]:
+              - generic:
+                - checkbox "Seleccionar todo" [disabled]
+              - generic [ref=e659]: Seleccionar todo
+            - generic [ref=e660]:
+              - generic [ref=e661]:
+                - generic:
+                  - checkbox "Alergias" [disabled]
+                - generic [ref=e662]: Alergias
+              - generic [ref=e663]:
+                - generic:
+                  - checkbox "Antibióticos" [checked] [disabled]
+                - generic [ref=e664]: Antibióticos
+              - generic [ref=e665]:
+                - generic:
+                  - checkbox "Bebidas Nutricionales" [disabled]
+                - generic [ref=e666]: Bebidas Nutricionales
+              - generic [ref=e667]:
+                - generic:
+                  - checkbox "Cardio" [disabled]
+                - generic [ref=e668]: Cardio
+              - generic [ref=e669]:
+                - generic:
+                  - checkbox "Cuidado de los Ojos" [disabled]
+                - generic [ref=e670]: Cuidado de los Ojos
+              - generic [ref=e671]:
+                - generic:
+                  - checkbox "Diabetes" [disabled]
+                - generic [ref=e672]: Diabetes
+              - generic [ref=e673]:
+                - generic:
+                  - checkbox "Dolor e Inflamación" [disabled]
+                - generic [ref=e674]: Dolor e Inflamación
+              - generic [ref=e675]:
+                - generic:
+                  - checkbox "Estomacales" [disabled]
+                - generic [ref=e676]: Estomacales
+              - generic [ref=e677]:
+                - generic:
+                  - checkbox "Gripe y Tos" [disabled]
+                - generic [ref=e678]: Gripe y Tos
+              - generic [ref=e679]:
+                - generic:
+                  - checkbox "Hormonales" [disabled]
+                - generic [ref=e680]: Hormonales
+              - generic [ref=e681]:
+                - generic:
+                  - checkbox "Material de Curación" [disabled]
+                - generic [ref=e682]: Material de Curación
+              - generic [ref=e683]:
+                - generic:
+                  - checkbox "Medición" [disabled]
+                - generic [ref=e684]: Medición
+              - generic [ref=e685]:
+                - generic:
+                  - checkbox "Neurología" [disabled]
+                - generic [ref=e686]: Neurología
+              - generic [ref=e687]:
+                - generic:
+                  - checkbox "Protección" [disabled]
+                - generic [ref=e688]: Protección
+              - generic [ref=e689]:
+                - generic:
+                  - checkbox "Prueba de Embarazo" [disabled]
+                - generic [ref=e690]: Prueba de Embarazo
+              - generic [ref=e691]:
+                - generic:
+                  - checkbox "Salud Sexual" [disabled]
+                - generic [ref=e692]: Salud Sexual
+              - generic [ref=e693]:
+                - generic:
+                  - checkbox "Sueros" [disabled]
+                - generic [ref=e694]: Sueros
+              - generic [ref=e695]:
+                - generic:
+                  - checkbox "Suplementos Alimenticios" [disabled]
+                - generic [ref=e696]: Suplementos Alimenticios
+              - generic [ref=e697]:
+                - generic:
+                  - checkbox "Vitaminas" [disabled]
+                - generic [ref=e698]: Vitaminas
+      - heading [level=3] [ref=e701]:
+        - button [ref=e702] [cursor=pointer]:
+          - paragraph [ref=e704]: Hogar
+      - heading [level=3] [ref=e710]:
+        - button [ref=e711] [cursor=pointer]:
+          - paragraph [ref=e713]: Bienestar Sexual
+    - generic [ref=e718]:
+      - heading "¿No encontraste tu categoría?" [level=6] [ref=e720]
+      - generic [ref=e722]:
+        - textbox "Escribe tu categoría aquí..." [disabled] [ref=e723]
+        - group
+      - generic [ref=e724]: 0/400 caracteres
+    - generic [ref=e726]:
+      - paragraph [ref=e727]: Sobre la venta
+      - paragraph [ref=e728]: Cantidad de piezas promedio vendidas y ticket promedio por sitio al mes *
+      - generic [ref=e731]:
+        - generic [ref=e732]:
+          - generic [ref=e733]: AMAZON
+          - textbox "Ingresa cantidad" [disabled] [ref=e734]: 100 piezas
+        - generic [ref=e735]:
+          - generic [ref=e736]: ¿Cuál es el ticket promedio? *
+          - textbox "$ 0000.00" [disabled] [ref=e737]: $ 250
+        - generic [ref=e738]:
+          - generic [ref=e739]: Link a tu catálogo *
+          - textbox "Ingresa el link de tu catálogo" [disabled] [ref=e740]: https://example.com/catalogo
+    - generic [ref=e741]:
+      - paragraph [ref=e742]: Sobre el envío
+      - generic [ref=e743]:
+        - paragraph [ref=e744]: ¿Trabajas con paqueterías terceras?*
+        - generic [ref=e745]:
+          - generic [ref=e746]:
+            - radio "Sí" [checked] [disabled] [ref=e747]
+            - generic [ref=e748]: Sí
+          - generic [ref=e749]:
+            - radio "No" [disabled] [ref=e750]
+            - generic [ref=e751]: "No"
+      - generic [ref=e752]:
+        - paragraph [ref=e753]: ¿Puedes despachar pedidos en un lapso de 24 a 48 hrs?*
+        - generic [ref=e754]:
+          - generic [ref=e755]:
+            - radio "Sí" [checked] [disabled] [ref=e756]
+            - generic [ref=e757]: Sí
+          - generic [ref=e758]:
+            - radio "No" [disabled] [ref=e759]
+            - generic [ref=e760]: "No"
+      - generic [ref=e761]:
+        - paragraph [ref=e762]: ¿Puedes enviar inventario a nuestro almacén?*
+        - generic [ref=e763]:
+          - generic [ref=e764]:
+            - radio "Sí" [checked] [disabled] [ref=e765]
+            - generic [ref=e766]: Sí
+          - generic [ref=e767]:
+            - radio "No" [disabled] [ref=e768]
+            - generic [ref=e769]: "No"
+    - button "Continuar" [ref=e772] [cursor=pointer]
+  - generic [ref=e24]: ©2026 Todos los derechos reservados
+  - region "Notifications Alt+T"

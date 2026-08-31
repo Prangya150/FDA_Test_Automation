@@ -1,0 +1,264 @@
+- generic [ref=f8e2]:
+  - banner [ref=f8e3]:
+    - figure [ref=f8e7]
+  - main [ref=f8e8]:
+    - generic [ref=f8e23]:
+      - text: o * *
+      - generic [ref=f8e24]:
+        - list "Progress steps" [ref=f8e26]:
+          - listitem [ref=f8e27] [cursor=pointer]:
+            - generic [ref=f8e28]: Información personal
+          - listitem [ref=f8e29] [cursor=pointer]:
+            - generic [ref=f8e30]: Información de la Empresa
+          - listitem [ref=f8e31]:
+            - generic [ref=f8e32]: Información de la Tienda
+          - listitem [ref=f8e33]:
+            - generic [ref=f8e34]: Información de Producto
+        - generic [ref=f8e35]:
+          - text: "* * * * * * * * * * * * * * * * *"
+          - generic [ref=f8e695]:
+            - strong [ref=f8e697]: Información de Tienda/s
+            - group [ref=f8e699]:
+              - generic [ref=f8e700]:
+                - strong [ref=f8e702]: Sobre la tienda
+                - group [ref=f8e704]:
+                  - group "¿Tienes ecommerce propio?*" [ref=f8e705]:
+                    - generic [ref=f8e707]:
+                      - generic [ref=f8e708]: Si
+                      - generic [ref=f8e709]: "No"
+                  - generic [ref=f8e868]:
+                    - generic [ref=f8e869]: ¿Cuál es el link de tu ecommerce?*
+                    - textbox "¿Cuál es el link de tu ecommerce?*" [ref=f8e871]:
+                      - /placeholder: www.mitienda.com.mx
+                      - text: https://example.com
+                  - group "¿Tu marca registrada está activa en el IMPI?*" [ref=f8e710]:
+                    - generic [ref=f8e712]:
+                      - generic [ref=f8e713]: Si
+                      - generic [ref=f8e714]: "No"
+                      - generic [ref=f8e715]: Genérico
+                  - generic [ref=f8e716]:
+                    - generic [ref=f8e717]: ¿Cuáles son las marcas que vendes?*
+                    - table [ref=f8e720]:
+                      - rowgroup [ref=f8e721]:
+                        - row [ref=f8e872]:
+                          - cell
+                          - cell [ref=f8e873]:
+                            - generic [ref=f8e724]:
+                              - generic [ref=f8e725]: Marca 1*
+                              - textbox "Marca 1*" [ref=f8e727]:
+                                - /placeholder: Ingresa el nombre de marca
+                                - text: Bienestar Kognivera Retry2
+                        - row [ref=f8e728]:
+                          - cell
+                          - cell [ref=f8e729]:
+                            - generic [ref=f8e730]:
+                              - generic [ref=f8e731]: Marca 2 (Opcional)
+                              - textbox "Marca 2 (Opcional)" [ref=f8e733]:
+                                - /placeholder: Ingresa el nombre de marca
+                      - rowgroup [ref=f8e734]:
+                        - row [ref=f8e735]:
+                          - cell [ref=f8e736]:
+                            - button "Añadir otra marca" [ref=f8e737] [cursor=pointer]
+                  - group "¿En qué sitios vendes? (Puedes elegir varias opciones)*" [ref=f8e739]:
+                    - generic [ref=f8e741]:
+                      - generic [ref=f8e742]:
+                        - checkbox [checked] [ref=f8e743]
+                        - text: Amazon
+                      - generic [ref=f8e744]:
+                        - checkbox [ref=f8e745]
+                        - text: Mercado Libre
+                      - generic [ref=f8e746]:
+                        - checkbox [ref=f8e747]
+                        - text: Liverpool
+                      - generic [ref=f8e748]:
+                        - checkbox [ref=f8e749]
+                        - text: Walmart
+                      - generic [ref=f8e750]:
+                        - checkbox [ref=f8e751]
+                        - text: Coppel
+                      - generic [ref=f8e752]:
+                        - checkbox [ref=f8e753]
+                        - text: Farmacias San Pablo
+                      - generic [ref=f8e754]:
+                        - checkbox [ref=f8e755]
+                        - text: Farmacias Guadalajara
+                      - generic [ref=f8e756]:
+                        - checkbox [ref=f8e757]
+                        - text: Farmacias Similares
+                      - generic [ref=f8e758]:
+                        - checkbox [ref=f8e759]
+                        - text: Farmacias Benavides
+                      - generic [ref=f8e760]:
+                        - checkbox [ref=f8e761]
+                        - text: Prix
+                      - generic [ref=f8e762]:
+                        - checkbox [ref=f8e763]
+                        - text: Ninguno
+                      - generic [ref=f8e764]:
+                        - checkbox "Otro" [ref=f8e765]
+                        - text: Otro
+              - generic [ref=f8e766]:
+                - strong [ref=f8e768]: ¿Qué tipo de categorías vendes?*
+                - generic [ref=f8e769]:
+                  - paragraph [ref=f8e770]: Elige todas las condiciones que consideres necesarias
+                  - group [ref=f8e771]:
+                    - group [ref=f8e772]:
+                      - tablist [ref=f8e774]:
+                        - tab [expanded] [selected] [ref=f8e775]:
+                          - heading "Marca del Ahorro" [level=4] [ref=f8e777]
+                        - tabpanel [ref=f8e898]:
+                          - generic [ref=f8e899]:
+                            - checkbox "Alergias" [ref=f8e900]
+                            - text: Alergias
+                          - generic [ref=f8e901]:
+                            - checkbox "Antibióticos" [checked] [active] [ref=f8e902]
+                            - text: Antibióticos
+                          - generic [ref=f8e903]:
+                            - checkbox "Bebidas Nutricionales" [ref=f8e904]
+                            - text: Bebidas Nutricionales
+                          - generic [ref=f8e905]:
+                            - checkbox "Cardio" [ref=f8e906]
+                            - text: Cardio
+                          - generic [ref=f8e907]:
+                            - checkbox "Cuidado de los Ojos" [ref=f8e908]
+                            - text: Cuidado de los Ojos
+                          - generic [ref=f8e909]:
+                            - checkbox "Diabetes" [ref=f8e910]
+                            - text: Diabetes
+                          - generic [ref=f8e911]:
+                            - checkbox "Dolor e Inflamación" [ref=f8e912]
+                            - text: Dolor e Inflamación
+                          - generic [ref=f8e913]:
+                            - checkbox "Estomacales" [ref=f8e914]
+                            - text: Estomacales
+                          - generic [ref=f8e915]:
+                            - checkbox "Gripe y Tos" [ref=f8e916]
+                            - text: Gripe y Tos
+                          - generic [ref=f8e917]:
+                            - checkbox "Hormonales" [ref=f8e918]
+                            - text: Hormonales
+                          - generic [ref=f8e919]:
+                            - checkbox "Material de Curación" [ref=f8e920]
+                            - text: Material de Curación
+                          - generic [ref=f8e921]:
+                            - checkbox "Medición" [ref=f8e922]
+                            - text: Medición
+                          - generic [ref=f8e923]:
+                            - checkbox "Neurología" [ref=f8e924]
+                            - text: Neurología
+                          - generic [ref=f8e925]:
+                            - checkbox "Protección" [ref=f8e926]
+                            - text: Protección
+                          - generic [ref=f8e927]:
+                            - checkbox "Prueba de Embarazo" [ref=f8e928]
+                            - text: Prueba de Embarazo
+                          - generic [ref=f8e929]:
+                            - checkbox "Salud Sexual" [ref=f8e930]
+                            - text: Salud Sexual
+                          - generic [ref=f8e931]:
+                            - checkbox "Sueros" [ref=f8e932]
+                            - text: Sueros
+                          - generic [ref=f8e933]:
+                            - checkbox "Suplementos Alimenticios" [ref=f8e934]
+                            - text: Suplementos Alimenticios
+                          - generic [ref=f8e935]:
+                            - checkbox "Vitaminas" [ref=f8e936]
+                            - text: Vitaminas
+                        - tab [ref=f8e778]:
+                          - heading "Mascotas" [level=4] [ref=f8e780]
+                        - tab [ref=f8e781]:
+                          - heading "Diabetes" [level=4] [ref=f8e783]
+                        - tab [ref=f8e784]:
+                          - heading "Equipo Médico" [level=4] [ref=f8e786]
+                        - tab [ref=f8e787]:
+                          - heading "Conveniencia" [level=4] [ref=f8e789]
+                        - tab [ref=f8e790]:
+                          - heading "Belleza Mujer" [level=4] [ref=f8e792]
+                        - tab [ref=f8e793]:
+                          - heading "Electrónica" [level=4] [ref=f8e795]
+                        - tab [ref=f8e796]:
+                          - heading "Hogar" [level=4] [ref=f8e798]
+                        - tab [ref=f8e799]:
+                          - heading "Cuidado de la Piel" [level=4] [ref=f8e801]
+                        - tab [ref=f8e802]:
+                          - heading "Bebé" [level=4] [ref=f8e804]
+                        - tab [ref=f8e805]:
+                          - heading "Higiene y Cuidado Personal" [level=4] [ref=f8e807]
+                        - tab [ref=f8e808]:
+                          - heading "Farmacia" [level=4] [ref=f8e810]
+                        - tab [ref=f8e811]:
+                          - heading "Juguetes" [level=4] [ref=f8e813]
+                        - tab [ref=f8e814]:
+                          - heading "Bienestar Sexual" [level=4] [ref=f8e816]
+                        - tab [ref=f8e817]:
+                          - heading "Óptica" [level=4] [ref=f8e819]
+                        - tab [ref=f8e820]:
+                          - heading "Perfumes" [level=4] [ref=f8e822]
+                        - tab [ref=f8e823]:
+                          - heading "Moda" [level=4] [ref=f8e825]
+                        - tab [ref=f8e826]:
+                          - heading "Vitaminas" [level=4] [ref=f8e828]
+                        - tab [ref=f8e829]:
+                          - heading "Nutrición y Deporte" [level=4] [ref=f8e831]
+              - generic [ref=f8e832]:
+                - strong [ref=f8e834]: ¿No encontraste tu categoría?
+                - generic [ref=f8e835]:
+                  - paragraph [ref=f8e836]: Descríbenos a continuación las categorías que vendes actualmente.
+                  - group [ref=f8e837]:
+                    - textbox [ref=f8e840]
+              - generic [ref=f8e841]:
+                - strong [ref=f8e843]: Sobre la venta
+                - generic [ref=f8e844]:
+                  - paragraph [ref=f8e845]: Cantidad de piezas promedio vendidas y ticket promedio por sitio al mes*
+                  - group [ref=f8e874]:
+                    - table [ref=f8e878]:
+                      - rowgroup [ref=f8e879]:
+                        - row [ref=f8e880]:
+                          - cell [ref=f8e881]:
+                            - generic [ref=f8e882]:
+                              - generic [ref=f8e883]: Amazon*
+                              - generic [ref=f8e885]:
+                                - textbox "Amazon* piezas*" [ref=f8e886]:
+                                  - /placeholder: ej. 1000 piezas
+                                - text: "*"
+                          - cell [ref=f8e887]:
+                            - generic [ref=f8e888]:
+                              - generic [ref=f8e889]: ¿Cuál es el ticket promedio?*
+                              - generic [ref=f8e891]:
+                                - textbox "¿Cuál es el ticket promedio?* $*" [ref=f8e892]:
+                                  - /placeholder: $ 0000.00
+                                - text: "*"
+                          - cell [ref=f8e893]:
+                            - generic [ref=f8e894]:
+                              - generic [ref=f8e895]: Link a tu catálogo*
+                              - textbox "Link a tu catálogo*" [ref=f8e897]:
+                                - /placeholder: Ingresa el link de tu catálogo
+              - generic [ref=f8e846]:
+                - strong [ref=f8e848]: Sobre el envío
+                - group [ref=f8e850]:
+                  - group "¿Trabajas con paqueterías terceras?*" [ref=f8e851]:
+                    - generic [ref=f8e853]:
+                      - generic [ref=f8e854]: Si
+                      - generic [ref=f8e855]: "No"
+                  - group "¿Puedes despachar pedidos en un lapso de 24 a 48 hrs?*" [ref=f8e856]:
+                    - generic [ref=f8e858]:
+                      - generic [ref=f8e859]: Si
+                      - generic [ref=f8e860]: "No"
+                  - group "¿Puedes enviar inventario a nuestro almacén?*" [ref=f8e861]:
+                    - generic [ref=f8e863]:
+                      - generic [ref=f8e864]: Si
+                      - generic [ref=f8e865]: "No"
+              - button "Continuar" [ref=f8e866] [cursor=pointer]
+          - text: "* * *"
+  - contentinfo [ref=f8e9]:
+    - generic [ref=f8e12]:
+      - paragraph [ref=f8e13]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f8e14] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f8e15]: ©2026 Todos los derechos reservados.
+  - figure [ref=f8e19]:
+    - link [ref=f8e20] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f8e21]

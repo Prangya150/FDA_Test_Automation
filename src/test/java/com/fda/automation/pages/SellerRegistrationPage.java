@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import java.util.Map;
+import java.util.function.Supplier;
 
 /**
  * Page object for the seller onboarding wizard at /marketplace/provider/form
@@ -127,6 +128,40 @@ public class SellerRegistrationPage extends BasePage {
         return By.cssSelector("div[data-index=\"" + stepDataIndex + "\"] button[data-index=\"submitButton\"]");
     }
 
+    private By stepContainer(String stepDataIndex) {
+        return By.cssSelector("div[data-index=\"" + stepDataIndex + "\"]");
+    }
+
+    /**
+     * All 4 steps' markup exists in the DOM simultaneously (Knockout toggles visibility),
+     * so clicking "Continuar" returning doesn't mean the next step has actually rendered
+     * yet. Waiting here for the next step's container to become visible avoids a race
+     * where the following step's fields are queried before the transition completes.
+     */
+    /**
+     * The staging environment has repeatedly shown transient hiccups this session (503s on
+     * submit, dropped connections) with no client-side error surfaced when they hit a step
+     * transition - all field values/checked-state were confirmed correct via live JS
+     * inspection when this was diagnosed, so a stuck transition is treated as a transient
+     * backend issue and retried rather than failed immediately.
+     */
+    private void clickContinuarAndWaitForStep(String currentStepDataIndex, String nextStepDataIndex) {
+        final int maxAttempts = 3;
+        for (int attempt = 1; attempt <= maxAttempts; attempt++) {
+            click(continuarButton(currentStepDataIndex));
+            try {
+                waitForVisible(stepContainer(nextStepDataIndex));
+                return;
+            } catch (org.openqa.selenium.TimeoutException e) {
+                log.warn("Step transition {} -> {} not visible after Continuar click (attempt {}/{})",
+                        currentStepDataIndex, nextStepDataIndex, attempt, maxAttempts);
+                if (attempt == maxAttempts) {
+                    throw e;
+                }
+            }
+        }
+    }
+
     public void fillPersonalInfo(Map<String, String> data) {
         log.info("Filling personal info step");
         type(byName("personalInformationStep[personalInformation][name]"), data.get(KEY_NOMBRE));
@@ -135,7 +170,7 @@ public class SellerRegistrationPage extends BasePage {
         chooseFromSelectMenu("personalInformationStep[personalInformation][roleInCompany]", data.get(KEY_ROL));
         type(byName("personalInformationStep[personalInformation][phone]"), data.get(KEY_TELEFONO));
         chooseFromSelectMenu("personalInformationStep[personalInformation][country]", data.get(KEY_PAIS));
-        click(continuarButton("personalInformationStep"));
+        clickContinuarAndWaitForStep("personalInformationStep", "companyInformationStep");
     }
 
     public void fillCompanyInfo(Map<String, String> data) {
@@ -151,7 +186,7 @@ public class SellerRegistrationPage extends BasePage {
         type(byName("companyInformationStep[taxAddress][municipality]"), data.get(KEY_MUNICIPIO));
         type(byName("companyInformationStep[taxAddress][numExterior]"), data.get(KEY_NUMERO_EXTERIOR));
         chooseFromSelectMenu("companyInformationStep[taxAddress][region]", data.get(KEY_ESTADO));
-        click(continuarButton("companyInformationStep"));
+        clickContinuarAndWaitForStep("companyInformationStep", "storeInformationStep");
     }
 
     public void fillStoreInfo(Map<String, String> data) {
@@ -179,7 +214,7 @@ public class SellerRegistrationPage extends BasePage {
         answerYesNo("thirdpartyShipping", data.get(KEY_PAQUETERIAS_TERCERAS));
         answerYesNo("expressDelivery", data.get(KEY_DESPACHO_24_48));
         answerYesNo("warehouseShipping", data.get(KEY_ENVIA_INVENTARIO));
-        click(continuarButton("storeInformationStep"));
+        clickContinuarAndWaitForStep("storeInformationStep", "productInformationStep");
     }
 
     public void fillProductInfoAndSubmit(Map<String, String> data) {
@@ -188,14 +223,66 @@ public class SellerRegistrationPage extends BasePage {
         answerYesNo("returns", data.get(KEY_ACEPTA_DEVOLUCIONES));
         answerYesNo("invoice", data.get(KEY_GENERA_FACTURAS));
         click(byName("productInformationStep[productInformation][acceptPolicies]"));
-        click(submitButton("productInformationStep"));
+        clickSubmitAndWaitForConfirmation();
     }
 
-    public void completeRegistration(Map<String, String> data) {
-        fillPersonalInfo(data);
-        fillCompanyInfo(data);
-        fillStoreInfo(data);
-        fillProductInfoAndSubmit(data);
+    // Same transient-backend tolerance as clickContinuarAndWaitForStep - see its javadoc.
+    private void clickSubmitAndWaitForConfirmation() {
+        final int maxAttempts = 3;
+        for (int attempt = 1; attempt <= maxAttempts; attempt++) {
+            click(submitButton("productInformationStep"));
+            try {
+                waitForVisible(CONFIRMATION_MESSAGE);
+                return;
+            } catch (org.openqa.selenium.TimeoutException e) {
+                log.warn("Success confirmation not visible after submit click (attempt {}/{})", attempt, maxAttempts);
+                if (attempt == maxAttempts) {
+                    throw e;
+                }
+            }
+        }
+    }
+
+    /**
+     * The staging site occasionally replaces the whole wizard with a terminal
+     * "&iexcl;Oh no! No pudimos enviar la informaci&oacute;n" error screen on submit (a
+     * separate failure mode from the "stuck transition" one clickSubmitAndWaitForConfirmation
+     * already retries in place) - once that error screen renders, the submit button is gone
+     * from the DOM, so a same-page re-click throws instead of retrying. Recover by reloading
+     * the page (which resets the Knockout wizard to a blank first step) and re-filling the
+     * whole thing from scratch, up to a few times.
+     *
+     * dataSupplier (rather than a plain Map) is called again on each retry, not reused,
+     * because a failure here can mean the response was lost rather than the request - the
+     * first attempt's POST may have actually reached the backend and created the seller,
+     * in which case resubmitting the identical email/RFC/trade name would be rejected as
+     * a duplicate on every retry, permanently masking the real cause behind the same
+     * generic error (observed live: 3/3 identical-data retries all failed the same way).
+     * Fresh unique values make each attempt unambiguously a new seller. Returns the data
+     * map that was actually (successfully) submitted, since it may differ from the first
+     * call's if a retry occurred.
+     */
+    public Map<String, String> completeRegistration(Supplier<Map<String, String>> dataSupplier) {
+        final int maxAttempts = 3;
+        Map<String, String> data = dataSupplier.get();
+        for (int attempt = 1; attempt <= maxAttempts; attempt++) {
+            try {
+                fillPersonalInfo(data);
+                fillCompanyInfo(data);
+                fillStoreInfo(data);
+                fillProductInfoAndSubmit(data);
+                return data;
+            } catch (org.openqa.selenium.TimeoutException e) {
+                log.warn("Registration attempt {}/{} failed ({}); reloading and retrying with fresh unique data",
+                        attempt, maxAttempts, e.getMessage());
+                if (attempt == maxAttempts) {
+                    throw e;
+                }
+                driver.navigate().refresh();
+                data = dataSupplier.get();
+            }
+        }
+        throw new IllegalStateException("unreachable");
     }
 
     public boolean isRegistrationSuccessful() {

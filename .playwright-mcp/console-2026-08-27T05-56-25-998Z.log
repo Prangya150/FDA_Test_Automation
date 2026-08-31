@@ -1,0 +1,6 @@
+[     337ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'. @ :0
+[     337ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'battery'. @ :0
+[     337ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'vibrate'. @ :0
+[     337ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'vr'. @ :0
+[     337ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'wake-lock'. @ :0
+[     337ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://farmaciasdelahorromx2-dev.mirakl.net/logout:0

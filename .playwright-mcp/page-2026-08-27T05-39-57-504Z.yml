@@ -1,0 +1,48 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - button "Atrás" [ref=e293] [cursor=pointer]
+    - generic [ref=e5]:
+      - img "FDA Seller Onboarding logo featuring stylized text FDA Seller Onboarding in blue and green, set against a clean white background, conveying a professional and welcoming tone" [ref=e6]
+      - heading "Marketplace" [level=1] [ref=e7]
+    - button "Cerrar sesión" [ref=e27] [cursor=pointer]
+  - generic [ref=e298]:
+    - generic [ref=e299] [cursor=pointer]: "1"
+    - generic [ref=e416] [cursor=pointer]: "2"
+    - generic [ref=e773] [cursor=pointer]: "3"
+    - generic [ref=e775] [cursor=pointer]: "4"
+  - generic [ref=e778]:
+    - paragraph [ref=e780]: Información de Producto
+    - generic [ref=e781]:
+      - paragraph [ref=e782]: Sobre el producto
+      - generic [ref=e783]:
+        - paragraph [ref=e784]: ¿Ofreces garantía?*
+        - generic [ref=e785]:
+          - generic [ref=e786]:
+            - radio "Sí" [checked] [disabled] [ref=e787]
+            - generic [ref=e788]: Sí
+          - generic [ref=e789]:
+            - radio "No" [disabled] [ref=e790]
+            - generic [ref=e791]: "No"
+      - generic [ref=e792]:
+        - paragraph [ref=e793]: ¿Aceptas devoluciones?*
+        - generic [ref=e794]:
+          - generic [ref=e795]:
+            - radio "Sí" [checked] [disabled] [ref=e796]
+            - generic [ref=e797]: Sí
+          - generic [ref=e798]:
+            - radio "No" [disabled] [ref=e799]
+            - generic [ref=e800]: "No"
+      - generic [ref=e801]:
+        - paragraph [ref=e802]: ¿Puedes generar facturas al consumidor?*
+        - generic [ref=e803]:
+          - generic [ref=e804]:
+            - radio "Sí" [checked] [disabled] [ref=e805]
+            - generic [ref=e806]: Sí
+          - generic [ref=e807]:
+            - radio "No" [disabled] [ref=e808]
+            - generic [ref=e809]: "No"
+    - generic [ref=e810]:
+      - button "RECHAZAR" [ref=e814] [cursor=pointer]
+      - button "PREAPROBACIÓN" [ref=e818] [cursor=pointer]
+  - generic [ref=e24]: ©2026 Todos los derechos reservados
+  - region "Notifications Alt+T"

@@ -1,0 +1,407 @@
+[    2505ms] [LOG] inside index prod ==> /fda/api/v2/seller-onboarding @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[    3455ms] [LOG]  ROLES RESPONSE >>>>> {"allowed":true,"shippingcharges_allowed":false,"sellerNotification":true,"invoice_allowed":true} @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[   83252ms] [WARNING] Form submission canceled because the form is not connected @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/preview/2024?view=true:0
+[   96073ms] [LOG] ✅ Final data of StoreInformation Along with PersonalData and CompanyData: @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[   96073ms] [LOG] {
+  "id": "2024",
+  "nombre": "Ana",
+  "apellido": "Garcia",
+  "correo": "psamal+full1787811013510001@kognivera.com",
+  "rol": "Dueño",
+  "pais": "MEX",
+  "telefono": "+52 551 234 5678",
+  "nombreComercial": "Bienestar Kognivera 1787811013514002",
+  "razonSocial": "Bienestar Kognivera 1787811013514002 SA de CV",
+  "rfc": "GODE041211DQ9",
+  "tipoEmpresa": "EMPRESA_PRIVADA",
+  "calle": "Av. Insurgentes Sur",
+  "codigoPostal": "03100",
+  "colonia": "Del Valle Centro",
+  "municipio": "Benito Juárez",
+  "numeroExterior": "123",
+  "numeroInterior": "",
+  "ecommerce": "si",
+  "ecommerceSite": "https://example.com",
+  "marcaActiva": "si",
+  "marcas": [
+    "Bienestar Kognivera 1787811013514002"
+  ],
+  "sitiosVenta": [
+    "AMAZON"
+  ],
+  "sitioOtro": "Otro",
+  "sitiosVentaOptions": [
+    {
+      "value": "AMAZON",
+      "label": "Amazon",
+      "textField": false,
+      "checked": true
+    },
+    {
+      "value": "MERCADO_LIBRE",
+      "label": "Mercado Libre",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "LIVERPOOL",
+      "label": "Liverpool",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "WALMART",
+      "label": "Walmart",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "COPPEL",
+      "label": "Coppel",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_SAN_PABLO",
+      "label": "Farmacias San Pablo",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_GUADALAJARA",
+      "label": "Farmacias Guadalajara",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_SIMILARES",
+      "label": "Farmacias Similares",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_BENAVIDES",
+      "label": "Farmacias Benavides",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "PRIX",
+      "label": "Prix",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "NINGUNO",
+      "label": "Ninguno",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "OTRO",
+      "label": "Otro",
+      "textField": true,
+      "checked": false
+    }
+  ],
+  "categories": [
+    "17221"
+  ],
+  "otherCategory": "",
+  "otherText": "",
+  "salesData": [
+    {
+      "commerceId": "AMAZON",
+      "label": "AMAZON",
+      "quantity": "100",
+      "amount": "250",
+      "catalogLink": "https://example.com/catalogo",
+      "value": 100
+    }
+  ],
+  "shipping": {
+    "usesThirdParty": "si",
+    "canDispatchFast": "si",
+    "canSendToWarehouse": "si"
+  },
+  "warranty": "si",
+  "returns": "si",
+  "invoices": "si",
+  "acceptTerms": true,
+  "status": "PRE_APPROVAL_PENDING",
+  "estado": "Ciudad de México"
+} @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[   96073ms] [LOG] ✅ Final data of StoreInformation Along with PersonalData and CompanyData: @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[   96074ms] [LOG] {
+  "id": "2024",
+  "nombre": "Ana",
+  "apellido": "Garcia",
+  "correo": "psamal+full1787811013510001@kognivera.com",
+  "rol": "Dueño",
+  "pais": "MEX",
+  "telefono": "+52 551 234 5678",
+  "nombreComercial": "Bienestar Kognivera 1787811013514002",
+  "razonSocial": "Bienestar Kognivera 1787811013514002 SA de CV",
+  "rfc": "GODE041211DQ9",
+  "tipoEmpresa": "EMPRESA_PRIVADA",
+  "calle": "Av. Insurgentes Sur",
+  "codigoPostal": "03100",
+  "colonia": "Del Valle Centro",
+  "municipio": "Benito Juárez",
+  "numeroExterior": "123",
+  "numeroInterior": "",
+  "ecommerce": "si",
+  "ecommerceSite": "https://example.com",
+  "marcaActiva": "si",
+  "marcas": [
+    "Bienestar Kognivera 1787811013514002"
+  ],
+  "sitiosVenta": [
+    "AMAZON"
+  ],
+  "sitioOtro": "Otro",
+  "sitiosVentaOptions": [
+    {
+      "value": "AMAZON",
+      "label": "Amazon",
+      "textField": false,
+      "checked": true
+    },
+    {
+      "value": "MERCADO_LIBRE",
+      "label": "Mercado Libre",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "LIVERPOOL",
+      "label": "Liverpool",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "WALMART",
+      "label": "Walmart",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "COPPEL",
+      "label": "Coppel",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_SAN_PABLO",
+      "label": "Farmacias San Pablo",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_GUADALAJARA",
+      "label": "Farmacias Guadalajara",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_SIMILARES",
+      "label": "Farmacias Similares",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_BENAVIDES",
+      "label": "Farmacias Benavides",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "PRIX",
+      "label": "Prix",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "NINGUNO",
+      "label": "Ninguno",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "OTRO",
+      "label": "Otro",
+      "textField": true,
+      "checked": false
+    }
+  ],
+  "categories": [
+    "17221"
+  ],
+  "otherCategory": "",
+  "otherText": "",
+  "salesData": [
+    {
+      "commerceId": "AMAZON",
+      "label": "AMAZON",
+      "quantity": "100",
+      "amount": "250",
+      "catalogLink": "https://example.com/catalogo",
+      "value": 100
+    }
+  ],
+  "shipping": {
+    "usesThirdParty": "si",
+    "canDispatchFast": "si",
+    "canSendToWarehouse": "si"
+  },
+  "warranty": "si",
+  "returns": "si",
+  "invoices": "si",
+  "acceptTerms": true,
+  "status": "PRE_APPROVAL_PENDING",
+  "estado": "Ciudad de México"
+} @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[   96075ms] [LOG] {id: 2024, nombre: Ana, apellido: Garcia, correo: psamal+full1787811013510001@kognivera.com, rol: Dueño} check @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[   96082ms] [LOG]  payloadRef updated: {id: 2024, nombre: Ana, apellido: Garcia, correo: psamal+full1787811013510001@kognivera.com, rol: Dueño} @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  102203ms] [LOG] {id: 2024, nombre: Ana, apellido: Garcia, correo: psamal+full1787811013510001@kognivera.com, rol: Dueño} check @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131638ms] [LOG] === APPROVAL ACTION === @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131638ms] [LOG] Action: APPROVE @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131639ms] [LOG] Seller ID: 2024 @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131639ms] [LOG] Approved: true @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131639ms] [LOG] Payload Data at Approval Time: @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131639ms] [LOG] {
+  "id": "2024",
+  "nombre": "Ana",
+  "apellido": "Garcia",
+  "correo": "psamal+full1787811013510001@kognivera.com",
+  "rol": "Dueño",
+  "pais": "MEX",
+  "telefono": "+52 551 234 5678",
+  "nombreComercial": "Bienestar Kognivera 1787811013514002",
+  "razonSocial": "Bienestar Kognivera 1787811013514002 SA de CV",
+  "rfc": "GODE041211DQ9",
+  "tipoEmpresa": "EMPRESA_PRIVADA",
+  "calle": "Av. Insurgentes Sur",
+  "codigoPostal": "03100",
+  "colonia": "Del Valle Centro",
+  "municipio": "Benito Juárez",
+  "numeroExterior": "123",
+  "numeroInterior": "",
+  "ecommerce": "si",
+  "ecommerceSite": "https://example.com",
+  "marcaActiva": "si",
+  "marcas": [
+    "Bienestar Kognivera 1787811013514002"
+  ],
+  "sitiosVenta": [
+    "AMAZON"
+  ],
+  "sitioOtro": "Otro",
+  "sitiosVentaOptions": [
+    {
+      "value": "AMAZON",
+      "label": "Amazon",
+      "textField": false,
+      "checked": true
+    },
+    {
+      "value": "MERCADO_LIBRE",
+      "label": "Mercado Libre",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "LIVERPOOL",
+      "label": "Liverpool",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "WALMART",
+      "label": "Walmart",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "COPPEL",
+      "label": "Coppel",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_SAN_PABLO",
+      "label": "Farmacias San Pablo",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_GUADALAJARA",
+      "label": "Farmacias Guadalajara",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_SIMILARES",
+      "label": "Farmacias Similares",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "FARMACIAS_BENAVIDES",
+      "label": "Farmacias Benavides",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "PRIX",
+      "label": "Prix",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "NINGUNO",
+      "label": "Ninguno",
+      "textField": false,
+      "checked": false
+    },
+    {
+      "value": "OTRO",
+      "label": "Otro",
+      "textField": true,
+      "checked": false
+    }
+  ],
+  "categories": [
+    "17221"
+  ],
+  "otherCategory": "",
+  "otherText": "",
+  "salesData": [
+    {
+      "commerceId": "AMAZON",
+      "label": "AMAZON",
+      "quantity": "100",
+      "amount": "250",
+      "catalogLink": "https://example.com/catalogo",
+      "value": 100
+    }
+  ],
+  "shipping": {
+    "usesThirdParty": "si",
+    "canDispatchFast": "si",
+    "canSendToWarehouse": "si"
+  },
+  "warranty": "si",
+  "returns": "si",
+  "invoices": "si",
+  "acceptTerms": true,
+  "status": "PRE_APPROVAL_PENDING",
+  "estado": "Ciudad de México"
+} @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131639ms] [LOG] Calling updateSellerState with: {sellerId: 2024, state: Ciudad de México} @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131639ms] [LOG] TimeStamp: [2026-08-27T06:18:39.879Z] @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131639ms] [LOG] Payload: {"sellerId":"2024","state":"Ciudad de México"} @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  131642ms] [LOG] {id: 2024, nombre: Ana, apellido: Garcia, correo: psamal+full1787811013510001@kognivera.com, rol: Dueño} check @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  132654ms] [LOG] Status updated successfully @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  132656ms] [LOG] {id: 2024, nombre: Ana, apellido: Garcia, correo: psamal+full1787811013510001@kognivera.com, rol: Dueño} check @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0
+[  133617ms] [LOG]  ROLES RESPONSE >>>>> {"allowed":true,"shippingcharges_allowed":false,"sellerNotification":true,"invoice_allowed":true} @ https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/build/main.js:0

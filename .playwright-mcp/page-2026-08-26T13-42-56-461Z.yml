@@ -1,0 +1,56 @@
+- generic [ref=f6e2]:
+  - banner [ref=f6e3]:
+    - figure [ref=f6e7]
+  - main [ref=f6e8]:
+    - generic [ref=f6e10]:
+      - text: o * *
+      - generic [ref=f6e11]:
+        - list "Progress steps" [ref=f6e35]:
+          - listitem [ref=f6e36] [cursor=pointer]:
+            - generic [ref=f6e37]: Información personal
+          - listitem [ref=f6e38] [cursor=pointer]:
+            - generic [ref=f6e39]: Información de la Empresa
+          - listitem [ref=f6e40] [cursor=pointer]:
+            - generic [ref=f6e41]: Información de la Tienda
+          - listitem [ref=f6e42]:
+            - generic [ref=f6e43]: Información de Producto
+        - generic [ref=f6e12]:
+          - text: "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+          - generic [ref=f6e943]:
+            - strong [ref=f6e945]: Información de Producto
+            - group [ref=f6e947]:
+              - generic [ref=f6e949]:
+                - paragraph [ref=f6e950]: Sobre el producto
+                - group [ref=f6e951]:
+                  - group "¿Ofreces garantía?*" [ref=f6e952]:
+                    - generic [ref=f6e954]:
+                      - generic [ref=f6e955]: Si
+                      - generic [ref=f6e956]: "No"
+                  - group "¿Aceptas devoluciones?*" [ref=f6e957]:
+                    - generic [ref=f6e959]:
+                      - generic [ref=f6e960]: Si
+                      - generic [ref=f6e961]: "No"
+                  - group "¿Puedes generar facturas al consumidor?*" [ref=f6e962]:
+                    - generic [ref=f6e964]:
+                      - generic [ref=f6e965]: Si
+                      - generic [ref=f6e966]: "No"
+              - generic [ref=f6e969]:
+                - checkbox "Aceptar Términos y Condiciones para vendedores de Farmacias del Ahorro" [ref=f6e970]
+                - generic [ref=f6e971]:
+                  - text: Aceptar
+                  - link "Términos y Condiciones" [ref=f6e972] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/terminos-y-condiciones-vendedores/
+                  - text: para vendedores de Farmacias del Ahorro
+              - button "Continuar" [ref=f6e973] [cursor=pointer]
+  - contentinfo [ref=f6e21]:
+    - generic [ref=f6e24]:
+      - paragraph [ref=f6e25]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f6e26] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f6e27]: ©2026 Todos los derechos reservados.
+  - figure [ref=f6e31]:
+    - link [ref=f6e32] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f6e33]

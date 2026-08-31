@@ -1,0 +1,63 @@
+- generic [ref=f6e2]:
+  - banner [ref=f6e3]:
+    - figure [ref=f6e7]
+  - main [ref=f6e8]:
+    - generic [ref=f6e10]:
+      - text: o * *
+      - generic [ref=f6e11]:
+        - list "Progress steps" [ref=f6e35]:
+          - listitem [ref=f6e36]:
+            - generic [ref=f6e37]: Información personal
+          - listitem [ref=f6e38]:
+            - generic [ref=f6e39]: Información de la Empresa
+          - listitem [ref=f6e40]:
+            - generic [ref=f6e41]: Información de la Tienda
+          - listitem [ref=f6e42]:
+            - generic [ref=f6e43]: Información de Producto
+        - generic [ref=f6e12]:
+          - group [ref=f6e15]:
+            - generic [ref=f6e16]:
+              - strong [ref=f6e18]: Información personal
+              - generic [ref=f6e19]:
+                - paragraph [ref=f6e20]: Por favor completa la siguiente información
+                - group [ref=f6e44]:
+                  - generic [ref=f6e45]:
+                    - generic [ref=f6e46]: Nombre*
+                    - textbox "Nombre*" [ref=f6e48]: Ana
+                  - generic [ref=f6e49]:
+                    - generic [ref=f6e50]: Apellido*
+                    - textbox "Apellido*" [ref=f6e52]: Garcia
+                  - generic [ref=f6e53]:
+                    - generic [ref=f6e54]: Correo electrónico*
+                    - generic [ref=f6e55]:
+                      - textbox "Correo electrónico*" [invalid] [ref=f6e56]: fda.automation.test@kognivera.com
+                      - generic [ref=f6e595]: Por favor completa este campo
+                  - generic [ref=f6e57]:
+                    - generic [ref=f6e58]: Rol en la empresa*
+                    - combobox "Dueño" [ref=f6e92] [cursor=pointer]
+                  - group [ref=f6e73]:
+                    - generic [ref=f6e74]:
+                      - combobox [ref=f6e77] [cursor=pointer]:
+                        - generic [ref=f6e78]: "+52"
+                      - generic [ref=f6e79]:
+                        - generic [ref=f6e80]: Número telefónico *
+                        - textbox "Número telefónico *" [ref=f6e83]:
+                          - /placeholder: 123 456 7890
+                          - text: "5512345678"
+                  - generic [ref=f6e84]:
+                    - generic [ref=f6e85]: País*
+                    - combobox "México" [ref=f6e87] [cursor=pointer]
+            - button "Continuar" [active] [ref=f6e89] [cursor=pointer]
+          - text: "* * * * * * * * * * * * * * * * * * * * * * * *"
+  - contentinfo [ref=f6e21]:
+    - generic [ref=f6e24]:
+      - paragraph [ref=f6e25]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f6e26] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f6e27]: ©2026 Todos los derechos reservados.
+  - figure [ref=f6e31]:
+    - link [ref=f6e32] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f6e33]

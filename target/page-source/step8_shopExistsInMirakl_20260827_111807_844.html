@@ -1,0 +1,195 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="_csrf" content="62413e17-4036-45af-bf2e-f2d7347ab718">
+    <meta name="_csrf_header" content="X-XSRF-TOKEN">
+
+    
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/static/images/favicon-bcff959f37601940c5adb4fa5be56134.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-93a08e7d50979b6c680f5d356b1af8a6.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;display=swap" rel="stylesheet">
+
+    <!--SirData tag-->
+    
+    
+    
+    <!--End of SirData tag-->
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    <link type="text/css" href="/static/css/footer-e3c8bd5d72491cb30e1c43e4fb056c56.css" media="screen, projection" rel="stylesheet">
+    <script type="text/javascript" src="/static/jquery/jquery.min-0ed1dbd9a7d3beb8c32b92f75581b3e4.js"></script>
+
+    
+
+    
+
+    
+    
+
+    <script type="text/javascript">
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+    </script>
+    
+
+    
+    <script>
+        /*<![CDATA[*/
+        var romaNavigationStyle =null;
+        var gatewayLanguage ="es";
+        var gatewayCountry ="MX";
+        var gatewayUserLocale = gatewayLanguage + '-' + gatewayCountry;
+        var gatewayOperatorTimezone = null;
+        var gatewayLanguageDirection = null;
+        /*]]>*/
+    </script>
+            
+            <title>Farmacias del Ahorro - Iniciar sesión</title>
+            <link type="text/css" href="/static/css/content-a712cd581e0e9b4055d4b2e6a888417c.css" media="screen, projection" rel="stylesheet">
+            <link type="text/css" href="/static/css/fa/font-awesome-fbc5b8d4faf420913f66ee0e37e2ba72.css" media="screen, projection" rel="stylesheet">
+            
+            <!--SirData tag-->
+            
+            
+            
+            <!--End of SirData tag-->
+    
+
+
+</head>
+<body>
+
+    <div class="gateway-context">
+        <div class="main login-main">
+            <div class="login-box">
+                <div>
+                    
+                    <div class="logo text-center">
+                        <img src="/media/operator-interface-logo">
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+
+                
+
+                    <div>
+                        
+                        
+
+                        <div id="login-error" class="alert alert-danger" style="display: none;">Se ha producido un error. Por favor, inténtalo de nuevo más tarde.</div>
+
+                        <form action="/authenticate" method="POST" id="loginForm" class="cssform form-horizontal" autocomplete="off"><input type="hidden" name="_csrf" value="62413e17-4036-45af-bf2e-f2d7347ab718">
+
+                            
+                            <div class="form-group" id="login-username-group">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon-pro user"></i>
+                                </span>
+                                        <input type="text" id="username" name="username" required="true" class="form-control" placeholder="Tu inicio de sesión" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <button type="submit" id="submitButton" class="btn btn-lg btn-login btn-primary">
+                                        <i id="submitButtonSpinner" class="glyphicon-pro refresh fa-spin icon-right-offset" style="display: none;"></i>
+                                        <span id="submitLabel">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript">
+                                /*<![CDATA[*/
+                                $(function () {
+                                    var usernameInput = $('#username');
+                                    var submitButton = $('#submitButton');
+                                    var submitButtonSpinner = $('#submitButtonSpinner');
+
+                                    $('#loginForm').submit(function (evt) {
+                                            evt.preventDefault();
+                                            evt.stopPropagation();
+
+                                            submitButton.prop('disabled', true);
+                                            submitButtonSpinner.show();
+
+                                            $.post("/login/option", {
+                                                "username": usernameInput.val(),
+                                                "_csrf": $("meta[name='_csrf']").attr("content")
+                                            })
+                                                .done(function (data) {
+                                                    window.location.href = data.url;
+                                                })
+                                                .fail(function (xhr, status, error) {
+                                                    submitButton.prop('disabled', false);
+                                                    submitButtonSpinner.hide();
+                                                    $('#login-error').show();
+                                                });
+                                        }
+                                    );
+
+                                    var messageBarMessage = null;
+                                    
+                                    if (usernameInput.val() !== '' && messageBarMessage === undefined) {
+                                        $('#loginForm').submit();
+                                    } else {
+                                        
+                                        var val = usernameInput.val();
+                                        usernameInput.val('');
+                                        usernameInput.focus();
+                                        usernameInput.val(val);
+                                    }
+                                });
+                                /*]]>*/
+                            </script>
+
+                        </form>
+                    </div>
+
+                    
+
+                
+            </div>
+
+            <div>
+    <div class="footer-version footer-copyright">
+        Copyright ©
+        2026
+        Mirakl
+        <div class="pull-right footer-copyright-right">
+            Mirakl MP
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+
+
+
+</body></html>

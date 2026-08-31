@@ -1,0 +1,437 @@
+- generic [ref=f11e10]:
+  - generic [ref=f11e11]:
+    - complementary [ref=f11e12]:
+      - link "Logotipo de la plataforma Farmacias del Ahorro" [ref=f11e14] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f11e15]:
+          - img "Logotipo de la plataforma" [ref=f11e18]
+          - generic [ref=f11e19]: Farmacias del Ahorro
+      - navigation [ref=f11e21]:
+        - generic [ref=f11e26]:
+          - generic [ref=f11e27]:
+            - generic [ref=f11e28]: Plataforma
+            - menubar [ref=f11e36]:
+              - menuitem "Panel de control" [ref=f11e37] [cursor=pointer]
+              - generic [ref=f11e46]:
+                - button "Tiendas" [expanded] [ref=f11e47] [cursor=pointer]
+                - region "Tiendas" [ref=f11e58]:
+                  - menu "Tiendas" [ref=f11e60]:
+                    - menuitem "Todas las cuentas tienda" [ref=f11e61] [cursor=pointer]
+                    - menuitem "Problemas de calidad" [ref=f11e65] [cursor=pointer]
+                    - menuitem "Comunicaciones" [ref=f11e69] [cursor=pointer]
+                    - menuitem "Invitaciones" [ref=f11e73] [cursor=pointer]
+              - button "Pedidos" [ref=f11e81] [cursor=pointer]
+              - button "Atención al cliente" [ref=f11e95] [cursor=pointer]
+              - menuitem "Mensajes" [ref=f11e106] [cursor=pointer]
+              - button "Catálogo" [ref=f11e116] [cursor=pointer]
+              - button "Precios y existencias" [ref=f11e130] [cursor=pointer]
+              - button "Contabilidad" [ref=f11e144] [cursor=pointer]
+              - menuitem "Payout" [ref=f11e155] [cursor=pointer]
+              - button "Configuración" [ref=f11e169] [cursor=pointer]
+          - link "Ads" [ref=f11e182] [cursor=pointer]:
+            - /url: https://retailmedia-dev.mirakl.net/?tenantId=farmaciasdelahorromx2-dev
+    - button [expanded] [ref=f11e192] [cursor=pointer]
+  - banner [ref=f11e194]:
+    - generic [ref=f11e195]:
+      - button "Buscar en todas partes" [ref=f11e197] [cursor=pointer]:
+        - generic [ref=f11e198]: Ctrl + k
+      - button "Help Center" [ref=f11e205] [cursor=pointer]
+      - button "PS" [ref=f11e215] [cursor=pointer]
+  - generic [ref=f11e217]:
+    - generic [ref=f11e225]:
+      - generic [ref=f11e226]:
+        - heading "Tiendas" [level=1] [ref=f11e231]
+        - button "Crear la cuenta tienda" [ref=f11e233] [cursor=pointer]
+      - main [ref=f11e238]:
+        - generic [ref=f11e242]:
+          - navigation [ref=f11e243]:
+            - list [ref=f11e244]:
+              - listitem [ref=f11e245]:
+                - link "Todas" [ref=f11e246] [cursor=pointer]:
+                  - /url: /mmp/operator/shop
+              - listitem [ref=f11e247]:
+                - link "Asignado a mí" [ref=f11e248] [cursor=pointer]:
+                  - /url: /mmp/operator/shop/assigned-to-me
+          - generic [ref=f11e249]:
+            - toolbar [ref=f11e250]:
+              - generic [ref=f11e251]:
+                - generic [ref=f11e253]:
+                  - generic [ref=f11e254]: Buscar
+                  - generic [ref=f11e257]:
+                    - button "Nombre de tienda" [ref=f11e261] [cursor=pointer]
+                    - searchbox "Buscar" [active] [ref=f11e266]: Bienestar Kognivera 1787809514556002
+                    - button "Borrar" [ref=f11e17179] [cursor=pointer]
+                - button "Filtrar" [ref=f11e274] [cursor=pointer]
+                - generic [ref=f11e280]:
+                  - generic [ref=f11e281]: 1 resultado
+                  - generic [ref=f11e282]:
+                    - button "Gestionar columnas" [ref=f11e283] [cursor=pointer]
+                    - button "Exportar" [ref=f11e292] [cursor=pointer]
+            - generic [ref=f11e299]:
+              - table [ref=f11e301]:
+                - rowgroup [ref=f11e302]:
+                  - row [ref=f11e303]:
+                    - columnheader [ref=f11e304]:
+                      - checkbox [ref=f11e308] [cursor=pointer]:
+                        - generic [ref=f11e309]:
+                          - checkbox [ref=f11e311]
+                          - generic [ref=f11e312]: Seleccionar todas las filas de la página
+                    - columnheader [ref=f11e313]:
+                      - button [ref=f11e315] [cursor=pointer]:
+                        - generic [ref=f11e316]: Nombre
+                        - button [ref=f11e317]
+                    - columnheader [ref=f11e321]:
+                      - generic [ref=f11e322]: Estado
+                    - columnheader [ref=f11e325]:
+                      - generic [ref=f11e326]: Modelo de plataforma
+                    - columnheader [ref=f11e329]:
+                      - button [ref=f11e331] [cursor=pointer]:
+                        - generic [ref=f11e332]: Creado
+                        - button [ref=f11e333]
+                        - button [ref=f11e337]
+                    - columnheader [ref=f11e341]:
+                      - generic [ref=f11e342]: Administrador de cuenta
+                    - columnheader [ref=f11e345]:
+                      - button [ref=f11e347] [cursor=pointer]:
+                        - generic [ref=f11e348]: Ofertas
+                        - button [ref=f11e349]
+                        - button [ref=f11e353]
+                    - columnheader [ref=f11e357]:
+                      - button [ref=f11e359] [cursor=pointer]:
+                        - generic [ref=f11e360]: Evaluación
+                        - button [ref=f11e361]
+                        - button [ref=f11e365]
+                    - columnheader [ref=f11e369]:
+                      - button [ref=f11e371] [cursor=pointer]:
+                        - generic [ref=f11e372]: Pedidos totales
+                        - button [ref=f11e373]
+                        - button [ref=f11e377]
+                    - columnheader [ref=f11e381]:
+                      - button [ref=f11e383] [cursor=pointer]:
+                        - generic [ref=f11e384]: Pedidos procesados
+                        - button [ref=f11e385]
+                        - button [ref=f11e389]
+                    - columnheader [ref=f11e393]:
+                      - button [ref=f11e395] [cursor=pointer]:
+                        - generic [ref=f11e396]: Rechazados
+                        - button [ref=f11e397]
+                        - button [ref=f11e401]
+                    - columnheader [ref=f11e405]:
+                      - button [ref=f11e407] [cursor=pointer]:
+                        - generic [ref=f11e408]: Rechazos automáticos
+                        - button [ref=f11e409]
+                        - button [ref=f11e413]
+                    - columnheader [ref=f11e417]:
+                      - button [ref=f11e419] [cursor=pointer]:
+                        - generic [ref=f11e420]: Pendiente de entrega
+                        - button [ref=f11e421]
+                        - button [ref=f11e425]
+                    - columnheader [ref=f11e429]:
+                      - button [ref=f11e431] [cursor=pointer]:
+                        - generic [ref=f11e432]: A pagar
+                        - button [ref=f11e433]
+                        - button [ref=f11e437]
+                    - columnheader [ref=f11e441]:
+                      - button [ref=f11e443] [cursor=pointer]:
+                        - generic [ref=f11e444]: Pagado
+                        - button [ref=f11e445]
+                        - button [ref=f11e449]
+                    - columnheader [ref=f11e453]:
+                      - button [ref=f11e455] [cursor=pointer]:
+                        - generic [ref=f11e456]: Ingresos totales
+                        - button [ref=f11e457]
+                        - button [ref=f11e461]
+                    - columnheader [ref=f11e465]:
+                      - button [ref=f11e467] [cursor=pointer]:
+                        - generic [ref=f11e468]: "% Aceptac."
+                        - button [ref=f11e469]
+                        - button [ref=f11e473]
+                    - columnheader [ref=f11e477]:
+                      - button [ref=f11e479] [cursor=pointer]:
+                        - generic [ref=f11e480]: Plazo de aceptación
+                        - button [ref=f11e481]
+                        - button [ref=f11e485]
+                    - columnheader [ref=f11e489]:
+                      - button [ref=f11e491] [cursor=pointer]:
+                        - generic [ref=f11e492]: Plazo envío
+                        - button [ref=f11e493]
+                        - button [ref=f11e497]
+                    - columnheader [ref=f11e501]:
+                      - button [ref=f11e503] [cursor=pointer]:
+                        - generic [ref=f11e504]: Tiempo para responder el mensaje
+                        - button [ref=f11e505]
+                        - button [ref=f11e509]
+                    - columnheader [ref=f11e513]:
+                      - button [ref=f11e515] [cursor=pointer]:
+                        - generic [ref=f11e516]: Tasa de incidencias
+                        - button [ref=f11e517]
+                        - button [ref=f11e521]
+                    - columnheader [ref=f11e525]:
+                      - button [ref=f11e527] [cursor=pointer]:
+                        - generic [ref=f11e528]: Tasa de reembolso
+                        - button [ref=f11e529]
+                        - button [ref=f11e533]
+                    - columnheader [ref=f11e537]:
+                      - button [ref=f11e539] [cursor=pointer]:
+                        - generic [ref=f11e540]: Tasa de cancelación
+                        - button [ref=f11e541]
+                        - button [ref=f11e545]
+                    - columnheader [ref=f11e549]:
+                      - button [ref=f11e551] [cursor=pointer]:
+                        - generic [ref=f11e552]: Tasa de rechazos automáticos
+                        - button [ref=f11e553]
+                        - button [ref=f11e557]
+                    - columnheader [ref=f11e561]:
+                      - button [ref=f11e563] [cursor=pointer]:
+                        - generic [ref=f11e564]: Tasa de envíos tardíos
+                        - button [ref=f11e565]
+                        - button [ref=f11e569]
+                    - columnheader [ref=f11e573]:
+                      - button [ref=f11e575] [cursor=pointer]:
+                        - generic [ref=f11e576]: Carrito promedio
+                        - button [ref=f11e577]
+                        - button [ref=f11e581]
+                    - columnheader [ref=f11e585]:
+                      - button [ref=f11e587] [cursor=pointer]:
+                        - generic [ref=f11e588]: Tasa de seguimiento
+                        - button [ref=f11e589]
+                        - button [ref=f11e593]
+                    - columnheader [ref=f11e597]:
+                      - button [ref=f11e599] [cursor=pointer]:
+                        - generic [ref=f11e600]: Tasa de devolución
+                        - button [ref=f11e601]
+                        - button [ref=f11e605]
+              - table [ref=f11e610]:
+                - rowgroup [ref=f11e611]:
+                  - row [ref=f11e612]:
+                    - columnheader [ref=f11e613]:
+                      - checkbox "Seleccionar todas las filas de la página" [ref=f11e617] [cursor=pointer]:
+                        - generic [ref=f11e618]:
+                          - checkbox [ref=f11e620]
+                          - generic [ref=f11e621]: Seleccionar todas las filas de la página
+                    - columnheader [ref=f11e622]:
+                      - button "Nombre Clasificar en orden ascendente" [ref=f11e624] [cursor=pointer]:
+                        - generic [ref=f11e625]: Nombre
+                        - button [ref=f11e626]:
+                          - img "Clasificar en orden ascendente" [ref=f11e628]
+                    - columnheader "Estado" [ref=f11e630]
+                    - columnheader "Modelo de plataforma" [ref=f11e634]
+                    - columnheader [ref=f11e638]:
+                      - button "Creado Fecha de apertura de la cuenta tienda. Ordenable" [ref=f11e640] [cursor=pointer]:
+                        - generic [ref=f11e641]: Creado
+                        - button [ref=f11e642]:
+                          - img "Fecha de apertura de la cuenta tienda." [ref=f11e644]
+                        - button [ref=f11e646]:
+                          - img "Ordenable" [ref=f11e648]
+                    - columnheader "Administrador de cuenta" [ref=f11e650]
+                    - columnheader [ref=f11e654]:
+                      - button "Ofertas Número total de ofertas activas de una cuenta tienda a día de ayer. Ordenable" [ref=f11e656] [cursor=pointer]:
+                        - generic [ref=f11e657]: Ofertas
+                        - button [ref=f11e658]:
+                          - img "Número total de ofertas activas de una cuenta tienda a día de ayer." [ref=f11e660]
+                        - button [ref=f11e662]:
+                          - img "Ordenable" [ref=f11e664]
+                    - columnheader [ref=f11e666]:
+                      - button "Evaluación Calificación media de los clientes de una cuenta tienda. Ordenable" [ref=f11e668] [cursor=pointer]:
+                        - generic [ref=f11e669]: Evaluación
+                        - button [ref=f11e670]:
+                          - img "Calificación media de los clientes de una cuenta tienda." [ref=f11e672]
+                        - button [ref=f11e674]:
+                          - img "Ordenable" [ref=f11e676]
+                    - columnheader [ref=f11e678]:
+                      - button "Pedidos totales Número total de pedidos creados (todos los estados incluidos) Ordenable" [ref=f11e680] [cursor=pointer]:
+                        - generic [ref=f11e681]: Pedidos totales
+                        - button [ref=f11e682]:
+                          - img "Número total de pedidos creados (todos los estados incluidos)" [ref=f11e684]
+                        - button [ref=f11e686]:
+                          - img "Ordenable" [ref=f11e688]
+                    - columnheader [ref=f11e690]:
+                      - button "Pedidos procesados Número total de pedidos debitados (o pedidos aceptados que se pagan a la entrega o en la fecha de vencimiento) Ordenable" [ref=f11e692] [cursor=pointer]:
+                        - generic [ref=f11e693]: Pedidos procesados
+                        - button [ref=f11e694]:
+                          - img "Número total de pedidos debitados (o pedidos aceptados que se pagan a la entrega o en la fecha de vencimiento)" [ref=f11e696]
+                        - button [ref=f11e698]:
+                          - img "Ordenable" [ref=f11e700]
+                    - columnheader [ref=f11e702]:
+                      - button "Rechazados Número de pedidos consecutivos rechazados por tienda Ordenable" [ref=f11e704] [cursor=pointer]:
+                        - generic [ref=f11e705]: Rechazados
+                        - button [ref=f11e706]:
+                          - img "Número de pedidos consecutivos rechazados por tienda" [ref=f11e708]
+                        - button [ref=f11e710]:
+                          - img "Ordenable" [ref=f11e712]
+                    - columnheader [ref=f11e714]:
+                      - button "Rechazos automáticos Número de pedidos consecutivos cancelados por la cuenta tienda. Ordenable" [ref=f11e716] [cursor=pointer]:
+                        - generic [ref=f11e717]: Rechazos automáticos
+                        - button [ref=f11e718]:
+                          - img "Número de pedidos consecutivos cancelados por la cuenta tienda." [ref=f11e720]
+                        - button [ref=f11e722]:
+                          - img "Ordenable" [ref=f11e724]
+                    - columnheader [ref=f11e726]:
+                      - button "Pendiente de entrega Saldo correspondiente a pedidos con estado «En espera de envío» o con incidencia abierta. Ordenable" [ref=f11e728] [cursor=pointer]:
+                        - generic [ref=f11e729]: Pendiente de entrega
+                        - button [ref=f11e730]:
+                          - img "Saldo correspondiente a pedidos con estado «En espera de envío» o con incidencia abierta." [ref=f11e732]
+                        - button [ref=f11e734]:
+                          - img "Ordenable" [ref=f11e736]
+                    - columnheader [ref=f11e738]:
+                      - button "A pagar Importe a pagar a la cuenta tienda en el próximo vencimiento Ordenable" [ref=f11e740] [cursor=pointer]:
+                        - generic [ref=f11e741]: A pagar
+                        - button [ref=f11e742]:
+                          - img "Importe a pagar a la cuenta tienda en el próximo vencimiento" [ref=f11e744]
+                        - button [ref=f11e746]:
+                          - img "Ordenable" [ref=f11e748]
+                    - columnheader [ref=f11e750]:
+                      - button "Pagado Saldo ya pagado a la cuenta tienda Ordenable" [ref=f11e752] [cursor=pointer]:
+                        - generic [ref=f11e753]: Pagado
+                        - button [ref=f11e754]:
+                          - img "Saldo ya pagado a la cuenta tienda" [ref=f11e756]
+                        - button [ref=f11e758]:
+                          - img "Ordenable" [ref=f11e760]
+                    - columnheader [ref=f11e762]:
+                      - button "Ingresos totales Ingresos totales de la cuenta tienda Ordenable" [ref=f11e764] [cursor=pointer]:
+                        - generic [ref=f11e765]: Ingresos totales
+                        - button [ref=f11e766]:
+                          - img "Ingresos totales de la cuenta tienda" [ref=f11e768]
+                        - button [ref=f11e770]:
+                          - img "Ordenable" [ref=f11e772]
+                    - columnheader [ref=f11e774]:
+                      - button "% Aceptac. El número de posiciones de pedido aceptadas dividido por el número total de posiciones de pedido rechazadas y aceptadas. Ordenable" [ref=f11e776] [cursor=pointer]:
+                        - generic [ref=f11e777]: "% Aceptac."
+                        - button [ref=f11e778]:
+                          - img "El número de posiciones de pedido aceptadas dividido por el número total de posiciones de pedido rechazadas y aceptadas." [ref=f11e780]
+                        - button [ref=f11e782]:
+                          - img "Ordenable" [ref=f11e784]
+                    - columnheader [ref=f11e786]:
+                      - button "Plazo de aceptación El tiempo medio transcurrido entre el envío de una notificación de pedido a la cuenta tienda y la aceptación del pedido. Ordenable" [ref=f11e788] [cursor=pointer]:
+                        - generic [ref=f11e789]: Plazo de aceptación
+                        - button [ref=f11e790]:
+                          - img "El tiempo medio transcurrido entre el envío de una notificación de pedido a la cuenta tienda y la aceptación del pedido." [ref=f11e792]
+                        - button [ref=f11e794]:
+                          - img "Ordenable" [ref=f11e796]
+                    - columnheader [ref=f11e798]:
+                      - button "Plazo envío Tiempo medio que tarda en enviarse un pedido con el estado \"Esperando envío\" en esta cuenta tienda. Ordenable" [ref=f11e800] [cursor=pointer]:
+                        - generic [ref=f11e801]: Plazo envío
+                        - button [ref=f11e802]:
+                          - img "Tiempo medio que tarda en enviarse un pedido con el estado \"Esperando envío\" en esta cuenta tienda." [ref=f11e804]
+                        - button [ref=f11e806]:
+                          - img "Ordenable" [ref=f11e808]
+                    - columnheader [ref=f11e810]:
+                      - button "Tiempo para responder el mensaje El periodo de tiempo medio en el que tienda responde a los mensajes de los clientes relacionados con el pedido. Ordenable" [ref=f11e812] [cursor=pointer]:
+                        - generic [ref=f11e813]: Tiempo para responder el mensaje
+                        - button [ref=f11e814]:
+                          - img "El periodo de tiempo medio en el que tienda responde a los mensajes de los clientes relacionados con el pedido." [ref=f11e816]
+                        - button [ref=f11e818]:
+                          - img "Ordenable" [ref=f11e820]
+                    - columnheader [ref=f11e822]:
+                      - button "Tasa de incidencias El número de asientos de pedido con al menos una incidencia dividido por el número de asientos de pedido aceptados. Ordenable" [ref=f11e824] [cursor=pointer]:
+                        - generic [ref=f11e825]: Tasa de incidencias
+                        - button [ref=f11e826]:
+                          - img "El número de asientos de pedido con al menos una incidencia dividido por el número de asientos de pedido aceptados." [ref=f11e828]
+                        - button [ref=f11e830]:
+                          - img "Ordenable" [ref=f11e832]
+                    - columnheader [ref=f11e834]:
+                      - button "Tasa de reembolso El número de asientos de pedido con al menos un reembolso dividido por el número de asientos de pedido aceptados. Ordenable" [ref=f11e836] [cursor=pointer]:
+                        - generic [ref=f11e837]: Tasa de reembolso
+                        - button [ref=f11e838]:
+                          - img "El número de asientos de pedido con al menos un reembolso dividido por el número de asientos de pedido aceptados." [ref=f11e840]
+                        - button [ref=f11e842]:
+                          - img "Ordenable" [ref=f11e844]
+                    - columnheader [ref=f11e846]:
+                      - button "Tasa de cancelación El número de asientos de pedido aceptados con, al menos, una cancelación, dividido por el número total de asientos de pedido aceptados. Ordenable" [ref=f11e848] [cursor=pointer]:
+                        - generic [ref=f11e849]: Tasa de cancelación
+                        - button [ref=f11e850]:
+                          - img "El número de asientos de pedido aceptados con, al menos, una cancelación, dividido por el número total de asientos de pedido aceptados." [ref=f11e852]
+                        - button [ref=f11e854]:
+                          - img "Ordenable" [ref=f11e856]
+                    - columnheader [ref=f11e858]:
+                      - button "Tasa de rechazos automáticos El número de artículos de los asientos de pedido rechazados automáticamente dividido por el número total de asientos de pedido enviados para la aprobación de la cuenta tienda. Ordenable" [ref=f11e860] [cursor=pointer]:
+                        - generic [ref=f11e861]: Tasa de rechazos automáticos
+                        - button [ref=f11e862]:
+                          - img "El número de artículos de los asientos de pedido rechazados automáticamente dividido por el número total de asientos de pedido enviados para la aprobación de la cuenta tienda." [ref=f11e864]
+                        - button [ref=f11e866]:
+                          - img "Ordenable" [ref=f11e868]
+                    - columnheader [ref=f11e870]:
+                      - button "Tasa de envíos tardíos El número de pedidos enviados pasado el plazo de envío dividido por el número total de pedidos. Ordenable" [ref=f11e872] [cursor=pointer]:
+                        - generic [ref=f11e873]: Tasa de envíos tardíos
+                        - button [ref=f11e874]:
+                          - img "El número de pedidos enviados pasado el plazo de envío dividido por el número total de pedidos." [ref=f11e876]
+                        - button [ref=f11e878]:
+                          - img "Ordenable" [ref=f11e880]
+                    - columnheader [ref=f11e882]:
+                      - button "Carrito promedio Total de gastos de pedidos aceptados dividido por el total de pedidos aceptados. Ordenable" [ref=f11e884] [cursor=pointer]:
+                        - generic [ref=f11e885]: Carrito promedio
+                        - button [ref=f11e886]:
+                          - img "Total de gastos de pedidos aceptados dividido por el total de pedidos aceptados." [ref=f11e888]
+                        - button [ref=f11e890]:
+                          - img "Ordenable" [ref=f11e892]
+                    - columnheader [ref=f11e894]:
+                      - button "Tasa de seguimiento Porcentaje de pedidos con información de seguimiento válida (recuento de pedidos con un seguimiento válido dividido por el número total de pedidos menos los pedidos con un envío sin cubrir) Ordenable" [ref=f11e896] [cursor=pointer]:
+                        - generic [ref=f11e897]: Tasa de seguimiento
+                        - button [ref=f11e898]:
+                          - img "Porcentaje de pedidos con información de seguimiento válida (recuento de pedidos con un seguimiento válido dividido por el número total de pedidos menos los pedidos con un envío sin cubrir)" [ref=f11e900]
+                        - button [ref=f11e902]:
+                          - img "Ordenable" [ref=f11e904]
+                    - columnheader [ref=f11e906]:
+                      - button "Tasa de devolución El número de asientos de pedido con, al menos, una devolución dividido por el número total de asientos de pedido con posibilidad de devolución. Ordenable" [ref=f11e908] [cursor=pointer]:
+                        - generic [ref=f11e909]: Tasa de devolución
+                        - button [ref=f11e910]:
+                          - img "El número de asientos de pedido con, al menos, una devolución dividido por el número total de asientos de pedido con posibilidad de devolución." [ref=f11e912]
+                        - button [ref=f11e914]:
+                          - img "Ordenable" [ref=f11e916]
+                    - columnheader [ref=f11e918]
+                - rowgroup [ref=f11e919]:
+                  - row [ref=f11e17183] [cursor=pointer]:
+                    - cell [ref=f11e17184]:
+                      - checkbox "Seleccionar fila 0" [ref=f11e17185]:
+                        - generic [ref=f11e6446]:
+                          - checkbox [ref=f11e6448]
+                          - generic [ref=f11e6449]: Seleccionar fila 0
+                    - cell [ref=f11e6450]:
+                      - link "Bienestar Kognivera 1787809514556002" [ref=f11e6451]:
+                        - /url: /mmp/operator/shop/2441
+                    - cell "Abierta" [ref=f11e6459]
+                    - cell "Marketplace" [ref=f11e6465]
+                    - cell "26 ago 2026" [ref=f11e6470]
+                    - cell "-" [ref=f11e6475]
+                    - cell "0" [ref=f11e6480]
+                    - cell "-" [ref=f11e6485]
+                    - cell "0" [ref=f11e6490]
+                    - cell "0" [ref=f11e6495]
+                    - cell "0" [ref=f11e6500]
+                    - cell "0" [ref=f11e6505]
+                    - cell "$0.00" [ref=f11e6510]
+                    - cell "$0.00" [ref=f11e6515]
+                    - cell "$0.00" [ref=f11e6520]
+                    - cell "$0.00" [ref=f11e6525]
+                    - cell "-" [ref=f11e6530]
+                    - cell "-" [ref=f11e6535]
+                    - cell "-" [ref=f11e6540]
+                    - cell "-" [ref=f11e6545]
+                    - cell "-" [ref=f11e6550]
+                    - cell "-" [ref=f11e6555]
+                    - cell "-" [ref=f11e6560]
+                    - cell "-" [ref=f11e6565]
+                    - cell "-" [ref=f11e6570]
+                    - cell "-" [ref=f11e6575]
+                    - cell "-" [ref=f11e6580]
+                    - cell "-" [ref=f11e6585]
+                    - cell [ref=f11e6590]:
+                      - button "Acción" [ref=f11e6593]
+            - generic [ref=f11e17135]:
+              - generic [ref=f11e17136]:
+                - generic [ref=f11e17137]: Resultados por página
+                - generic [ref=f11e17139]:
+                  - generic [ref=f11e17140]: Resultados por página
+                  - combobox "Resultados por página" [ref=f11e17145] [cursor=pointer]:
+                    - generic [ref=f11e17146]: "100"
+              - generic [ref=f11e17151]:
+                - generic [ref=f11e17152]: 1 resultado
+                - generic [ref=f11e17153]:
+                  - button "Anterior" [disabled] [ref=f11e17154]
+                  - button "Siguiente" [disabled] [ref=f11e17161]
+    - contentinfo [ref=f11e17168]:
+      - generic [ref=f11e17170]:
+        - generic [ref=f11e17174]: "|"
+        - generic [ref=f11e17175]: Copyright © 2026 Mirakl, All Rights Reserved - Strictly Confidential
+        - generic [ref=f11e17176]: "|"
+        - generic [ref=f11e17177]: Copyright © 2025 Mirakl - Farmacias del Ahorro.

@@ -1,0 +1,1045 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>FDA Automation Test Results</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">FDA Automation Test Results - 20260828_105442</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 28, 2026 10:54:42 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">sellerOnboardingEndToEnd</p>
+            <p class="text-sm">
+              <span>10:54:43 am</span> / <span>00:12:38:910</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sellerOnboardingEndToEnd</h5>
+<span class='badge badge-success'>08.28.2026 10:54:43 am</span>
+<span class='badge badge-danger'>08.28.2026 11:07:22 am</span>
+<span class='badge badge-default'>00:12:38:910</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">TC_SOB_001: seller onboarding end to end - registration -> registration email -> middleware pre-approval -> pre-approval email -> document upload -> middleware final approval -> final-approval email -> Mirakl shop search -> Kibo validation</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:43 am</td>
+        <td>
+          <b>1. Seller Registration (FDA frontend)</b>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:45 am</td>
+        <td>
+          Clicked element: By.cssSelector: button[data-action='customer-menu-toggle']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:50 am</td>
+        <td>
+          Clicked element: By.xpath: //a[contains(normalize-space(.),'Vende con nosotros')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:54 am</td>
+        <td>
+          Clicked element: By.xpath: //a[contains(normalize-space(.),'Comenzar a vender')] | //button[contains(normalize-space(.),'Comenzar a vender')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:02 am</td>
+        <td>
+          Typed 'Ana' into element: By.cssSelector: [name="personalInformationStep[personalInformation][name]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:04 am</td>
+        <td>
+          Typed 'Garcia' into element: By.cssSelector: [name="personalInformationStep[personalInformation][lastName]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:06 am</td>
+        <td>
+          Typed 'psamal+full1787894700616001@kognivera.com' into element: By.cssSelector: [name="personalInformationStep[personalInformation][email]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:08 am</td>
+        <td>
+          Clicked element: By.xpath: //select[@name="personalInformationStep[personalInformation][roleInCompany]"]/following-sibling::span[contains(@class,'ui-selectmenu-button')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:10 am</td>
+        <td>
+          Clicked element: By.xpath: //*[@role='option'][normalize-space()="Dueño"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:11 am</td>
+        <td>
+          Typed '5512345678' into element: By.cssSelector: [name="personalInformationStep[personalInformation][phone]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:13 am</td>
+        <td>
+          Clicked element: By.xpath: //select[@name="personalInformationStep[personalInformation][country]"]/following-sibling::span[contains(@class,'ui-selectmenu-button')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:15 am</td>
+        <td>
+          Clicked element: By.xpath: //*[@role='option'][normalize-space()="México"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:17 am</td>
+        <td>
+          Clicked element: By.cssSelector: div[data-index="personalInformationStep"] button[data-index="continueButton"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:19 am</td>
+        <td>
+          Typed 'Bienestar Kognivera 1787894700624002' into element: By.cssSelector: [name="companyInformationStep[companyInformation][tradeName]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:21 am</td>
+        <td>
+          Typed 'Bienestar Kognivera 1787894700624002 SA de CV' into element: By.cssSelector: [name="companyInformationStep[companyInformation][companyName]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:23 am</td>
+        <td>
+          Typed 'GODE041211RF1' into element: By.cssSelector: [name="companyInformationStep[companyInformation][rfc]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:24 am</td>
+        <td>
+          Clicked element: By.xpath: //select[@name="companyInformationStep[companyInformation][companyType]"]/following-sibling::span[contains(@class,'ui-selectmenu-button')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:26 am</td>
+        <td>
+          Clicked element: By.xpath: //*[@role='option'][normalize-space()="Empresa privada"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:28 am</td>
+        <td>
+          Typed 'Av. Insurgentes Sur' into element: By.cssSelector: [name="companyInformationStep[taxAddress][street]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:30 am</td>
+        <td>
+          Typed '03100' into element: By.cssSelector: [name="companyInformationStep[taxAddress][postalCode]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:31 am</td>
+        <td>
+          Clicked element: By.xpath: //select[@name="companyInformationStep[taxAddress][colonySelect]"]/following-sibling::span[contains(@class,'ui-selectmenu-button')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:33 am</td>
+        <td>
+          Clicked element: By.xpath: //*[@role='option'][normalize-space()="Del Valle Centro"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:35 am</td>
+        <td>
+          Typed 'Benito Juárez' into element: By.cssSelector: [name="companyInformationStep[taxAddress][municipality]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:37 am</td>
+        <td>
+          Typed '123' into element: By.cssSelector: [name="companyInformationStep[taxAddress][numExterior]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:39 am</td>
+        <td>
+          Clicked element: By.xpath: //select[@name="companyInformationStep[taxAddress][region]"]/following-sibling::span[contains(@class,'ui-selectmenu-button')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:40 am</td>
+        <td>
+          Clicked element: By.xpath: //*[@role='option'][normalize-space()="Ciudad de México"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:42 am</td>
+        <td>
+          Clicked element: By.cssSelector: div[data-index="companyInformationStep"] button[data-index="continueButton"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:44 am</td>
+        <td>
+          Clicked element: By.xpath: //fieldset[@data-index="ownEcommerce"]//label[normalize-space()="Si"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:46 am</td>
+        <td>
+          Typed 'https://example.com' into element: By.cssSelector: [name="storeInformationStep[storeInformation][ecommerceUrl]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:48 am</td>
+        <td>
+          Clicked element: By.xpath: //fieldset[@data-index="trademark"]//label[normalize-space()="Si"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:50 am</td>
+        <td>
+          Typed 'Bienestar Kognivera 1787894700624002' into element: By.cssSelector: [name="storeInformationStep[storeInformation][sellingBrands][0]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:51 am</td>
+        <td>
+          Clicked element: By.cssSelector: fieldset[data-index='previousSellingOptions'] input[type='checkbox'][value="AMAZON"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:53 am</td>
+        <td>
+          Clicked element: By.xpath: //fieldset[@data-index='sellingCategories']//h4[normalize-space()="Marca del Ahorro"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:55 am</td>
+        <td>
+          Clicked element: By.cssSelector: fieldset[data-index='sellingCategories'] input[type='checkbox'][value="17221"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:57 am</td>
+        <td>
+          Typed '100' into element: By.cssSelector: [name="storeInformationStep[previousSales][0][value]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:59 am</td>
+        <td>
+          Typed '250' into element: By.cssSelector: [name="storeInformationStep[previousSales][0][averageProfitPerMonth]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:00 am</td>
+        <td>
+          Typed 'https://example.com/catalogo' into element: By.cssSelector: [name="storeInformationStep[previousSales][0][catalogLink]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:02 am</td>
+        <td>
+          Clicked element: By.xpath: //fieldset[@data-index="thirdpartyShipping"]//label[normalize-space()="Si"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:04 am</td>
+        <td>
+          Clicked element: By.xpath: //fieldset[@data-index="expressDelivery"]//label[normalize-space()="Si"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:06 am</td>
+        <td>
+          Clicked element: By.xpath: //fieldset[@data-index="warehouseShipping"]//label[normalize-space()="Si"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:08 am</td>
+        <td>
+          Clicked element: By.cssSelector: div[data-index="storeInformationStep"] button[data-index="continueButton"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:10 am</td>
+        <td>
+          Clicked element: By.xpath: //fieldset[@data-index="guarantee"]//label[normalize-space()="Si"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:11 am</td>
+        <td>
+          Clicked element: By.xpath: //fieldset[@data-index="returns"]//label[normalize-space()="Si"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:13 am</td>
+        <td>
+          Clicked element: By.xpath: //fieldset[@data-index="invoice"]//label[normalize-space()="Si"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:15 am</td>
+        <td>
+          Clicked element: By.cssSelector: [name="productInformationStep[productInformation][acceptPolicies]"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:17 am</td>
+        <td>
+          Clicked element: By.cssSelector: div[data-index="productInformationStep"] button[data-index="submitButton"]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:56:18 am</td>
+        <td>
+          1. Seller Registration (FDA frontend) passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:18 am</td>
+        <td>
+          <b>2. Registration Successful Email</b>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:22 am</td>
+        <td>
+          Typed 'psamal@kognivera.com' into element: By.name: loginfmt
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:24 am</td>
+        <td>
+          Clicked element: By.id: idSIButton9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:25 am</td>
+        <td>
+          Typed '••••••••' into element: By.name: passwd
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:27 am</td>
+        <td>
+          Clicked element: By.id: idSIButton9
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:30 am</td>
+        <td>
+          Clicked element: By.cssSelector: button[role='tab'][value='other']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:56:35 am</td>
+        <td>
+          2. Registration Successful Email passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:35 am</td>
+        <td>
+          <b>3. Middleware Pre-Approval</b>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:42 am</td>
+        <td>
+          Typed 'psamal@kognivera.com' into element: By.xpath: //label[contains(normalize-space(.),'Correo electrónico')]/following::input[1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:44 am</td>
+        <td>
+          Typed '••••••••' into element: By.xpath: //label[contains(normalize-space(.),'Contraseña')]/following::input[1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:45 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Iniciar sesión']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:47 am</td>
+        <td>
+          Clicked element: By.xpath: //div[@role='row'][.//div[@data-field='sellerEmail'][contains(normalize-space(.),"psamal+full1787894700616001@kognivera.com")]]//button[normalize-space()='Vista']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:49 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Continuar'] | //button[contains(normalize-space(.),'Continuar')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:51 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Continuar'] | //button[contains(normalize-space(.),'Continuar')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:54 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Continuar'] | //button[contains(normalize-space(.),'Continuar')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:57 am</td>
+        <td>
+          Clicked element: By.xpath: //button[contains(normalize-space(.),'PREAPROBACIÓN') or contains(normalize-space(.),'PREAPROBACION')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:56:59 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='OK' or normalize-space()='Ok']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:57:00 am</td>
+        <td>
+          3. Middleware Pre-Approval passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:00 am</td>
+        <td>
+          <b>4. Pre-Approval Email + "Ingresa al link"</b>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:06 am</td>
+        <td>
+          Clicked element: By.cssSelector: button[role='tab'][value='other']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:57:09 am</td>
+        <td>
+          4. Pre-Approval Email + "Ingresa al link" passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:09 am</td>
+        <td>
+          <b>5. Upload Seller Documents</b>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:17 am</td>
+        <td>
+          Typed 'psamal+full1787894700616001@kognivera.com' into element: By.xpath: //label[contains(normalize-space(.),"Email de la tienda")]/following::input[1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:19 am</td>
+        <td>
+          Typed '1234567890' into element: By.xpath: //label[contains(normalize-space(.),"Número de Cuenta Bancaria")]/following::input[1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:21 am</td>
+        <td>
+          Typed '002010077777777771' into element: By.xpath: //label[contains(normalize-space(.),"CLABE")]/following::input[1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:23 am</td>
+        <td>
+          Typed 'BBVA' into element: By.xpath: //label[contains(normalize-space(.),"Nombre del Banco")]/following::input[1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:25 am</td>
+        <td>
+          Typed 'Ana Garcia' into element: By.xpath: //label[contains(normalize-space(.),"Nombre del Titular")]/following::input[1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:27 am</td>
+        <td>
+          Clicked element: By.xpath: //input[@type='checkbox'][following-sibling::*[contains(.,'érminos') or contains(.,'ondiciones')] or parent::label[contains(.,'érminos')]]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:30 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Enviar']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:31 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='OK' or normalize-space()='Ok']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:57:33 am</td>
+        <td>
+          5. Upload Seller Documents passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:33 am</td>
+        <td>
+          <b>6. Middleware Final Approval</b>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:34 am</td>
+        <td>
+          Typed 'psamal@kognivera.com' into element: By.xpath: //label[contains(normalize-space(.),'Correo electrónico')]/following::input[1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:36 am</td>
+        <td>
+          Typed '••••••••' into element: By.xpath: //label[contains(normalize-space(.),'Contraseña')]/following::input[1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:38 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Iniciar sesión']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:40 am</td>
+        <td>
+          Clicked element: By.xpath: //div[@role='row'][.//div[@data-field='sellerEmail'][contains(normalize-space(.),"psamal+full1787894700616001@kognivera.com")]]//button[normalize-space()='Vista']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:42 am</td>
+        <td>
+          Clicked element: By.xpath: //*[contains(normalize-space(.),"Documento de Identidad")]/following::button[contains(normalize-space(.),'Descargar Documento')][1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:43 am</td>
+        <td>
+          Clicked element: By.xpath: //*[contains(normalize-space(.),"Comprobante de Domicilio")]/following::button[contains(normalize-space(.),'Descargar Documento')][1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:45 am</td>
+        <td>
+          Clicked element: By.xpath: //*[contains(normalize-space(.),"Constancia de situación fiscal")]/following::button[contains(normalize-space(.),'Descargar Documento')][1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:47 am</td>
+        <td>
+          Clicked element: By.xpath: //*[contains(normalize-space(.),"Acta Constitutiva")]/following::button[contains(normalize-space(.),'Descargar Documento')][1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:50 am</td>
+        <td>
+          Clicked element: By.xpath: //*[contains(normalize-space(.),"Poder Notaria")]/following::button[contains(normalize-space(.),'Descargar Documento')][1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:52 am</td>
+        <td>
+          Clicked element: By.xpath: //*[contains(normalize-space(.),"Opinión de Cumplimiento SAT")]/following::button[contains(normalize-space(.),'Descargar Documento')][1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:53 am</td>
+        <td>
+          Clicked element: By.xpath: //*[contains(normalize-space(.),"Licencia comercial")]/following::button[contains(normalize-space(.),'Descargar Documento')][1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:56 am</td>
+        <td>
+          Clicked element: By.xpath: //*[contains(normalize-space(.),"Estado de Cuenta Bancario")]/following::button[contains(normalize-space(.),'Descargar Documento')][1]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:57:59 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='APROBAR']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:01 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='OK' or normalize-space()='Ok']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:58:08 am</td>
+        <td>
+          6. Middleware Final Approval passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:08 am</td>
+        <td>
+          <b>7. Final Approval Email</b>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:14 am</td>
+        <td>
+          Clicked element: By.cssSelector: button[role='tab'][value='other']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:58:16 am</td>
+        <td>
+          7. Final Approval Email passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:16 am</td>
+        <td>
+          <b>8. Mirakl Marketplace Shop Search + Capture Shop ID</b>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:19 am</td>
+        <td>
+          Typed 'psamal@kognivera.com' into element: By.cssSelector: input[name='username'], input[name='email']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:21 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Siguiente']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:24 am</td>
+        <td>
+          Typed '••••••••' into element: By.cssSelector: input[name='password']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:32 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Sign in']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:42 am</td>
+        <td>
+          Typed '511306' into element: By.cssSelector: input[name='code']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:43 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Continue']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:49 am</td>
+        <td>
+          Clicked element: By.xpath: //button[normalize-space()='Tiendas']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:58:55 am</td>
+        <td>
+          Clicked element: By.xpath: //*[@role='menuitem'][contains(normalize-space(.),'Todas las cuentas tienda')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:59:06 am</td>
+        <td>
+          Typed 'Bienestar Kognivera 1787894700624002' into element: By.xpath: //input[contains(@placeholder,'Buscar') or contains(@aria-label,'Buscar')]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:59:08 am</td>
+        <td>
+          Clicked element: By.xpath: //tr[contains(., "Bienestar Kognivera 1787894700624002")]//a[contains(normalize-space(.), "Bienestar Kognivera 1787894700624002")]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:59:14 am</td>
+        <td>
+          8. Mirakl Marketplace Shop Search + Capture Shop ID passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:59:14 am</td>
+        <td>
+          <b>9. Kibo Verification</b>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:07:14 am</td>
+        <td>
+          Kibo request executing for location 2475 (shop Bienestar Kognivera 1787894700624002)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:07:22 am</td>
+        <td>
+          Kibo response status: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:07:22 am</td>
+        <td>
+          Trade name "Bienestar Kognivera 1787894700624002" found in response body
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:07:22 am</td>
+        <td>
+          Kibo location 2475 response body:<pre>{"code":"2475","locationTypes":[{"code":"seller","name":"Seller Warehouse","auditInfo":{"updateDate":"2026-04-28T09:18:04.340Z","createDate":"2026-04-28T09:18:04.340Z","updateBy":"9b7c0a635a6848eba1a81e04e75691b2","createBy":"9b7c0a635a6848eba1a81e04e75691b2"}}],"name":"Bienestar Kognivera 1787894700624002","description":"Mirakl shop","address":{"address1":"Av. Insurgentes Sur","address2":"Del Valle Centro","cityOrTown":"Ciudad de México","stateOrProvince":"Ciudad de México","postalOrZipCode":"03100","countryCode":"MEX","addressType":"Commercial","isValidated":false},"geo":{"lat":19.4229664,"lng":-99.16336659999999},"supportsInventory":true,"fulfillmentTypes":[{"code":"DS","name":"Direct Ship"}],"shippingOriginContact":{"firstName":"Ana","lastNameOrSurname":"Garcia","companyOrOrganization":"Bienestar Kognivera 1787894700624002","phoneNumber":"+52 551 234 5678","email":"psamal+full1787894700616001@kognivera.com"},"tags":[],"attributes":[{"fullyQualifiedName":"tenant~sellerid","attributeDefinitionId":2,"values":["2475"]},{"fullyQualifiedName":"tenant~3pl","attributeDefinitionId":4,"values":["FBO"]}],"auditInfo":{"updateDate":"2026-08-28T05:32:02.554Z","createDate":"2026-08-28T05:32:02.554Z","updateBy":"12d4e2ea75c349da8145d2f661ebddae","createBy":"12d4e2ea75c349da8145d2f661ebddae"},"allowFulfillmentWithNoStock":true,"isDisabled":false,"express":false,"transferEnabled":false,"shipToHomeConsolidation":false,"deliveryConsolidation":false,"includeInInventoryAggregrate":true,"includeInLocationExport":true,"warehouseEnabled":true,"requiresManifest":false,"slaConfigurations":[]}</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:07:22 am</td>
+        <td>
+          9. Kibo Verification passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 28, 2026 10:54:42 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 28, 2026 11:07:23 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='7%'><b>9</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>106</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"sellerOnboardingEndToEnd":758.91
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 9,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 106
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

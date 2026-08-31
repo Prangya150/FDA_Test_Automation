@@ -1,0 +1,24 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - img "FDA Seller Onboarding logo featuring stylized text FDA Seller Onboarding in blue and green, set against a clean white background, conveying a professional and welcoming tone" [ref=e6]
+    - heading "Marketplace" [level=1] [ref=e7]
+  - generic [ref=e9]:
+    - heading "Iniciar sesión" [level=5] [ref=e10]
+    - generic [ref=e11]:
+      - generic: Correo electrónico
+      - generic [ref=e12]:
+        - textbox "Correo electrónico" [ref=e13]
+        - group:
+          - generic: Correo electrónico
+    - generic [ref=e14]:
+      - generic: Contraseña
+      - generic [ref=e15]:
+        - textbox "Contraseña" [ref=e16]
+        - button [ref=e18] [cursor=pointer]
+        - group:
+          - generic: Contraseña
+    - button "Iniciar sesión" [ref=e21] [cursor=pointer]
+    - button "Crea una cuenta" [ref=e22] [cursor=pointer]
+    - button "¿Olvidaste tu contraseña?" [ref=e23] [cursor=pointer]
+  - generic [ref=e24]: ©2026 Todos los derechos reservados
+  - region "Notifications Alt+T"

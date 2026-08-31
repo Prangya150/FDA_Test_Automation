@@ -1,0 +1,5 @@
+[     549ms] [LOG] Will not send fingerprint @ https://mcstaging.fahorro.com/marketplace/provider/form:565
+[     549ms] [LOG] undefined @ https://mcstaging.fahorro.com/marketplace/provider/form:565
+[    1774ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://mcstaging.fahorro.com/static/version1787751639/frontend/Magento/base/default/Fda_Marketplace/css/images/ui-icons_777777_256x240.png:0
+[   24367ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://mcstaging.fahorro.com/static/version1787751639/frontend/Magento/base/default/Fda_Marketplace/css/images/ui-icons_555555_256x240.png:0
+[   24370ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://mcstaging.fahorro.com/static/version1787751639/frontend/Magento/base/default/Fda_Marketplace/css/images/ui-icons_ffffff_256x240.png:0

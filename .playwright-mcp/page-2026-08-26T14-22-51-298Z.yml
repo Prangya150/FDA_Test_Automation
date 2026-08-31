@@ -1,0 +1,89 @@
+- generic [ref=f16e2]:
+  - banner [ref=f16e3]:
+    - figure [ref=f16e7]
+  - main [ref=f16e8]:
+    - generic [ref=f16e23]:
+      - text: o * *
+      - generic [ref=f16e24]:
+        - list "Progress steps" [ref=f16e26]:
+          - listitem [ref=f16e27] [cursor=pointer]:
+            - generic [ref=f16e28]: Información personal
+          - listitem [ref=f16e29]:
+            - generic [ref=f16e30]: Información de la Empresa
+          - listitem [ref=f16e31]:
+            - generic [ref=f16e32]: Información de la Tienda
+          - listitem [ref=f16e33]:
+            - generic [ref=f16e34]: Información de Producto
+        - generic [ref=f16e35]:
+          - text: "* * * * * *"
+          - generic [ref=f16e595]:
+            - strong [ref=f16e597]: Información de Empresa/s
+            - group [ref=f16e599]:
+              - generic [ref=f16e600]:
+                - strong [ref=f16e602]: Ingresa la información de tu empresa
+                - group [ref=f16e604]:
+                  - generic [ref=f16e605]:
+                    - generic [ref=f16e606]: Nombre comercial*
+                    - textbox "Nombre comercial*" [ref=f16e608]: Bienestar Kognivera Debug2
+                  - generic [ref=f16e609]:
+                    - generic [ref=f16e610]: Denominación / Razón social*
+                    - textbox "Denominación / Razón social*" [ref=f16e612]: Bienestar Kognivera Debug2 SA de CV
+                  - generic [ref=f16e613]:
+                    - generic [ref=f16e614]: RFC*
+                    - textbox "RFC*" [ref=f16e616]: DBG120101DDD
+                  - generic [ref=f16e617]:
+                    - generic [ref=f16e618]: Tipo de empresa*
+                    - combobox [expanded] [active] [ref=f16e658] [cursor=pointer]:
+                      - listbox [ref=f16e659]:
+                        - listitem [ref=f16e660]:
+                          - option "Seleccione una opción" [ref=f16e661]
+                        - listitem [ref=f16e662]:
+                          - option "Empresa pública" [ref=f16e663]
+                        - listitem [ref=f16e664]:
+                          - option "Empresa con cotización en la bolsa" [ref=f16e665]
+                        - listitem [ref=f16e666]:
+                          - option "Empresa privada" [ref=f16e667]
+                        - listitem [ref=f16e668]:
+                          - option "Organización benéfica" [ref=f16e669]
+                        - listitem [ref=f16e670]:
+                          - option "Particular (No tengo ninguna empresa registrada)" [ref=f16e671]
+              - generic [ref=f16e622]:
+                - strong [ref=f16e624]: Dirección fiscal
+                - group [ref=f16e626]:
+                  - generic [ref=f16e627]:
+                    - generic [ref=f16e628]: Calle*
+                    - textbox "Calle*" [ref=f16e630]
+                  - generic [ref=f16e631]:
+                    - generic [ref=f16e632]: Código postal*
+                    - textbox "Código postal*" [ref=f16e634]
+                  - generic [ref=f16e635]:
+                    - generic [ref=f16e636]: Colonia*
+                    - textbox "Colonia*" [ref=f16e638]
+                  - text: "*"
+                  - generic [ref=f16e639]:
+                    - generic [ref=f16e640]: Municipio o alcaldía*
+                    - textbox "Municipio o alcaldía*" [ref=f16e642]
+                  - generic [ref=f16e643]:
+                    - generic [ref=f16e644]: Número exterior*
+                    - textbox "Número exterior*" [ref=f16e646]
+                  - generic [ref=f16e647]:
+                    - generic [ref=f16e648]: Número interior (opcional)
+                    - textbox "Número interior (opcional)" [ref=f16e650]
+                  - generic [ref=f16e651]:
+                    - generic [ref=f16e652]: Estado*
+                    - combobox [ref=f16e654] [cursor=pointer]:
+                      - generic [ref=f16e655]: Seleccione una opción
+              - button "Continuar" [ref=f16e656] [cursor=pointer]
+          - text: "* * * * * * * * * * * * *"
+  - contentinfo [ref=f16e9]:
+    - generic [ref=f16e12]:
+      - paragraph [ref=f16e13]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f16e14] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f16e15]: ©2026 Todos los derechos reservados.
+  - figure [ref=f16e19]:
+    - link [ref=f16e20] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f16e21]

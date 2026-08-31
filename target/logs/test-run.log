@@ -1,26 +1,107 @@
-2026-08-17 17:21:17.743 [INFO ] [main] com.fda.automation.listeners.TestListener — === Suite started: All Tests ===
-2026-08-17 17:21:18.036 [INFO ] [TestNG-test-All Tests-2] io.github.bonigarcia.wdm.WebDriverManager — Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
-2026-08-17 17:21:18.036 [INFO ] [TestNG-test-All Tests-1] io.github.bonigarcia.wdm.WebDriverManager — Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
-2026-08-17 17:21:18.064 [INFO ] [TestNG-test-All Tests-1] io.github.bonigarcia.wdm.WebDriverManager — Exporting webdriver.chrome.driver as C:\Users\ShubhamKumarThakur\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
-2026-08-17 17:21:18.065 [INFO ] [TestNG-test-All Tests-2] io.github.bonigarcia.wdm.WebDriverManager — Exporting webdriver.chrome.driver as C:\Users\ShubhamKumarThakur\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
-2026-08-17 17:21:19.438 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BaseTest — Browser started [thread=38]
-2026-08-17 17:21:19.442 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.listeners.TestListener — >>> START: testInvalidPasswordShowsError
-2026-08-17 17:21:19.444 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BaseTest — Browser started [thread=37]
-2026-08-17 17:21:19.445 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.listeners.TestListener — >>> START: testEmptyCredentialsShowsError
-2026-08-17 17:21:19.453 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BasePage — Navigate to: https://the-internet.herokuapp.com/login
-2026-08-17 17:21:19.453 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Navigate to: https://the-internet.herokuapp.com/login
-2026-08-17 17:21:22.474 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BasePage — Logging in as: tomsmith
-2026-08-17 17:21:22.535 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BasePage — Logging in as: 
-2026-08-17 17:21:23.836 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.listeners.TestListener — >>> PASS:  testInvalidPasswordShowsError
-2026-08-17 17:21:23.836 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.listeners.TestListener — >>> PASS:  testEmptyCredentialsShowsError
-2026-08-17 17:21:24.933 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BaseTest — Browser closed [thread=38]
-2026-08-17 17:21:24.937 [INFO ] [TestNG-test-All Tests-1] com.fda.automation.base.BaseTest — Browser closed [thread=37]
-2026-08-17 17:21:24.960 [INFO ] [TestNG-test-All Tests-2] io.github.bonigarcia.wdm.WebDriverManager — Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
-2026-08-17 17:21:24.986 [INFO ] [TestNG-test-All Tests-2] io.github.bonigarcia.wdm.WebDriverManager — Exporting webdriver.chrome.driver as C:\Users\ShubhamKumarThakur\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
-2026-08-17 17:21:25.843 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BaseTest — Browser started [thread=38]
-2026-08-17 17:21:25.844 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.listeners.TestListener — >>> START: testSuccessfulLogin
-2026-08-17 17:21:25.845 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BasePage — Navigate to: https://the-internet.herokuapp.com/login
-2026-08-17 17:21:28.775 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BasePage — Logging in as: tomsmith
-2026-08-17 17:21:29.992 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.listeners.TestListener — >>> PASS:  testSuccessfulLogin
-2026-08-17 17:21:30.861 [INFO ] [TestNG-test-All Tests-2] com.fda.automation.base.BaseTest — Browser closed [thread=38]
-2026-08-17 17:21:30.864 [INFO ] [main] com.fda.automation.listeners.TestListener — === Suite finished: All Tests | pass=3 fail=0 skip=0 ===
+2026-08-31 10:22:25.579 [INFO ] [main] com.fda.automation.listeners.TestListener — === Suite started: Seller Onboarding - End to End ===
+2026-08-31 10:22:25.829 [INFO ] [main] io.github.bonigarcia.wdm.WebDriverManager — Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-31 10:22:25.844 [INFO ] [main] io.github.bonigarcia.wdm.WebDriverManager — Exporting webdriver.chrome.driver as C:\Users\PrangyaParamitaSamal\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+2026-08-31 10:22:26.791 [INFO ] [main] com.fda.automation.base.BaseTest — Browser started [thread=3]
+2026-08-31 10:22:26.795 [INFO ] [main] com.fda.automation.listeners.TestListener — >>> START: sellerOnboardingEndToEnd
+2026-08-31 10:22:26.938 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE START: 1. Seller Registration (FDA frontend) ====
+2026-08-31 10:22:26.943 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://mcstaging.fahorro.com/
+2026-08-31 10:22:43.015 [INFO ] [main] com.fda.automation.base.BasePage — Filling personal info step
+2026-08-31 10:22:48.625 [INFO ] [main] com.fda.automation.base.BasePage — Filling company info step
+2026-08-31 10:22:50.870 [INFO ] [main] com.fda.automation.base.BasePage — Filling store info step
+2026-08-31 10:22:52.549 [INFO ] [main] com.fda.automation.base.BasePage — Filling product info step and submitting
+2026-08-31 10:22:54.617 [INFO ] [main] com.fda.automation.base.BaseTest — Registration successful. Confirmation: ¡Listo!
+Se han enviado tus datos correctamente
+2026-08-31 10:22:54.617 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE PASSED: 1. Seller Registration (FDA frontend) ====
+2026-08-31 10:22:54.618 [INFO ] [main] com.fda.automation.base.BaseTest — Seller created: name=Ana Garcia, email=psamal+full1788151963011001@kognivera.com, shopName=Bienestar Kognivera 1788151963013002
+2026-08-31 10:22:54.618 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE START: 2. Registration Successful Email ====
+2026-08-31 10:22:54.628 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://outlook.office365.com/mail/
+2026-08-31 10:22:54.985 [INFO ] [main] com.fda.automation.base.BasePage — Logging into Outlook as psamal@kognivera.com
+2026-08-31 10:23:03.419 [INFO ] [main] com.fda.automation.base.BaseTest — Registration confirmation email received for psamal+full1788151963011001@kognivera.com (Bienestar Kognivera 1788151963013002)
+2026-08-31 10:23:04.293 [INFO ] [main] com.fda.automation.base.BaseTest — Registration Confirmation Email: ¡Hola Bienestar Kognivera 1788151963013002!
+Gracias por registrarte,
+
+Revisaremos tus datos y a la brevedad te enviaremos un correo con la respuesta a tu petición para ser parte del Marketplace de Farmacias del Ahorro.
+Por favor mantente al pendiente para conocer próximos pasos de este proceso.
+Marketplace
+Todos los derechos reservados por Comercializadora Farmacéutica de Chiapas A.P.I. de C.V., México D.F. 2026
+Cofepris: 143300201 B1447 | No. de licencia sanitaria: 09 011 09 0096
+2026-08-31 10:23:04.420 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE PASSED: 2. Registration Successful Email ====
+2026-08-31 10:23:04.420 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE START: 3. Middleware Pre-Approval ====
+2026-08-31 10:23:04.441 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/login
+2026-08-31 10:23:08.759 [INFO ] [main] com.fda.automation.base.BasePage — Logging into Mirakl middleware as psamal@kognivera.com
+2026-08-31 10:23:09.093 [INFO ] [main] com.fda.automation.base.BasePage — Opening seller detail for psamal+full1788151963011001@kognivera.com
+2026-08-31 10:23:10.281 [INFO ] [main] com.fda.automation.base.BasePage — Reviewing seller info and pre-approving
+2026-08-31 10:23:15.269 [INFO ] [main] com.fda.automation.base.BaseTest — Pre-Approval completed for seller psamal+full1788151963011001@kognivera.com
+2026-08-31 10:23:15.269 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE PASSED: 3. Middleware Pre-Approval ====
+2026-08-31 10:23:15.269 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE START: 4. Pre-Approval Email + "Ingresa al link" ====
+2026-08-31 10:23:15.269 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://outlook.office365.com/mail/
+2026-08-31 10:23:15.659 [INFO ] [main] com.fda.automation.base.BasePage — Logging into Outlook as psamal@kognivera.com
+2026-08-31 10:23:20.926 [INFO ] [main] com.fda.automation.base.BasePage — Login form not shown (session already authenticated from an earlier login this run); reusing it
+2026-08-31 10:23:26.759 [INFO ] [main] com.fda.automation.base.BaseTest — Pre-Approval email received for Bienestar Kognivera 1788151963013002
+2026-08-31 10:23:27.589 [INFO ] [main] com.fda.automation.base.BaseTest — Pre-Approval Email: ¡Hola Bienestar Kognivera 1788151963013002!
+¡Solicitud Pre aprobada!
+
+Hemos revisado tus datos y tu primer solicitud ha quedado aprobada a continuación, te pedimos ingreses al siguiente link para continuar con algunos datos faltantes y estemos todos listos para que seas parte del Marketplace de Farmacias del Ahorro.
+Ingresa al link
+Estamos muy cerca,
+te deseamos mucho éxito.
+Marketplace
+Todos los derechos reservados por Comercializadora Farmacéutica de Chiapas A.P.I. de C.V., México D.F. 2026
+Cofepris: 143300201 B1447 | No. de licencia sanitaria: 09 011 09 0096
+2026-08-31 10:23:27.617 [INFO ] [main] com.fda.automation.base.BaseTest — Extracted document submission link: https://ind01.safelinks.protection.outlook.com/?url=https%3A%2F%2Frelaytrk.fahorro.com.mx%2FClick%2FTrack%3Fp%3DeyJkZWxpdmVyeUd1aWQiOiIyMDI2MDgzMS0wNDUzLTA5NzEtYTZmMC0yNTg3MDkyMTkwY2UiLCJsaW5rVXJsIjoiaHR0cHM6Ly93ZWJob29rLXNpdC5mYWhvcnJvLmNvbS5teC9mZGEvYXBpL3YyL3NlbGxlci1vbmJvYXJkaW5nL3NlbGxlckFkZGl0aW9uYWxJbmZvL2F0WmI2N0liOHRGajBRUVMxUFNYcHciLCJhSWQiOjY1NDh9&data=05%7C02%7Cpsamal%40kognivera.com%7Cdd121204a3f2443b2d5e08df071bc4ee%7Cf277f5b532804df690f07598c153d4a1%7C0%7C0%7C639237487998655744%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=B%2BM2lHIFAxLMac1%2BOsdhJ%2Fy5GSxhP2YiRPhSwAZ69%2Fk%3D&reserved=0
+2026-08-31 10:23:27.617 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE PASSED: 4. Pre-Approval Email + "Ingresa al link" ====
+2026-08-31 10:23:27.617 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE START: 5. Upload Seller Documents ====
+2026-08-31 10:23:27.649 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://ind01.safelinks.protection.outlook.com/?url=https%3A%2F%2Frelaytrk.fahorro.com.mx%2FClick%2FTrack%3Fp%3DeyJkZWxpdmVyeUd1aWQiOiIyMDI2MDgzMS0wNDUzLTA5NzEtYTZmMC0yNTg3MDkyMTkwY2UiLCJsaW5rVXJsIjoiaHR0cHM6Ly93ZWJob29rLXNpdC5mYWhvcnJvLmNvbS5teC9mZGEvYXBpL3YyL3NlbGxlci1vbmJvYXJkaW5nL3NlbGxlckFkZGl0aW9uYWxJbmZvL2F0WmI2N0liOHRGajBRUVMxUFNYcHciLCJhSWQiOjY1NDh9&data=05%7C02%7Cpsamal%40kognivera.com%7Cdd121204a3f2443b2d5e08df071bc4ee%7Cf277f5b532804df690f07598c153d4a1%7C0%7C0%7C639237487998655744%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=B%2BM2lHIFAxLMac1%2BOsdhJ%2Fy5GSxhP2YiRPhSwAZ69%2Fk%3D&reserved=0
+2026-08-31 10:23:34.168 [INFO ] [main] com.fda.automation.base.BasePage — Uploading seller documents and bank details
+2026-08-31 10:23:36.805 [INFO ] [main] com.fda.automation.base.BasePage — Document upload and bank-details submission completed
+2026-08-31 10:23:36.805 [INFO ] [main] com.fda.automation.base.BaseTest — Document upload completed (8 documents + bank details) for psamal+full1788151963011001@kognivera.com
+2026-08-31 10:23:36.805 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE PASSED: 5. Upload Seller Documents ====
+2026-08-31 10:23:36.805 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE START: 6. Middleware Final Approval ====
+2026-08-31 10:23:36.809 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/login
+2026-08-31 10:23:37.575 [INFO ] [main] com.fda.automation.base.BasePage — Logging into Mirakl middleware as psamal@kognivera.com
+2026-08-31 10:23:37.892 [INFO ] [main] com.fda.automation.base.BasePage — Opening seller detail for psamal+full1788151963011001@kognivera.com
+2026-08-31 10:23:39.497 [INFO ] [main] com.fda.automation.base.BasePage — Downloading submitted documents and approving
+2026-08-31 10:23:52.287 [INFO ] [main] com.fda.automation.base.BaseTest — Final Approval completed for seller psamal+full1788151963011001@kognivera.com
+2026-08-31 10:23:52.287 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE PASSED: 6. Middleware Final Approval ====
+2026-08-31 10:23:52.289 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE START: 7. Final Approval Email ====
+2026-08-31 10:23:52.289 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://outlook.office365.com/mail/
+2026-08-31 10:23:52.596 [INFO ] [main] com.fda.automation.base.BasePage — Logging into Outlook as psamal@kognivera.com
+2026-08-31 10:23:57.933 [INFO ] [main] com.fda.automation.base.BasePage — Login form not shown (session already authenticated from an earlier login this run); reusing it
+2026-08-31 10:25:05.393 [INFO ] [main] com.fda.automation.base.BaseTest — Final Approval email received for Bienestar Kognivera 1788151963013002
+2026-08-31 10:25:06.131 [INFO ] [main] com.fda.automation.base.BaseTest — Final Approval Email: ¡Hola Bienestar Kognivera 1788151963013002!
+¡Felicidades!
+
+Hemos revisado tus datos y estamos muy felices de que seas parte del Marketplace de Farmacias del Ahorro. Está todo listo para que empieces a vender.
+
+Por favor use el correo electrónico mirakl para iniciar sesión, que recibirás en breve.
+Gracias por unirte,
+te deseamos mucho éxito.
+Marketplace
+Todos los derechos reservados por Comercializadora Farmacéutica de Chiapas A.P.I. de C.V., México D.F. 2026
+Cofepris: 143300201 B1447 | No. de licencia sanitaria: 09 011 09 0096
+2026-08-31 10:25:06.131 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE PASSED: 7. Final Approval Email ====
+2026-08-31 10:25:06.131 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE START: 8. Mirakl Marketplace Shop Search + Capture Shop ID ====
+2026-08-31 10:25:06.195 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://farmaciasdelahorromx2-dev.mirakl.net/
+2026-08-31 10:25:08.984 [INFO ] [main] com.fda.automation.base.BasePage — Logging into Mirakl marketplace as psamal@kognivera.com
+2026-08-31 10:25:11.820 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://outlook.office365.com/mail/
+2026-08-31 10:25:12.175 [INFO ] [main] com.fda.automation.base.BasePage — Logging into Outlook as psamal@kognivera.com
+2026-08-31 10:25:17.233 [INFO ] [main] com.fda.automation.base.BasePage — Login form not shown (session already authenticated from an earlier login this run); reusing it
+2026-08-31 10:25:17.459 [INFO ] [main] com.fda.automation.base.BasePage — Waiting for Mirakl's email MFA challenge
+2026-08-31 10:25:19.379 [INFO ] [main] com.fda.automation.base.BasePage — MFA challenge shown; fetching the code from Outlook in a new tab
+2026-08-31 10:25:19.450 [INFO ] [main] com.fda.automation.base.BasePage — Navigate to: https://outlook.office365.com/mail/
+2026-08-31 10:25:19.684 [INFO ] [main] com.fda.automation.base.BasePage — Logging into Outlook as psamal@kognivera.com
+2026-08-31 10:25:24.758 [INFO ] [main] com.fda.automation.base.BasePage — Login form not shown (session already authenticated from an earlier login this run); reusing it
+2026-08-31 10:26:46.970 [INFO ] [main] com.fda.automation.base.BaseTest — Mirakl Shop found for trade name Bienestar Kognivera 1788151963013002
+2026-08-31 10:26:49.721 [INFO ] [main] com.fda.automation.base.BaseTest — Mirakl Shop ID captured: 2490
+2026-08-31 10:26:49.721 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE PASSED: 8. Mirakl Marketplace Shop Search + Capture Shop ID ====
+2026-08-31 10:26:49.721 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE START: 9. Kibo Verification ====
+2026-08-31 10:34:49.729 [INFO ] [main] com.fda.automation.base.BaseTest — Kibo request executing for location 2490 (shop Bienestar Kognivera 1788151963013002)
+2026-08-31 10:34:49.787 [INFO ] [main] com.fda.automation.utils.KiboApiClient — Fetching Kibo OAuth token from https://t1000490-s1000992.sb.usc1.gcp.kibocommerce.com
+2026-08-31 10:34:53.268 [INFO ] [main] com.fda.automation.utils.KiboApiClient — Fetching Kibo location 2490
+2026-08-31 10:34:54.710 [INFO ] [main] com.fda.automation.base.BaseTest — Kibo response validated (200, non-empty body) for location 2490; trade name "Bienestar Kognivera 1788151963013002" found in response body
+2026-08-31 10:34:54.710 [INFO ] [main] com.fda.automation.base.BaseTest — Kibo location 2490 response: {"code":"2490","locationTypes":[{"code":"seller","name":"Seller Warehouse","auditInfo":{"updateDate":"2026-04-28T09:18:04.340Z","createDate":"2026-04-28T09:18:04.340Z","updateBy":"9b7c0a635a6848eba1a81e04e75691b2","createBy":"9b7c0a635a6848eba1a81e04e75691b2"}}],"name":"Bienestar Kognivera 1788151963013002","description":"Mirakl shop","address":{"address1":"Av. Insurgentes Sur","address2":"Del Valle Centro","cityOrTown":"Ciudad de México","stateOrProvince":"Ciudad de México","postalOrZipCode":"03100","countryCode":"MEX","addressType":"Commercial","isValidated":false},"geo":{"lat":19.4229664,"lng":-99.16336659999999},"supportsInventory":true,"fulfillmentTypes":[{"code":"DS","name":"Direct Ship"}],"shippingOriginContact":{"firstName":"Ana","lastNameOrSurname":"Garcia","companyOrOrganization":"Bienestar Kognivera 1788151963013002","phoneNumber":"+52 551 234 5678","email":"psamal+full1788151963011001@kognivera.com"},"tags":[],"attributes":[{"fullyQualifiedName":"tenant~sellerid","attributeDefinitionId":2,"values":["2490"]},{"fullyQualifiedName":"tenant~3pl","attributeDefinitionId":4,"values":["FBO"]}],"auditInfo":{"updateDate":"2026-08-31T05:00:08.885Z","createDate":"2026-08-31T04:56:02.671Z","updateBy":"12d4e2ea75c349da8145d2f661ebddae","createBy":"12d4e2ea75c349da8145d2f661ebddae"},"allowFulfillmentWithNoStock":true,"isDisabled":false,"express":false,"transferEnabled":false,"shipToHomeConsolidation":false,"deliveryConsolidation":false,"includeInInventoryAggregrate":false,"includeInLocationExport":true,"warehouseEnabled":true,"requiresManifest":false,"slaConfigurations":[]}
+2026-08-31 10:34:54.710 [INFO ] [main] com.fda.automation.base.BaseTest — ==== STAGE PASSED: 9. Kibo Verification ====
+2026-08-31 10:34:54.710 [INFO ] [main] com.fda.automation.base.BaseTest — === TC_SOB_001 seller onboarding completed successfully: shop=Bienestar Kognivera 1788151963013002, shopId=2490, email=psamal+full1788151963011001@kognivera.com ===
+2026-08-31 10:34:54.712 [INFO ] [main] com.fda.automation.listeners.TestListener — >>> PASS:  sellerOnboardingEndToEnd
+2026-08-31 10:34:55.432 [INFO ] [main] com.fda.automation.base.BaseTest — Browser closed [thread=3]
+2026-08-31 10:34:55.435 [INFO ] [main] com.fda.automation.listeners.TestListener — === Suite finished: Seller Onboarding - End to End | pass=1 fail=0 skip=0 ===

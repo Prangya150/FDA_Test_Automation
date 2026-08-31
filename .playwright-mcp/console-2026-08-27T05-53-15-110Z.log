@@ -1,0 +1,10 @@
+[   53444ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'. @ :0
+[   53444ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'battery'. @ :0
+[   53444ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'vibrate'. @ :0
+[   53444ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'vr'. @ :0
+[   53444ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'wake-lock'. @ :0
+[   84259ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'. @ :0
+[   84259ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'battery'. @ :0
+[   84259ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'vibrate'. @ :0
+[   84259ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'vr'. @ :0
+[   84259ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'wake-lock'. @ :0

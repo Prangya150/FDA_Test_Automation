@@ -1,0 +1,354 @@
+- generic [ref=f10e7]:
+  - generic [ref=f10e10]:
+    - generic [ref=f10e11]:
+      - complementary [ref=f10e12]:
+        - link "Logotipo de la plataforma Farmacias del Ahorro" [ref=f10e14] [cursor=pointer]:
+          - /url: /
+          - generic [ref=f10e15]:
+            - img "Logotipo de la plataforma" [ref=f10e18]
+            - generic [ref=f10e19]: Farmacias del Ahorro
+        - navigation [ref=f10e21]:
+          - generic [ref=f10e26]:
+            - generic [ref=f10e27]:
+              - generic [ref=f10e28]: Plataforma
+              - menubar [ref=f10e36]:
+                - menuitem "Panel de control" [ref=f10e37] [cursor=pointer]
+                - generic [ref=f10e46]:
+                  - button "Tiendas" [expanded] [active] [ref=f10e47] [cursor=pointer]
+                  - region "Tiendas" [ref=f10e208]:
+                    - menu "Tiendas" [ref=f10e210]:
+                      - menuitem "Todas las cuentas tienda" [ref=f10e211] [cursor=pointer]
+                      - menuitem "Problemas de calidad" [ref=f10e215] [cursor=pointer]
+                      - menuitem "Comunicaciones" [ref=f10e219] [cursor=pointer]
+                      - menuitem "Invitaciones" [ref=f10e223] [cursor=pointer]
+                - button "Pedidos" [ref=f10e61] [cursor=pointer]
+                - button "Atención al cliente" [ref=f10e75] [cursor=pointer]
+                - menuitem "Mensajes" [ref=f10e86] [cursor=pointer]
+                - button "Catálogo" [ref=f10e96] [cursor=pointer]
+                - button "Precios y existencias" [ref=f10e110] [cursor=pointer]
+                - button "Contabilidad" [ref=f10e124] [cursor=pointer]
+                - menuitem "Payout" [ref=f10e135] [cursor=pointer]
+                - button "Configuración" [ref=f10e149] [cursor=pointer]
+            - link "Ads" [ref=f10e162] [cursor=pointer]:
+              - /url: https://retailmedia-dev.mirakl.net/?tenantId=farmaciasdelahorromx2-dev
+      - button [expanded] [ref=f10e172] [cursor=pointer]
+    - banner [ref=f10e174]:
+      - generic [ref=f10e175]:
+        - button "Buscar en todas partes" [ref=f10e177] [cursor=pointer]:
+          - generic [ref=f10e178]: Ctrl + k
+        - button "Help Center" [ref=f10e185] [cursor=pointer]
+        - button "PS" [ref=f10e232] [cursor=pointer]
+    - generic [ref=f10e190]:
+      - generic [ref=f10e236]:
+        - heading "Panel de control" [level=1] [ref=f10e242]
+        - navigation [ref=f10e243]:
+          - list [ref=f10e244]:
+            - listitem [ref=f10e245]:
+              - link "Producto del marketplace" [ref=f10e246] [cursor=pointer]:
+                - /url: /marketplace-dashboard/
+            - listitem [ref=f10e249]:
+              - link "Dropship" [ref=f10e250] [cursor=pointer]:
+                - /url: /marketplace-dashboard/DROPSHIP
+        - main [ref=f10e254]:
+          - generic [ref=f10e257]:
+            - toolbar [ref=f10e258]:
+              - generic [ref=f10e259]:
+                - button "Últimos 7 días" [ref=f10e263] [cursor=pointer]
+                - generic [ref=f10e270]:
+                  - button "Para tienda" [ref=f10e273] [cursor=pointer]
+                  - button "Tus categorías" [ref=f10e281] [cursor=pointer]
+                  - button "Administrador de la cuenta" [ref=f10e289] [cursor=pointer]
+                - generic [ref=f10e296]:
+                  - button "Configuración del valor bruto de mercancías" [ref=f10e297] [cursor=pointer]
+                  - generic [ref=f10e302]: Pedidos pagados. Impuestos no incluidos, gastos de envío incluidos
+            - generic [ref=f10e303]:
+              - generic [ref=f10e310]:
+                - generic [ref=f10e311]: Ingresos por ventas
+                - generic [ref=f10e313]:
+                  - heading "$63,300" [level=3] [ref=f10e314]
+                  - button [ref=f10e316]:
+                    - img "Importe total de ventas de pedidos después de los reembolsos (según la configuración de la visualización de tu GMV)" [ref=f10e318] [cursor=pointer]
+              - generic [ref=f10e326]:
+                - generic [ref=f10e327]: Valor bruto de mercancía
+                - generic [ref=f10e329]:
+                  - heading "$69,636" [level=3] [ref=f10e330]
+                  - button [ref=f10e332]:
+                    - img "Importe total de ventas de pedidos (según la configuración de visualización de su valor bruto de mercancías)." [ref=f10e334] [cursor=pointer]
+              - generic [ref=f10e342]:
+                - generic [ref=f10e343]: Media Carr.
+                - heading "$487" [level=3] [ref=f10e346]
+              - generic [ref=f10e353]:
+                - generic [ref=f10e354]: Comisión
+                - heading "$15,343" [level=3] [ref=f10e357]
+            - generic [ref=f10e358]:
+              - generic [ref=f10e359]:
+                - generic [ref=f10e360]:
+                  - heading "Resumen" [level=2] [ref=f10e367]
+                  - generic [ref=f10e372]:
+                    - img [ref=f10e373]:
+                      - generic [ref=f10e377]:
+                        - generic [ref=f10e378]: 20 ago
+                        - generic [ref=f10e380]: 22 ago
+                        - generic [ref=f10e382]: 24 ago
+                        - generic [ref=f10e384]: 26 ago
+                      - generic [ref=f10e387]:
+                        - generic [ref=f10e388]: $0
+                        - generic [ref=f10e390]: $6.5K
+                        - generic [ref=f10e392]: $13K
+                        - generic [ref=f10e394]: $19.5K
+                        - generic [ref=f10e396]: $26K
+                      - generic [ref=f10e398]:
+                        - generic [ref=f10e399]:
+                          - generic [ref=f10e400]: "0"
+                          - generic [ref=f10e402]: "40"
+                          - generic [ref=f10e404]: "80"
+                          - generic [ref=f10e406]: "120"
+                          - generic [ref=f10e408]: "160"
+                        - generic [ref=f10e410]: Cuentas tienda activas
+                    - generic [ref=f10e433]:
+                      - generic [ref=f10e434]:
+                        - generic [ref=f10e438]: Valor bruto de mercancía
+                        - button [ref=f10e439]
+                      - generic [ref=f10e443]:
+                        - generic [ref=f10e447]: Ofertas activas
+                        - button [ref=f10e448]
+                      - generic [ref=f10e452]:
+                        - generic [ref=f10e456]: Cuentas tienda activas
+                        - button [ref=f10e457]
+                - generic [ref=f10e461]:
+                  - heading "Rendimiento de las ventas" [level=2] [ref=f10e468]
+                  - generic [ref=f10e470]:
+                    - generic [ref=f10e471]:
+                      - heading [level=3] [ref=f10e472]:
+                        - generic [ref=f10e473]:
+                          - text: Pedidos totales
+                          - button [ref=f10e474]
+                      - heading "736" [level=3] [ref=f10e478]
+                    - generic [ref=f10e481]:
+                      - img [ref=f10e482]:
+                        - generic [ref=f10e486]:
+                          - generic [ref=f10e487]: 20 ago
+                          - generic [ref=f10e489]: 22 ago
+                          - generic [ref=f10e491]: 24 ago
+                          - generic [ref=f10e493]: 26 ago
+                        - generic [ref=f10e496]:
+                          - generic [ref=f10e497]: "0"
+                          - generic [ref=f10e499]: "75"
+                          - generic [ref=f10e501]: "150"
+                          - generic [ref=f10e503]: "225"
+                          - generic [ref=f10e505]: "300"
+                      - generic [ref=f10e511]: Número de pedidos
+                - generic [ref=f10e518]:
+                  - heading "Estadísticas" [level=2] [ref=f10e525]
+                  - generic [ref=f10e528]:
+                    - heading "Total de pedidos incluidos en las estadísticas" [level=3] [ref=f10e530]
+                    - heading "736" [level=3] [ref=f10e532]
+                  - generic [ref=f10e536]:
+                    - generic [ref=f10e537]:
+                      - term [ref=f10e538]:
+                        - button "Tasa de rechazos automáticos" [ref=f10e539]
+                      - definition [ref=f10e541]: 0%
+                    - generic [ref=f10e542]:
+                      - term [ref=f10e543]:
+                        - button "Plazo de aceptación" [ref=f10e544]
+                      - definition [ref=f10e546]: 1h 41min
+                    - generic [ref=f10e547]:
+                      - term [ref=f10e548]:
+                        - button "Tasa de aceptaciones" [ref=f10e549]
+                      - definition [ref=f10e551]: 100%
+                    - generic [ref=f10e552]:
+                      - term [ref=f10e553]:
+                        - button "Tasa de cancelación" [ref=f10e554]
+                      - definition [ref=f10e556]: 26.75%
+                    - generic [ref=f10e557]:
+                      - term [ref=f10e558]:
+                        - button "Tasa de incidencias" [ref=f10e559]
+                      - definition [ref=f10e561]: 4.64%
+                    - generic [ref=f10e562]:
+                      - term [ref=f10e563]:
+                        - button "Tiempo de respuesta" [ref=f10e564]
+                      - definition [ref=f10e566]: n/c
+                    - generic [ref=f10e567]:
+                      - term [ref=f10e568]:
+                        - button "Tasa de envíos tardíos" [ref=f10e569]
+                      - definition [ref=f10e571]: 0%
+                    - generic [ref=f10e572]:
+                      - term [ref=f10e573]:
+                        - button "Tasa de reembolso" [ref=f10e574]
+                      - definition [ref=f10e576]: 2.5%
+                    - generic [ref=f10e577]:
+                      - term [ref=f10e578]:
+                        - button "Tasa de devolución" [ref=f10e579]
+                      - definition [ref=f10e581]: 20.35%
+                    - generic [ref=f10e582]:
+                      - term [ref=f10e583]:
+                        - button "Plazo envío" [ref=f10e584]
+                      - definition [ref=f10e586]: 1h 25min
+                    - generic [ref=f10e587]:
+                      - term [ref=f10e588]:
+                        - button "Tasa de seguimiento" [ref=f10e589]
+                      - definition [ref=f10e591]: 91.67%
+                - generic [ref=f10e592]:
+                  - heading "Top 10" [level=2] [ref=f10e599]
+                  - tablist [ref=f10e601]:
+                    - tab "Tiendas por valor bruto de mercancías" [selected] [ref=f10e602] [cursor=pointer]
+                    - tab [ref=f10e605] [cursor=pointer]
+                  - tabpanel "Tiendas por valor bruto de mercancías" [ref=f10e610]:
+                    - generic [ref=f10e613]:
+                      - heading "98% del valor bruto de mercancías total" [level=3] [ref=f10e615]
+                      - heading "$68,480" [level=3] [ref=f10e617]
+                    - generic [ref=f10e620]:
+                      - generic [ref=f10e621]:
+                        - term [ref=f10e622]:
+                          - link "MASTEREDI" [ref=f10e623] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2085
+                        - definition [ref=f10e625]:
+                          - button "$21,287" [ref=f10e626]
+                      - generic [ref=f10e628]:
+                        - term [ref=f10e629]:
+                          - link "Feather" [ref=f10e630] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2322
+                        - definition [ref=f10e632]:
+                          - button "$15,316" [ref=f10e633]
+                      - generic [ref=f10e635]:
+                        - term [ref=f10e636]:
+                          - link "DEV DIXITTTT TRADERS" [ref=f10e637] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2201
+                        - definition [ref=f10e639]:
+                          - button "$13,271" [ref=f10e640]
+                      - generic [ref=f10e642]:
+                        - term [ref=f10e643]:
+                          - link "R. Torres" [ref=f10e644] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2001
+                        - definition [ref=f10e646]:
+                          - button "$4,784" [ref=f10e647]
+                      - generic [ref=f10e649]:
+                        - term [ref=f10e650]:
+                          - link "GRAPHIMEDIC" [ref=f10e651] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2000
+                        - definition [ref=f10e653]:
+                          - button "$4,684" [ref=f10e654]
+                      - generic [ref=f10e656]:
+                        - term [ref=f10e657]:
+                          - link "ABCD test" [ref=f10e658] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2020
+                        - definition [ref=f10e660]:
+                          - button "$2,700" [ref=f10e661]
+                      - generic [ref=f10e663]:
+                        - term [ref=f10e664]:
+                          - link "ESCUELA KEMPER URGATE" [ref=f10e665] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2086
+                        - definition [ref=f10e667]:
+                          - button "$2,315" [ref=f10e668]
+                      - generic [ref=f10e670]:
+                        - term [ref=f10e671]:
+                          - link "CHAI AUR CODE COMPLEX 5.0" [ref=f10e672] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2222
+                        - definition [ref=f10e674]:
+                          - button "$1,852" [ref=f10e675]
+                      - generic [ref=f10e677]:
+                        - term [ref=f10e678]:
+                          - link "Subo Store" [ref=f10e679] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2119
+                        - definition [ref=f10e681]:
+                          - button "$1,142" [ref=f10e682]
+                      - generic [ref=f10e684]:
+                        - term [ref=f10e685]:
+                          - link "Microcontroller23" [ref=f10e686] [cursor=pointer]:
+                            - /url: /mmp/operator/shop/2316
+                        - definition [ref=f10e688]:
+                          - button "$1,129" [ref=f10e689]
+              - generic [ref=f10e691]:
+                - generic [ref=f10e692]:
+                  - heading "Pedidos" [level=2] [ref=f10e699]
+                  - generic [ref=f10e702]:
+                    - generic [ref=f10e703]:
+                      - term [ref=f10e704]:
+                        - generic [ref=f10e705]: Pedidos tardíos
+                      - definition [ref=f10e711]:
+                        - link "10835" [ref=f10e712] [cursor=pointer]:
+                          - /url: /mmp/operator/order/all?shippingDeadline=Superado%3D%3D%22EXCEEDED%22&platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D
+                    - generic [ref=f10e713]:
+                      - term [ref=f10e714]:
+                        - generic [ref=f10e715]: Pedidos en espera de envío
+                      - definition [ref=f10e721]:
+                        - link "11130" [ref=f10e722] [cursor=pointer]:
+                          - /url: /mmp/operator/order/awaiting-shipment?platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D
+                    - generic [ref=f10e723]:
+                      - term [ref=f10e724]:
+                        - generic [ref=f10e725]: Pedidos en espera de aceptación
+                      - definition [ref=f10e731]:
+                        - link "2" [ref=f10e732] [cursor=pointer]:
+                          - /url: /mmp/operator/order/pending-acceptance?platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D
+                - generic [ref=f10e733]:
+                  - heading "Devoluciones" [level=2] [ref=f10e740]
+                  - generic [ref=f10e743]:
+                    - generic [ref=f10e744]:
+                      - term [ref=f10e745]:
+                        - generic [ref=f10e746]: Solicitudes de devolución
+                      - definition [ref=f10e752]:
+                        - link "0" [ref=f10e753] [cursor=pointer]:
+                          - /url: /mmp/operator/return/pending-acceptance?platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D
+                    - generic [ref=f10e754]:
+                      - term [ref=f10e755]:
+                        - generic [ref=f10e756]: Devoluciones en curso
+                      - definition [ref=f10e763]:
+                        - link "266" [ref=f10e764] [cursor=pointer]:
+                          - /url: /mmp/operator/return/in-progress?platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D
+                - generic [ref=f10e765]:
+                  - heading "Incidencias" [level=2] [ref=f10e772]
+                  - generic [ref=f10e775]:
+                    - generic [ref=f10e776]:
+                      - term [ref=f10e777]:
+                        - generic [ref=f10e778]: Incidencias en disputa
+                      - definition [ref=f10e784]:
+                        - link "0" [ref=f10e785] [cursor=pointer]:
+                          - /url: /mmp/operator/incident/open?platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D&status=%5B%22En%20disputa%3D%3D%5C%22DISPUTED%5C%22%22%5D
+                    - generic [ref=f10e786]:
+                      - term [ref=f10e787]:
+                        - generic [ref=f10e788]: Nuevas incidencias
+                      - definition [ref=f10e794]:
+                        - link "42" [ref=f10e795] [cursor=pointer]:
+                          - /url: /mmp/operator/incident/open?platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D&status=%5B%22Nueva%20incidencia%3D%3D%5C%22NEW%5C%22%22%5D
+                    - generic [ref=f10e796]:
+                      - term [ref=f10e797]:
+                        - generic [ref=f10e798]: Incidencia en curso
+                      - definition [ref=f10e804]:
+                        - link "1" [ref=f10e805] [cursor=pointer]:
+                          - /url: /mmp/operator/incident/open?platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D&status=%5B%22Incidencia%20en%20curso%3D%3D%5C%22IN_PROGRESS%5C%22%22%5D
+                    - generic [ref=f10e806]:
+                      - term [ref=f10e807]:
+                        - generic [ref=f10e808]: Incidencias resueltas por la tienda
+                      - definition [ref=f10e814]:
+                        - link "0" [ref=f10e815] [cursor=pointer]:
+                          - /url: /mmp/operator/incident/open?platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D&status=%5B%22Resuelta%20por%20tienda%3D%3D%5C%22RESOLVED%5C%22%22%5D
+                - generic [ref=f10e816]:
+                  - heading "Mensajes" [level=2] [ref=f10e823]
+                  - generic [ref=f10e827]:
+                    - term [ref=f10e828]:
+                      - generic [ref=f10e829]: Mensajes no leídos
+                    - definition [ref=f10e835]:
+                      - link "23" [ref=f10e836] [cursor=pointer]:
+                        - /url: /inbox/operator/threads/me?platformModels=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D&unread=S%C3%AD%3D%3Dtrue
+                - generic [ref=f10e837]:
+                  - heading "Tiendas" [level=2] [ref=f10e844]
+                  - generic [ref=f10e847]:
+                    - generic [ref=f10e848]:
+                      - term [ref=f10e849]:
+                        - generic [ref=f10e850]: Nueva(s) tiendas suspendida(s) automáticamente
+                      - definition [ref=f10e856]:
+                        - link "0" [ref=f10e857] [cursor=pointer]:
+                          - /url: /mmp/operator/shop/quality-issues/suspended?model=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D&type=%5B%22Suspendida%20autom%C3%A1ticamente%3D%3D%5C%22SUSPENSION%5C%22%22%5D&lastSuspension=%7B%22startDate%22%3A1787724000000%7D
+                    - generic [ref=f10e858]:
+                      - term [ref=f10e859]:
+                        - generic [ref=f10e860]: Nueva(s) tiendas con alertas
+                      - definition [ref=f10e866]:
+                        - link "3" [ref=f10e867] [cursor=pointer]:
+                          - /url: /mmp/operator/shop/quality-issues/alerted?model=%5B%22Marketplace%3D%3D%5C%22MARKETPLACE%5C%22%22%5D&type=%5B%22Alertada%3D%3D%5C%22ALERT%5C%22%22%5D&lastAlert=%7B%22startDate%22%3A1787724000000%7D
+      - contentinfo [ref=f10e195]:
+        - generic [ref=f10e197]:
+          - generic [ref=f10e201]: "|"
+          - generic [ref=f10e202]: Copyright © 2026 Mirakl, All Rights Reserved - Strictly Confidential
+          - generic [ref=f10e203]: "|"
+          - generic [ref=f10e204]: Copyright © 2025 Mirakl - Farmacias del Ahorro.
+  - generic [ref=f10e868]: "300"

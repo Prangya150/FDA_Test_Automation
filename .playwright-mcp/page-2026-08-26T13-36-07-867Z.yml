@@ -1,0 +1,75 @@
+- generic [ref=f6e2]:
+  - banner [ref=f6e3]:
+    - figure [ref=f6e7]
+  - main [ref=f6e8]:
+    - generic [ref=f6e10]:
+      - text: o * *
+      - generic [ref=f6e11]:
+        - list "Progress steps" [ref=f6e35]:
+          - listitem [ref=f6e36] [cursor=pointer]:
+            - generic [ref=f6e37]: Información personal
+          - listitem [ref=f6e38]:
+            - generic [ref=f6e39]: Información de la Empresa
+          - listitem [ref=f6e40]:
+            - generic [ref=f6e41]: Información de la Tienda
+          - listitem [ref=f6e42]:
+            - generic [ref=f6e43]: Información de Producto
+        - generic [ref=f6e12]:
+          - text: "* * * * * *"
+          - generic [ref=f6e596]:
+            - strong [ref=f6e598]: Información de Empresa/s
+            - group [ref=f6e600]:
+              - generic [ref=f6e601]:
+                - strong [ref=f6e603]: Ingresa la información de tu empresa
+                - group [ref=f6e605]:
+                  - generic [ref=f6e606]:
+                    - generic [ref=f6e607]: Nombre comercial*
+                    - textbox "Nombre comercial*" [ref=f6e609]: Bienestar Kognivera 1787739000
+                  - generic [ref=f6e610]:
+                    - generic [ref=f6e611]: Denominación / Razón social*
+                    - textbox "Denominación / Razón social*" [ref=f6e613]: Bienestar Kognivera SA de CV
+                  - generic [ref=f6e614]:
+                    - generic [ref=f6e615]: RFC*
+                    - textbox "RFC*" [ref=f6e617]: ABC120101AAA
+                  - generic [ref=f6e618]:
+                    - generic [ref=f6e619]: Tipo de empresa*
+                    - combobox "Empresa privada" [ref=f6e674] [cursor=pointer]
+              - generic [ref=f6e623]:
+                - strong [ref=f6e625]: Dirección fiscal
+                - group [ref=f6e627]:
+                  - generic [ref=f6e628]:
+                    - generic [ref=f6e629]: Calle*
+                    - textbox "Calle*" [ref=f6e631]: Av. Insurgentes Sur
+                  - generic [ref=f6e632]:
+                    - generic [ref=f6e633]: Código postal*
+                    - textbox "Código postal*" [active] [ref=f6e635]: "03100"
+                  - text: "*"
+                  - generic [ref=f6e676]:
+                    - generic [ref=f6e677]: Colonia*
+                    - combobox "Seleccione una opción" [ref=f6e679] [cursor=pointer]
+                  - generic [ref=f6e640]:
+                    - generic [ref=f6e641]: Municipio o alcaldía*
+                    - textbox "Municipio o alcaldía*" [ref=f6e643]: Benito Juárez
+                  - generic [ref=f6e644]:
+                    - generic [ref=f6e645]: Número exterior*
+                    - textbox "Número exterior*" [ref=f6e647]
+                  - generic [ref=f6e648]:
+                    - generic [ref=f6e649]: Número interior (opcional)
+                    - textbox "Número interior (opcional)" [ref=f6e651]
+                  - generic [ref=f6e652]:
+                    - generic [ref=f6e653]: Estado*
+                    - combobox "Ciudad de México" [ref=f6e681] [cursor=pointer]
+              - button "Continuar" [ref=f6e657] [cursor=pointer]
+          - text: "* * * * * * * * * * * * *"
+  - contentinfo [ref=f6e21]:
+    - generic [ref=f6e24]:
+      - paragraph [ref=f6e25]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f6e26] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f6e27]: ©2026 Todos los derechos reservados.
+  - figure [ref=f6e31]:
+    - link [ref=f6e32] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f6e33]

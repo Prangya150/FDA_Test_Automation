@@ -1,0 +1,26 @@
+- generic [ref=f8e2]:
+  - banner [ref=f8e3]:
+    - figure [ref=f8e7]
+  - main [ref=f8e8]:
+    - generic [ref=f8e23]:
+      - text: o * *
+      - generic [ref=f8e35]:
+        - text: "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+        - generic [ref=f8e974]:
+          - heading "¡Listo! Se han enviado tus datos correctamente" [level=2] [ref=f8e975]: ¡Listo!Se han enviado tus datos correctamente
+          - paragraph [ref=f8e976]:
+            - text: Evaluaremos tu solicitud y te enviaremos un correo electrónico a
+            - strong [ref=f8e977]: fda.automation.retry2@kognivera.com
+            - text: para notificarte sobre los próximos pasos.
+  - contentinfo [ref=f8e9]:
+    - generic [ref=f8e12]:
+      - paragraph [ref=f8e13]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f8e14] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f8e15]: ©2026 Todos los derechos reservados.
+  - figure [ref=f8e19]:
+    - link [ref=f8e20] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f8e21]

@@ -1,0 +1,412 @@
+- application [ref=f8e1]:
+  - generic [ref=f8e20]:
+    - link "Skip to main content" [ref=f8e21] [cursor=pointer]
+    - generic [ref=f8e25]:
+      - button "App launcher" [ref=f8e27]:
+        - generic [ref=f8e28]: 
+      - generic [ref=f8e31]:
+        - generic [ref=f8e32]: Outlook
+        - search [ref=f8e36]:
+          - generic [ref=f8e37]:
+            - status
+            - generic [ref=f8e39]: 
+            - combobox "Search for email, meetings, files and more." [ref=f8e45]
+        - generic [ref=f8e47]:
+          - button "Teams Chat" [ref=f8e48]
+          - button "My Day" [ref=f8e53]
+          - button "Notifications" [ref=f8e58]:
+            - generic [ref=f8e59]: 
+          - button "Settings" [ref=f8e62]:
+            - generic [ref=f8e63]: 
+      - button "Prangya Paramita Samal" [ref=f8e68]:
+        - img [ref=f8e69]:
+          - generic [ref=f8e70]: PS
+    - generic [ref=f8e74]:
+      - generic [ref=f8e78]:
+        - navigation "left-rail-appbar" [ref=f8e80]:
+          - generic "Mail" [ref=f8e82]:
+            - button "Mail" [pressed] [ref=f8e83]:
+              - generic [ref=f8e84]:
+                - generic:
+                  - generic:
+                    - img "Mail"
+          - generic "Calendar" [ref=f8e86]:
+            - button "Calendar" [ref=f8e87]:
+              - generic [ref=f8e88]:
+                - generic:
+                  - generic:
+                    - img "Calendar"
+          - generic "Copilot" [ref=f8e90]:
+            - button "Copilot" [ref=f8e91]:
+              - generic [ref=f8e92]:
+                - generic:
+                  - generic:
+                    - img "Copilot"
+          - generic "People" [ref=f8e94]:
+            - button "People" [ref=f8e95]:
+              - generic [ref=f8e96]:
+                - generic:
+                  - generic:
+                    - img "People"
+          - generic "To Do" [ref=f8e98]:
+            - button "To Do" [ref=f8e99]:
+              - generic [ref=f8e100]:
+                - generic:
+                  - generic:
+                    - img "To Do"
+          - generic "Newsletters" [ref=f8e102]:
+            - button "Newsletters" [ref=f8e103]:
+              - generic [ref=f8e104]:
+                - generic:
+                  - generic:
+                    - img "Newsletters"
+          - generic "Org Explorer" [ref=f8e106]:
+            - button "Org Explorer" [ref=f8e107]:
+              - generic [ref=f8e108]:
+                - generic:
+                  - generic:
+                    - img "Org Explorer"
+          - generic "OneDrive" [ref=f8e110]:
+            - button "OneDrive" [ref=f8e111]:
+              - generic [ref=f8e112]:
+                - generic:
+                  - generic:
+                    - img "OneDrive"
+          - status [ref=f8e113]
+        - button [ref=f8e116]:
+          - generic [ref=f8e117]: 
+      - generic [ref=f8e121]:
+        - region "Ribbon" [ref=f8e122]:
+          - generic [ref=f8e124]:
+            - generic [ref=f8e125]:
+              - button "Hide navigation pane" [ref=f8e127]:
+                - generic [ref=f8e128]: 
+              - button "File" [ref=f8e130]
+              - toolbar [ref=f8e136]:
+                - tablist "Ribbon tabs" [ref=f8e138]:
+                  - tab "Home" [selected] [ref=f8e140] [cursor=pointer]
+                  - tab "View" [ref=f8e142] [cursor=pointer]
+                  - tab "Help" [ref=f8e144] [cursor=pointer]
+              - menuitem "Automation | Daily Standup Call, 12:00 PM to 12:30 PM, Thursday, August 27, 2026, Microsoft Teams Meeting, By Karthika Selvaraj, Tentative, Recurring event" [ref=f8e679] [cursor=pointer]:
+                - generic [ref=f8e682]:
+                  - generic [ref=f8e683]: 
+                  - generic [ref=f8e686]:
+                    - generic [ref=f8e687]: Automation | Daily Standup Call
+                    - generic [ref=f8e688]:
+                      - generic [ref=f8e689]: in 38 min
+                      - generic [ref=f8e690]: Microsoft Teams Meeting
+            - generic [ref=f8e148]:
+              - toolbar [ref=f8e151]:
+                - tabpanel "Home" [ref=f8e153]:
+                  - generic [ref=f8e160]:
+                    - group "Move & delete" [ref=f8e164]:
+                      - group [ref=f8e165]:
+                        - button "New mail" [ref=f8e166]:
+                          - generic [ref=f8e167]: 
+                          - generic [ref=f8e172]: Create a new email message. (N)
+                        - button "Expand to see more New options" [ref=f8e173]:
+                          - generic [ref=f8e175]: 
+                      - group [ref=f8e179]:
+                        - button "Delete" [disabled]:
+                          - generic: 
+                          - generic: this message. (Delete)
+                        - button "Expand to see delete options" [disabled]:
+                          - generic: 
+                      - button "Archive" [disabled]:
+                        - generic: 
+                        - generic: Move this message to your archive folder. (E)
+                      - group [ref=f8e180]:
+                        - button "Report" [disabled]:
+                          - generic: 
+                          - generic: this message as phishing.
+                        - button "Expand to see more report options" [disabled]:
+                          - generic: 
+                      - button "Sweep" [disabled]:
+                        - generic: 
+                        - generic: Make a rule around the selected email authors.
+                      - generic [ref=f8e181]:
+                        - button "Move to" [disabled]:
+                          - generic: 
+                          - generic: a folder. (V)
+                          - generic: 
+                    - group "Respond" [ref=f8e187]:
+                      - button "Reply" [disabled]:
+                        - generic: 
+                        - generic: to this message. (R / Ctrl+R)
+                      - button "Reply all" [disabled]:
+                        - generic: 
+                        - generic: to this message. (Shift+R / Ctrl+Shift+R)
+                      - group [ref=f8e188]:
+                        - button "Forward" [disabled]:
+                          - generic: 
+                          - generic: this message. (Shift+F / Ctrl+Shift+F)
+                        - button "Expand to see forward options" [disabled]:
+                          - generic: 
+                    - group "Teams" [ref=f8e694]:
+                      - button "Share to Teams" [disabled]:
+                        - generic: Share email using Teams.
+                    - group "Tags" [ref=f8e194]:
+                      - generic "Quick steps" [ref=f8e195]:
+                        - radio "With quick steps, you can take multiple actions on a message in a single click. For example, you can set to move a message to a specific folder, flag it, and mark it as read." [ref=f8e198]:
+                          - generic [ref=f8e199]:
+                            - generic [ref=f8e200]: 
+                            - generic [ref=f8e203]: Quick steps
+                        - button "More quick steps" [ref=f8e204]:
+                          - generic [ref=f8e205]: 
+                      - button "Mark all as read" [ref=f8e209]:
+                        - generic [ref=f8e210]: 
+                        - generic [ref=f8e215]: Mark all messages in this folder as read.
+                      - generic [ref=f8e216]:
+                        - button "Categorize" [disabled]:
+                          - generic: 
+                          - generic: this item. Categories applied to a conversation will be applied to all current and future items in the conversation. (C)
+                          - generic: 
+                      - group [ref=f8e217]:
+                        - button "Flag / Unflag" [disabled]:
+                          - generic: 
+                          - generic: Flag or unflag this message.
+                        - button "Expand to see flag options" [disabled]:
+                          - generic: 
+                      - generic [ref=f8e218]:
+                        - button "Snooze" [disabled]:
+                          - generic: 
+                          - generic: Hide this message until a later time. (B)
+                          - generic: 
+                      - generic [ref=f8e219]:
+                        - button "Assign policy" [disabled]:
+                          - generic: 
+                          - generic: Assign an archive or retention policy to automatically archive or delete the selected items.
+                          - generic: 
+                    - group "Print" [ref=f8e225]:
+                      - button "Print" [disabled]:
+                        - generic: 
+                        - generic: this email.
+                    - group "Add-ins" [ref=f8e231]:
+                      - button "More apps" [disabled]:
+                        - generic: 
+                        - generic: Enhance Outlook with apps.
+                      - button "Translate Message" [disabled]:
+                        - generic: Translator helps you read messages in your preferred language across devices.
+                      - button "Convert To PDF" [disabled]:
+                        - generic: Easily convert emails to PDF, append PDFs, or share attachments with public links.
+                      - button "Viva Insights" [disabled]
+                    - group "Undo" [ref=f8e237]:
+                      - button "Undo" [disabled]:
+                        - generic: 
+                        - generic: last action. (Ctrl+Z / Alt+Backspace)
+                    - group "More options" [ref=f8e244]:
+                      - button "More options" [ref=f8e247]:
+                        - generic [ref=f8e248]: 
+                  - button "Switch layouts" [ref=f8e255]:
+                    - generic [ref=f8e256]: 
+              - button "Chat with Copilot" [ref=f8e265]
+        - generic [ref=f8e278]:
+          - generic [ref=f8e282]:
+            - region "Navigation pane" [ref=f8e283]:
+              - generic [ref=f8e288]:
+                - tree [ref=f8e289]:
+                  - heading "Navigation pane" [level=2] [ref=f8e290]
+                  - group [ref=f8e292]:
+                    - treeitem "Favorites" [expanded] [level=1] [ref=f8e293] [cursor=pointer]:
+                      - button [ref=f8e294]:
+                        - generic [ref=f8e295]: 
+                    - generic [ref=f8e299]:
+                      - treeitem "Inbox 1763 unread" [level=2] [ref=f8e301] [cursor=pointer]:
+                        - generic [ref=f8e302]: 
+                        - generic [ref=f8e305]: Inbox
+                        - generic [ref=f8e307]:
+                          - text: "1763"
+                          - generic [ref=f8e308]: unread
+                      - treeitem "Sent Items" [level=2] [ref=f8e310] [cursor=pointer]:
+                        - generic [ref=f8e311]: 
+                      - treeitem "Drafts [2] items" [level=2] [ref=f8e316] [cursor=pointer]:
+                        - generic [ref=f8e317]: 
+                        - generic [ref=f8e320]: Drafts
+                        - generic [ref=f8e322]:
+                          - text: "[2]"
+                          - generic [ref=f8e323]: items
+                  - group [ref=f8e326]:
+                    - treeitem "psamal@kognivera.com" [expanded] [level=1] [ref=f8e328] [cursor=pointer]:
+                      - button [ref=f8e329]:
+                        - generic [ref=f8e330]: 
+                    - group "psamal@kognivera.com" [ref=f8e335]:
+                      - treeitem "Inbox selected 1763 unread" [level=2] [selected] [ref=f8e337] [cursor=pointer]:
+                        - generic [ref=f8e338]: 
+                        - generic [ref=f8e341]: Inbox
+                        - generic [ref=f8e342]: selected
+                        - generic [ref=f8e344]:
+                          - text: "1763"
+                          - generic [ref=f8e345]: unread
+                      - treeitem "Drafts [2] items" [level=2] [ref=f8e347] [cursor=pointer]:
+                        - generic [ref=f8e348]: 
+                        - generic [ref=f8e351]: Drafts
+                        - generic [ref=f8e353]:
+                          - text: "[2]"
+                          - generic [ref=f8e354]: items
+                      - treeitem "Sent Items" [level=2] [ref=f8e356] [cursor=pointer]:
+                        - generic [ref=f8e357]: 
+                      - treeitem "Deleted Items 55 unread" [level=2] [ref=f8e362] [cursor=pointer]:
+                        - generic [ref=f8e363]: 
+                        - generic [ref=f8e366]: Deleted Items
+                        - generic [ref=f8e368]:
+                          - text: "55"
+                          - generic [ref=f8e369]: unread
+                      - treeitem "Junk Email [2] items" [level=2] [ref=f8e371] [cursor=pointer]:
+                        - generic [ref=f8e372]: 
+                        - generic [ref=f8e375]: Junk Email
+                        - generic [ref=f8e377]:
+                          - text: "[2]"
+                          - generic [ref=f8e378]: items
+                      - treeitem "Notes" [level=2] [ref=f8e380] [cursor=pointer]:
+                        - generic [ref=f8e381]: 
+                      - treeitem "Archive 1 unread" [level=2] [ref=f8e386] [cursor=pointer]:
+                        - generic [ref=f8e387]: 
+                        - generic [ref=f8e390]: Archive
+                        - generic [ref=f8e392]:
+                          - text: "1"
+                          - generic [ref=f8e393]: unread
+                      - treeitem "Conversation History" [level=2] [ref=f8e395] [cursor=pointer]:
+                        - generic [ref=f8e396]: 
+                      - treeitem "Search Folders" [level=2] [ref=f8e400] [cursor=pointer]:
+                        - generic [ref=f8e401]: 
+                    - treeitem "Go to Groups" [level=1] [ref=f8e406] [cursor=pointer]:
+                      - generic [ref=f8e407]: 
+                - status
+            - generic [ref=f8e416]:
+              - complementary "Message list" [ref=f8e419]:
+                - generic [ref=f8e420]:
+                  - generic [ref=f8e422]:
+                    - tablist [ref=f8e424]:
+                      - tab "Focused" [selected] [ref=f8e427] [cursor=pointer]
+                      - tab "Other" [ref=f8e430] [cursor=pointer]
+                    - generic [ref=f8e433]:
+                      - generic "Select" [ref=f8e435]:
+                        - button "Select" [ref=f8e436]:
+                          - generic [ref=f8e437]: 
+                      - button "Jump to" [ref=f8e439]:
+                        - generic [ref=f8e440]: 
+                      - button "Filter" [ref=f8e442] [cursor=pointer]:
+                        - generic [ref=f8e443]: 
+                      - 'button "Sorted: By Date" [ref=f8e445] [cursor=pointer]':
+                        - generic [ref=f8e446]: 
+                  - generic [ref=f8e448]:
+                    - generic [ref=f8e449]: 
+                    - button "Other Emails (1) Farmacias del Ahorro App Móvil Click to switch to Other" [ref=f8e452] [cursor=pointer]:
+                      - generic "Other Emails (1)" [ref=f8e453]
+                      - generic "Farmacias del Ahorro App Móvil" [ref=f8e454]
+                - region [ref=f8e457]:
+                  - listbox "Message list No conversations selected" [ref=f8e458]:
+                    - generic [ref=f8e463]:
+                      - generic [ref=f8e465]:
+                        - button "Today" [expanded] [ref=f8e466] [cursor=pointer]:
+                          - generic [ref=f8e467]: 
+                          - button "Header action menu" [ref=f8e471]:
+                            - generic [ref=f8e472]: 
+                        - 'option "Unread Mirakl SSO Mirakl: Multi-factor Authentication 11:20 AM Multi-factor Authentication Your verification code is: 321252 We will never call to ask for this code. This code is intended to be used only on login.mirakl.net If you are having any issues with your account, please don''t hesitate to contact us… No conversations selected" [active] [ref=f8e474]':
+                          - group [ref=f8e477]:
+                            - generic [ref=f8e478]:
+                              - button "Mark as read" [ref=f8e480] [cursor=pointer]
+                              - generic [ref=f8e481]:
+                                - checkbox "Select a conversation" [ref=f8e483] [cursor=pointer]:
+                                  - img "Mirakl SSO" [ref=f8e484]:
+                                    - generic [ref=f8e485]: MS
+                                - generic [ref=f8e486]:
+                                  - generic [ref=f8e487]: Mirakl SSO
+                                  - generic [ref=f8e489]:
+                                    - generic [ref=f8e490]: "Mirakl: Multi-factor Authentication"
+                                    - generic "Thu 8/27/2026 11:20 AM" [ref=f8e492]: 11:20 AM
+                                  - generic [ref=f8e493]: "Multi-factor Authentication Your verification code is: 321252 We will never call to ask for this code. This code is intended to be used only on login.mirakl.net If you are having any issues with your account, please don't hesitate to contact us…"
+                      - 'option "Unread Farmacias del Ahorro Se ha creado tu cuenta tienda de 11:17 AM Hola, Bienestar Kognivera 1787809514556002: ¡Enhorabuena! Tu cuenta tienda de Bienestar Kognivera 1787809514556002 se ha creado correctamente. Tu nombre de usuario es: psamal+full1787809514555001@kognivera.com Ahora solo te hace falta: - Estable…" [ref=f8e500]':
+                        - group [ref=f8e503]:
+                          - generic [ref=f8e504]:
+                            - button "Mark as read" [ref=f8e506] [cursor=pointer]
+                            - generic [ref=f8e507]:
+                              - checkbox "Select a conversation" [ref=f8e509] [cursor=pointer]:
+                                - img "Farmacias del Ahorro" [ref=f8e510]:
+                                  - generic [ref=f8e511]: FA
+                              - generic [ref=f8e512]:
+                                - generic [ref=f8e513]: Farmacias del Ahorro
+                                - generic [ref=f8e515]:
+                                  - generic [ref=f8e516]: Se ha creado tu cuenta tienda de
+                                  - generic "Thu 8/27/2026 11:17 AM" [ref=f8e518]: 11:17 AM
+                                - generic [ref=f8e519]: "Hola, Bienestar Kognivera 1787809514556002: ¡Enhorabuena! Tu cuenta tienda de Bienestar Kognivera 1787809514556002 se ha creado correctamente. Tu nombre de usuario es: psamal+full1787809514555001@kognivera.com Ahora solo te hace falta: - Estable…"
+                      - generic [ref=f8e525]:
+                        - button "Yesterday" [expanded] [ref=f8e526] [cursor=pointer]:
+                          - generic [ref=f8e527]: 
+                          - button "Header action menu" [ref=f8e531]:
+                            - generic [ref=f8e532]: 
+                        - 'option "Unread Mirakl SSO Mirakl: Multi-factor Authentication Wed 3:48 PM Multi-factor Authentication Your verification code is: 303367 We will never call to ask for this code. This code is intended to be used only on login.mirakl.net If you are having any issues with your account, please don''t hesitate to contact us…" [ref=f8e534]':
+                          - group [ref=f8e537]:
+                            - generic [ref=f8e538]:
+                              - button "Mark as read" [ref=f8e540] [cursor=pointer]
+                              - generic [ref=f8e541]:
+                                - checkbox "Select a conversation" [ref=f8e543] [cursor=pointer]:
+                                  - img "Mirakl SSO" [ref=f8e544]:
+                                    - generic [ref=f8e545]: MS
+                                - generic [ref=f8e546]:
+                                  - generic [ref=f8e547]: Mirakl SSO
+                                  - generic [ref=f8e549]:
+                                    - generic [ref=f8e550]: "Mirakl: Multi-factor Authentication"
+                                    - generic "Wed 8/26/2026 3:48 PM" [ref=f8e552]: Wed 3:48 PM
+                                  - generic [ref=f8e553]: "Multi-factor Authentication Your verification code is: 303367 We will never call to ask for this code. This code is intended to be used only on login.mirakl.net If you are having any issues with your account, please don't hesitate to contact us…"
+                      - 'option "Unread Mirakl SSO Mirakl: Multi-factor Authentication Wed 3:48 PM Multi-factor Authentication Your verification code is: 913298 We will never call to ask for this code. This code is intended to be used only on login.mirakl.net If you are having any issues with your account, please don''t hesitate to contact us…" [ref=f8e560]':
+                        - group [ref=f8e563]:
+                          - generic [ref=f8e564]:
+                            - button "Mark as read" [ref=f8e566] [cursor=pointer]
+                            - generic [ref=f8e567]:
+                              - checkbox "Select a conversation" [ref=f8e569] [cursor=pointer]:
+                                - img "Mirakl SSO" [ref=f8e570]:
+                                  - generic [ref=f8e571]: MS
+                              - generic [ref=f8e572]:
+                                - generic [ref=f8e573]: Mirakl SSO
+                                - generic [ref=f8e575]:
+                                  - generic [ref=f8e576]: "Mirakl: Multi-factor Authentication"
+                                  - generic "Wed 8/26/2026 3:48 PM" [ref=f8e578]: Wed 3:48 PM
+                                - generic [ref=f8e579]: "Multi-factor Authentication Your verification code is: 913298 We will never call to ask for this code. This code is intended to be used only on login.mirakl.net If you are having any issues with your account, please don't hesitate to contact us…"
+                      - 'option "Unread Farmacias del Ahorro Se ha creado tu cuenta tienda de Wed 3:47 PM Hola, Bienestar Kognivera 1787739278728: ¡Enhorabuena! Tu cuenta tienda de Bienestar Kognivera 1787739278728 se ha creado correctamente. Tu nombre de usuario es: psamal+full1787739278728@kognivera.com Ahora solo te hace falta: - Establecer una c…" [ref=f8e586]':
+                        - group [ref=f8e589]:
+                          - generic [ref=f8e590]:
+                            - button "Mark as read" [ref=f8e592] [cursor=pointer]
+                            - generic [ref=f8e593]:
+                              - checkbox "Select a conversation" [ref=f8e595] [cursor=pointer]:
+                                - img "Farmacias del Ahorro" [ref=f8e596]:
+                                  - generic [ref=f8e597]: FA
+                              - generic [ref=f8e598]:
+                                - generic [ref=f8e599]: Farmacias del Ahorro
+                                - generic [ref=f8e601]:
+                                  - generic [ref=f8e602]: Se ha creado tu cuenta tienda de
+                                  - generic "Wed 8/26/2026 3:47 PM" [ref=f8e604]: Wed 3:47 PM
+                                - generic [ref=f8e605]: "Hola, Bienestar Kognivera 1787739278728: ¡Enhorabuena! Tu cuenta tienda de Bienestar Kognivera 1787739278728 se ha creado correctamente. Tu nombre de usuario es: psamal+full1787739278728@kognivera.com Ahora solo te hace falta: - Establecer una c…"
+                      - 'option "Unread Farmacias del Ahorro Se ha creado tu cuenta tienda de Wed 3:30 PM Hola, Bienestar Kognivera 1787737596622: ¡Enhorabuena! Tu cuenta tienda de Bienestar Kognivera 1787737596622 se ha creado correctamente. Tu nombre de usuario es: psamal+full1787737596622@kognivera.com Ahora solo te hace falta: - Establecer una c…" [ref=f8e612]':
+                        - group [ref=f8e615]:
+                          - generic [ref=f8e616]:
+                            - button "Mark as read" [ref=f8e618] [cursor=pointer]
+                            - generic [ref=f8e619]:
+                              - checkbox "Select a conversation" [ref=f8e621] [cursor=pointer]:
+                                - img "Farmacias del Ahorro" [ref=f8e622]:
+                                  - generic [ref=f8e623]: FA
+                              - generic [ref=f8e624]:
+                                - generic [ref=f8e625]: Farmacias del Ahorro
+                                - generic [ref=f8e627]:
+                                  - generic [ref=f8e628]: Se ha creado tu cuenta tienda de
+                                  - generic "Wed 8/26/2026 3:30 PM" [ref=f8e630]: Wed 3:30 PM
+                                - generic [ref=f8e631]: "Hola, Bienestar Kognivera 1787737596622: ¡Enhorabuena! Tu cuenta tienda de Bienestar Kognivera 1787737596622 se ha creado correctamente. Tu nombre de usuario es: psamal+full1787737596622@kognivera.com Ahora solo te hace falta: - Establecer una c…"
+                      - 'option "Unread Farmacias del Ahorro Se ha creado tu cuenta tienda de Wed 3:30 PM Hola, Bienestar Kognivera 1787736088435: ¡Enhorabuena! Tu cuenta tienda de Bienestar Kognivera 1787736088435 se ha creado correctamente. Tu nombre de usuario es: psamal+full1787736088435@kognivera.com Ahora solo te hace falta: - Establecer una c…" [ref=f8e638]':
+                        - group [ref=f8e641]:
+                          - generic [ref=f8e642]:
+                            - button "Mark as read" [ref=f8e644] [cursor=pointer]
+                            - generic [ref=f8e645]:
+                              - checkbox "Select a conversation" [ref=f8e647] [cursor=pointer]:
+                                - img "Farmacias del Ahorro" [ref=f8e648]:
+                                  - generic [ref=f8e649]: FA
+                              - generic [ref=f8e650]:
+                                - generic [ref=f8e651]: Farmacias del Ahorro
+                                - generic [ref=f8e653]:
+                                  - generic [ref=f8e654]: Se ha creado tu cuenta tienda de
+                                  - generic "Wed 8/26/2026 3:30 PM" [ref=f8e656]: Wed 3:30 PM
+                                - generic [ref=f8e657]: "Hola, Bienestar Kognivera 1787736088435: ¡Enhorabuena! Tu cuenta tienda de Bienestar Kognivera 1787736088435 se ha creado correctamente. Tu nombre de usuario es: psamal+full1787736088435@kognivera.com Ahora solo te hace falta: - Establecer una c…"
+                - alert [ref=f8e664]
+              - main "Reading Pane" [ref=f8e667]:
+                - alert [ref=f8e672]
+          - generic:
+            - status

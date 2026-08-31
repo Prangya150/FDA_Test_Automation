@@ -1,0 +1,20 @@
+- generic [active] [ref=f15e1]:
+  - option "Automático" [selected]
+  - option "Siempre premium"
+  - option "Nunca premium"
+  - option "No hay nada seleccionado" [selected]
+  - option "Sí"
+  - option "No"
+  - option "No hay nada seleccionado" [selected]
+  - option "Sí"
+  - option "No"
+  - option "No hay nada seleccionado" [selected]
+  - option "Sí"
+  - option "No"
+  - option "Sr." [selected]
+  - option "Sra."
+  - option "Srta."
+  - option "No binario"
+  - paragraph [ref=f15e8]: Cuando está deshabilitado, los usuarios de la cuenta tienda no pueden utilizar los alias de los correos electrónicos de los clientes. Deben utilizar la bandeja de entrada del back office para comunicarse con sus clientes.
+  - paragraph [ref=f15e9]: Cuando está desactivada, los usuarios de la cuenta tienda no pueden utilizar la función de mensajería. Esto evita el envío de mensajes no deseados.
+  - status [ref=f15e10]

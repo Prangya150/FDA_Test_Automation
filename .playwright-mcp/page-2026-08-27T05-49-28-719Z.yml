@@ -1,0 +1,21 @@
+- generic [ref=f1e2]:
+  - main [ref=f1e3]:
+    - generic [ref=f1e6]:
+      - heading "Enter your password to sign in" [level=1] [ref=f1e9]
+      - generic [ref=f1e11]:
+        - generic [ref=f1e14]:
+          - generic [ref=f1e16]:
+            - generic [ref=f1e17]: Username or email address
+            - textbox "Username or email address" [ref=f1e18]
+            - link "Edit email address" [ref=f1e19] [cursor=pointer]:
+              - /url: /u/login/identifier?state=hKFo2SA5MmxNa3NJNE1KcXRWY0FGaUN1VVJuczdDMDdidm91R6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDZsRnpNeFo3ZEU1dDVuSm13NUtQS2NDWl9PQmxQQnN5o2NpZNkgVU5QQjRLYlN6MTBaRXhGeVJzTlE2SkhiS0JlVzk0bnE
+              - text: Edit
+          - generic [ref=f1e21]:
+            - generic [ref=f1e22]: Password *
+            - textbox "Password" [active] [ref=f1e23]
+            - switch "Show password" [ref=f1e24] [cursor=pointer]
+        - paragraph [ref=f1e25]:
+          - link "Reset password" [ref=f1e26] [cursor=pointer]:
+            - /url: /u/login/password-reset-start/connect/psamal%40kognivera.com?state=hKFo2SA5MmxNa3NJNE1KcXRWY0FGaUN1VVJuczdDMDdidm91R6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDZsRnpNeFo3ZEU1dDVuSm13NUtQS2NDWl9PQmxQQnN5o2NpZNkgVU5QQjRLYlN6MTBaRXhGeVJzTlE2SkhiS0JlVzk0bnE
+        - button "Sign in" [ref=f1e28] [cursor=pointer]
+  - generic [ref=f1e29]: Copyright © 2026 Mirakl

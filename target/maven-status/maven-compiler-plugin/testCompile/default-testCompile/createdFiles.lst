@@ -1,2 +1,12 @@
-com\fda\automation\pages\LoginPage.class
-com\fda\automation\tests\LoginTest.class
+com\fda\automation\pages\MiraklLoginPage.class
+com\fda\automation\pages\MarketplaceLandingPage.class
+com\fda\automation\pages\HomePage.class
+com\fda\automation\pages\MiddlewareSellerListPage.class
+com\fda\automation\pages\MiddlewareSellerDetailPage.class
+com\fda\automation\pages\OutlookLoginPage.class
+com\fda\automation\pages\OutlookInboxPage.class
+com\fda\automation\tests\SellerOnboardingEndToEndTest.class
+com\fda\automation\pages\DocumentSubmissionPage.class
+com\fda\automation\pages\MiddlewareLoginPage.class
+com\fda\automation\pages\SellerRegistrationPage.class
+com\fda\automation\pages\MiraklShopSearchPage.class

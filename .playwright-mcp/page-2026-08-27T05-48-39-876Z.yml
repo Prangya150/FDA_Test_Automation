@@ -1,0 +1,9 @@
+- generic [ref=e3]:
+  - generic [ref=e9]:
+    - generic [ref=e12]:
+      - text: 
+      - textbox "Tu inicio de sesión" [active] [ref=e13]
+    - button "Siguiente" [ref=e16] [cursor=pointer]: 
+  - generic [ref=e19]:
+    - text: Copyright © 2026 Mirakl
+    - generic [ref=e20]: Mirakl MP

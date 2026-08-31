@@ -1,0 +1,196 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - img "FDA Seller Onboarding logo featuring stylized text FDA Seller Onboarding in blue and green, set against a clean white background, conveying a professional and welcoming tone" [ref=e6]
+      - heading "Marketplace" [level=1] [ref=e7]
+    - button "Cerrar sesión" [ref=e27] [cursor=pointer]
+  - generic [ref=e28]:
+    - heading "Lista de vendedores" [level=5] [ref=e30]
+    - generic [ref=e31]:
+      - generic:
+        - generic: Nombre del vendedor
+        - generic:
+          - textbox "Nombre del vendedor" [ref=e32]
+          - group:
+            - generic: Nombre del vendedor
+      - generic:
+        - generic: RFC
+        - generic:
+          - textbox "RFC" [ref=e33]
+          - group:
+            - generic: RFC
+      - generic [ref=e34]:
+        - generic: Estado
+        - generic [ref=e35]:
+          - combobox [ref=e36] [cursor=pointer]
+          - textbox
+          - group:
+            - generic: Estado
+      - generic [ref=e37]:
+        - generic: Tipo de tienda
+        - generic [ref=e38]:
+          - combobox [ref=e39] [cursor=pointer]
+          - textbox
+          - group:
+            - generic: Tipo de tienda
+      - button "Exportar" [ref=e40] [cursor=pointer]
+      - button "Reglas BuyBox" [ref=e41] [cursor=pointer]
+      - button "Descarga CFDIs" [ref=e42] [cursor=pointer]
+      - button "Notificaciones" [ref=e43] [cursor=pointer]
+    - generic [ref=e47]:
+      - grid [ref=e48]:
+        - row [ref=e49]:
+          - columnheader "ID Sort" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: ID
+            - generic "Sort" [ref=e54]:
+              - button "Sort" [ref=e55]
+          - columnheader "Nombre del vendedor" [ref=e59] [cursor=pointer]
+          - columnheader "Correo electrónico" [ref=e63] [cursor=pointer]
+          - columnheader "RFC" [ref=e67] [cursor=pointer]
+          - columnheader "Estado" [ref=e71] [cursor=pointer]
+          - columnheader "Tipo de tienda" [ref=e75] [cursor=pointer]
+          - columnheader "Última actualización" [ref=e79] [cursor=pointer]
+          - columnheader "Última actualización por" [ref=e83] [cursor=pointer]
+          - columnheader "Acción" [ref=e87]
+        - rowgroup [ref=e91]:
+          - row [ref=e92]:
+            - gridcell "2,020" [ref=e93]
+            - gridcell "Bienestar Kognivera 1787808808797002" [ref=e94]
+            - gridcell "psamal+full1787808808795001@kognivera.com" [ref=e96]
+            - gridcell "GODE041211XC3" [ref=e98]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e99]
+            - gridcell "3P" [ref=e101]
+            - gridcell "26/08/2026, 11:33 p.m." [ref=e103]
+            - gridcell "-" [ref=e105]
+            - gridcell [ref=e107]:
+              - generic [ref=e108]:
+                - button "Vista" [ref=e109] [cursor=pointer]
+                - button "Editar" [ref=e110] [cursor=pointer]
+          - row [ref=e111]:
+            - gridcell "2,019" [ref=e112]
+            - gridcell "Bienestar Kognivera 1787808628824002" [ref=e113]
+            - gridcell "psamal+full1787808628822001@kognivera.com" [ref=e115]
+            - gridcell "GODE041211RT7" [ref=e117]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e118]
+            - gridcell "3P" [ref=e120]
+            - gridcell "26/08/2026, 11:30 p.m." [ref=e122]
+            - gridcell "-" [ref=e124]
+            - gridcell [ref=e126]:
+              - generic [ref=e127]:
+                - button "Vista" [ref=e128] [cursor=pointer]
+                - button "Editar" [ref=e129] [cursor=pointer]
+          - row [ref=e130]:
+            - gridcell "2,018" [ref=e131]
+            - gridcell "Bienestar Kognivera 1787808510284002" [ref=e132]
+            - gridcell "psamal+full1787808510281001@kognivera.com" [ref=e134]
+            - gridcell "GODE041211TS1" [ref=e136]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e137]
+            - gridcell "3P" [ref=e139]
+            - gridcell "26/08/2026, 11:28 p.m." [ref=e141]
+            - gridcell "-" [ref=e143]
+            - gridcell [ref=e145]:
+              - generic [ref=e146]:
+                - button "Vista" [ref=e147] [cursor=pointer]
+                - button "Editar" [ref=e148] [cursor=pointer]
+          - row [ref=e149]:
+            - gridcell "2,017" [ref=e150]
+            - gridcell "Bienestar Kognivera 1787808289957002" [ref=e151]
+            - gridcell "fda.automation+1787808289956001@kognivera.com" [ref=e153]
+            - gridcell "ABC120101903" [ref=e155]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e156]
+            - gridcell "3P" [ref=e158]
+            - gridcell "26/08/2026, 11:25 p.m." [ref=e160]
+            - gridcell "-" [ref=e162]
+            - gridcell [ref=e164]:
+              - generic [ref=e165]:
+                - button "Vista" [ref=e166] [cursor=pointer]
+                - button "Editar" [ref=e167] [cursor=pointer]
+          - row [ref=e168]:
+            - gridcell "2,016" [ref=e169]
+            - gridcell "Bienestar Kognivera 1787807964975002" [ref=e170]
+            - gridcell "fda.automation+1787807964972001@kognivera.com" [ref=e172]
+            - gridcell "ABC120101303" [ref=e174]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e175]
+            - gridcell "3P" [ref=e177]
+            - gridcell "26/08/2026, 11:19 p.m." [ref=e179]
+            - gridcell "-" [ref=e181]
+            - gridcell [ref=e183]:
+              - generic [ref=e184]:
+                - button "Vista" [ref=e185] [cursor=pointer]
+                - button "Editar" [ref=e186] [cursor=pointer]
+          - row [ref=e187]:
+            - gridcell "2,015" [ref=e188]
+            - gridcell "Bienestar Kognivera 1787807762359002" [ref=e189]
+            - gridcell "fda.automation+1787807762358001@kognivera.com" [ref=e191]
+            - gridcell "ABC120101503" [ref=e193]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e194]
+            - gridcell "3P" [ref=e196]
+            - gridcell "26/08/2026, 11:16 p.m." [ref=e198]
+            - gridcell "-" [ref=e200]
+            - gridcell [ref=e202]:
+              - generic [ref=e203]:
+                - button "Vista" [ref=e204] [cursor=pointer]
+                - button "Editar" [ref=e205] [cursor=pointer]
+          - row [ref=e206]:
+            - gridcell "2,014" [ref=e207]
+            - gridcell "Bienestar Kognivera 1787807588444002" [ref=e208]
+            - gridcell "fda.automation+1787807588442001@kognivera.com" [ref=e210]
+            - gridcell "ABC120101103" [ref=e212]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e213]
+            - gridcell "3P" [ref=e215]
+            - gridcell "26/08/2026, 11:13 p.m." [ref=e217]
+            - gridcell "-" [ref=e219]
+            - gridcell [ref=e221]:
+              - generic [ref=e222]:
+                - button "Vista" [ref=e223] [cursor=pointer]
+                - button "Editar" [ref=e224] [cursor=pointer]
+          - row [ref=e225]:
+            - gridcell "2,013" [ref=e226]
+            - gridcell "Bienestar Kognivera 1787807457012002" [ref=e227]
+            - gridcell "fda.automation+1787807457009001@kognivera.com" [ref=e229]
+            - gridcell "ABC120101703" [ref=e231]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e232]
+            - gridcell "3P" [ref=e234]
+            - gridcell "26/08/2026, 11:11 p.m." [ref=e236]
+            - gridcell "-" [ref=e238]
+            - gridcell [ref=e240]:
+              - generic [ref=e241]:
+                - button "Vista" [ref=e242] [cursor=pointer]
+                - button "Editar" [ref=e243] [cursor=pointer]
+          - row [ref=e244]:
+            - gridcell "2,012" [ref=e245]
+            - gridcell "QA Seller 148307" [ref=e246]
+            - gridcell "mmandara+148307@kognivera.com" [ref=e248]
+            - gridcell "RRX42041514U" [ref=e250]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e251]
+            - gridcell "3P" [ref=e253]
+            - gridcell "26/08/2026, 10:28 p.m." [ref=e255]
+            - gridcell "-" [ref=e257]
+            - gridcell [ref=e259]:
+              - generic [ref=e260]:
+                - button "Vista" [ref=e261] [cursor=pointer]
+                - button "Editar" [ref=e262] [cursor=pointer]
+          - row [ref=e263]:
+            - gridcell "2,011" [ref=e264]
+            - gridcell "QA Seller 420246" [ref=e265]
+            - gridcell "mmandara+420246@kognivera.com" [ref=e267]
+            - gridcell "SRX63022330L" [ref=e269]
+            - gridcell "1 - Solicitud Recibida (Vendedor)" [ref=e270]
+            - gridcell "3P" [ref=e272]
+            - gridcell "26/08/2026, 10:27 p.m." [ref=e274]
+            - gridcell "-" [ref=e276]
+            - gridcell [ref=e278]:
+              - generic [ref=e279]:
+                - button "Vista" [ref=e280] [cursor=pointer]
+                - button "Editar" [ref=e281] [cursor=pointer]
+      - generic [ref=e284]:
+        - paragraph [ref=e285]: "Rows per page:"
+        - generic [ref=e286]:
+          - 'combobox "Rows per page: 10" [ref=e287] [cursor=pointer]': "10"
+          - textbox: "10"
+        - paragraph [ref=e288]: 1–10 of 864
+        - generic [ref=e289]:
+          - button "Go to previous page" [disabled]
+          - button "Go to next page" [ref=e290] [cursor=pointer]
+  - generic [ref=e24]: ©2026 Todos los derechos reservados
+  - region "Notifications Alt+T"

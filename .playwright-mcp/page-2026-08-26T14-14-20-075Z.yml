@@ -1,0 +1,16 @@
+- generic [ref=f14e2]:
+  - banner [ref=f14e3]:
+    - figure [ref=f14e7]
+  - main [ref=f14e8]
+  - contentinfo [ref=f14e9]:
+    - generic [ref=f14e12]:
+      - paragraph [ref=f14e13]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f14e14] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f14e15]: ©2026 Todos los derechos reservados.
+  - figure [ref=f14e19]:
+    - link [ref=f14e20] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f14e21]

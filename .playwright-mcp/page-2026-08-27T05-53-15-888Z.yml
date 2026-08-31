@@ -1,0 +1,22 @@
+- generic [ref=f9e2]:
+  - main [ref=f9e3]:
+    - generic [ref=f9e6]:
+      - generic [ref=f9e7]:
+        - heading "Verify Your Identity" [level=1] [ref=f9e9]
+        - paragraph [ref=f9e11]: We've sent an email with your code to
+      - generic [ref=f9e14]:
+        - generic [ref=f9e16]:
+          - generic [ref=f9e17]: Email address
+          - textbox "Email address" [ref=f9e18]
+        - generic [ref=f9e19]:
+          - generic [ref=f9e24]:
+            - generic [ref=f9e25]: Enter the code *
+            - textbox "Enter the code" [active] [ref=f9e26]
+          - generic [ref=f9e27]:
+            - checkbox "Remember this device for 30 days" [checked] [ref=f9e28]
+            - generic [ref=f9e29] [cursor=pointer]: Remember this device for 30 days
+          - button "Continue" [ref=f9e31] [cursor=pointer]
+        - generic [ref=f9e32]:
+          - text: Didn't receive an email?
+          - button "Resend" [ref=f9e34] [cursor=pointer]
+  - generic [ref=f9e35]: Copyright © 2026 Mirakl

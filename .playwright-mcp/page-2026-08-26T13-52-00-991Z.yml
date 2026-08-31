@@ -1,0 +1,75 @@
+- generic [ref=f8e2]:
+  - banner [ref=f8e3]:
+    - figure [ref=f8e7]
+  - main [ref=f8e8]:
+    - generic [ref=f8e23]:
+      - text: o * *
+      - generic [ref=f8e24]:
+        - list "Progress steps" [ref=f8e26]:
+          - listitem [ref=f8e27] [cursor=pointer]:
+            - generic [ref=f8e28]: Información personal
+          - listitem [ref=f8e29]:
+            - generic [ref=f8e30]: Información de la Empresa
+          - listitem [ref=f8e31]:
+            - generic [ref=f8e32]: Información de la Tienda
+          - listitem [ref=f8e33]:
+            - generic [ref=f8e34]: Información de Producto
+        - generic [ref=f8e35]:
+          - text: "* * * * * *"
+          - generic [ref=f8e596]:
+            - strong [ref=f8e598]: Información de Empresa/s
+            - group [ref=f8e600]:
+              - generic [ref=f8e601]:
+                - strong [ref=f8e603]: Ingresa la información de tu empresa
+                - group [ref=f8e605]:
+                  - generic [ref=f8e606]:
+                    - generic [ref=f8e607]: Nombre comercial*
+                    - textbox "Nombre comercial*" [ref=f8e609]: Bienestar Kognivera Retry2
+                  - generic [ref=f8e610]:
+                    - generic [ref=f8e611]: Denominación / Razón social*
+                    - textbox "Denominación / Razón social*" [ref=f8e613]: Bienestar Kognivera Retry2 SA de CV
+                  - generic [ref=f8e614]:
+                    - generic [ref=f8e615]: RFC*
+                    - textbox "RFC*" [ref=f8e617]: XYZ120101BBB
+                  - generic [ref=f8e618]:
+                    - generic [ref=f8e619]: Tipo de empresa*
+                    - combobox "Empresa privada" [ref=f8e674] [cursor=pointer]
+              - generic [ref=f8e623]:
+                - strong [ref=f8e625]: Dirección fiscal
+                - group [ref=f8e627]:
+                  - generic [ref=f8e628]:
+                    - generic [ref=f8e629]: Calle*
+                    - textbox "Calle*" [ref=f8e631]: Av. Insurgentes Sur
+                  - generic [ref=f8e632]:
+                    - generic [ref=f8e633]: Código postal*
+                    - textbox "Código postal*" [ref=f8e635]: "03100"
+                  - text: "*"
+                  - generic [ref=f8e676]:
+                    - generic [ref=f8e677]: Colonia*
+                    - combobox "Del Valle Centro" [active] [ref=f8e693] [cursor=pointer]
+                  - generic [ref=f8e640]:
+                    - generic [ref=f8e641]: Municipio o alcaldía*
+                    - textbox "Municipio o alcaldía*" [ref=f8e643]: Benito Juárez
+                  - generic [ref=f8e644]:
+                    - generic [ref=f8e645]: Número exterior*
+                    - textbox "Número exterior*" [ref=f8e647]
+                  - generic [ref=f8e648]:
+                    - generic [ref=f8e649]: Número interior (opcional)
+                    - textbox "Número interior (opcional)" [ref=f8e651]
+                  - generic [ref=f8e652]:
+                    - generic [ref=f8e653]: Estado*
+                    - combobox "Ciudad de México" [ref=f8e690] [cursor=pointer]
+              - button "Continuar" [ref=f8e657] [cursor=pointer]
+          - text: "* * * * * * * * * * * * *"
+  - contentinfo [ref=f8e9]:
+    - generic [ref=f8e12]:
+      - paragraph [ref=f8e13]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f8e14] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f8e15]: ©2026 Todos los derechos reservados.
+  - figure [ref=f8e19]:
+    - link [ref=f8e20] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f8e21]

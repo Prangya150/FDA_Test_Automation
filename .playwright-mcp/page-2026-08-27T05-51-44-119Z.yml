@@ -1,0 +1,31 @@
+- generic [ref=f5e5]:
+  - img "Organization background image" [ref=f5e56]
+  - generic [ref=f5e58]:
+    - generic [ref=f5e60]:
+      - img "Organization header logo"
+    - generic [ref=f5e66]:
+      - generic [ref=f5e68]:
+        - img "Organization banner logo"
+      - main [ref=f5e69]:
+        - generic [ref=f5e70]:
+          - generic [ref=f5e73]:
+            - button "Back" [ref=f5e74] [cursor=pointer]
+            - generic "psamal@kognivera.com" [ref=f5e75]
+          - generic [ref=f5e77]:
+            - textbox [ref=f5e78]: psamal@kognivera.com
+            - heading "Enter password" [level=1] [ref=f5e80]
+            - generic [ref=f5e82]:
+              - alert
+              - textbox "Enter the password for psamal@kognivera.com" [active] [ref=f5e84]:
+                - /placeholder: Password
+            - link "Forgot my password" [ref=f5e91] [cursor=pointer]:
+              - /url: https://passwordreset.microsoftonline.com/?ru=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2freprocess%3fctx%3drQQIARAAjdI9bBtlHAbwu1ziuodJXLeqEAvGlApRfPe-9-HzWWS4Gqd2YscmNvEHQtbde3fJ2e99cO_Z8bnNiKiEkCqxICbEhLwQdUJM3ZCykIEBZSpLhzCAypKNyuoKEstfzyM9009_NiFzUODAu4zAgdItFaqqYQsgr0PRzksQKPmibKI8ECCUlKJi2VIxzLDp9lfS91_-Xn_jfP3z26kbo18W9FuHURSQEs_7kwj7_pjzbdtBlliQOeS7vKs7mP-Rps9oerFyC0AdSBDJeVtBZl4pKEreMEyQVxRBkC3ZLgJZPl_ZaGqT6FBYHj905tbFyjqxsIWioY6QP_Gi5ytJO9QPXMuLvmG-pa14OxiUa4XaSJv1OxpodBuw3u2LfaER7c4PQD8GUmM0cOud2rw_bxw1OuN5f6TNmu0aqbkQm_cqTtMjjt6VwaC3fdgX9wJDkD-yendxbeQ7yN0f671t3Bc_dOwe2HygV_cAqjYK9Vidmr09YghqWHdVd-Di0aDTEHbb8sgQwNTobgVGubhgXv93pKXQYyaBfNf1vVNG--8Vz5mWrU9wlPUDy3PMbBD6toOtrG_b2PGspYxFyG8MfbZKX6zeTK6lU69RWeqd24ApJZNsmlq2y1X6u7UMm17LfYZ__eL9ncXbb3b45g_U6RqvxWUpCHrbEQ6nYUUr4OKdnTLa58eSCuPdg7DWbccVs6vGTbIplOCjBP0ocf1x4mqSSVM5ptyCp4kNl-iYGxHOCP0jYoV_JeiHV6ifrv6fD_mapRfsHVH0RVJVW8OpCu4FUUfbD2LU9uuQzCZRzdiNt45gZYi7-hCdsPTZK_R5KsVeQdgx9UjP0PA8VWQTCOuOSzLc_dxLk2Hkjy0vV7qfm7lkiNAyTXU8sUiu9HGu3IK5T46Pj5-8Sl2u_3Hy87O__3nyZ_Vi4z0b8BVlB9vtllj04tZWO9I-5YFdncZ3Cel6GhHQ7OiDwsGgKm2epKmnaerpNeryWvZhhlpkaPgC0&mkt=en-US&hosted=0&device_platform=Windows+10
+            - button "Sign in" [ref=f5e94] [cursor=pointer]
+            - paragraph [ref=f5e96]: Please sign in to KogniVera
+    - contentinfo [ref=f5e97]:
+      - generic [ref=f5e98]:
+        - link "Terms of use" [ref=f5e99] [cursor=pointer]:
+          - /url: https://www.microsoft.com/en-US/servicesagreement/
+        - link "Privacy & cookies" [ref=f5e100] [cursor=pointer]:
+          - /url: https://privacy.microsoft.com/en-US/privacystatement
+        - button "Click here for troubleshooting information" [ref=f5e101] [cursor=pointer]: ...

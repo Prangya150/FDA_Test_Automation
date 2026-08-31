@@ -1,0 +1,299 @@
+- generic [ref=f4e2]:
+  - banner [ref=f4e3]:
+    - generic [ref=f4e4]:
+      - link "store logo" [ref=f4e5] [cursor=pointer]:
+        - /url: https://mcstaging.fahorro.com/marketplace-inicio/
+        - img "Farmacias del Ahorro" [ref=f4e6]
+      - navigation [ref=f4e14]:
+        - paragraph [ref=f4e15] [cursor=pointer]:
+          - link "¿Qué es?" [ref=f4e16]:
+            - /url: "#que-es"
+        - paragraph [ref=f4e17] [cursor=pointer]:
+          - link "Canales digitales" [ref=f4e18]:
+            - /url: "#canales-digitales"
+        - paragraph [ref=f4e19] [cursor=pointer]:
+          - link "FDA en números" [ref=f4e20]:
+            - /url: "#fda-en-numeros"
+        - paragraph [ref=f4e21] [cursor=pointer]:
+          - link "Beneficios" [ref=f4e22]:
+            - /url: "#beneficios"
+        - paragraph [ref=f4e23] [cursor=pointer]:
+          - link "¿Cómo vender?" [ref=f4e24]:
+            - /url: "#como-vender"
+        - paragraph [ref=f4e25] [cursor=pointer]:
+          - link "¿Qué vender?" [ref=f4e26]:
+            - /url: "#que-vender"
+        - paragraph [ref=f4e27] [cursor=pointer]:
+          - link "Tarifas y precios" [ref=f4e28]:
+            - /url: "#tarifas-y-precios"
+      - listitem [ref=f4e29]:
+        - link "Iniciar sesión" [ref=f4e30] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/customer/account/login/
+  - main [ref=f4e31]:
+    - generic [ref=f4e33]:
+      - text: o * *
+      - generic [ref=f4e36]:
+        - figure [ref=f4e38]
+        - generic [ref=f4e39]:
+          - heading "Comienza a vender hoy en Farmacias del Ahorro" [level=1] [ref=f4e40]
+          - paragraph [ref=f4e42]:
+            - text: Únete al
+            - strong [ref=f4e43]: primer Marketplace
+            - text: Farmacéutico de América Latina y llega a
+            - strong [ref=f4e44]: millones
+            - text: de clientes en todo México.
+          - link "Comenzar a vender" [ref=f4e47] [cursor=pointer]:
+            - /url: /marketplace/provider/form
+      - generic [ref=f4e51]:
+        - generic [ref=f4e52]:
+          - figure [ref=f4e53]
+          - heading "¿Qué es FDA Marketplace?" [level=1] [ref=f4e54]
+          - paragraph [ref=f4e56]:
+            - text: El Marketplace de Farmacias del Ahorro es nuestra plataforma digital donde marcas, fabricantes y emprendedores pueden
+            - strong [ref=f4e57]: ofrecer sus productos a millones de clientes
+            - text: en México. Ampliamos la oferta más allá de la farmacia tradicional, integrando categorías como
+            - strong [ref=f4e58]: belleza, cuidado personal, hogar y mascotas
+            - text: . Los sellers tienen control total de su operación y acceden a un ecosistema confiable, en expansión y respaldado por la
+            - strong [ref=f4e59]: "farmacia #1 del país."
+            - text: Vender en FDA Marketplace es ser parte de un ecosistema omnicanal confiable, en crecimiento y centrado en brindar
+            - strong [ref=f4e60]: valor tanto al cliente como a nuestros socios comerciales.
+        - figure [ref=f4e62]
+      - generic [ref=f4e66]:
+        - figure [ref=f4e68]
+        - generic [ref=f4e69]:
+          - heading "Cuáles son nuestros canales digitales" [level=1] [ref=f4e70]
+          - generic [ref=f4e71]:
+            - paragraph [ref=f4e72]: "Al integrarte a esta gran comunidad tus productos estarán disponibles en:"
+            - list [ref=f4e73]:
+              - listitem [ref=f4e74]:
+                - text: "Tienda en línea:"
+                - link "www.fahorro.com" [ref=f4e75] [cursor=pointer]:
+                  - /url: https://www.fahorro.com
+              - listitem [ref=f4e76]: "APP # 1 Farmacias: Android / IOS"
+              - listitem [ref=f4e77]: Call Center
+      - generic [ref=f4e79]:
+        - heading "Farmacias del Ahorro en números" [level=1] [ref=f4e83]
+        - generic [ref=f4e84]:
+          - generic [ref=f4e85]:
+            - generic [ref=f4e87]:
+              - paragraph [ref=f4e88]:
+                - strong [ref=f4e89]
+              - paragraph [ref=f4e90]:
+                - strong [ref=f4e91]: 80 millones
+                - text: de afiliados a Monedero del Ahorro
+            - generic [ref=f4e93]:
+              - paragraph [ref=f4e94]:
+                - strong [ref=f4e95]
+              - paragraph [ref=f4e96]:
+                - strong [ref=f4e97]: +20 millones
+                - text: de clientes activos
+            - generic [ref=f4e99]:
+              - paragraph [ref=f4e100]:
+                - strong [ref=f4e101]
+              - paragraph [ref=f4e102]:
+                - strong [ref=f4e103]: +3M
+                - text: descargas
+          - generic [ref=f4e104]:
+            - generic [ref=f4e106]:
+              - paragraph [ref=f4e107]:
+                - strong [ref=f4e108]
+              - paragraph [ref=f4e109]:
+                - strong [ref=f4e110]: +13M
+                - text: visitas al mes
+            - generic [ref=f4e112]:
+              - paragraph [ref=f4e113]:
+                - strong [ref=f4e114]
+              - paragraph [ref=f4e115]:
+                - strong [ref=f4e116]: +1,800
+                - text: tiendas físicas en todo México
+            - generic [ref=f4e118]:
+              - paragraph [ref=f4e119]
+              - paragraph [ref=f4e120]:
+                - text: Envíos gratis en menos de
+                - strong [ref=f4e121]: 60 min
+      - generic [ref=f4e123]:
+        - heading "Beneficios de vender en Farmacias del Ahorro" [level=1] [ref=f4e127]
+        - generic [ref=f4e129]:
+          - generic [ref=f4e130]:
+            - figure [ref=f4e131]
+            - heading "Plataforma dinámica de administración" [level=3] [ref=f4e132]
+            - paragraph [ref=f4e134]: Espacio propio y dinámico para controlar su negocio
+          - generic [ref=f4e135]:
+            - figure [ref=f4e136]
+            - heading "Visibilidad de escalamiento" [level=3] [ref=f4e137]
+            - paragraph [ref=f4e139]: Dashboard con reportes de ventas, inventario y pagos
+          - generic [ref=f4e140]:
+            - figure [ref=f4e141]
+            - heading "Asesoría" [level=3] [ref=f4e142]
+            - paragraph [ref=f4e144]: Soporte comercial y operativo para hacer crecer tu negocio
+          - generic [ref=f4e145]:
+            - figure [ref=f4e146]
+            - heading "Promociones" [level=3] [ref=f4e147]
+            - paragraph [ref=f4e149]: Participación en campañas exclusivas y diferenciadas para el canal
+      - generic [ref=f4e153]:
+        - generic [ref=f4e154]:
+          - heading "Monedero del Ahorro" [level=1] [ref=f4e155]
+          - paragraph [ref=f4e157]:
+            - text: Alcance a más de
+            - strong [ref=f4e158]: 20 millones
+            - text: de clientes que usan frecuentemente su MDA con propuestas exclusivas para el canal.
+        - figure [ref=f4e160]
+      - generic [ref=f4e162]:
+        - heading "¿Cómo vender en FDA Marketplace?" [level=1] [ref=f4e163]
+        - generic [ref=f4e164]:
+          - tablist [ref=f4e165]:
+            - tab [expanded] [selected] [ref=f4e166]:
+              - link "Requisitos" [ref=f4e167] [cursor=pointer]:
+                - /url: "#MSYNC5P"
+            - tab [ref=f4e169]:
+              - link "Documentación" [ref=f4e170] [cursor=pointer]:
+                - /url: "#JWVL4A6"
+            - tab [ref=f4e172]:
+              - link "Comienza a Vender" [ref=f4e173] [cursor=pointer]:
+                - /url: "#NYEYI5X"
+            - tab [ref=f4e175]:
+              - link "Registro" [ref=f4e176] [cursor=pointer]:
+                - /url: "#O4POQJJ"
+          - generic [ref=f4e178]:
+            - tabpanel "Requisitos" [ref=f4e179]:
+              - paragraph [ref=f4e184]: "Estos son los requisitos iniciales para que puedas vender en FDA Marketplace:"
+              - generic [ref=f4e186]:
+                - paragraph [ref=f4e189]: Ser persona física o moral con capacidad operativa para facturar.
+                - paragraph [ref=f4e192]:
+                  - text: Contar con las facturas de compra de los productos que se pretendan comercializar a través de
+                  - strong [ref=f4e193]: farmaciasdelahorro.com
+                  - text: con el fin de validar que sean de origen legal, nuevos y/o reacondicionados.
+              - generic [ref=f4e195]:
+                - paragraph [ref=f4e198]: Capacidad para aceptar devoluciones y manejar garantías en tus productos.
+                - paragraph [ref=f4e201]: Capacidad operativa para seguimiento y surtido de pedidos.
+            - text: • • • • • • • • • • • • • • •
+      - generic [ref=f4e203]:
+        - heading "¿Qué productos puedo vender?" [level=1] [ref=f4e207]
+        - generic [ref=f4e208]:
+          - generic [ref=f4e209]:
+            - list [ref=f4e212]:
+              - listitem [ref=f4e213]: MONITORES DE SALUD
+              - listitem [ref=f4e214]: ORTOPEDIA Y MOVILIDAD
+              - listitem [ref=f4e215]: CUIDADO DE LOS OJOS
+              - listitem [ref=f4e216]: CUIDADO DE LOS OÍDOS
+              - listitem [ref=f4e217]: AUDÍFONOS Y AUDIO
+              - listitem [ref=f4e218]: AUDÍFONOS Y AUDIO (APPLE)
+              - listitem [ref=f4e219]: SMARTWATCHES (APPLE)
+              - listitem [ref=f4e220]: SMARTWATCHES Y TRACKERS
+              - listitem [ref=f4e221]: COCINA
+              - listitem [ref=f4e222]: ELECTRODOMÉSTICOS
+              - listitem [ref=f4e223]: ALIMENTACION DE BEBÉ
+              - listitem [ref=f4e224]: CUIDADO DEL BEBÉ
+              - listitem [ref=f4e225]: JUGUETES Y ENTRETENIMIENTO
+              - listitem [ref=f4e226]: PAÑALES Y TOALLITAS HÚMEDAS
+            - list [ref=f4e229]:
+              - listitem [ref=f4e230]: SEGURIDAD DEL BEBÉ
+              - listitem [ref=f4e231]: CUIDADO Y PROTECCIÓN
+              - listitem [ref=f4e232]: JUGUETES SEXUALES
+              - listitem [ref=f4e233]: ACCESORIOS
+              - listitem [ref=f4e234]: ALIMENTO
+              - listitem [ref=f4e235]: CUIDADO Y BIENESTAR
+              - listitem [ref=f4e236]: LENTES DE SOL
+              - listitem [ref=f4e237]: SOMBREROS, GORROS Y VISERAS
+              - listitem [ref=f4e238]: AROMATERAPIA
+              - listitem [ref=f4e239]: ACCESORIOS DEPORTIVOS
+              - listitem [ref=f4e240]: MOCHILAS Y ACCESORIOS
+              - listitem [ref=f4e241]: ENTRENAMIENTO Y FITNESS
+              - listitem [ref=f4e242]: EQUIPO PARA DEPORTE
+              - listitem [ref=f4e243]: SUPLEMENTOS DEPORTIVOS
+            - list [ref=f4e246]:
+              - listitem [ref=f4e247]: VITAMINAS Y SUPLEMENTOS
+              - listitem [ref=f4e248]: TRATAMIENTO PESTAÑAS
+              - listitem [ref=f4e249]: CUIDADO DE BARBA
+              - listitem [ref=f4e250]: CUIDADO FACIAL
+              - listitem [ref=f4e251]: ACONDICIONADORES
+              - listitem [ref=f4e252]: TRATAMIENTOS CAPILARES
+              - listitem [ref=f4e253]: COLORACIÓN
+              - listitem [ref=f4e254]: SHAMPOO
+              - listitem [ref=f4e255]: ACCESORIOS PARA EL CABELLO
+              - listitem [ref=f4e256]: ACCESORIOS DE BELLEZA
+              - listitem [ref=f4e257]: ACCESORIOS FACIALES
+              - listitem [ref=f4e258]: CEPILLOS DE AIRE CALIENTE
+              - listitem [ref=f4e259]: DEPILADORAS
+              - listitem [ref=f4e260]: SECADORAS
+            - list [ref=f4e263]:
+              - listitem [ref=f4e264]: AFEITADO ELÉCTRICO
+              - listitem [ref=f4e265]: PLANCHAS PARA EL CABELLO
+              - listitem [ref=f4e266]: PINZAS RIZADORAS
+              - listitem [ref=f4e267]: ESMALTES, BASES Y TRATAMIENTOS
+              - listitem [ref=f4e268]: HERRAMIENTAS
+              - listitem [ref=f4e269]: MAQUILLAJE
+              - listitem [ref=f4e270]: PERFUMES HOMBRE / MUJER / UNISEX / SETS
+              - listitem [ref=f4e271]: ACCESORIOS DE HOGAR
+              - listitem [ref=f4e272]: PEQUEÑOS ELECTRODOMÉSTICOS
+              - listitem [ref=f4e273]: ACCESORIOS DE COCINA
+              - listitem [ref=f4e274]: BLANCOS
+              - listitem [ref=f4e275]: TABLETS
+              - listitem [ref=f4e276]: BOCINAS
+          - paragraph [ref=f4e280]: Algunos productos se encuentran prohibidos o restringidos debido a múltiples razones, tales como seguridad, salud y restricciones regulatorias. Para más detalles, consultarlo con tu comercial asignado.
+      - generic [ref=f4e282]:
+        - heading "Tarifas y Precios" [level=1] [ref=f4e286]
+        - table [ref=f4e293]:
+          - rowgroup [ref=f4e294]:
+            - row [ref=f4e295]:
+              - columnheader "Categoría" [ref=f4e296]
+              - columnheader "Porcentaje de tarifa por referencia (IVA incluido)" [ref=f4e297]:
+                - text: Porcentaje de tarifa por referencia
+                - generic [ref=f4e298]: (IVA incluido)
+              - columnheader "Tarifa mínima de referencia Aplicable por producto (con IVA incluido, salvo que se indique expresamente lo contrario)" [ref=f4e299]:
+                - text: Tarifa mínima de referencia
+                - generic [ref=f4e300]: Aplicable por producto (con IVA incluido, salvo que se indique expresamente lo contrario)
+          - rowgroup [ref=f4e301]:
+            - row [ref=f4e302]:
+              - cell "Celulares" [ref=f4e303]
+              - cell "7%" [ref=f4e304]
+              - cell "MXN $20.00" [ref=f4e305]
+            - row [ref=f4e306]:
+              - cell "Smartwatches" [ref=f4e307]
+              - cell "7%" [ref=f4e308]
+              - cell "MXN $20.00" [ref=f4e309]
+            - row [ref=f4e310]:
+              - cell "Tablets" [ref=f4e311]
+              - cell "7%" [ref=f4e312]
+              - cell "MXN $20.00" [ref=f4e313]
+            - row [ref=f4e314]:
+              - cell "Accesorios y Gadgets" [ref=f4e315]
+              - cell "10%" [ref=f4e316]
+              - cell "MXN $20.00" [ref=f4e317]
+            - row [ref=f4e318]:
+              - cell "Artículos para la Cocina" [ref=f4e319]
+              - cell "12%" [ref=f4e320]
+              - cell "MXN $20.00" [ref=f4e321]
+            - row [ref=f4e322]:
+              - cell "Orden y limpieza" [ref=f4e323]
+              - cell "12%" [ref=f4e324]
+              - cell "MXN $20.00" [ref=f4e325]
+            - row [ref=f4e326]:
+              - cell "Iluminación" [ref=f4e327]
+              - cell "12%" [ref=f4e328]
+              - cell "MXN $20.00" [ref=f4e329]
+            - row [ref=f4e330]:
+              - cell "Textiles y blancos" [ref=f4e331]
+              - cell "12%" [ref=f4e332]
+              - cell "MXN $20.00" [ref=f4e333]
+      - generic [ref=f4e337]:
+        - figure [ref=f4e339]
+        - generic [ref=f4e340]:
+          - paragraph [ref=f4e342]:
+            - text: No esperes más
+            - strong [ref=f4e343]: ¡Regístrate ahora en FDA Marketplace!
+          - link "Comenzar a vender" [ref=f4e346] [cursor=pointer]:
+            - /url: /marketplace/provider/form
+  - contentinfo [ref=f4e347]:
+    - generic [ref=f4e350]:
+      - paragraph [ref=f4e351]:
+        - text: Consulta nuestros
+        - link [ref=f4e352] [cursor=pointer]:
+          - /url: terminos-y-condiciones-vendedores
+          - strong [ref=f4e353]: Términos y Condiciones
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f4e354]: ©2026 Todos los derechos reservados
+  - figure [ref=f4e358]:
+    - link [ref=f4e359] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f4e360]

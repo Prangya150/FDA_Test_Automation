@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mirakl Shop Search Verification]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.fda.automation.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Mirakl Shop Search Verification(failed)" verbose="0">
+    <classes>
+      <class name="com.fda.automation.tests.MiraklShopSearchVerificationTest">
+        <methods>
+          <include name="verifyExistingShopIsSearchable"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.fda.automation.tests.MiraklShopSearchVerificationTest -->
+    </classes>
+  </test> <!-- Mirakl Shop Search Verification(failed) -->
+</suite> <!-- Failed suite [Mirakl Shop Search Verification] -->

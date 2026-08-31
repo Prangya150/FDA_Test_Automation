@@ -1,0 +1,592 @@
+<title>TC_SOB_001 — Test Execution Report</title>
+<style>
+  :root {
+    --bg: #f4f6fb;
+    --surface: #ffffff;
+    --surface-2: #eef1f8;
+    --border: #dde2ec;
+    --text: #171b24;
+    --text-muted: #5c6478;
+    --accent: #4f5fe0;
+    --accent-soft: #e9eafc;
+    --pass: #16a370;
+    --pass-soft: #e1f7ee;
+    --fail: #d13c3c;
+    --fail-soft: #fbe9e9;
+    --warn: #c17a0a;
+    --warn-soft: #fbf0da;
+    --violet: #8452d9;
+    --violet-soft: #f0e9fc;
+    --radius: 8px;
+    --mono: ui-monospace, "SFMono-Regular", "SF Mono", "Cascadia Code", "Consolas", "Roboto Mono", monospace;
+    --sans: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #11131c; --surface: #191c28; --surface-2: #212536; --border: #303649;
+    --text: #eceef6; --text-muted: #9aa1b8; --accent: #8b98ff; --accent-soft: #262c52;
+    --pass: #3fe0a5; --pass-soft: #113627; --fail: #ff7a7a; --fail-soft: #3a1c1c;
+    --warn: #f7c15b; --warn-soft: #3b2f10; --violet: #b393ff; --violet-soft: #2c2352;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #11131c; --surface: #191c28; --surface-2: #212536; --border: #303649;
+      --text: #eceef6; --text-muted: #9aa1b8; --accent: #8b98ff; --accent-soft: #262c52;
+      --pass: #3fe0a5; --pass-soft: #113627; --fail: #ff7a7a; --fail-soft: #3a1c1c;
+      --warn: #f7c15b; --warn-soft: #3b2f10; --violet: #b393ff; --violet-soft: #2c2352;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--text); font-family: var(--sans);
+    line-height: 1.55; padding: 40px 20px 80px; display: flex; justify-content: center;
+  }
+  .page { width: 100%; max-width: 1060px; display: flex; flex-direction: column; gap: 28px; }
+  a { color: var(--accent); }
+
+  /* ---- Header ---- */
+  header.report-header {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 26px 30px 24px; display: flex; flex-direction: column; gap: 14px;
+    position: relative; overflow: hidden;
+  }
+  header.report-header::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--violet), var(--pass));
+  }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+  .test-name {
+    font-family: var(--mono); font-size: clamp(16px, 2.4vw, 20px); font-weight: 700;
+    letter-spacing: -0.01em; word-break: break-word;
+  }
+  .verdict {
+    display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 12.5px;
+    font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; padding: 6px 14px;
+    border-radius: 999px; background: var(--pass); color: #fff; white-space: nowrap;
+    box-shadow: 0 2px 10px -2px color-mix(in srgb, var(--pass) 60%, transparent);
+  }
+  .verdict::before { content: "\2713"; font-weight: 900; }
+  .timing-row {
+    font-family: var(--mono); font-size: 12.5px; color: var(--text-muted);
+    display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center;
+  }
+  .timing-row b { color: var(--text); font-weight: 600; }
+  .description {
+    font-size: 13.5px; color: var(--text-muted); border-top: 1px solid var(--border);
+    padding-top: 14px; font-style: italic;
+  }
+
+  /* ---- Tests index ---- */
+  .index-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .index-heading {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-muted); padding: 14px 22px; border-bottom: 1px solid var(--border);
+    background: var(--surface-2);
+  }
+  .test-row {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    padding: 14px 22px; border-bottom: 1px solid var(--border); border-left: 4px solid var(--pass);
+    text-decoration: none; color: inherit; transition: background 0.12s ease;
+  }
+  .test-row:hover { background: var(--surface-2); }
+  .test-row:last-child { border-bottom: none; }
+  .test-row-left { display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 260px; }
+  .test-index-num {
+    font-family: var(--mono); font-size: 11px; font-weight: 700; color: #fff;
+    background: var(--accent); border-radius: 5px; padding: 3px 8px; flex-shrink: 0;
+  }
+  .test-row-name {
+    font-family: var(--mono); font-size: 13.5px; font-weight: 600;
+    overflow-wrap: anywhere; word-break: break-word; min-width: 0; flex: 1 1 auto;
+  }
+  .test-row-right { display: flex; align-items: center; gap: 14px; font-family: var(--mono); font-size: 12px; color: var(--text-muted); white-space: nowrap; flex-shrink: 0; }
+
+  /* ---- Pills ---- */
+  .pill {
+    font-family: var(--mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.03em;
+    text-transform: uppercase; padding: 3px 10px; border-radius: 999px;
+  }
+  .pill.pass { background: var(--pass); color: #fff; }
+  .pill.info { background: var(--accent-soft); color: var(--accent); }
+  .pill.warn { background: var(--warn); color: #241a02; }
+
+  /* ---- Stage details/summary ---- */
+  details.stage {
+    background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--violet);
+    border-radius: var(--radius); overflow: hidden; scroll-margin-top: 20px;
+  }
+  details.stage[open] summary { border-bottom: 1px solid var(--border); }
+  summary {
+    list-style: none; cursor: pointer; padding: 16px 20px; display: flex; align-items: center;
+    gap: 14px; justify-content: space-between; flex-wrap: wrap; background: var(--surface-2);
+  }
+  summary::-webkit-details-marker { display: none; }
+  .summary-left { display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 260px; }
+  .stage-num {
+    font-family: var(--mono); font-size: 11px; font-weight: 700; color: #fff;
+    background: var(--violet); border-radius: 5px; padding: 3px 8px; flex-shrink: 0;
+  }
+  .stage-title {
+    font-weight: 700; font-size: 14px; font-family: var(--mono);
+    overflow-wrap: anywhere; word-break: break-word; min-width: 0; flex: 1 1 auto;
+  }
+  .summary-right { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 12px; color: var(--text-muted); white-space: nowrap; flex-shrink: 0; }
+  .chev { transition: transform 0.15s ease; color: var(--violet); font-weight: 700; }
+  details.stage[open] .chev { transform: rotate(90deg); }
+  .stage-desc {
+    font-size: 13px; color: var(--text-muted); font-style: italic; padding: 12px 22px;
+    border-bottom: 1px solid var(--border); background: var(--surface);
+  }
+
+  .table-scroll { overflow-x: auto; }
+  table.steps { width: 100%; border-collapse: collapse; font-size: 12.5px; min-width: 640px; }
+  table.steps th {
+    text-align: left; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--text-muted); padding: 8px 20px;
+    background: var(--surface-2); border-bottom: 1px solid var(--border); white-space: nowrap;
+  }
+  table.steps td { padding: 8px 20px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  table.steps tr:last-child td { border-bottom: none; }
+  table.steps tr.warn-row td { background: var(--warn-soft); }
+  table.steps tr.pass-row td { background: var(--pass-soft); }
+  .ts { font-family: var(--mono); font-size: 11.5px; color: var(--text-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .detail code {
+    font-family: var(--mono); font-size: 11px; background: var(--surface-2); color: var(--violet);
+    padding: 1px 5px; border-radius: 4px; word-break: break-all;
+  }
+  .detail .val { color: var(--accent); font-weight: 700; }
+
+  /* ---- API panel ---- */
+  .api-panel { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); overflow: hidden; margin-top: 12px; margin-left: 20px; margin-right: 20px; margin-bottom: 18px; }
+  .api-request { padding: 12px 20px; border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 8px 22px; font-family: var(--mono); font-size: 12px; background: var(--accent-soft); }
+  .api-request .k { color: var(--text-muted); }
+  .status-200 { color: var(--pass); font-weight: 700; }
+  .json-scroll { overflow-x: auto; background: var(--surface-2); }
+  pre.json { margin: 0; padding: 16px 20px; font-family: var(--mono); font-size: 12px; line-height: 1.6; white-space: pre; }
+  .json .k { color: var(--accent); } .json .s { color: var(--pass); } .json .n { color: var(--warn); } .json .b { color: var(--text-muted); }
+
+  footer { font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 16px; }
+  footer code { font-family: var(--mono); }
+</style>
+
+<div class="page">
+
+  <header class="report-header">
+    <div class="header-top">
+      <div class="test-name">SellerOnboardingEndToEndTest.sellerOnboardingEndToEnd</div>
+      <span class="verdict">Passed</span>
+    </div>
+    <div class="timing-row">
+      <span>08.27.2026 <b>5:17:47 pm</b></span>
+      <span>&rarr;</span>
+      <span>08.27.2026 <b>5:29:15 pm</b></span>
+      <span>&middot;</span>
+      <span><b>00:11:28.371</b> elapsed</span>
+      <span>&middot;</span>
+      <span>#test-id=TC_SOB_001</span>
+      <span>&middot;</span>
+      <span>run <b>ba6317lrm</b></span>
+    </div>
+    <div class="description">
+      "TC_SOB_001: seller onboarding end to end &mdash; registration &rarr; registration email &rarr; middleware pre-approval &rarr; pre-approval email &rarr; document upload &rarr; middleware final approval &rarr; final-approval email &rarr; Mirakl shop search &rarr; Kibo validation." Target: <code>https://mcstaging.fahorro.com</code>
+    </div>
+  </header>
+
+  <!-- ============ TESTS INDEX ============ -->
+  <div class="index-card">
+    <div class="index-heading">Tests &middot; 9 of 9 passed</div>
+
+    <a class="test-row" href="#stage-1">
+      <div class="test-row-left"><span class="test-index-num">01</span><span class="test-row-name">testSellerOnboardingFullFlowWithValidData</span></div>
+      <div class="test-row-right"><span>5:17:47 pm</span><span>00:01:11.633</span><span class="pill pass">Pass</span></div>
+    </a>
+    <a class="test-row" href="#stage-2">
+      <div class="test-row-left"><span class="test-index-num">02</span><span class="test-row-name">testSellerConfirmationEmailReceived</span></div>
+      <div class="test-row-right"><span>5:18:58 pm</span><span>00:00:20.328</span><span class="pill pass">Pass</span></div>
+    </a>
+    <a class="test-row" href="#stage-3">
+      <div class="test-row-left"><span class="test-index-num">03</span><span class="test-row-name">testOperatorPreApprovesSeller</span></div>
+      <div class="test-row-right"><span>5:19:19 pm</span><span>00:00:14.707</span><span class="pill pass">Pass</span></div>
+    </a>
+    <a class="test-row" href="#stage-4">
+      <div class="test-row-left"><span class="test-index-num">04</span><span class="test-row-name">testSellerPreApprovalEmailReceived</span></div>
+      <div class="test-row-right"><span>5:19:33 pm</span><span>00:00:08.602</span><span class="pill pass">Pass</span></div>
+    </a>
+    <a class="test-row" href="#stage-5">
+      <div class="test-row-left"><span class="test-index-num">05</span><span class="test-row-name">testSellerUploadsMissingDocumentsAndSubmits</span></div>
+      <div class="test-row-right"><span>5:19:42 pm</span><span>00:00:10.671</span><span class="pill pass">Pass</span></div>
+    </a>
+    <a class="test-row" href="#stage-6">
+      <div class="test-row-left"><span class="test-index-num">06</span><span class="test-row-name">testOperatorReviewsAdvancedDetailsAndApprovesSeller</span></div>
+      <div class="test-row-right"><span>5:19:53 pm</span><span>00:00:21.845</span><span class="pill pass">Pass</span></div>
+    </a>
+    <a class="test-row" href="#stage-7">
+      <div class="test-row-left"><span class="test-index-num">07</span><span class="test-row-name">testSellerApprovalEmailReceived</span></div>
+      <div class="test-row-right"><span>5:20:14 pm</span><span>00:00:07.156</span><span class="pill pass">Pass</span></div>
+    </a>
+    <a class="test-row" href="#stage-8">
+      <div class="test-row-left"><span class="test-index-num">08</span><span class="test-row-name">testOnboardedSellerPresentInMirakl</span></div>
+      <div class="test-row-right"><span>5:20:22 pm</span><span>00:00:48.132</span><span class="pill pass">Pass</span></div>
+    </a>
+    <a class="test-row" href="#stage-9">
+      <div class="test-row-left"><span class="test-index-num">09</span><span class="test-row-name">testSellerLocationVerifiedInKibo</span></div>
+      <div class="test-row-right"><span>5:21:10 pm</span><span>00:08:04.719</span><span class="pill pass">Pass</span></div>
+    </a>
+  </div>
+
+  <!-- ============ STAGE 1 ============ -->
+  <details class="stage" id="stage-1" open>
+    <summary>
+      <div class="summary-left">
+        <span class="stage-num">01</span>
+        <span class="stage-title">testSellerOnboardingFullFlowWithValidData</span>
+      </div>
+      <div class="summary-right">
+        <span class="pill pass">Pass</span>
+        <span>5:17:47 pm &ndash; 5:18:58 pm &middot; 00:01:11.633</span>
+        <span class="chev">&#9656;</span>
+      </div>
+    </summary>
+    <div class="stage-desc">Completing the seller onboarding wizard via the header's "Vende con nosotros" entry point, answering "Si" throughout, should submit successfully.</div>
+    <div class="table-scroll">
+      <table class="steps">
+        <thead><tr><th>Status</th><th>Timestamp</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:17:47 pm</td><td class="detail">Navigated to <code>https://mcstaging.fahorro.com/</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:17:52 pm</td><td class="detail">Clicked element: <code>By.cssSelector: button[data-action='customer-menu-toggle']</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:17:53 pm</td><td class="detail">Clicked element: <code>By.xpath: //a[contains(normalize-space(.),'Vende con nosotros')]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:17:56 pm</td><td class="detail">Clicked element: <code>By.xpath: //a[contains(normalize-space(.),'Comenzar a vender')] | //button[contains(normalize-space(.),'Comenzar a vender')]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:02 pm</td><td class="detail">Filling personal info step (attempt 1/3)</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:02 pm</td><td class="detail">Typed <span class="val">'Ana'</span> into element: <code>[name="personalInformationStep[personalInformation][name]"]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:05 pm</td><td class="detail">Typed <span class="val">'Garcia'</span> into element: <code>[name="personalInformationStep[personalInformation][lastName]"]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:05 pm</td><td class="detail">Typed <span class="val">'psamal+full1787831282485001@kognivera.com'</span> into element: <code>[name="personalInformationStep[personalInformation][email]"]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:06 pm</td><td class="detail">Clicked element: <code>roleInCompany</code> select dropdown</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:06 pm</td><td class="detail">Clicked element: option <span class="val">"Dueño"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:06 pm</td><td class="detail">Typed <span class="val">'5512345678'</span> into element: <code>[name="personalInformationStep[personalInformation][phone]"]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:07 pm</td><td class="detail">Clicked element: <code>country</code> select dropdown</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:07 pm</td><td class="detail">Clicked element: option <span class="val">"México"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:07 pm</td><td class="detail">Clicked element: personal-information <code>continueButton</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:08 pm</td><td class="detail">Filling company info step</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:08 pm</td><td class="detail">Typed <span class="val">'Bienestar Kognivera 1787831282491002'</span> into element: <code>[tradeName]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:08 pm</td><td class="detail">Typed <span class="val">'Bienestar Kognivera 1787831282491002 SA de CV'</span> into element: <code>[companyName]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:08 pm</td><td class="detail">Typed <span class="val">'GODE041211DQ9'</span> into element: <code>[rfc]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:09 pm</td><td class="detail">Clicked element: <code>companyType</code> select dropdown</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:09 pm</td><td class="detail">Clicked element: option <span class="val">"Empresa privada"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:09 pm</td><td class="detail">Typed <span class="val">'Av. Insurgentes Sur'</span> into element: <code>[taxAddress][street]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:09 pm</td><td class="detail">Typed <span class="val">'03100'</span> into element: <code>[taxAddress][postalCode]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:10 pm</td><td class="detail">Clicked element: <code>colonySelect</code> dropdown</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:11 pm</td><td class="detail">Clicked element: option <span class="val">"Del Valle Centro"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:11 pm</td><td class="detail">Typed <span class="val">'Benito Juárez'</span> into element: <code>[taxAddress][municipality]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:12 pm</td><td class="detail">Typed <span class="val">'123'</span> into element: <code>[taxAddress][numExterior]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:12 pm</td><td class="detail">Clicked element: <code>region</code> select dropdown</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:12 pm</td><td class="detail">Clicked element: option <span class="val">"Ciudad de México"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:12 pm</td><td class="detail">Clicked element: company-information <code>continueButton</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:13 pm</td><td class="detail">Filling store info step</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:13 pm</td><td class="detail">Clicked element: <code>ownEcommerce</code> &rarr; <span class="val">"Si"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:13 pm</td><td class="detail">Typed <span class="val">'https://example.com'</span> into element: <code>[ecommerceUrl]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:13 pm</td><td class="detail">Clicked element: <code>trademark</code> &rarr; <span class="val">"Si"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:14 pm</td><td class="detail">Typed <span class="val">'Bienestar Kognivera 1787831282491002'</span> into element: <code>[sellingBrands][0]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:14 pm</td><td class="detail">Clicked element: <code>previousSellingOptions</code> checkbox <span class="val">"AMAZON"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:14 pm</td><td class="detail">Clicked element: <code>sellingCategories</code> &rarr; <span class="val">"Marca del Ahorro"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:15 pm</td><td class="detail">Clicked element: <code>sellingCategories</code> checkbox <span class="val">"17221"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:15 pm</td><td class="detail">Typed <span class="val">'100'</span> into element: <code>[previousSales][0][value]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:15 pm</td><td class="detail">Typed <span class="val">'250'</span> into element: <code>[previousSales][0][averageProfitPerMonth]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:15 pm</td><td class="detail">Typed <span class="val">'https://example.com/catalogo'</span> into element: <code>[previousSales][0][catalogLink]</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:16 pm</td><td class="detail">Clicked element: <code>thirdpartyShipping</code> &rarr; <span class="val">"Si"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:16 pm</td><td class="detail">Clicked element: <code>expressDelivery</code> &rarr; <span class="val">"Si"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:16 pm</td><td class="detail">Clicked element: <code>warehouseShipping</code> &rarr; <span class="val">"Si"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:17 pm</td><td class="detail">Clicked element: store-information <code>continueButton</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:17 pm</td><td class="detail">Filling product info step and submitting</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:17 pm</td><td class="detail">Clicked element: <code>guarantee</code> &rarr; <span class="val">"Si"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:17 pm</td><td class="detail">Clicked element: <code>returns</code> &rarr; <span class="val">"Si"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:18 pm</td><td class="detail">Clicked element: <code>invoice</code> &rarr; <span class="val">"Si"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:18 pm</td><td class="detail">Clicked element: <code>[acceptPolicies]</code> checkbox</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:18 pm</td><td class="detail">Clicked element: product-information <code>submitButton</code></td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:18:29 pm</td><td class="detail">Success confirmation not visible after submit click (attempt 1/3)</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:29 pm</td><td class="detail">Clicked element: product-information <code>submitButton</code> (retry)</td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:18:39 pm</td><td class="detail">Registration attempt 1/3 failed &mdash; timeout waiting for <code>submitButton</code> to be clickable; reloading and retrying with fresh unique data (attempt 2/3)</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:40 pm</td><td class="detail">Filling personal info step (attempt 2/3)</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:40 pm</td><td class="detail">Typed <span class="val">'Ana'</span> / <span class="val">'Garcia'</span> / <span class="val">'psamal+full1787831320975004@kognivera.com'</span> / <span class="val">'5512345678'</span> into personal-info fields; selected <span class="val">"Dueño"</span>, <span class="val">"México"</span>; clicked <code>continueButton</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:47 pm</td><td class="detail">Filling company info step &mdash; typed <span class="val">'Bienestar Kognivera 1787831320975005'</span> / <span class="val">'Bienestar Kognivera 1787831320975005 SA de CV'</span> / <span class="val">'GODE041211WC2'</span>; selected <span class="val">"Empresa privada"</span>, address <span class="val">"Av. Insurgentes Sur", "03100", "Del Valle Centro", "Benito Juárez", "123", "Ciudad de México"</span>; clicked <code>continueButton</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:52 pm</td><td class="detail">Filling store info step &mdash; e-commerce/trademark <span class="val">"Si"</span>, brand <span class="val">'Bienestar Kognivera 1787831320975005'</span>, channel <span class="val">AMAZON</span>, category <span class="val">"Marca del Ahorro" / "17221"</span>, volumes <span class="val">100 / 250</span>, catalog link, shipping options all <span class="val">"Si"</span>; clicked <code>continueButton</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:55 pm</td><td class="detail">Filling product info step &mdash; guarantee/returns/invoice <span class="val">"Si"</span>, accepted policies, clicked <code>submitButton</code></td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:18:58 pm</td><td class="detail">Registration successful. Confirmation: <em>"¡Listo! Se han enviado tus datos correctamente"</em></td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:18:58 pm</td><td class="detail">Seller created: <span class="val">Ana Garcia</span>, <code>psamal+full1787831320975004@kognivera.com</code>, shop <code>Bienestar Kognivera 1787831320975005</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- ============ STAGE 2 ============ -->
+  <details class="stage" id="stage-2" open>
+    <summary>
+      <div class="summary-left"><span class="stage-num">02</span><span class="stage-title">testSellerConfirmationEmailReceived</span></div>
+      <div class="summary-right"><span class="pill pass">Pass</span><span>5:18:58 pm &ndash; 5:19:19 pm &middot; 00:00:20.328</span><span class="chev">&#9656;</span></div>
+    </summary>
+    <div class="stage-desc">After registration, the seller should receive a "Gracias por unirse" confirmation email in the Outlook Other tab.</div>
+    <div class="table-scroll">
+      <table class="steps">
+        <thead><tr><th>Status</th><th>Timestamp</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:58 pm</td><td class="detail">Navigated to <code>https://outlook.office365.com/mail/</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:18:59 pm</td><td class="detail">Logging into Outlook as <code>psamal@kognivera.com</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:03 pm</td><td class="detail">Typed <span class="val">'psamal@kognivera.com'</span> into element: <code>By.name: loginfmt</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:03 pm</td><td class="detail">Clicked element: <code>By.id: idSIButton9</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:04 pm</td><td class="detail">Typed <span class="val">'••••••••••••'</span> into element: <code>By.name: passwd</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:05 pm</td><td class="detail">Clicked element: <code>By.id: idSIButton9</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:07 pm</td><td class="detail">Clicked element: Other tab &mdash; <code>By.cssSelector: button[role='tab'][value='other']</code></td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:19:19 pm</td><td class="detail">Registration confirmation email received for <code>psamal+full1787831320975004@kognivera.com</code> (Bienestar Kognivera 1787831320975005)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- ============ STAGE 3 ============ -->
+  <details class="stage" id="stage-3" open>
+    <summary>
+      <div class="summary-left"><span class="stage-num">03</span><span class="stage-title">testOperatorPreApprovesSeller</span></div>
+      <div class="summary-right"><span class="pill pass">Pass</span><span>5:19:19 pm &ndash; 5:19:33 pm &middot; 00:00:14.707</span><span class="chev">&#9656;</span></div>
+    </summary>
+    <div class="stage-desc">The Mirakl middleware operator opens the new seller by email and pre-approves it.</div>
+    <div class="table-scroll">
+      <table class="steps">
+        <thead><tr><th>Status</th><th>Timestamp</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:19 pm</td><td class="detail">Navigated to <code>https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/login</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:25 pm</td><td class="detail">Logging into Mirakl middleware as <code>psamal@kognivera.com</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:25 pm</td><td class="detail">Typed <span class="val">'psamal@kognivera.com'</span> into element: "Correo electrónico" field</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:25 pm</td><td class="detail">Typed <span class="val">'••••••••••'</span> into element: "Contraseña" field</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:25 pm</td><td class="detail">Clicked element: <span class="val">"Iniciar sesión"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:25 pm</td><td class="detail">Opening seller detail for <code>psamal+full1787831320975004@kognivera.com</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:25 pm</td><td class="detail">Clicked element: seller row &rarr; <span class="val">"Vista"</span> button</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:27 pm</td><td class="detail">Reviewing seller info and pre-approving</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:27 pm</td><td class="detail">Clicked element: <span class="val">"Continuar"</span></td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:19:29 pm</td><td class="detail">Click intercepted for "Continuar" &mdash; scrolled into view center, retried via JS click</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:29 pm</td><td class="detail">Clicked element: <span class="val">"Continuar"</span></td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:19:30 pm</td><td class="detail">Click intercepted for "Continuar" &mdash; scrolled into view center, retried via JS click</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:30 pm</td><td class="detail">Clicked element: <span class="val">"Continuar"</span></td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:19:32 pm</td><td class="detail">Click intercepted for "Continuar" &mdash; scrolled into view center, retried via JS click</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:32 pm</td><td class="detail">Clicked element: <span class="val">"PREAPROBACIÓN"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:32 pm</td><td class="detail">Clicked element: <span class="val">"OK"</span> confirmation dialog</td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:19:33 pm</td><td class="detail">Pre-Approval completed for seller <code>psamal+full1787831320975004@kognivera.com</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- ============ STAGE 4 ============ -->
+  <details class="stage" id="stage-4" open>
+    <summary>
+      <div class="summary-left"><span class="stage-num">04</span><span class="stage-title">testSellerPreApprovalEmailReceived</span></div>
+      <div class="summary-right"><span class="pill pass">Pass</span><span>5:19:33 pm &ndash; 5:19:42 pm &middot; 00:00:08.602</span><span class="chev">&#9656;</span></div>
+    </summary>
+    <div class="stage-desc">The seller should receive a pre-approval email containing the "Ingresa al link" document-submission URL.</div>
+    <div class="table-scroll">
+      <table class="steps">
+        <thead><tr><th>Status</th><th>Timestamp</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:33 pm</td><td class="detail">Navigated to <code>https://outlook.office365.com/mail/</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:34 pm</td><td class="detail">Logging into Outlook as <code>psamal@kognivera.com</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:39 pm</td><td class="detail">Login form not shown (session already authenticated); reusing it</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:39 pm</td><td class="detail">Clicked element: Other tab &mdash; <code>button[role='tab'][value='other']</code></td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:19:40 pm</td><td class="detail">Pre-Approval email received for <em>Bienestar Kognivera 1787831320975005</em></td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:19:42 pm</td><td class="detail">Extracted document submission link ("Ingresa al link") from email body</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- ============ STAGE 5 ============ -->
+  <details class="stage" id="stage-5" open>
+    <summary>
+      <div class="summary-left"><span class="stage-num">05</span><span class="stage-title">testSellerUploadsMissingDocumentsAndSubmits</span></div>
+      <div class="summary-right"><span class="pill pass">Pass</span><span>5:19:42 pm &ndash; 5:19:53 pm &middot; 00:00:10.671</span><span class="chev">&#9656;</span></div>
+    </summary>
+    <div class="stage-desc">Using the extracted link, the seller uploads the 8 required documents and bank details.</div>
+    <div class="table-scroll">
+      <table class="steps">
+        <thead><tr><th>Status</th><th>Timestamp</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:42 pm</td><td class="detail">Navigated to the extracted document-submission link</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:48 pm</td><td class="detail">Uploading seller documents and bank details</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:49 pm</td><td class="detail">Typed <span class="val">'psamal+full1787831320975004@kognivera.com'</span> into "Email de la tienda"</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:49 pm</td><td class="detail">Typed <span class="val">'1234567890'</span> into "Número de Cuenta Bancaria"</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:50 pm</td><td class="detail">Typed <span class="val">'002010077777777771'</span> into "CLABE"</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:50 pm</td><td class="detail">Typed <span class="val">'BBVA'</span> into "Nombre del Banco"</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:50 pm</td><td class="detail">Typed <span class="val">'Ana Garcia'</span> into "Nombre del Titular"</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:51 pm</td><td class="detail">Clicked element: Términos y Condiciones checkbox</td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:19:52 pm</td><td class="detail">Click intercepted for the checkbox &mdash; scrolled into view center, retried via JS click</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:52 pm</td><td class="detail">Clicked element: <span class="val">"Enviar"</span> (8 documents attached: identidad, comprobante de domicilio, constancia fiscal, acta constitutiva, poder notarial, opinión SAT, licencia comercial, estado de cuenta)</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:52 pm</td><td class="detail">Clicked element: <span class="val">"OK"</span> confirmation dialog</td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:19:53 pm</td><td class="detail">Document upload and bank-details submission completed (8 documents + bank details)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- ============ STAGE 6 ============ -->
+  <details class="stage" id="stage-6" open>
+    <summary>
+      <div class="summary-left"><span class="stage-num">06</span><span class="stage-title">testOperatorReviewsAdvancedDetailsAndApprovesSeller</span></div>
+      <div class="summary-right"><span class="pill pass">Pass</span><span>5:19:53 pm &ndash; 5:20:14 pm &middot; 00:00:21.845</span><span class="chev">&#9656;</span></div>
+    </summary>
+    <div class="stage-desc">The operator downloads the submitted documents and grants final approval.</div>
+    <div class="table-scroll">
+      <table class="steps">
+        <thead><tr><th>Status</th><th>Timestamp</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:53 pm</td><td class="detail">Navigated to <code>https://webhook-sit.fahorro.com.mx/fda/api/v2/seller-onboarding/login</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:53 pm</td><td class="detail">Logging into Mirakl middleware as <code>psamal@kognivera.com</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:53 pm</td><td class="detail">Typed credentials into "Correo electrónico" / "Contraseña"; clicked <span class="val">"Iniciar sesión"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:54 pm</td><td class="detail">Opening seller detail for <code>psamal+full1787831320975004@kognivera.com</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:54 pm</td><td class="detail">Clicked element: seller row &rarr; <span class="val">"Vista"</span> button</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:56 pm</td><td class="detail">Downloading submitted documents and approving</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:56 pm</td><td class="detail">Clicked element: "Documento de Identidad" &rarr; <span class="val">"Descargar Documento"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:57 pm</td><td class="detail">Clicked element: "Comprobante de Domicilio" &rarr; <span class="val">"Descargar Documento"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:58 pm</td><td class="detail">Clicked element: "Constancia de situación fiscal" &rarr; <span class="val">"Descargar Documento"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:58 pm</td><td class="detail">Clicked element: "Acta Constitutiva" &rarr; <span class="val">"Descargar Documento"</span></td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:19:59 pm</td><td class="detail">Click intercepted (Acta Constitutiva download) &mdash; scrolled into view center, retried via JS click</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:19:59 pm</td><td class="detail">Clicked element: "Poder Notarial" &rarr; <span class="val">"Descargar Documento"</span></td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:20:00 pm</td><td class="detail">Click intercepted (Poder Notarial download) &mdash; scrolled into view center, retried via JS click</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:01 pm</td><td class="detail">Clicked element: "Opinión de Cumplimiento SAT" &rarr; <span class="val">"Descargar Documento"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:01 pm</td><td class="detail">Clicked element: "Licencia comercial" &rarr; <span class="val">"Descargar Documento"</span></td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:20:02 pm</td><td class="detail">Click intercepted (Licencia comercial download) &mdash; scrolled into view center, retried via JS click</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:02 pm</td><td class="detail">Clicked element: "Estado de Cuenta Bancario" &rarr; <span class="val">"Descargar Documento"</span></td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:20:03 pm</td><td class="detail">Click intercepted (Estado de Cuenta download) &mdash; scrolled into view center, retried via JS click</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:03 pm</td><td class="detail">Clicked element: <span class="val">"APROBAR"</span></td></tr>
+          <tr class="warn-row"><td><span class="pill warn">Warn</span></td><td class="ts">5:20:05 pm</td><td class="detail">Click intercepted ("APROBAR") &mdash; scrolled into view center, retried via JS click</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:05 pm</td><td class="detail">Clicked element: <span class="val">"OK"</span> confirmation dialog</td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:20:14 pm</td><td class="detail">Final Approval completed for seller <code>psamal+full1787831320975004@kognivera.com</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- ============ STAGE 7 ============ -->
+  <details class="stage" id="stage-7" open>
+    <summary>
+      <div class="summary-left"><span class="stage-num">07</span><span class="stage-title">testSellerApprovalEmailReceived</span></div>
+      <div class="summary-right"><span class="pill pass">Pass</span><span>5:20:14 pm &ndash; 5:20:22 pm &middot; 00:00:07.156</span><span class="chev">&#9656;</span></div>
+    </summary>
+    <div class="stage-desc">The seller should receive a final "incorporación exitosa" approval email.</div>
+    <div class="table-scroll">
+      <table class="steps">
+        <thead><tr><th>Status</th><th>Timestamp</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:14 pm</td><td class="detail">Navigated to <code>https://outlook.office365.com/mail/</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:15 pm</td><td class="detail">Logging into Outlook as <code>psamal@kognivera.com</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:20 pm</td><td class="detail">Login form not shown (session already authenticated); reusing it</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:20 pm</td><td class="detail">Clicked element: Other tab &mdash; <code>button[role='tab'][value='other']</code></td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:20:22 pm</td><td class="detail">Final Approval email received for <em>Bienestar Kognivera 1787831320975005</em></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- ============ STAGE 8 ============ -->
+  <details class="stage" id="stage-8" open>
+    <summary>
+      <div class="summary-left"><span class="stage-num">08</span><span class="stage-title">testOnboardedSellerPresentInMirakl</span></div>
+      <div class="summary-right"><span class="pill pass">Pass</span><span>5:20:22 pm &ndash; 5:21:10 pm &middot; 00:00:48.132</span><span class="chev">&#9656;</span></div>
+    </summary>
+    <div class="stage-desc">The approved seller's shop should be searchable in Mirakl's Todas las cuentas tienda and openable to capture its shop id.</div>
+    <div class="table-scroll">
+      <table class="steps">
+        <thead><tr><th>Status</th><th>Timestamp</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:22 pm</td><td class="detail">Navigated to <code>https://farmaciasdelahorromx2-dev.mirakl.net/</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:25 pm</td><td class="detail">Logging into Mirakl marketplace as <code>psamal@kognivera.com</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:25 pm</td><td class="detail">Typed <span class="val">'psamal@kognivera.com'</span> into identifier field; clicked <span class="val">"Siguiente"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:25 pm</td><td class="detail">Typed <span class="val">'••••••••••••'</span> into password field</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:28 pm</td><td class="detail">Opened Outlook in a separate tab; snapshotted existing "Mirakl SSO" codes before sign-in</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:34 pm</td><td class="detail">Clicked element: <span class="val">"Sign in"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:36 pm</td><td class="detail">Waiting for Mirakl's email MFA challenge</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:36 pm</td><td class="detail">MFA challenge shown; fetching the code from Outlook in a new tab</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:43 pm</td><td class="detail">Typed <span class="val">'645361'</span> into element: <code>input[name='code']</code></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:43 pm</td><td class="detail">Clicked element: <span class="val">"Continue"</span></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:43 pm</td><td class="detail">Clicked element: <span class="val">"Tiendas"</span> nav</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:53 pm</td><td class="detail">Clicked element: <span class="val">"Todas las cuentas tienda"</span> menu item</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:20:55 pm</td><td class="detail">Typed <span class="val">'Bienestar Kognivera 1787831320975005'</span> into the "Buscar" search field</td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:21:05 pm</td><td class="detail">Mirakl Shop found for trade name <em>Bienestar Kognivera 1787831320975005</em></td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:21:05 pm</td><td class="detail">Clicked element: shop row link &rarr; <code>/mmp/operator/shop/2467</code></td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:21:10 pm</td><td class="detail">Mirakl Shop ID captured: <b>2467</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- ============ STAGE 9 ============ -->
+  <details class="stage" id="stage-9" open>
+    <summary>
+      <div class="summary-left"><span class="stage-num">09</span><span class="stage-title">testSellerLocationVerifiedInKibo</span></div>
+      <div class="summary-right"><span class="pill pass">Pass</span><span>5:21:10 pm &ndash; 5:29:15 pm &middot; 00:08:04.719</span><span class="chev">&#9656;</span></div>
+    </summary>
+    <div class="stage-desc">The Mirakl shop id should resolve to a valid, matching location in the Kibo commerce API.</div>
+    <div class="table-scroll">
+      <table class="steps">
+        <thead><tr><th>Status</th><th>Timestamp</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:21:10 pm</td><td class="detail">Waiting 8 minutes for Mirakl &rarr; Kibo propagation (manual-test-case-equivalent wait)</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:29:10 pm</td><td class="detail">Kibo request executing for location <b>2467</b> (shop Bienestar Kognivera 1787831320975005)</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:29:10 pm</td><td class="detail">POST <code>/api/platform/applications/authtickets/oauth</code> &rarr; <span class="status-200">200 OK</span> (OAuth token acquired)</td></tr>
+          <tr><td><span class="pill info">Info</span></td><td class="ts">5:29:14 pm</td><td class="detail">GET <code>/api/commerce/admin/locations/2467</code> &rarr; <span class="status-200">200 OK</span></td></tr>
+          <tr class="pass-row"><td><span class="pill pass">Pass</span></td><td class="ts">5:29:14 pm</td><td class="detail">Kibo response validated (200, non-empty body); trade name <em>"Bienestar Kognivera 1787831320975005"</em> found in response body</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="api-panel">
+      <div class="api-request">
+        <span><span class="k">endpoint</span> t1000490-s1000992.sb.usc1.gcp.kibocommerce.com</span>
+        <span><span class="k">location</span> 2467</span>
+        <span><span class="k">status</span> <span class="status-200">200 OK</span></span>
+      </div>
+      <div class="json-scroll"><pre class="json">{
+  <span class="k">"code"</span>: <span class="s">"2467"</span>,
+  <span class="k">"locationTypes"</span>: [
+    { <span class="k">"code"</span>: <span class="s">"seller"</span>, <span class="k">"name"</span>: <span class="s">"Seller Warehouse"</span>,
+      <span class="k">"auditInfo"</span>: { <span class="k">"updateDate"</span>: <span class="s">"2026-04-28T09:18:04.340Z"</span>, <span class="k">"createDate"</span>: <span class="s">"2026-04-28T09:18:04.340Z"</span>,
+        <span class="k">"updateBy"</span>: <span class="s">"9b7c0a635a6848eba1a81e04e75691b2"</span>, <span class="k">"createBy"</span>: <span class="s">"9b7c0a635a6848eba1a81e04e75691b2"</span> } }
+  ],
+  <span class="k">"name"</span>: <span class="s">"Bienestar Kognivera 1787831320975005"</span>,
+  <span class="k">"description"</span>: <span class="s">"Mirakl shop"</span>,
+  <span class="k">"address"</span>: {
+    <span class="k">"address1"</span>: <span class="s">"Av. Insurgentes Sur"</span>, <span class="k">"address2"</span>: <span class="s">"Del Valle Centro"</span>,
+    <span class="k">"cityOrTown"</span>: <span class="s">"Ciudad de M&eacute;xico"</span>, <span class="k">"stateOrProvince"</span>: <span class="s">"Ciudad de M&eacute;xico"</span>,
+    <span class="k">"postalOrZipCode"</span>: <span class="s">"03100"</span>, <span class="k">"countryCode"</span>: <span class="s">"MEX"</span>,
+    <span class="k">"addressType"</span>: <span class="s">"Commercial"</span>, <span class="k">"isValidated"</span>: <span class="b">false</span>
+  },
+  <span class="k">"geo"</span>: { <span class="k">"lat"</span>: <span class="n">19.4229664</span>, <span class="k">"lng"</span>: <span class="n">-99.1633666</span> },
+  <span class="k">"supportsInventory"</span>: <span class="b">true</span>,
+  <span class="k">"fulfillmentTypes"</span>: [ { <span class="k">"code"</span>: <span class="s">"DS"</span>, <span class="k">"name"</span>: <span class="s">"Direct Ship"</span> } ],
+  <span class="k">"shippingOriginContact"</span>: {
+    <span class="k">"firstName"</span>: <span class="s">"Ana"</span>, <span class="k">"lastNameOrSurname"</span>: <span class="s">"Garcia"</span>,
+    <span class="k">"companyOrOrganization"</span>: <span class="s">"Bienestar Kognivera 1787831320975005"</span>,
+    <span class="k">"phoneNumber"</span>: <span class="s">"+52 551 234 5678"</span>,
+    <span class="k">"email"</span>: <span class="s">"psamal+full1787831320975004@kognivera.com"</span>
+  },
+  <span class="k">"tags"</span>: [],
+  <span class="k">"attributes"</span>: [
+    { <span class="k">"fullyQualifiedName"</span>: <span class="s">"tenant~sellerid"</span>, <span class="k">"attributeDefinitionId"</span>: <span class="n">2</span>, <span class="k">"values"</span>: [<span class="s">"2467"</span>] },
+    { <span class="k">"fullyQualifiedName"</span>: <span class="s">"tenant~3pl"</span>, <span class="k">"attributeDefinitionId"</span>: <span class="n">4</span>, <span class="k">"values"</span>: [<span class="s">"FBO"</span>] }
+  ],
+  <span class="k">"auditInfo"</span>: {
+    <span class="k">"updateDate"</span>: <span class="s">"2026-08-27T11:56:04.689Z"</span>, <span class="k">"createDate"</span>: <span class="s">"2026-08-27T11:56:04.689Z"</span>,
+    <span class="k">"updateBy"</span>: <span class="s">"12d4e2ea75c349da8145d2f661ebddae"</span>, <span class="k">"createBy"</span>: <span class="s">"12d4e2ea75c349da8145d2f661ebddae"</span>
+  },
+  <span class="k">"allowFulfillmentWithNoStock"</span>: <span class="b">true</span>, <span class="k">"isDisabled"</span>: <span class="b">false</span>, <span class="k">"express"</span>: <span class="b">false</span>,
+  <span class="k">"transferEnabled"</span>: <span class="b">false</span>, <span class="k">"shipToHomeConsolidation"</span>: <span class="b">false</span>, <span class="k">"deliveryConsolidation"</span>: <span class="b">false</span>,
+  <span class="k">"includeInInventoryAggregrate"</span>: <span class="b">true</span>, <span class="k">"includeInLocationExport"</span>: <span class="b">true</span>,
+  <span class="k">"warehouseEnabled"</span>: <span class="b">true</span>, <span class="k">"requiresManifest"</span>: <span class="b">false</span>, <span class="k">"slaConfigurations"</span>: []
+}</pre></div>
+    </div>
+  </details>
+
+  <footer>
+    Generated from <code>target/logs/test-run.log</code> (DEBUG-level, run <code>ba6317lrm</code>) &middot; suite <code>testng_seller_onboarding.xml</code> &middot; base.url <code>https://mcstaging.fahorro.com</code> &middot; passwords redacted
+  </footer>
+
+</div>

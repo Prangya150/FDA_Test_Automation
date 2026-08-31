@@ -1,0 +1,2799 @@
+- generic [active] [ref=e1]:
+  - paragraph [ref=e5]:
+    - strong [ref=e7]:
+      - link "¡Encuentra aquí las mejores promociones en vitaminas infantiles y cuida a los pequeños de la casa!" [ref=e8] [cursor=pointer]:
+        - /url: promociones/vitaminas/infantil.html
+  - generic [ref=e9]:
+    - banner [ref=e10]:
+      - generic [ref=e11]:
+        - link "store logo" [ref=e12] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/
+          - img "Farmacias del Ahorro" [ref=e13]
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "Sucursales" [ref=e17] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/find-a-store.html
+          - listitem [ref=e18]:
+            - link [ref=e19] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/facturacion/
+              - img "Facturación" [ref=e20]
+          - listitem [ref=e21]:
+            - button "Mi cuenta" [ref=e22] [cursor=pointer]: 
+          - listitem [ref=e23]:
+            - link "Monedero del Ahorro" [ref=e24] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/monedero/customer/index/
+        - link "Mi carrito" [ref=e26] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/checkout/cart/
+        - link "Ingresa una dirección de envío" [ref=e29] [cursor=pointer]:
+          - /url: "#"
+    - navigation [ref=e32]:
+      - list [ref=e33]:
+        - link [disabled] [ref=e34] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/me-quiero-bien
+          - text: Nutrición y deporte
+        - link [disabled] [ref=e35] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/todos-por-venezuela.html
+          - text: Todos por Venezuela
+        - link [disabled] [ref=e36] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/derma-mexico
+          - text: Derma
+        - link [disabled] [ref=e37] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/bebe.html
+          - text: Bebé
+        - list [ref=e38]:
+          - link [disabled] [ref=e39] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas.html
+            - text: Fórmulas
+          - list [ref=e40]:
+            - link [disabled] [ref=e41] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas/especialidad.html
+              - text: Especialidad
+            - link [disabled] [ref=e42] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas/regualres.html
+              - text: Regulares
+            - link [disabled] [ref=e43] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas/etapa-1.html
+              - text: Etapa 1
+            - link [disabled] [ref=e44] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas/etapa-2.html
+              - text: Etapa 2
+            - link [disabled] [ref=e45] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas/etapa-3.html
+              - text: Etapa 3
+            - link [disabled] [ref=e46] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas/crecimiento.html
+              - text: Crecimiento
+            - link [disabled] [ref=e47] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas/confort.html
+              - text: Confort
+            - link [disabled] [ref=e48] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas/organicas.html
+              - text: Orgánicas
+            - link [disabled] [ref=e49] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/formulas-lacteas/nan.html
+              - text: NAN
+          - link [disabled] [ref=e50] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas.html
+            - text: Pañales y Toallitas Húmedas
+          - list [ref=e51]:
+            - link [disabled] [ref=e52] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/panales.html
+              - text: Pañales
+            - link [disabled] [ref=e53] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/etapa-1.html
+              - text: Etapa 1
+            - link [disabled] [ref=e54] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/etapa-2.html
+              - text: Etapa 2
+            - link [disabled] [ref=e55] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/etapa-3.html
+              - text: Etapa 3
+            - link [disabled] [ref=e56] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/etapa-4.html
+              - text: Etapa 4
+            - link [disabled] [ref=e57] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/etapa-5.html
+              - text: Etapa 5
+            - link [disabled] [ref=e58] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/etapa-6-7.html
+              - text: Etapa 6 & 7
+            - link [disabled] [ref=e59] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/recien-nacido.html
+              - text: Recién Nacido
+            - link [disabled] [ref=e60] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/toallitas-humedas.html
+              - text: Toallitas Húmedas
+            - link [disabled] [ref=e61] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/ecologicos.html
+              - text: Ecológicos
+            - link [disabled] [ref=e62] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/panales-y-toallitas-humedas/prueba-lalo-agregar-categoria.html
+              - text: Test Prueba
+          - link [disabled] [ref=e63] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/leches.html
+            - text: Leches
+          - list [ref=e64]:
+            - link [disabled] [ref=e65] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/leches/biberones-y-mamilas.html
+              - text: Biberones y Mamilas
+            - link [disabled] [ref=e66] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/leches/accesorios-para-la-alimentacion.html
+              - text: Accesorios para la Alimentación
+            - link [disabled] [ref=e67] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/leches/fortificadas.html
+              - text: Fortificadas
+            - link [disabled] [ref=e68] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/leches/deslactosada.html
+              - text: Deslactosada
+            - link [disabled] [ref=e69] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/leches/aguas.html
+              - text: Aguas
+            - link [disabled] [ref=e70] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/leches/nido.html
+              - text: NIDO
+          - link [disabled] [ref=e71] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/cuidado-del-bebe.html
+            - text: Cuidado del Bebé
+          - list [ref=e72]:
+            - link [disabled] [ref=e73] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/cuidado-del-bebe/cuidado-dental-para-bebes.html
+              - text: Cuidado Dental Para Bebés
+            - link [disabled] [ref=e74] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/cuidado-del-bebe/pomadas-y-unguentos.html
+              - text: Pomadas y Ungüentos
+            - link [disabled] [ref=e75] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/cuidado-del-bebe/shampoo-y-jabones-para-bebe.html
+              - text: Shampoo y Jabones Para Bebé
+            - link [disabled] [ref=e76] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/cuidado-del-bebe/cremas-y-aceites-para-bebe.html
+              - text: Cremas y Aceites Para Bebé
+            - link [disabled] [ref=e77] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/cuidado-del-bebe/cuidado-de-la-mama.html
+              - text: Cuidado de la Mamá
+            - link [disabled] [ref=e78] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/cuidado-del-bebe/talcos-y-aceites.html
+              - text: Talcos y Aceites
+          - link [disabled] [ref=e79] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/accesorios-para-bebe.html
+            - text: Accesorios Para Bebé
+          - list [ref=e80]:
+            - link [disabled] [ref=e81] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/accesorios-para-bebe/biberones-y-mamilas.html
+              - text: Biberones y Mamilas
+            - link [disabled] [ref=e82] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/accesorios-para-bebe/vasos-y-utensilios.html
+              - text: Vasos y Utensilios
+            - link [disabled] [ref=e83] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/accesorios-para-bebe/chupones-y-mordederas.html
+              - text: Chupones y Mordederas
+            - link [disabled] [ref=e84] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/accesorios-para-bebe/extractores-para-lactancia-y-accesorios-para-lactancia.html
+              - text: Extractores para Lactancia y Accesorios para Lactancia
+            - link [disabled] [ref=e85] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/accesorios-para-bebe/panaleras-y-accesorios.html
+              - text: Pañaleras y Accesorios
+            - link [disabled] [ref=e86] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/accesorios-para-bebe/cepillos-y-peines.html
+              - text: Cepillos y Peines
+            - link [disabled] [ref=e87] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/accesorios-para-bebe/accesorios-de-bano.html
+              - text: Accesorios de Baño
+            - link [disabled] [ref=e88] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/accesorios-para-bebe/cuidado-de-unas.html
+              - text: Cuidado de Uñas
+          - link [disabled] [ref=e89] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/alimentacion-bebe.html
+            - text: Alimentación Bebé
+          - list [ref=e90]:
+            - link [disabled] [ref=e91] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/alimentacion-bebe/biberones-y-mamilas.html
+              - text: Biberones y Mamilas
+            - link [disabled] [ref=e92] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/alimentacion-bebe/cereales.html
+              - text: Cereales
+            - link [disabled] [ref=e93] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/alimentacion-bebe/alimentos-organicos.html
+              - text: Alimentos Orgánicos
+            - link [disabled] [ref=e94] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/alimentacion-bebe/accesorios-para-la-alimentacion.html
+              - text: Accesorios para la Alimentación
+            - link [disabled] [ref=e95] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/alimentacion-bebe/papillas.html
+              - text: Papillas
+            - link [disabled] [ref=e96] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/alimentacion-bebe/jugos-bebidas.html
+              - text: Jugos & Bebidas
+          - link [disabled] [ref=e97] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/marcas-destacadas.html
+            - text: Marcas Destacadas
+          - list [ref=e98]:
+            - link [disabled] [ref=e99] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/marcas-destacadas/huggies.html
+              - text: Huggies
+            - link [disabled] [ref=e100] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/marcas-destacadas/medela.html
+              - text: Medela
+            - link [disabled] [ref=e101] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bebes/marcas-destacadas/frida-mom.html
+              - text: Frida Mom
+          - link [disabled] [ref=e102] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/mes-del-bebe.html
+            - text: Mes del Bebé
+          - link [disabled] [ref=e103] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/catalogo-extendido-bebes.html
+            - text: Catálogo Extendido Bebés
+          - link [disabled] [ref=e104] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/catalogo-extendido-juguetes-bebes.html
+            - text: Catálogo Extendido Juguetes Bebés
+          - link [disabled] [ref=e105] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebes/promociones-del-mes.html
+            - text: Promociones del Mes
+          - link [disabled] [ref=e106] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebe/leche-formulas.html
+            - text: Leche Formulas
+          - link [disabled] [ref=e107] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bebe/expo-maternidad.html
+            - text: Expo Maternidad
+        - link [disabled] [ref=e108] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/belleza.html
+          - text: Belleza Mujer
+        - list [ref=e109]:
+          - link [disabled] [ref=e110] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/belleza/ver-todo-belleza.html
+            - text: Ver Todo Catálogo Extendido Belleza
+          - link [disabled] [ref=e111] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/belleza/belleza-profesional.html
+            - text: Belleza Profesional
+          - list [ref=e112]:
+            - link [disabled] [ref=e113] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/belleza-profesional/cabello.html
+              - text: Cabello
+          - link [disabled] [ref=e114] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/belleza/herramientas-de-peinado.html
+            - text: Herramientas de peinado
+          - list [ref=e115]:
+            - link [disabled] [ref=e116] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/herramientas-de-peinado/cepillos-electricos.html
+              - text: Cepillos eléctricos
+            - link [disabled] [ref=e117] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/herramientas-de-peinado/planchas.html
+              - text: Planchas
+            - link [disabled] [ref=e118] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/herramientas-de-peinado/rizadoras.html
+              - text: Rizadoras
+            - link [disabled] [ref=e119] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/herramientas-de-peinado/secadoras.html
+              - text: Secadoras
+            - link [disabled] [ref=e120] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/herramientas-de-peinado/cepillos-y-peines.html
+              - text: Cepillos y peines
+            - link [disabled] [ref=e121] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/herramientas-de-peinado/otros.html
+              - text: Otros
+          - link [disabled] [ref=e122] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/belleza/maquillaje.html
+            - text: Maquillaje
+          - list [ref=e123]:
+            - link [disabled] [ref=e124] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/maquillaje/labios.html
+              - text: Labios
+            - link [disabled] [ref=e125] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/maquillaje/mejillas.html
+              - text: Mejillas
+            - link [disabled] [ref=e126] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/maquillaje/ojos.html
+              - text: Ojos
+            - link [disabled] [ref=e127] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/maquillaje/rostro.html
+              - text: Rostro
+            - link [disabled] [ref=e128] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/maquillaje/unas.html
+              - text: Uñas
+          - link [disabled] [ref=e129] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/belleza/perfumes.html
+            - text: Perfumes
+          - list [ref=e130]:
+            - link [disabled] [ref=e131] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/perfumes/hombres.html
+              - text: Hombre
+            - link [disabled] [ref=e132] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/perfumes/mujeres.html
+              - text: Mujer
+            - link [disabled] [ref=e133] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/perfumes/sets.html
+              - text: Sets
+            - link [disabled] [ref=e134] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/perfumes/unisex.html
+              - text: Unisex
+          - link [disabled] [ref=e135] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/belleza/tratamientos.html
+            - text: Tratamientos
+          - list [ref=e136]:
+            - link [disabled] [ref=e137] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/tratamientos/pestanas.html
+              - text: Pestañas
+            - link [disabled] [ref=e138] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/tratamientos/cuidado-facial.html
+              - text: Cuidado Facial
+            - link [disabled] [ref=e139] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/tratamientos/cuidado-de-los-pies.html
+              - text: Cuidado de los Pies
+          - link [disabled] [ref=e140] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/belleza/utensilios-de-belleza.html
+            - text: Accesorios de Belleza
+          - list [ref=e141]:
+            - link [disabled] [ref=e142] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/utensilios-de-belleza/espejos.html
+              - text: Espejos
+          - link [disabled] [ref=e143] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/belleza/herramienta-de-peinado.html
+            - text: Herramienta de peinado
+          - list [ref=e144]:
+            - link [disabled] [ref=e145] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/herramienta-de-peinado/otros.html
+              - text: Otros
+          - link [disabled] [ref=e146] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/belleza/electrobelleza.html
+            - text: Electrobelleza
+          - list [ref=e147]:
+            - link [disabled] [ref=e148] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/belleza/electrobelleza/depilacion.html
+              - text: Depilación
+        - link [disabled] [ref=e149] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/prevencion-y-control-diabetes
+          - text: Diabetes
+        - link [disabled] [ref=e150] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/mi-bebe
+          - text: Mamás y Papás
+        - link [disabled] [ref=e151] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/catalogo-extendido.html
+          - text: Catálogo Extendido
+        - list [ref=e152]:
+          - link [disabled] [ref=e153] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-lo-mas-vendido.html
+            - text: Lo más vendido
+          - link [disabled] [ref=e154] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-perfumes.html
+            - text: Perfumes
+          - link [disabled] [ref=e155] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-belleza.html
+            - text: Belleza
+          - link [disabled] [ref=e156] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-maquillaje.html
+            - text: Maquillaje
+          - link [disabled] [ref=e157] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-bebes.html
+            - text: Bebés
+          - link [disabled] [ref=e158] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-nutricion-y-deporte.html
+            - text: Nutrición y Deporte
+          - link [disabled] [ref=e159] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-mascotas.html
+            - text: Mascotas
+          - link [disabled] [ref=e160] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-equipo-medico.html
+            - text: Equipo Médico
+          - link [disabled] [ref=e161] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-hogar.html
+            - text: Hogar
+          - link [disabled] [ref=e162] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-bienestar-sexual.html
+            - text: Salud Sexual
+          - link [disabled] [ref=e163] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-electrobelleza.html
+            - text: Electro - belleza
+          - link [disabled] [ref=e164] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/catalogo-extendido-juguetes.html
+            - text: Juguetes
+          - link [disabled] [ref=e165] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/exclusivos-en-linea-electronica.html
+            - text: Electrónica
+          - link [disabled] [ref=e166] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalogo-extendido/ver-todo-catalogo-extendido.html
+            - text: Ver Todo Catálogo Extendido
+        - link [disabled] [ref=e167] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/perfumes.html
+          - text: Perfumes
+        - list [ref=e168]:
+          - link [disabled] [ref=e169] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/perfumes/ver-mas-perfumes.html
+            - text: Ver Todo Perfumes
+          - link [disabled] [ref=e170] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/perfumes/perfumes.html
+            - text: Perfumes más vendidos
+          - link [disabled] [ref=e171] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/perfumes/mujer.html
+            - text: Perfumes Mujer
+          - link [disabled] [ref=e172] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/perfumes/perfumes-hombre.html
+            - text: Perfumes Hombre
+          - link [disabled] [ref=e173] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/perfumes/unisex.html
+            - text: Unisex
+        - link [disabled] [ref=e174] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/monedero-del-ahorro
+          - text: Monedero del Ahorro
+        - link [disabled] [ref=e175] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/#
+          - text: Descubre más
+        - link [disabled] [ref=e176] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/derma.html
+          - text: Dermatologia
+        - list [ref=e177]:
+          - link [disabled] [ref=e178] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/derma-days.html
+            - text: DermaDays
+          - link [disabled] [ref=e179] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/derma.html
+            - text: DERMA
+          - link [disabled] [ref=e180] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/lanzamientos.html
+            - text: Lo más nuevo
+          - link [disabled] [ref=e181] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/cuidado-facial.html
+            - text: Cuidado Facial
+          - list [ref=e182]:
+            - link [disabled] [ref=e183] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-facial/cremas-e-hidratantes-faciales.html
+              - text: Cremas e Hidratantes Faciales
+            - link [disabled] [ref=e184] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-facial/anti-acne.html
+              - text: Anti-Acné
+            - link [disabled] [ref=e185] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-facial/serums-faciales.html
+              - text: Serums Faciales
+            - link [disabled] [ref=e186] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-facial/cremas-de-noche.html
+              - text: Cremas de Noche
+            - link [disabled] [ref=e187] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-facial/contorno-de-ojos.html
+              - text: Contorno de Ojos
+            - link [disabled] [ref=e188] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-facial/limpiadores-tonicos-y-exfoliantes.html
+              - text: Limpiadores, Tónicos y Exfoliantes
+            - link [disabled] [ref=e189] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-facial/tratamientos-y-mascarillas.html
+              - text: Tratamientos y Mascarillas
+            - link [disabled] [ref=e190] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-facial/proteccion-de-labios.html
+              - text: Protección de Labios
+            - link [disabled] [ref=e191] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-facial/limpiadores.html
+              - text: Limpiadores
+          - link [disabled] [ref=e192] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/protectores-solares.html
+            - text: Protectores Solares
+          - list [ref=e193]:
+            - link [disabled] [ref=e194] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/protectores-solares/facial.html
+              - text: Facial
+            - link [disabled] [ref=e195] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/protectores-solares/corporal.html
+              - text: Corporal
+            - link [disabled] [ref=e196] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/protectores-solares/ninos-y-bebes.html
+              - text: Niños y Bebés
+          - link [disabled] [ref=e197] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/cuidado-de-la-piel/cuidado-capilar.html
+            - text: Cuidado Capilar
+          - list [ref=e198]:
+            - link [disabled] [ref=e199] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-capilar/tratamientos.html
+              - text: Tratamientos
+            - link [disabled] [ref=e200] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-capilar/shampoo.html
+              - text: Shampoo
+            - link [disabled] [ref=e201] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-capilar/acondicionador.html
+              - text: Acondicionador
+          - link [disabled] [ref=e202] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/cuidado-corporal.html
+            - text: Cuidado Corporal
+          - list [ref=e203]:
+            - link [disabled] [ref=e204] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-corporal/cremas-humectantes.html
+              - text: Cremas Humectantes
+            - link [disabled] [ref=e205] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-corporal/proteccion-solar.html
+              - text: Protección Solar
+            - link [disabled] [ref=e206] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-corporal/bronceadores.html
+              - text: Bronceadores
+            - link [disabled] [ref=e207] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-corporal/exfoliantes.html
+              - text: Exfoliantes
+          - link [disabled] [ref=e208] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/cuidado-del-hombre.html
+            - text: Cuidado del Hombre
+          - list [ref=e209]:
+            - link [disabled] [ref=e210] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-del-hombre/facial.html
+              - text: Facial
+            - link [disabled] [ref=e211] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-del-hombre/capilar.html
+              - text: Capilar
+            - link [disabled] [ref=e212] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/cuidado-del-hombre/corporal.html
+              - text: Corporal
+          - link [disabled] [ref=e213] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/bebes.html
+            - text: Bebés
+          - list [ref=e214]:
+            - link [disabled] [ref=e215] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/bebes/bloqueadores.html
+              - text: Bloqueadores
+            - link [disabled] [ref=e216] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/bebes/cuidado-del-bebe-y-accesorios.html
+              - text: Cuidado del bebé y accesorios
+            - list [ref=e217]:
+              - link [disabled] [ref=e218] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/bebes/cuidado-del-bebe-y-accesorios/bano-piel-y-cabello.html
+                - text: Baño Piel y Cabello
+              - link [disabled] [ref=e219] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/bebes/cuidado-del-bebe-y-accesorios/pomadas-y-unguentos.html
+                - text: Pomadas y Ungüentos
+            - link [disabled] [ref=e220] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/bebes/cuidados-de-mama.html
+              - text: Cuidados de Mamá
+            - link [disabled] [ref=e221] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/bebes/hidratacion.html
+              - text: Hidratación
+          - link [disabled] [ref=e222] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/kits.html
+            - text: Kits & Packs
+          - link [disabled] [ref=e223] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/marcas.html
+            - text: Marcas Destacadas
+          - list [ref=e224]:
+            - link [disabled] [ref=e225] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/la-roche-posay.html
+              - text: La Roche-Posay
+            - link [disabled] [ref=e226] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/isdin.html
+              - text: ISDIN
+            - link [disabled] [ref=e227] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/clinique.html
+              - text: Clinique
+            - link [disabled] [ref=e228] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/avene.html
+              - text: Avene
+            - link [disabled] [ref=e229] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/bioderma.html
+              - text: Bioderma
+            - list [ref=e230]:
+              - link [disabled] [ref=e231] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/marcas/bioderma/photoderm.html
+                - text: Photoderm
+              - link [disabled] [ref=e232] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/marcas/bioderma/sebium.html
+                - text: Sébium
+              - link [disabled] [ref=e233] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/marcas/bioderma/sensibio.html
+                - text: Sensibio
+              - link [disabled] [ref=e234] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/marcas/bioderma/pigmentbio.html
+                - text: Pigmentbio
+              - link [disabled] [ref=e235] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/marcas/bioderma/abcderm.html
+                - text: ABCderm
+              - link [disabled] [ref=e236] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/marcas/bioderma/atoderm.html
+                - text: Atoderm
+              - link [disabled] [ref=e237] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/marcas/bioderma/serums.html
+                - text: Serums
+            - link [disabled] [ref=e238] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/vichy.html
+              - text: Vichy
+            - link [disabled] [ref=e239] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/eucerin.html
+              - text: Eucerin
+            - link [disabled] [ref=e240] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/cerave.html
+              - text: CeraVe
+            - link [disabled] [ref=e241] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/cetaphil.html
+              - text: Cetaphil
+            - link [disabled] [ref=e242] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/cantabria.html
+              - text: Cantabria
+            - link [disabled] [ref=e243] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/uriage.html
+              - text: Uriage
+            - link [disabled] [ref=e244] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/darrow.html
+              - text: Darrow
+            - link [disabled] [ref=e245] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/ducray.html
+              - text: Ducray
+            - link [disabled] [ref=e246] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/a-derma.html
+              - text: A-Derma
+            - link [disabled] [ref=e247] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma/marcas/dexeryl.html
+              - text: Dexeryl
+          - link [disabled] [ref=e248] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/promociones-del-mes.html
+            - text: El Regalo Ideal
+          - link [disabled] [ref=e249] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma/aguas-micelares-y-desmaquillantes.html
+            - text: Aguas Micelares y Desmaquillantes
+        - link [disabled] [ref=e250] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/bienestar-sexual.html
+          - text: Bienestar Sexual
+        - list [ref=e251]:
+          - link [disabled] [ref=e252] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bienestar-sexual/ver-mas-bienestar-sexual.html
+            - text: Catálogo Extendido de Bienestar Sexual
+          - link [disabled] [ref=e253] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bienestar-sexual/juguetes-sexuales.html
+            - text: Juguetes Sexuales
+          - list [ref=e254]:
+            - link [disabled] [ref=e255] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bienestar-sexual/juguetes-sexuales/dildos.html
+              - text: Dildos
+            - link [disabled] [ref=e256] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bienestar-sexual/juguetes-sexuales/juguetes-eroticos.html
+              - text: Juguetes Eróticos
+            - link [disabled] [ref=e257] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bienestar-sexual/juguetes-sexuales/juguetes-para-hombre.html
+              - text: Juguetes Para Hombre
+            - link [disabled] [ref=e258] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bienestar-sexual/juguetes-sexuales/vibradores-y-succionadores.html
+              - text: Vibradores y Succionadores
+            - link [disabled] [ref=e259] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bienestar-sexual/juguetes-sexuales/juguetes-er-ticos.html
+              - text: Juguetes Eróticos
+            - link [disabled] [ref=e260] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/bienestar-sexual/juguetes-sexuales/accesorios-sexualidad.html
+              - text: Accesorios Sexualidad
+          - link [disabled] [ref=e261] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bienestar-sexual/preservativos.html
+            - text: Preservativos
+          - link [disabled] [ref=e262] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bienestar-sexual/suplementos.html
+            - text: Suplementos
+          - link [disabled] [ref=e263] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bienestar-sexual/lubricantes.html
+            - text: Lubricantes
+          - link [disabled] [ref=e264] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bienestar-sexual/accesorios-sexualidad.html
+            - text: Accesorios Sexualidad
+          - link [disabled] [ref=e265] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bienestar-sexual/promociones.html
+            - text: Promociones del Mes
+          - link [disabled] [ref=e266] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/bienestar-sexual/lo-mas-vendido.html
+            - text: Lo Más Vendido
+        - link [disabled] [ref=e267] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/cuidado-personal.html
+          - text: Cuidado Personal
+        - list [ref=e268]:
+          - link [disabled] [ref=e269] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-bucal.html
+            - text: Higiene Bucal
+          - list [ref=e270]:
+            - link [disabled] [ref=e271] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-bucal/cremas-dentales.html
+              - text: Cremas Dentales
+            - link [disabled] [ref=e272] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-bucal/cepillos-dentales.html
+              - text: Cepillos Dentales
+            - link [disabled] [ref=e273] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-bucal/enjuagues-bucales.html
+              - text: Enjuagues Bucales
+            - link [disabled] [ref=e274] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-bucal/especializados.html
+              - text: Especializados
+          - link [disabled] [ref=e275] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-y-belleza.html
+            - text: Cuidado Personal
+          - list [ref=e276]:
+            - link [disabled] [ref=e277] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-y-belleza/facial.html
+              - text: Cuidado Facial
+            - link [disabled] [ref=e278] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-y-belleza/corporal.html
+              - text: Cuidado Corporal
+            - link [disabled] [ref=e279] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-y-belleza/mascarillas.html
+              - text: Mascarillas
+            - link [disabled] [ref=e280] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-y-belleza/proteccion-de-labios.html
+              - text: Protección de Labios
+            - link [disabled] [ref=e281] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-y-belleza/cremas-para-las-manos.html
+              - text: Cremas para las Manos
+            - link [disabled] [ref=e282] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-y-belleza/cuidado-solar.html
+              - text: Cuidado Solar
+            - link [disabled] [ref=e283] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/higiene-y-belleza/masaje-y-relajacion.html
+              - text: Masaje y Relajación
+          - link [disabled] [ref=e284] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/incontinencia.html
+            - text: Incontinencia
+          - list [ref=e285]:
+            - link [disabled] [ref=e286] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/incontinencia/ropa-interior.html
+              - text: Ropa Interior
+            - link [disabled] [ref=e287] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/incontinencia/panales.html
+              - text: Pañales
+            - link [disabled] [ref=e288] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/incontinencia/toallas-humedas.html
+              - text: Toallas Húmedas
+            - link [disabled] [ref=e289] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/incontinencia/otros.html
+              - text: Otros
+            - link [disabled] [ref=e290] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/incontinencia/compra-mas-ahorra-mas.html
+              - text: Compra Más, Ahorra Más
+          - link [disabled] [ref=e291] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/proteccion-femenina.html
+            - text: Protección Femenina
+          - list [ref=e292]:
+            - link [disabled] [ref=e293] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/proteccion-femenina/toallas-femeninas.html
+              - text: Toallas Femeninas
+            - link [disabled] [ref=e294] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/proteccion-femenina/tampones.html
+              - text: Tampones
+            - link [disabled] [ref=e295] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/proteccion-femenina/higiene-intima.html
+              - text: Higiene Intima
+            - link [disabled] [ref=e296] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/proteccion-femenina/panty-protector.html
+              - text: Panty Protector
+            - link [disabled] [ref=e297] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/proteccion-femenina/copas-menstruales.html
+              - text: Copas Menstruales
+            - link [disabled] [ref=e298] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/proteccion-femenina/higiene.html
+              - text: Higiene
+          - link [disabled] [ref=e299] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-cabello.html
+            - text: Cuidado Del Cabello
+          - list [ref=e300]:
+            - link [disabled] [ref=e301] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-cabello/shampoo.html
+              - text: Shampoo
+            - link [disabled] [ref=e302] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-cabello/acondicionadores.html
+              - text: Acondicionadores
+            - link [disabled] [ref=e303] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-cabello/tratamiento.html
+              - text: Tratamientos Capilares
+            - link [disabled] [ref=e304] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-cabello/modeladores.html
+              - text: Fijadores y Modeladores
+            - link [disabled] [ref=e305] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-cabello/crema-para-peinar.html
+              - text: Crema para Peinar
+            - link [disabled] [ref=e306] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-cabello/tintes.html
+              - text: Tintes
+          - link [disabled] [ref=e307] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/desodorantes.html
+            - text: Desodorantes
+          - list [ref=e308]:
+            - link [disabled] [ref=e309] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/desodorantes/aerosol.html
+              - text: Aerosol
+            - link [disabled] [ref=e310] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/desodorantes/barra.html
+              - text: Barra
+            - link [disabled] [ref=e311] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/desodorantes/clinical.html
+              - text: Clinical
+            - link [disabled] [ref=e312] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/desodorantes/gel.html
+              - text: Gel
+            - link [disabled] [ref=e313] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/desodorantes/roll-on.html
+              - text: Roll-On
+          - link [disabled] [ref=e314] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/afeitado.html
+            - text: Rasurado & Afeitado
+          - list [ref=e315]:
+            - link [disabled] [ref=e316] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/afeitado/sistemas-y-cartuchos.html
+              - text: Rastrillos y Cartuchos
+            - link [disabled] [ref=e317] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/afeitado/crema-para-afeitar.html
+              - text: Crema para Afeitar
+            - link [disabled] [ref=e318] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/afeitado/aparatos-electricos.html
+              - text: Aparatos Eléctricos
+          - link [disabled] [ref=e319] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/travel.html
+            - text: Travel
+          - link [disabled] [ref=e320] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-hombre.html
+            - text: Cuidado del Hombre
+          - list [ref=e321]:
+            - link [disabled] [ref=e322] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-hombre/corporal.html
+              - text: Cuidado Corporal
+            - link [disabled] [ref=e323] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-hombre/cuidado-facial.html
+              - text: Cuidado Facial
+            - link [disabled] [ref=e324] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-hombre/capilar.html
+              - text: Cuidado Capilar
+            - link [disabled] [ref=e325] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/cuidado-del-hombre/manicure-y-pedicure.html
+              - text: Manicure y Pedicure
+          - link [disabled] [ref=e326] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/jabones.html
+            - text: Jabones
+          - list [ref=e327]:
+            - link [disabled] [ref=e328] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/jabones/barras.html
+              - text: Barras
+            - link [disabled] [ref=e329] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/jabones/liquido-corporal.html
+              - text: Liquido Corporal
+            - link [disabled] [ref=e330] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/jabones/toallas-antibacteriales.html
+              - text: Toallas Antibacteriales
+            - link [disabled] [ref=e331] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/jabones/liquido-manos.html
+              - text: Liquido Manos
+            - link [disabled] [ref=e332] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/jabones/gel-antibacterial.html
+              - text: Gel Antibacterial
+          - link [disabled] [ref=e333] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/outlet.html
+            - text: Outlet
+          - link [disabled] [ref=e334] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/promociones-del-mes.html
+            - text: Cuida Tu Sonrisa
+          - link [disabled] [ref=e335] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/marcas.html
+            - text: Marcas Destacadas
+          - list [ref=e336]:
+            - link [disabled] [ref=e337] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/marcas/bexident.html
+              - text: Bexident
+            - link [disabled] [ref=e338] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/marcas/loreal.html
+              - text: L'Oréal
+            - link [disabled] [ref=e339] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/marcas/acure.html
+              - text: Acure
+            - link [disabled] [ref=e340] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/cuidado-personal/marcas/blistex.html
+              - text: Blistex
+          - link [disabled] [ref=e341] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/lanzamientos.html
+            - text: Lanzamientos
+          - link [disabled] [ref=e342] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/cuidado-personal/catalogo-extendido-belleza.html
+            - text: Catálogo extendido Belleza
+        - link [disabled] [ref=e343] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/nutricion-y-deporte.html
+          - text: Nutrición y Deporte
+        - list [ref=e344]:
+          - link [disabled] [ref=e345] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos.html
+            - text: Vitaminas y Suplementos
+          - list [ref=e346]:
+            - link [disabled] [ref=e347] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/probioticos.html
+              - text: Probióticos
+            - link [disabled] [ref=e348] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/cardiovasculares.html
+              - text: Cardiovasculares
+            - link [disabled] [ref=e349] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/colagenos.html
+              - text: Colágenos
+            - link [disabled] [ref=e350] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/antiedad.html
+              - text: Antiedad
+            - link [disabled] [ref=e351] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/minerales.html
+              - text: Minerales
+            - link [disabled] [ref=e352] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/multivitaminico.html
+              - text: Multivitamínico
+            - link [disabled] [ref=e353] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/sistema-inmune.html
+              - text: Sistema Inmune
+            - link [disabled] [ref=e354] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/bebes-y-ninos.html
+              - text: Bebés y Niños
+            - link [disabled] [ref=e355] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/digestion.html
+              - text: Digestión
+            - link [disabled] [ref=e356] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/sueno.html
+              - text: Sueño
+            - link [disabled] [ref=e357] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/memoria-y-concentracion.html
+              - text: Memoria y Concentración
+            - link [disabled] [ref=e358] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/mujer.html
+              - text: Mujer
+            - link [disabled] [ref=e359] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/control-de-peso.html
+              - text: Control de peso
+            - link [disabled] [ref=e360] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/huesos-y-articulaciones.html
+              - text: Huesos y articulaciones
+            - link [disabled] [ref=e361] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/univitaminicos.html
+              - text: Univitamínicos
+            - link [disabled] [ref=e362] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vitaminas-y-suplementos/super-alimento.html
+              - text: Superalimentos
+          - link [disabled] [ref=e363] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/nutricion-deportiva.html
+            - text: Nutrición Deportiva
+          - list [ref=e364]:
+            - link [disabled] [ref=e365] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/nutricion-deportiva/proteina.html
+              - text: Proteína
+            - link [disabled] [ref=e366] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/nutricion-deportiva/rendimiento-y-energeticos.html
+              - text: Rendimiento y Energéticos
+            - link [disabled] [ref=e367] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/nutricion-deportiva/hidratacion.html
+              - text: Hidratación
+          - link [disabled] [ref=e368] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/alimentos-saludables.html
+            - text: Alimentos Saludables
+          - link [disabled] [ref=e369] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vida-en-balance.html
+            - text: Vida en Balance
+          - list [ref=e370]:
+            - link [disabled] [ref=e371] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vida-en-balance/remedios-naturales.html
+              - text: Remedios Naturales
+            - link [disabled] [ref=e372] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vida-en-balance/tes-en-sobre.html
+              - text: Tés en Sobre
+            - link [disabled] [ref=e373] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/vida-en-balance/aromaterapia.html
+              - text: Aromaterapia
+          - link [disabled] [ref=e374] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/bebidas-saludables.html
+            - text: Bebidas Saludables
+          - link [disabled] [ref=e375] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/promociones-del-mes.html
+            - text: Promociones del Mes
+          - link [disabled] [ref=e376] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/marcas-destacadas.html
+            - text: Marcas Destacadas
+          - list [ref=e377]:
+            - link [disabled] [ref=e378] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/marcas-destacadas/habits.html
+              - text: Habits
+            - link [disabled] [ref=e379] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/marcas-destacadas/multiblue.html
+              - text: MultiBlue
+            - link [disabled] [ref=e380] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/marcas-destacadas/microbiot-fit.html
+              - text: Microbiot Fit
+            - link [disabled] [ref=e381] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/marcas-destacadas/birdman.html
+              - text: Birdman
+            - link [disabled] [ref=e382] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/marcas-destacadas/goli.html
+              - text: GOLI
+            - link [disabled] [ref=e383] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/marcas-destacadas/vital.html
+              - text: Vital Proteins
+          - link [disabled] [ref=e384] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/lo-mas-vendido.html
+            - text: Promociones Nutrición Deportiva
+          - link [disabled] [ref=e385] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/lunes-fit.html
+            - text: Lunes Fit
+          - link [disabled] [ref=e386] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/nutricion-y-deporte/catalogo-extendido-nutricion-y-deporte.html
+            - text: Catálogo extendido nutrición y deporte
+        - link [disabled] [ref=e387] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/diabetes.html
+          - text: Diabetes
+        - list [ref=e388]:
+          - link [disabled] [ref=e389] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/diabetes/articulos-de-medicion.html
+            - text: Artículos De Medición
+          - link [disabled] [ref=e390] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/diabetes/cuidado-personal.html
+            - text: Cuidado Personal
+          - link [disabled] [ref=e391] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/diabetes/gripa-y-tos.html
+            - text: Gripa y Tos
+          - link [disabled] [ref=e392] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/diabetes/jeringas-y-agujas.html
+            - text: Jeringas y Agujas
+          - link [disabled] [ref=e393] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/diabetes/medicamentos-especializados.html
+            - text: Medicamentos Especializados
+          - link [disabled] [ref=e394] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/diabetes/snacks-bajos-en-azucar.html
+            - text: Snacks Bajos en Azúcar
+          - link [disabled] [ref=e395] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/diabetes/suplementos-alimenticios.html
+            - text: Suplementos Alimenticios
+          - link [disabled] [ref=e396] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/diabetes/vitaminas-y-minerales.html
+            - text: Vitaminas y Minerales
+          - link [disabled] [ref=e397] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/diabetes/sueros.html
+            - text: Sueros
+        - link [disabled] [ref=e398] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/hogar.html
+          - text: Hogar
+        - list [ref=e399]:
+          - link [disabled] [ref=e400] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/hogar/ver-mas-hogar.html
+            - text: Ver Todo Hogar
+          - link [disabled] [ref=e401] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/hogar/cocina.html
+            - text: Cocina
+          - list [ref=e402]:
+            - link [disabled] [ref=e403] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/hogar/cocina/accesorios-de-cocina.html
+              - text: Accesorios de cocina
+            - link [disabled] [ref=e404] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/hogar/cocina/sartenes.html
+              - text: Sartenes
+            - link [disabled] [ref=e405] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/hogar/cocina/vajillas.html
+              - text: Vajillas
+            - link [disabled] [ref=e406] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/hogar/cocina/termos-y-vasos.html
+              - text: Termos y Vasos
+          - link [disabled] [ref=e407] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/hogar/electrodomesticos.html
+            - text: Electrodomésticos
+          - list [ref=e408]:
+            - link [disabled] [ref=e409] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/hogar/electrodomesticos/cafeteras-prensas-y-teteras.html
+              - text: Cafeteras, prensas y teteras
+            - link [disabled] [ref=e410] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/hogar/electrodomesticos/licuadoras-y-procesadoras.html
+              - text: Licuadoras y procesadoras
+            - link [disabled] [ref=e411] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/hogar/electrodomesticos/electrodomesticos-especializados.html
+              - text: Electrodomésticos especializados
+        - link [disabled] [ref=e412] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/derma-1.html
+          - text: Dermat
+        - list [ref=e413]:
+          - link [disabled] [ref=e414] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma-cuidado-de-la-piel/derma-productos.html
+            - text: Derma
+        - link [disabled] [ref=e415] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/marca-farmacias-del-ahorro.html
+          - text: Marca Farmacias del Ahorro
+        - list [ref=e416]:
+          - link [disabled] [ref=e417] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/alergias.html
+            - text: Alergias
+          - link [disabled] [ref=e418] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/antibioticos.html
+            - text: Antibióticos
+          - link [disabled] [ref=e419] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/bebida-nutricionales.html
+            - text: Bebida Nutricionales
+          - link [disabled] [ref=e420] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/cardio.html
+            - text: Cardio
+          - link [disabled] [ref=e421] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/cuidado-de-los-ojos.html
+            - text: Cuidado de los ojos
+          - link [disabled] [ref=e422] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/derma.html
+            - text: Derma
+          - link [disabled] [ref=e423] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/diabetes.html
+            - text: Diabetes
+          - link [disabled] [ref=e424] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/dolor-e-inflamacion.html
+            - text: Dolor e Inflamación
+          - link [disabled] [ref=e425] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/estomacales.html
+            - text: Estomacales
+          - link [disabled] [ref=e426] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/gripe-y-tos.html
+            - text: Gripe y Tos
+          - link [disabled] [ref=e427] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/hormonales.html
+            - text: Hormonales
+          - link [disabled] [ref=e428] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/material-de-curacion.html
+            - text: Material De Curación
+          - link [disabled] [ref=e429] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/medicion.html
+            - text: Medición
+          - link [disabled] [ref=e430] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/neurologia.html
+            - text: Neurología
+          - link [disabled] [ref=e431] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/proteccion.html
+            - text: Protección
+          - link [disabled] [ref=e432] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/prueba-de-embarazo.html
+            - text: Prueba De Embarazo
+          - link [disabled] [ref=e433] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/salud-sexual.html
+            - text: Salud sexual
+          - link [disabled] [ref=e434] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/sueros.html
+            - text: Sueros
+          - link [disabled] [ref=e435] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/suplementos-alimenticios.html
+            - text: Suplementos Alimenticios
+          - link [disabled] [ref=e436] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/vitaminas.html
+            - text: Vitaminas
+          - link [disabled] [ref=e437] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/marca-del-ahorro/que-buen-plan.html
+            - text: Acumula y Gana Piezas GRATIS
+        - link [disabled] [ref=e438] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/mascotas.html
+          - text: Mascotas
+        - list [ref=e439]:
+          - link [disabled] [ref=e440] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/ver-mas-mascotas.html
+            - text: Ver Todo Mascotas
+          - link [disabled] [ref=e441] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/alimento.html
+            - text: Alimento
+          - list [ref=e442]:
+            - link [disabled] [ref=e443] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/mascotas/alimento/alimento-para-perro.html
+              - text: Alimento Para Perro
+            - link [disabled] [ref=e444] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/mascotas/alimento/alimento-para-gato.html
+              - text: Alimento Para Gato
+            - link [disabled] [ref=e445] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/mascotas/alimento/premios-y-snacks.html
+              - text: Premios y Snacks
+          - link [disabled] [ref=e446] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/accesorios.html
+            - text: Accesorios
+          - link [disabled] [ref=e447] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/cuidado-y-bienestar.html
+            - text: Grooming
+          - list [ref=e448]:
+            - link [disabled] [ref=e449] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/mascotas/cuidado-y-bienestar/limpieza-de-la-mascota.html
+              - text: Limpieza de la Mascota
+            - link [disabled] [ref=e450] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/mascotas/cuidado-y-bienestar/entrenamiento.html
+              - text: Entrenamiento
+            - link [disabled] [ref=e451] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/mascotas/cuidado-y-bienestar/rascadores.html
+              - text: Rascadores
+            - link [disabled] [ref=e452] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/mascotas/cuidado-y-bienestar/collares-y-conos-de-recuperacion.html
+              - text: Collares y Conos de Recuperación
+          - link [disabled] [ref=e453] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/juguetes.html
+            - text: Juguetes
+          - link [disabled] [ref=e454] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/casas-y-camas.html
+            - text: Casas y Camas
+          - link [disabled] [ref=e455] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/suplementos-y-vitaminas.html
+            - text: Suplementos y Vitaminas
+          - link [disabled] [ref=e456] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/bebederos-y-contenedores.html
+            - text: Bebederos y Contenedores
+          - link [disabled] [ref=e457] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/perros.html
+            - text: Perros
+          - link [disabled] [ref=e458] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mascotas/gatos.html
+            - text: Gatos
+        - link [disabled] [ref=e459] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/electronica.html
+          - text: Electrónica
+        - list [ref=e460]:
+          - link [disabled] [ref=e461] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electronica/audio.html
+            - text: Audio
+          - link [disabled] [ref=e462] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electronica/smartwatches-y-trackers.html
+            - text: Smartwatches y Trackers
+          - link [disabled] [ref=e463] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electronica/otros.html
+            - text: Otros
+        - link [disabled] [ref=e464] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/juguetes.html
+          - text: Juguetes
+        - list [ref=e465]:
+          - link [disabled] [ref=e466] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/juguetes/ver-mas-juguetes.html
+            - text: Ver Todo Juguetes
+          - link [disabled] [ref=e467] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/juguetes/juguetes-para-nina.html
+            - text: Juguetes para Niña
+          - link [disabled] [ref=e468] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/juguetes/juguetes-para-nino.html
+            - text: Juguetes para Niño
+          - link [disabled] [ref=e469] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/juguetes/juguetes-de-oficio.html
+            - text: Juguetes de Oficio
+          - link [disabled] [ref=e470] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/juguetes/jueguetes-de-construccion.html
+            - text: Jueguetes de Construcción
+        - link [disabled] [ref=e471] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/electro-belleza.html
+          - text: Electro belleza
+        - list [ref=e472]:
+          - link [disabled] [ref=e473] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electrobelleza/ver-mas-electrobelleza.html
+            - text: Ver Todo Electrobelleza
+          - link [disabled] [ref=e474] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electrobelleza/cepillos-electricos.html
+            - text: Cepillos eléctricos
+          - link [disabled] [ref=e475] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electrobelleza/planchas.html
+            - text: Planchas
+          - link [disabled] [ref=e476] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electrobelleza/rizadoras.html
+            - text: Rizadoras
+          - link [disabled] [ref=e477] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electrobelleza/secadoras.html
+            - text: Secadoras
+          - link [disabled] [ref=e478] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electrobelleza/rasurado-y-depilacion.html
+            - text: Afeitadoras y rasuradoras
+          - link [disabled] [ref=e479] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electrobelleza/depilacion.html
+            - text: Depilación
+          - link [disabled] [ref=e480] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/electrobelleza/cuidado-facial.html
+            - text: Cuidado Facial
+        - link [disabled] [ref=e481] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/conveniencia.html
+          - text: Conveniencia
+        - list [ref=e482]:
+          - link [disabled] [ref=e483] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/conveniencia/bebidas-refrescantes.html
+            - text: Bebidas Refrescantes
+          - link [disabled] [ref=e484] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/conveniencia/articulos-para-el-hogar.html
+            - text: Artículos para el Hogar
+          - link [disabled] [ref=e485] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/conveniencia/anti-tabaco.html
+            - text: Anti-Tabaco
+          - link [disabled] [ref=e486] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/conveniencia/repelentes.html
+            - text: Repelentes
+          - link [disabled] [ref=e487] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/conveniencia/promociones-del-mes.html
+            - text: Hidratazone
+        - link [disabled] [ref=e488] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/promociones-monedero-del-ahorro.html
+          - text: Promociones Monedero del Ahorro
+        - link [disabled] [ref=e489] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/campanas.html
+          - text: Campañas
+        - list [ref=e490]:
+          - link [disabled] [ref=e491] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/hidratazone.html
+            - text: Hidratazone
+          - link [disabled] [ref=e492] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/descanso.html
+            - text: Sueño y Descanso
+          - list [ref=e493]:
+            - link [disabled] [ref=e494] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/descanso/insomnio.html
+              - text: Insomnio
+            - link [disabled] [ref=e495] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/descanso/ansiedad.html
+              - text: Ansiedad
+            - link [disabled] [ref=e496] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/descanso/antiestres.html
+              - text: Antiestrés
+            - link [disabled] [ref=e497] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/descanso/complementos.html
+              - text: Complementos
+          - link [disabled] [ref=e498] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/back-to-school.html
+            - text: Back to School
+          - list [ref=e499]:
+            - link [disabled] [ref=e500] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/higiene-y-belleza.html
+              - text: Higiene y Belleza
+            - link [disabled] [ref=e501] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/nutricion-deportiva.html
+              - text: Nutrición Deportiva
+            - link [disabled] [ref=e502] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/vitaminas-y-suplementos.html
+              - text: Vitaminas y Suplementos
+            - link [disabled] [ref=e503] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/protectores-solares.html
+              - text: Protectores Solares
+            - link [disabled] [ref=e504] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/anti-acne.html
+              - text: Antiacné
+            - link [disabled] [ref=e505] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/dermocosmeticos.html
+              - text: Dermocosméticos
+            - link [disabled] [ref=e506] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/gastroenterologia.html
+              - text: Gastroenterología
+            - link [disabled] [ref=e507] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/analgesicos.html
+              - text: Analgésicos OTC
+            - link [disabled] [ref=e508] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/marca-del-ahorro.html
+              - text: Marca del Ahorro
+            - link [disabled] [ref=e509] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/back-to-school/bebes.html
+              - text: Bebés
+          - link [disabled] [ref=e510] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/bbva-septiembre.html
+            - text: BBVA Septiembre
+          - link [disabled] [ref=e511] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/citisalud.html
+            - text: CitiSalud
+          - link [disabled] [ref=e512] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/vitaminas-septiembre.html
+            - text: Vitaminas - Septiembre
+          - link [disabled] [ref=e513] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/sanofi-winter.html
+            - text: Sanofi Winter
+          - link [disabled] [ref=e514] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/salud-mental.html
+            - text: Salud Mental
+          - link [disabled] [ref=e515] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/ola-3.html
+            - text: La Farmacia que te quiere bien
+          - list [ref=e516]:
+            - link [disabled] [ref=e517] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/ola-3/solares.html
+              - text: Solares
+            - link [disabled] [ref=e518] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/ola-3/derma.html
+              - text: Derma
+            - link [disabled] [ref=e519] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/ola-3/me-quiero-bien.html
+              - text: Me Quiero Bien
+            - link [disabled] [ref=e520] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/ola-3/higiene-y-belleza.html
+              - text: Higiene y Belleza
+            - link [disabled] [ref=e521] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/campanas/ola-3/bebes.html
+              - text: Bebés
+          - link [disabled] [ref=e522] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/neutrogena-octubre.html
+            - text: Neutrogena
+          - link [disabled] [ref=e523] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/citi.html
+            - text: CitiBanamex - Noviembre
+          - link [disabled] [ref=e524] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/diciembre15.html
+            - text: DICIEMBRE15
+          - link [disabled] [ref=e525] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/enero10.html
+            - text: ENERO10
+          - link [disabled] [ref=e526] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas/nivea-ssr.html
+            - text: NIVEA SSR
+        - link [disabled] [ref=e527] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/landings.html
+          - text: Landings
+        - list [ref=e528]:
+          - link [disabled] [ref=e529] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/ahorra-es-cuando.html
+            - text: Ahorra es Cuando
+          - link [disabled] [ref=e530] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/mi-bebe.html
+            - text: Mi bebé
+          - list [ref=e531]:
+            - link [disabled] [ref=e532] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/mi-bebe/0-a-12-meses.html
+              - text: 0 A 12 Meses
+            - list [ref=e533]:
+              - link [disabled] [ref=e534] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/mi-bebe/0-a-12-meses/higiene-cuidado-y-accesorios.html
+                - text: Higiene Cuidado y Accesorios
+              - link [disabled] [ref=e535] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/mi-bebe/0-a-12-meses/nutricion.html
+                - text: Nutrición
+              - link [disabled] [ref=e536] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/mi-bebe/0-a-12-meses/salud-y-bienestar.html
+                - text: Salud y Bienestar
+            - link [disabled] [ref=e537] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/mi-bebe/embarazo.html
+              - text: Embarazo
+            - list [ref=e538]:
+              - link [disabled] [ref=e539] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/mi-bebe/embarazo/embarazo-y-postparto.html
+                - text: Embarazo Y Postparto
+              - link [disabled] [ref=e540] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/mi-bebe/embarazo/salud-y-bienestar.html
+                - text: Salud y Bienestar
+              - link [disabled] [ref=e541] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/mi-bebe/embarazo/lactancia.html
+                - text: Lactancia
+            - link [disabled] [ref=e542] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/mi-bebe/12-meses.html
+              - text: +12 meses
+            - list [ref=e543]:
+              - link [disabled] [ref=e544] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/mi-bebe/12-meses/higiene-cuidado-y-accesorios.html
+                - text: Higiene Cuidado y Accesorios
+              - link [disabled] [ref=e545] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/mi-bebe/12-meses/nutricion.html
+                - text: Nutrición
+              - link [disabled] [ref=e546] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/mi-bebe/12-meses/salud-y-bienestar.html
+                - text: Salud y Bienestar
+          - link [disabled] [ref=e547] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/gastro.html
+            - text: Gastro
+          - list [ref=e548]:
+            - link [disabled] [ref=e549] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/gastro/gastritis-colitis.html
+              - text: Gastritis Colitis
+            - link [disabled] [ref=e550] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/gastro/dolor-malestar.html
+              - text: Dolor Malestar
+            - link [disabled] [ref=e551] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/gastro/probioticos.html
+              - text: Probióticos
+            - link [disabled] [ref=e552] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/gastro/antidiarreico.html
+              - text: Antidiarreico
+            - link [disabled] [ref=e553] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/gastro/laxantes.html
+              - text: Laxantes
+            - link [disabled] [ref=e554] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/gastro/nauseas.html
+              - text: Nauseas
+            - link [disabled] [ref=e555] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/gastro/acidez.html
+              - text: Acidez
+            - link [disabled] [ref=e556] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/gastro/antiparasitos.html
+              - text: Antiparásitos
+          - link [disabled] [ref=e557] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/flonorm.html
+            - text: Flonorm
+          - link [disabled] [ref=e558] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/vessel-due.html
+            - text: Vessel Due
+          - link [disabled] [ref=e559] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/pfizer.html
+            - text: Pfizer
+          - list [ref=e560]:
+            - link [disabled] [ref=e561] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/pfizer/plan-de-lealtad.html
+              - text: Plan de lealtad
+            - link [disabled] [ref=e562] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/pfizer/promociones.html
+              - text: Promociones
+            - link [disabled] [ref=e563] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/pfizer/banner-1.html
+              - text: Elicuis - Depo provera
+            - link [disabled] [ref=e564] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/pfizer/banner-2.html
+              - text: Azitrocin - Dalacin C
+            - link [disabled] [ref=e565] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/pfizer/banner-3.html
+              - text: Vibramicina
+          - link [disabled] [ref=e566] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/promociones-salud-mental.html
+            - text: Promociones Salud Mental
+          - link [disabled] [ref=e567] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/pilexil.html
+            - text: Pilexil
+          - link [disabled] [ref=e568] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/prevencion.html
+            - text: Prevención
+          - list [ref=e569]:
+            - link [disabled] [ref=e570] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/prevencion/proteccion.html
+              - text: Protección
+            - link [disabled] [ref=e571] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/prevencion/marca-del-ahorro.html
+              - text: Marca del Ahorro
+            - link [disabled] [ref=e572] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/prevencion/farmacia.html
+              - text: Farmacia
+            - link [disabled] [ref=e573] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/prevencion/vitaminas.html
+              - text: Vitaminas
+          - link [disabled] [ref=e574] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/semana-marca-del-ahorro.html
+            - text: Semana Marca del Ahorro
+          - link [disabled] [ref=e575] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/aniversario-marca-del-ahorro.html
+            - text: Aniversario Marca del Ahorro
+          - link [disabled] [ref=e576] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/energoceuticos.html
+            - text: ENERGOCÉUTICOS
+          - link [disabled] [ref=e577] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/organoceuticos.html
+            - text: ORGANOCÉUTICOS
+          - link [disabled] [ref=e578] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/infoceuticos.html
+            - text: INFOCÉUTICOS
+          - link [disabled] [ref=e579] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/banner-p-g.html
+            - text: Banner P&G
+          - link [disabled] [ref=e580] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/reckitt.html
+            - text: Reckitt
+          - list [ref=e581]:
+            - link [disabled] [ref=e582] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/reckitt/enfamil-0-a-12-meses.html
+              - text: Enfamil 0 a 12 meses
+            - link [disabled] [ref=e583] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/reckitt/enfagrow.html
+              - text: Enfagrow
+            - link [disabled] [ref=e584] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/reckitt/enfagrow-plan-de-lealtad.html
+              - text: Enfagrow Plan de Lealtad
+          - link [disabled] [ref=e585] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/enfagrow.html
+            - text: Enfagrow
+          - link [disabled] [ref=e586] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/unilever-rexona.html
+            - text: Unilever - Rexona
+          - link [disabled] [ref=e587] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/deos-dove.html
+            - text: Deos Dove
+          - link [disabled] [ref=e588] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/navidermapacks.html
+            - text: Navidermapacks
+          - link [disabled] [ref=e589] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/microbiot-fit.html
+            - text: Microbiot Fit
+          - link [disabled] [ref=e590] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/higiene-y-belleza-plan-de-lealtad.html
+            - text: Higiene y Belleza Plan de lealtad
+          - list [ref=e591]:
+            - link [disabled] [ref=e592] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/higiene-y-belleza-plan-de-lealtad/facial.html
+              - text: Facial
+            - link [disabled] [ref=e593] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/higiene-y-belleza-plan-de-lealtad/acumula-y-gana.html
+              - text: Acumula y Gana
+            - link [disabled] [ref=e594] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/higiene-y-belleza-plan-de-lealtad/corporal.html
+              - text: Corporal
+            - link [disabled] [ref=e595] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/higiene-y-belleza-plan-de-lealtad/monedero-del-ahorro.html
+              - text: Monedero del Ahorro
+            - link [disabled] [ref=e596] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/higiene-y-belleza-plan-de-lealtad/capilar.html
+              - text: Capilar
+            - link [disabled] [ref=e597] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/higiene-y-belleza-plan-de-lealtad/bucal.html
+              - text: Bucal
+            - link [disabled] [ref=e598] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/higiene-y-belleza-plan-de-lealtad/incontinencia.html
+              - text: Incontinencia
+            - link [disabled] [ref=e599] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/higiene-y-belleza-plan-de-lealtad/cuidado-femenino.html
+              - text: Cuidado Femenino
+          - link [disabled] [ref=e600] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/diabetes.html
+            - text: Diabetes
+          - list [ref=e601]:
+            - link [disabled] [ref=e602] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/diabetes/orales.html
+              - text: Orales
+            - link [disabled] [ref=e603] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/diabetes/repuestos-y-consumibles.html
+              - text: Repuestos y Consumibles
+            - link [disabled] [ref=e604] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/diabetes/respiratorio.html
+              - text: Respiratorio
+            - link [disabled] [ref=e605] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/diabetes/insulinas.html
+              - text: Insulinas
+            - link [disabled] [ref=e606] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/diabetes/nutricionales.html
+              - text: Nutricionales
+          - link [disabled] [ref=e607] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/slider.html
+            - text: Artículos de Medición Diabetes
+          - link [disabled] [ref=e608] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/ya-disponibles.html
+            - text: Ya disponibles
+          - link [disabled] [ref=e609] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/cafe-respiro.html
+            - text: Cafe Respiro
+          - link [disabled] [ref=e610] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/gugu.html
+            - text: Gugu
+          - link [disabled] [ref=e611] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/nestle.html
+            - text: Nestlé
+          - list [ref=e612]:
+            - link [disabled] [ref=e613] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/nestle/mailing-nestle.html
+              - text: Mailing Nestlé
+            - link [disabled] [ref=e614] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/nestle/10-de-descuento-exclusivo.html
+              - text: 10% de Descuento Exclusivo
+            - link [disabled] [ref=e615] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/nestle/formulas.html
+              - text: Formulas
+            - link [disabled] [ref=e616] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/nestle/nestle-4-1.html
+              - text: Nestlé 4+1
+          - link [disabled] [ref=e617] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/health-science.html
+            - text: HEALTH SCIENCE
+          - link [disabled] [ref=e618] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/mda-nestle.html
+            - text: MDA Nestlé
+          - link [disabled] [ref=e619] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/laboratorios-panalab.html
+            - text: Laboratorios Panalab
+          - link [disabled] [ref=e620] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/pasta-total-12.html
+            - text: Pasta Total 12
+          - link [disabled] [ref=e621] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/pastas-toms.html
+            - text: Pastas Toms
+          - link [disabled] [ref=e622] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/colgate-landing.html
+            - text: Colgate landing
+          - link [disabled] [ref=e623] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/ldb.html
+            - text: LDB
+          - list [ref=e624]:
+            - link [disabled] [ref=e625] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/ldb/vichy.html
+              - text: Vichy
+            - list [ref=e626]:
+              - link [disabled] [ref=e627] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/ldb/vichy/me-vs-uv.html
+                - text: Me vs. UV
+            - link [disabled] [ref=e628] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/ldb/la-roche-posay.html
+              - text: La Roche-Posay
+            - link [disabled] [ref=e629] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/ldb/cerave.html
+              - text: CeraVe
+          - link [disabled] [ref=e630] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/loreal-vichy.html
+            - text: Loreal - Vichy
+          - link [disabled] [ref=e631] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/juan-bertheau-vick.html
+            - text: Juan Bertheau - Vick
+          - link [disabled] [ref=e632] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/vick-monica-martinez.html
+            - text: Vick - Mónica Martínez
+          - link [disabled] [ref=e633] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/vvr-vick-inhalador.html
+            - text: VVR & VICK INHALADOR
+          - link [disabled] [ref=e634] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/vick.html
+            - text: Vick
+          - link [disabled] [ref=e635] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/pepto-bismol.html
+            - text: Pepto Bismol
+          - link [disabled] [ref=e636] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/mes-de-la-piel-sensible.html
+            - text: Mes de la piel sensible
+          - link [disabled] [ref=e637] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/cetaphil.html
+            - text: Cetaphil
+          - list [ref=e638]:
+            - link [disabled] [ref=e639] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/cetaphil/protectores-solares.html
+              - text: Protectores Solares
+            - link [disabled] [ref=e640] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/cetaphil/mailing-cetaphil.html
+              - text: Mailing Cetaphil
+            - link [disabled] [ref=e641] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/cetaphil/limpiadores.html
+              - text: Limpiadores
+            - link [disabled] [ref=e642] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/cetaphil/cuidado-facial.html
+              - text: Cuidado Facial
+            - link [disabled] [ref=e643] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/cetaphil/cuidado-corporal.html
+              - text: Cuidado Corporal
+            - link [disabled] [ref=e644] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/cetaphil/hidratantes.html
+              - text: Hidratantes
+          - link [disabled] [ref=e645] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/galderma.html
+            - text: Galderma
+          - list [ref=e646]:
+            - link [disabled] [ref=e647] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/cetaphil-te-cuida-proteccion-solar.html
+              - text: Cetaphil Te Cuida - Protección Solar
+            - link [disabled] [ref=e648] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/solares-gel.html
+              - text: Solares Gel
+            - link [disabled] [ref=e649] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/solares-locion.html
+              - text: Solares Loción
+            - link [disabled] [ref=e650] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/solares-oil-control.html
+              - text: Solares Oil Control
+            - link [disabled] [ref=e651] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/limpiadores.html
+              - text: Limpiadores
+            - link [disabled] [ref=e652] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/cetaphil-verano.html
+              - text: Cetaphil Verano
+            - link [disabled] [ref=e653] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/12-deseos-cetaphil.html
+              - text: 12 Deseos Cetaphil
+            - link [disabled] [ref=e654] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/12-deseos-cetaphil-3x2.html
+              - text: 12 Deseos Cetaphil 3x2
+            - link [disabled] [ref=e655] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/linea-pro.html
+              - text: Línea Pro
+            - link [disabled] [ref=e656] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/pro-ad-restoraderm.html
+              - text: Pro AD Restoraderm
+            - link [disabled] [ref=e657] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/cuidado-para-pieles-con-tendencia-a-dermatitis.html
+              - text: Cuidado para Pieles con Tendencia a Dermatitis
+            - link [disabled] [ref=e658] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/piel-grasa.html
+              - text: Piel Grasa
+            - link [disabled] [ref=e659] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/piel-mixta.html
+              - text: Piel Mixta
+            - link [disabled] [ref=e660] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/presentaciones-pequenas.html
+              - text: Presentaciones Pequeñas
+            - link [disabled] [ref=e661] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/hidratantes.html
+              - text: Hidratantes
+            - link [disabled] [ref=e662] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/cremas.html
+              - text: Cremas
+            - link [disabled] [ref=e663] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/barras-dermolimpiadoras.html
+              - text: Barras Dermolimpiadoras
+            - link [disabled] [ref=e664] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/barras-dermolimpiadoras-2.html
+              - text: Barras Dermolimpiadoras 2
+            - link [disabled] [ref=e665] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/packs.html
+              - text: Packs
+            - link [disabled] [ref=e666] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/presentaciones-grandes.html
+              - text: Presentaciones Grandes
+            - link [disabled] [ref=e667] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/best-sellers.html
+              - text: Best Sellers
+            - link [disabled] [ref=e668] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/cetaphil-te-acompana-soluciones-para-piel-con-tendencia-al-acne.html
+              - text: Cetaphil Te Acompaña - Soluciones para Piel con Tendencia al Acné
+            - link [disabled] [ref=e669] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/rutina-completa-benzac.html
+              - text: Rutina Completa Benzac
+            - link [disabled] [ref=e670] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/pro-ac-dermacontrol.html
+              - text: Pro AC Dermacontrol
+            - link [disabled] [ref=e671] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/acido-hialuronico.html
+              - text: Ácido Hialurónico
+            - link [disabled] [ref=e672] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/rutina-acido-hialuronico.html
+              - text: Rutina Ácido Hialurónico
+            - link [disabled] [ref=e673] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/rutina-am-pm.html
+              - text: Rutina AM/PM
+            - link [disabled] [ref=e674] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/rutina-optimal-hydration.html
+              - text: Rutina Optimal Hydration
+            - link [disabled] [ref=e675] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/pro-ar-calm-control.html
+              - text: Pro AR Calm Control
+            - link [disabled] [ref=e676] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/locion-humectante.html
+              - text: Loción Humectante
+            - link [disabled] [ref=e677] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/limpiador-facial-diario-para-piel-grasa.html
+              - text: Limpiador Facial Diario para Piel Grasa
+            - link [disabled] [ref=e678] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/galderma/crema-limpiadora-espumosa.html
+              - text: Crema Limpiadora Espumosa
+          - link [disabled] [ref=e679] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/pearls.html
+            - text: Pearls
+          - link [disabled] [ref=e680] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/eucerin-3x2-noviembre.html
+            - text: Eucerin 3x2 - Noviembre
+          - link [disabled] [ref=e681] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/eucerin.html
+            - text: Eucerin
+          - list [ref=e682]:
+            - link [disabled] [ref=e683] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/eucerin/arma-tu-rutina.html
+              - text: Arma tu Rutina
+            - link [disabled] [ref=e684] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/eucerin/aquaphor.html
+              - text: Aquaphor
+            - link [disabled] [ref=e685] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/eucerin/eucerin-packs.html
+              - text: Eucerin Packs
+            - link [disabled] [ref=e686] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/eucerin/comunicacion-diciembre.html
+              - text: Comunicación Diciembre
+          - link [disabled] [ref=e687] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/johnson-johnson.html
+            - text: Johnson & Johnson
+          - link [disabled] [ref=e688] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/megalabs.html
+            - text: Megalabs
+          - list [ref=e689]:
+            - link [disabled] [ref=e690] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/megalabs/rutina-enero.html
+              - text: Rutina Enero
+            - link [disabled] [ref=e691] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/megalabs/rutina-diciembre.html
+              - text: Rutina Diciembre
+            - link [disabled] [ref=e692] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/megalabs/fisiogel-ai.html
+              - text: Fisiogel AI
+          - link [disabled] [ref=e693] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/soy-poderosa.html
+            - text: soy poderosa
+          - link [disabled] [ref=e694] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/anticonceptivos-bayer.html
+            - text: Anticonceptivos Bayer
+          - link [disabled] [ref=e695] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/descuentos-especiales.html
+            - text: Descuentos especiales
+          - link [disabled] [ref=e696] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/italmex.html
+            - text: Italmex
+          - link [disabled] [ref=e697] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/bayer.html
+            - text: Bayer
+          - link [disabled] [ref=e698] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/loreal.html
+            - text: Loreal
+          - link [disabled] [ref=e699] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/nuevos-lanzamientos.html
+            - text: Nuevos lanzamientos
+          - link [disabled] [ref=e700] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/incontinencia.html
+            - text: Incontinencia
+          - link [disabled] [ref=e701] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/gastro-22.html
+            - text: Gastro 22
+          - link [disabled] [ref=e702] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/categoria-4.html
+            - text: Categoría 4
+          - link [disabled] [ref=e703] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/sunstar.html
+            - text: Sunstar
+          - link [disabled] [ref=e704] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/natures.html
+            - text: Natures
+          - link [disabled] [ref=e705] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/nature-s-heart.html
+            - text: Nature's heart
+          - link [disabled] [ref=e706] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/olemania.html
+            - text: Olemanía
+          - list [ref=e707]:
+            - link [disabled] [ref=e708] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/olemania/maquillaje.html
+              - text: Maquillaje
+            - link [disabled] [ref=e709] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/olemania/esmalte.html
+              - text: Esmalte
+          - link [disabled] [ref=e710] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/bayer-otc-multimarca.html
+            - text: Bayer OTC - MultiMarca
+          - link [disabled] [ref=e711] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/bayer-otc.html
+            - text: Bayer OTC
+          - link [disabled] [ref=e712] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/goli.html
+            - text: Goli
+          - link [disabled] [ref=e713] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/group-kps.html
+            - text: Group KPS
+          - link [disabled] [ref=e714] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/sanofi-varios.html
+            - text: SANOFI- VARIOS
+          - link [disabled] [ref=e715] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/productos-farmaceuticos.html
+            - text: Productos Farmacéuticos
+          - link [disabled] [ref=e716] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/chinoin.html
+            - text: Chinoin
+          - link [disabled] [ref=e717] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/armstrong.html
+            - text: Armstrong
+          - link [disabled] [ref=e718] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/sinuberase.html
+            - text: SINUBERASE
+          - link [disabled] [ref=e719] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/categoria-1.html
+            - text: Categoría 1
+          - link [disabled] [ref=e720] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/sanofi-otc-aderogyl.html
+            - text: SANOFI OTC - ADEROGYL
+          - link [disabled] [ref=e721] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/sanofi-rx-troujea-y-soliqua.html
+            - text: Sanofi RX - Troujea y Soliqua
+          - link [disabled] [ref=e722] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/sanofi-histiacil.html
+            - text: Sanofi - Histiacil
+          - link [disabled] [ref=e723] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/pharmaton.html
+            - text: Pharmaton
+          - link [disabled] [ref=e724] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/schwabe-umckaloabo.html
+            - text: SCHWABE - UMCKALOABO
+          - link [disabled] [ref=e725] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/muvareta.html
+            - text: Muvareta
+          - link [disabled] [ref=e726] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/p-g-doloneurobiongsk-emergenc.html
+            - text: P&G - DOLONEUROBIONGSK - EMERGENC
+          - link [disabled] [ref=e727] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/bdf-nivea.html
+            - text: BDF - Nivea
+          - link [disabled] [ref=e728] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/biocodex-floratil.html
+            - text: BIOCODEX - FLORATIL
+          - link [disabled] [ref=e729] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/biocodex.html
+            - text: Biocodex
+          - link [disabled] [ref=e730] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/dolo-neurobion.html
+            - text: Dolo-Neurobión
+          - link [disabled] [ref=e731] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/dia-mundial-de-diabetes.html
+            - text: Dia mundial de diabetes
+          - link [disabled] [ref=e732] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/xarelto.html
+            - text: xarelto
+          - link [disabled] [ref=e733] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/levitra.html
+            - text: Levitra
+          - link [disabled] [ref=e734] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/no-bajemos-la-guardia.html
+            - text: No bajemos la guardia
+          - link [disabled] [ref=e735] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/canesten-v.html
+            - text: Canesten V
+          - link [disabled] [ref=e736] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/yasmin-duo.html
+            - text: Yasmin duo
+          - link [disabled] [ref=e737] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/xarelto-pack.html
+            - text: Xarelto Pack
+          - link [disabled] [ref=e738] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/actron.html
+            - text: Actron
+          - link [disabled] [ref=e739] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/nueva-presentacion-aspirina.html
+            - text: Nueva presentación aspirina
+          - link [disabled] [ref=e740] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/sanofi-enterogermina.html
+            - text: SANOFI - ENTEROGERMINA
+          - link [disabled] [ref=e741] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/neilmed.html
+            - text: NeilMed
+          - link [disabled] [ref=e742] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/fedele.html
+            - text: Fedele
+          - link [disabled] [ref=e743] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/p-g-vapo-shower.html
+            - text: P&G - VAPO SHOWER
+          - link [disabled] [ref=e744] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/procter-vick.html
+            - text: PROCTER - VICK
+          - link [disabled] [ref=e745] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/jnj-dramamine-y-lomotil.html
+            - text: JNJ - Dramamine y Lomotil
+          - link [disabled] [ref=e746] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/bayer-hot-sale.html
+            - text: Bayer Hot Sale
+          - link [disabled] [ref=e747] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/alka-seltzer.html
+            - text: Alka Seltzer
+          - link [disabled] [ref=e748] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/bepanthen.html
+            - text: Bepanthen
+          - link [disabled] [ref=e749] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/abbott-laboratories.html
+            - text: Abbott Laboratories
+          - link [disabled] [ref=e750] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/categoria-3.html
+            - text: Categoría 3
+          - link [disabled] [ref=e751] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/abbott-glucerna.html
+            - text: ABBOTT - GLUCERNA
+          - link [disabled] [ref=e752] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/afrin.html
+            - text: Afrin
+          - link [disabled] [ref=e753] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/bdf-eucerin.html
+            - text: BDF - Eucerin
+          - link [disabled] [ref=e754] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/tempra.html
+            - text: Tempra
+          - link [disabled] [ref=e755] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/pfizer-pbg-provera.html
+            - text: Pfizer PBG - Provera
+          - link [disabled] [ref=e756] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/loreal-anthelios.html
+            - text: Loreal - Anthelios
+          - link [disabled] [ref=e757] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/cleanance.html
+            - text: Cleanance
+          - link [disabled] [ref=e758] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/octubre-rosa-avene.html
+            - text: Octubre Rosa Avene
+          - link [disabled] [ref=e759] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/avene.html
+            - text: AVÈNE
+          - link [disabled] [ref=e760] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/avene-physiolift.html
+            - text: Avene Physiolift
+          - link [disabled] [ref=e761] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/antiedad.html
+            - text: Antiedad
+          - link [disabled] [ref=e762] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/avene-solares-verano.html
+            - text: Avene Solares Verano
+          - list [ref=e763]:
+            - link [disabled] [ref=e764] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/avene-solares-verano/anti-edad-facebook.html
+              - text: Anti-Edad Facebook
+            - link [disabled] [ref=e765] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/avene-solares-verano/cleanance-facebook.html
+              - text: Cleanance Facebook
+            - link [disabled] [ref=e766] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/avene-solares-verano/pr-boxes.html
+              - text: PR Boxes
+            - link [disabled] [ref=e767] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/avene-solares-verano/solares-mail.html
+              - text: Solares Mail
+            - link [disabled] [ref=e768] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/avene-solares-verano/solares-facebook.html
+              - text: Solares Facebook
+          - link [disabled] [ref=e769] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/test-hotsale.html
+            - text: Test Hotsale
+          - link [disabled] [ref=e770] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/avene-oxitive.html
+            - text: Avene Oxitive
+          - link [disabled] [ref=e771] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/avene-a.html
+            - text: Avene A
+          - link [disabled] [ref=e772] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/avene-ene-feb.html
+            - text: Avene Ene-Feb
+          - link [disabled] [ref=e773] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/avene-dermabsolu.html
+            - text: Avene-Dermabsolu
+          - link [disabled] [ref=e774] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/emotivo.html
+            - text: Emotivo
+          - list [ref=e775]:
+            - link [disabled] [ref=e776] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/emotivo/avene.html
+              - text: Avene
+          - link [disabled] [ref=e777] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/dercos.html
+            - text: Dercos
+          - link [disabled] [ref=e778] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/frabel-varios.html
+            - text: FRABEL - VARIOS
+          - link [disabled] [ref=e779] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/categoria-2.html
+            - text: Categoría 2
+          - link [disabled] [ref=e780] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/nivea-verano-2023.html
+            - text: Nivea Verano 2023
+          - link [disabled] [ref=e781] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/bdf-luminos.html
+            - text: BDF-Luminos
+          - link [disabled] [ref=e782] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/bdf-exclusividad-sun.html
+            - text: BDF - EXCLUSIVIDAD SUN
+          - link [disabled] [ref=e783] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/roche-glucometro.html
+            - text: ROCHE - GLUCOMETRO
+          - link [disabled] [ref=e784] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/salud-mental.html
+            - text: Salud Mental
+          - link [disabled] [ref=e785] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/trulicity.html
+            - text: Trulicity
+          - link [disabled] [ref=e786] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/toujeo.html
+            - text: Toujeo
+          - link [disabled] [ref=e787] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/soliqua.html
+            - text: Soliqua
+          - link [disabled] [ref=e788] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/chinoin-fb.html
+            - text: Chinoin
+          - list [ref=e789]:
+            - link [disabled] [ref=e790] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/chinoin-fb/chinoin-fb1.html
+              - text: Chinoin
+            - link [disabled] [ref=e791] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/landings/chinoin-fb/chinoin-fb2.html
+              - text: Chinoin
+          - link [disabled] [ref=e792] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/marca-del-ahorro.html
+            - text: Marca del Ahorro
+          - link [disabled] [ref=e793] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/cantabria.html
+            - text: Cantabria
+          - link [disabled] [ref=e794] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/immu-flo.html
+            - text: Immu-flo
+          - link [disabled] [ref=e795] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/heliocare.html
+            - text: Heliocare
+          - link [disabled] [ref=e796] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/eternal.html
+            - text: Eternal
+          - link [disabled] [ref=e797] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/derma.html
+            - text: Derma
+          - link [disabled] [ref=e798] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/libertrim.html
+            - text: Libertrim
+          - link [disabled] [ref=e799] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/landings/isdin.html
+            - text: Isdin
+        - link [disabled] [ref=e800] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/optica.html
+          - text: Óptica
+        - list [ref=e801]:
+          - link [disabled] [ref=e802] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/optica/lentes.html
+            - text: Lentes
+        - link [disabled] [ref=e803] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/campanas-ecommerce.html
+          - text: Campañas Ecommerce
+        - list [ref=e804]:
+          - link [disabled] [ref=e805] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas-promocion-del-mes/lo-mas-vendido.html
+            - text: Lo Más Vendido
+          - link [disabled] [ref=e806] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas-promocion-del-mes/promociones-del-mes.html
+            - text: Promociones del mes
+          - link [disabled] [ref=e807] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/campanas-promocion-del-mes/promociones-flash.html
+            - text: Promociones Flash
+        - link [disabled] [ref=e808] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/aniversario-farmacias-del-ahorro.html
+          - text: Aniversario Farmacias del Ahorro
+        - list [ref=e809]:
+          - link [disabled] [ref=e810] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/aniversario-farmacias-del-ahorro/lo-mas-vendido.html
+            - text: Lo Más Vendido
+          - link [disabled] [ref=e811] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/aniversario-farmacias-del-ahorro/farmacia.html
+            - text: Farmacia
+          - link [disabled] [ref=e812] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/aniversario-farmacias-del-ahorro/perfumes.html
+            - text: Perfumes
+          - link [disabled] [ref=e813] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/aniversario-farmacias-del-ahorro/belleza.html
+            - text: Belleza
+          - link [disabled] [ref=e814] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/aniversario-farmacias-del-ahorro/hogar.html
+            - text: Hogar
+          - link [disabled] [ref=e815] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/aniversario-farmacias-del-ahorro/bebes.html
+            - text: Bebés
+          - link [disabled] [ref=e816] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/aniversario-farmacias-del-ahorro/nutricion-deportiva.html
+            - text: Nutrición Deportiva
+          - link [disabled] [ref=e817] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/aniversario-farmacias-del-ahorro/exclusivos-en-linea.html
+            - text: Exclusivos en línea
+        - link [disabled] [ref=e818] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/moda.html
+          - text: Moda
+        - list [ref=e819]:
+          - link [disabled] [ref=e820] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/moda/ropa.html
+            - text: Ropa
+          - list [ref=e821]:
+            - link [disabled] [ref=e822] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/moda/ropa/playeras.html
+              - text: Playeras
+        - link [disabled] [ref=e823] [cursor=pointer]:
+          - /url: https://mcstaging.fahorro.com/catalog/category/view/s/juegos-y-juguetes/id/17936/
+          - text: Juegos y Juguetes
+        - list [ref=e824]:
+          - link [disabled] [ref=e825] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/catalog/category/view/s/juguetes-de-construccion/id/17939/
+            - text: Juguetes de Construcción
+    - navigation "Main Menu" [ref=e828]:
+      - menubar [ref=e829]:
+        - menuitem [ref=e830]:
+          - button " Categorías" [ref=e831] [cursor=pointer]:
+            - generic [ref=e832]: 
+            - generic [ref=e833]: Categorías
+        - menuitem [ref=e834]:
+          - link "Nutrición y deporte" [ref=e835] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/me-quiero-bien
+            - paragraph [ref=e836]:
+              - generic [ref=e837]: Nutrición y deporte
+        - menuitem [ref=e838]:
+          - link "Derma" [ref=e839] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/derma-mexico
+            - paragraph [ref=e840]:
+              - generic [ref=e841]: Derma
+        - menuitem [ref=e842]:
+          - link "Diabetes" [ref=e843] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/prevencion-y-control-diabetes
+            - paragraph [ref=e844]:
+              - generic [ref=e845]: Diabetes
+        - menuitem [ref=e846]:
+          - link "Mamás y Papás" [ref=e847] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/mi-bebe
+            - paragraph [ref=e848]:
+              - generic [ref=e849]: Mamás y Papás
+        - menuitem [ref=e850]:
+          - link "Monedero del Ahorro" [ref=e851] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/monedero-del-ahorro
+            - paragraph [ref=e852]:
+              - generic [ref=e853]: Monedero del Ahorro
+        - menuitem [ref=e854]:
+          - link "Descubre más" [ref=e855] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/#
+            - paragraph [ref=e856]:
+              - generic [ref=e857]: Descubre más
+    - main [ref=e858]:
+      - generic [ref=e860]:
+        - text: o * *
+        - generic [ref=e863]:
+          - button "Previous" [disabled] [ref=e864] [cursor=pointer]
+          - generic [ref=e866]:
+            - tabpanel [ref=e867]:
+              - link [ref=e870] [cursor=pointer]:
+                - /url: ""
+            - tabpanel [ref=e876]:
+              - link [ref=e879] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/farmacia/promociones-del-mes.html
+            - tabpanel [ref=e885]:
+              - link [ref=e888] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/derma/promociones-del-mes.html
+            - tabpanel [ref=e894]:
+              - link [ref=e897] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/landings/avene-solares-verano.html
+            - tabpanel [ref=e903]:
+              - link [ref=e906] [cursor=pointer]:
+                - /url: ""
+            - tabpanel [ref=e912]:
+              - link [ref=e915] [cursor=pointer]:
+                - /url: https://mcstaging.fahorro.com/bioderma-sensibio-h20-para-pieles-sensibles-500-ml.html
+          - button "Next" [ref=e921] [cursor=pointer]
+          - tablist [ref=e922]:
+            - tab "1 of 6" [selected] [ref=e923] [cursor=pointer]: • 1
+            - tab "2 of 6" [ref=e924] [cursor=pointer]: • 2
+            - tab "3 of 6" [ref=e925] [cursor=pointer]: • 3
+            - tab "4 of 6" [ref=e926] [cursor=pointer]: • 4
+            - tab "5 of 6" [ref=e927] [cursor=pointer]: • 5
+            - tab "6 of 6" [ref=e928] [cursor=pointer]: • 6
+        - generic [ref=e934]:
+          - generic [ref=e937]:
+            - figure [ref=e938]:
+              - img "Icon Domicilio Farmacia del Ahorro" [ref=e939]
+            - generic [ref=e940]:
+              - heading [level=4] [ref=e941]:
+                - link "Servicio a Domicilio" [ref=e942] [cursor=pointer]:
+                  - /url: /servicio-a-domicilio
+              - paragraph [ref=e943]:
+                - link "Envío Gratuito. Consulta tu número local" [ref=e944] [cursor=pointer]:
+                  - /url: /servicio-a-domicilio
+                - text: .
+          - generic [ref=e947]:
+            - figure [ref=e948]:
+              - img "Icon Tarjeta Farmacia del Ahorro" [ref=e949]
+            - generic [ref=e950]:
+              - heading [level=4] [ref=e951]:
+                - link "Monedero del Ahorro" [ref=e952] [cursor=pointer]:
+                  - /url: /monedero-del-ahorro
+              - paragraph [ref=e953]:
+                - link "Llévate más en cada compra." [ref=e954] [cursor=pointer]:
+                  - /url: /monedero-del-ahorro
+          - generic [ref=e957]:
+            - figure [ref=e958]:
+              - img "Icon Pildora Farmacia del Ahorro" [ref=e959]
+            - generic [ref=e960]:
+              - heading [level=4] [ref=e961]:
+                - link "Marca del Ahorro" [ref=e962] [cursor=pointer]:
+                  - /url: /catalogsearch/result/index/?q=marca+del+ahorro&product_list_limit=30
+              - paragraph [ref=e963]:
+                - link "Medicamentos de calidad." [ref=e964] [cursor=pointer]:
+                  - /url: /catalogsearch/result/index/?q=marca+del+ahorro&product_list_limit=30
+          - generic [ref=e967]:
+            - figure [ref=e968]:
+              - img "Icon Medico Farmacia del Ahorro" [ref=e969]
+            - generic [ref=e970]:
+              - heading [level=4] [ref=e971]:
+                - link "Servicio de Orientación Médica" [ref=e972] [cursor=pointer]:
+                  - /url: /orientacion-medica
+              - paragraph [ref=e973]:
+                - link "Sin Costo." [ref=e974] [cursor=pointer]:
+                  - /url: /orientacion-medica
+        - generic [ref=e975]:
+          - figure [ref=e977]:
+            - link [ref=e978] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/sistema-integral-de-vacunacion
+              - img "Imagen Ahorro Lab Farmacia del Ahorro" [ref=e979]
+          - paragraph [ref=e981]:
+            - link "Enlace Farmacias" [ref=e982] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/derma.html
+        - figure [ref=e985]:
+          - link [ref=e986] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/sistema-integral-de-vacunacion
+            - img "Imagen Ahorro Lab Farmacia del Ahorro" [ref=e987]
+        - generic [ref=e991]:
+          - figure [ref=e993]:
+            - link [ref=e994] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/tracking/index/
+              - img "Imagen Consulta Pedidos Farmacia del Ahorro" [ref=e995]
+          - figure [ref=e997]:
+            - img "Imagen Consulta Lab Farmacia del Ahorro" [ref=e998]
+        - generic [ref=e1002]:
+          - figure [ref=e1004]:
+            - link [ref=e1005] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/vitaminas?utm_source=HomeFahorro&utm_medium=banner/
+              - img "Imagen Vitamine Farmacia del Ahorro" [ref=e1006]
+          - figure [ref=e1008]:
+            - link [ref=e1009] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/marca-del-ahorro?utm_source=HomeFahorro&utm_medium=banner/
+              - img "Imagen Visita Farmacia del Ahorro" [ref=e1010]
+          - figure [ref=e1012]:
+            - link [ref=e1013] [cursor=pointer]:
+              - /url: https://www.teleorientacion.com/
+              - img "Imagen Orientacion Farmacia del Ahorro" [ref=e1014]
+          - figure [ref=e1016]:
+            - link [ref=e1017] [cursor=pointer]:
+              - /url: https://www.ahorrocel.com/
+              - img "Imagen Medico Pediatra Farmacia del Ahorro" [ref=e1018]
+        - heading [level=2] [ref=e1022]:
+          - img "Recomendaciones de la semana" [ref=e1023]
+          - text: Recomendaciones de la semana
+        - list [ref=e1027]:
+          - button "Previous" [disabled]
+          - generic [ref=e1029]:
+            - tabpanel [ref=e1030]:
+              - listitem [ref=e1032]:
+                - generic [ref=e1033]:
+                  - link [ref=e1034] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/althera-formula-para-lactantes-a-partir-del-nacimiento-2-latas-de-400-g-c-u-a7359b1e.html
+                    - img "Althera Fórmula Para Lactantes A Partir del Nacimiento 2 Latas de 400 g c/u" [ref=e1037]
+                  - generic [ref=e1048]:
+                    - link "Althera Fórmula Para Lactantes A Partir del Nacimiento 2 Latas de 400 g c/u" [ref=e1051] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/althera-formula-para-lactantes-a-partir-del-nacimiento-2-latas-de-400-g-c-u-a7359b1e.html
+                    - generic [ref=e1056]:
+                      - generic [ref=e1058]:
+                        - generic [ref=e1059]: MXN
+                        - generic [ref=e1060]:
+                          - text: $0
+                          - generic [ref=e1061]: ".00"
+                      - generic [ref=e1062]: $0.00 x 3 meses sin intereses
+                    - generic [ref=e1071]:
+                      - button "Agregar al carrito" [ref=e1072] [cursor=pointer]
+                      - generic:
+                        - button "Disminuir cantidad" [ref=e1074] [cursor=pointer]
+                        - spinbutton "Cantidad" [ref=e1075]
+                        - button "Aumentar cantidad" [ref=e1076] [cursor=pointer]
+            - tabpanel [ref=e1077]:
+              - listitem [ref=e1079]:
+                - generic [ref=e1080]:
+                  - link [ref=e1081] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/house-of-quirk-insulated-reusable-lunch-bag-tote-bag1-8493ff81.html
+                  - generic [ref=e1095]:
+                    - link [ref=e1098] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/house-of-quirk-insulated-reusable-lunch-bag-tote-bag1-8493ff81.html
+                      - text: House of Quirk Insulated Reusable Lunch Bag Tote Bag1
+                    - generic [ref=e1100]: Exclusivo en línea
+                    - generic [ref=e1104]:
+                      - generic [ref=e1106]:
+                        - generic [ref=e1107]: MXN
+                        - generic [ref=e1108]:
+                          - text: $0
+                          - generic [ref=e1109]: ".00"
+                      - generic [ref=e1110]: $0.00 x 3 meses sin intereses
+                    - generic [ref=e1119]:
+                      - button [ref=e1120] [cursor=pointer]:
+                        - generic [ref=e1121]: Agregar al carrito
+                      - button [ref=e1122] [cursor=pointer]
+                      - spinbutton [ref=e1123]
+                      - button [ref=e1124] [cursor=pointer]
+            - tabpanel [ref=e1125]:
+              - listitem [ref=e1127]:
+                - generic [ref=e1128]:
+                  - link [ref=e1129] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/britannia-nutrichoice-oats-cookies-diabetic-friendly-02-d14585a3.html
+                  - generic [ref=e1143]:
+                    - link [ref=e1146] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/britannia-nutrichoice-oats-cookies-diabetic-friendly-02-d14585a3.html
+                      - text: Britannia NutriChoice Oats Cookies (Diabetic Friendly)02
+                    - generic [ref=e1148]: Exclusivo en línea
+                    - generic [ref=e1152]:
+                      - generic [ref=e1154]:
+                        - generic [ref=e1155]: MXN
+                        - generic [ref=e1156]:
+                          - text: $0
+                          - generic [ref=e1157]: ".00"
+                      - generic [ref=e1158]: $0.00 x 3 meses sin intereses
+                    - generic [ref=e1167]:
+                      - button [ref=e1168] [cursor=pointer]:
+                        - generic [ref=e1169]: Agregar al carrito
+                      - button [ref=e1170] [cursor=pointer]
+                      - spinbutton [ref=e1171]
+                      - button [ref=e1172] [cursor=pointer]
+            - tabpanel [ref=e1173]:
+              - listitem [ref=e1175]:
+                - generic [ref=e1176]:
+                  - link [ref=e1177] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/britannia-nutrichoice-oats-cookies-diabetic-friendly-02-cd80cb45.html
+                  - generic [ref=e1191]:
+                    - link [ref=e1194] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/britannia-nutrichoice-oats-cookies-diabetic-friendly-02-cd80cb45.html
+                      - text: Britannia NutriChoice Oats Cookies (Diabetic Friendly)02
+                    - generic [ref=e1196]: Exclusivo en línea
+                    - generic [ref=e1200]:
+                      - generic [ref=e1202]:
+                        - generic [ref=e1203]: MXN
+                        - generic [ref=e1204]:
+                          - text: $0
+                          - generic [ref=e1205]: ".00"
+                      - generic [ref=e1206]: $0.00 x 3 meses sin intereses
+                    - generic [ref=e1215]:
+                      - button [ref=e1216] [cursor=pointer]:
+                        - generic [ref=e1217]: Agregar al carrito
+                      - button [ref=e1218] [cursor=pointer]
+                      - spinbutton [ref=e1219]
+                      - button [ref=e1220] [cursor=pointer]
+            - tabpanel [ref=e1221]:
+              - listitem [ref=e1223]:
+                - generic [ref=e1224]:
+                  - link [ref=e1225] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/britannia-nutrichoice-oats-cookies-diabetic-friendly-01-34532198.html
+                  - generic [ref=e1239]:
+                    - link [ref=e1242] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/britannia-nutrichoice-oats-cookies-diabetic-friendly-01-34532198.html
+                      - text: Britannia NutriChoice Oats Cookies (Diabetic Friendly)01
+                    - generic [ref=e1244]: Exclusivo en línea
+                    - generic [ref=e1248]:
+                      - generic [ref=e1250]:
+                        - generic [ref=e1251]: MXN
+                        - generic [ref=e1252]:
+                          - text: $0
+                          - generic [ref=e1253]: ".00"
+                      - generic [ref=e1254]: $0.00 x 3 meses sin intereses
+                    - generic [ref=e1263]:
+                      - button [ref=e1264] [cursor=pointer]:
+                        - generic [ref=e1265]: Agregar al carrito
+                      - button [ref=e1266] [cursor=pointer]
+                      - spinbutton [ref=e1267]
+                      - button [ref=e1268] [cursor=pointer]
+            - tabpanel [ref=e1269]:
+              - listitem [ref=e1271]:
+                - generic [ref=e1272]:
+                  - link [ref=e1273] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/oziva-sugar-support-effervescent91-f2912508.html
+                  - generic [ref=e1287]:
+                    - link [ref=e1290] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/oziva-sugar-support-effervescent91-f2912508.html
+                      - text: OZiva Sugar Support Effervescent91
+                    - generic [ref=e1292]: Exclusivo en línea
+                    - generic [ref=e1296]:
+                      - generic [ref=e1298]:
+                        - generic [ref=e1299]: MXN
+                        - generic [ref=e1300]:
+                          - text: $0
+                          - generic [ref=e1301]: ".00"
+                      - generic [ref=e1302]: $0.00 x 3 meses sin intereses
+                    - generic [ref=e1311]:
+                      - button [ref=e1312] [cursor=pointer]:
+                        - generic [ref=e1313]: Agregar al carrito
+                      - button [ref=e1314] [cursor=pointer]
+                      - spinbutton [ref=e1315]
+                      - button [ref=e1316] [cursor=pointer]
+            - tabpanel [ref=e1317]:
+              - listitem [ref=e1319]:
+                - generic [ref=e1320]:
+                  - link [ref=e1321] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/oziva-sugar-support-effervescent90-b2583e28.html
+                  - generic [ref=e1335]:
+                    - link [ref=e1338] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/oziva-sugar-support-effervescent90-b2583e28.html
+                      - text: OZiva Sugar Support Effervescent90
+                    - generic [ref=e1340]: Exclusivo en línea
+                    - generic [ref=e1344]:
+                      - generic [ref=e1346]:
+                        - generic [ref=e1347]: MXN
+                        - generic [ref=e1348]:
+                          - text: $0
+                          - generic [ref=e1349]: ".00"
+                      - generic [ref=e1350]: $0.00 x 3 meses sin intereses
+                    - generic [ref=e1359]:
+                      - button [ref=e1360] [cursor=pointer]:
+                        - generic [ref=e1361]: Agregar al carrito
+                      - button [ref=e1362] [cursor=pointer]
+                      - spinbutton [ref=e1363]
+                      - button [ref=e1364] [cursor=pointer]
+            - tabpanel [ref=e1365]:
+              - listitem [ref=e1367]:
+                - generic [ref=e1368]:
+                  - link [ref=e1369] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/dolphy-professional-wall-mounted-hair-dryer-1875-watts-white-7223b544.html
+                  - generic [ref=e1382]:
+                    - link [ref=e1385] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/dolphy-professional-wall-mounted-hair-dryer-1875-watts-white-7223b544.html
+                      - text: DOLPHY Professional Wall Mounted Hair Dryer - 1875 Watts White
+                    - generic [ref=e1387]: Exclusivo en línea
+                    - generic [ref=e1391]:
+                      - generic [ref=e1393]:
+                        - generic [ref=e1394]: MXN
+                        - generic [ref=e1395]:
+                          - text: $0
+                          - generic [ref=e1396]: ".00"
+                      - generic [ref=e1397]: $0.00 x 3 meses sin intereses
+                    - generic [ref=e1406]:
+                      - button [ref=e1407] [cursor=pointer]:
+                        - generic [ref=e1408]: Agregar al carrito
+                      - button [ref=e1409] [cursor=pointer]
+                      - spinbutton [ref=e1410]
+                      - button [ref=e1411] [cursor=pointer]
+            - tabpanel [ref=e1412]:
+              - listitem [ref=e1414]:
+                - generic [ref=e1415]:
+                  - link [ref=e1416] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/cubrebocas-tricapa-1-pieza-azul-marca-del-ahorro.html
+                  - generic [ref=e1429]:
+                    - link [ref=e1432] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/cubrebocas-tricapa-1-pieza-azul-marca-del-ahorro.html
+                      - text: Cubrebocas Tricapa 1 Pieza Azul Marca del Ahorro
+                    - generic [ref=e1437]:
+                      - generic [ref=e1439]:
+                        - generic [ref=e1440]: MXN
+                        - generic [ref=e1441]:
+                          - text: $6
+                          - generic [ref=e1442]: ".00"
+                      - generic [ref=e1443]: $2.00 x 3 meses sin intereses
+                    - generic [ref=e1444]:
+                      - generic [ref=e1445]: Acumula 5 y llévate 1 GRATIS con tu Monedero del Ahorro
+                      - generic [ref=e1453]:
+                        - button [ref=e1454] [cursor=pointer]:
+                          - generic [ref=e1455]: Agregar al carrito
+                        - button [ref=e1456] [cursor=pointer]
+                        - spinbutton [ref=e1457]
+                        - button [ref=e1458] [cursor=pointer]
+            - tabpanel [ref=e1459]:
+              - listitem [ref=e1461]:
+                - generic [ref=e1462]:
+                  - link [ref=e1463] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/jeringa-desechable-21x32-3-ml-marca-del-ahorro.html
+                  - generic [ref=e1476]:
+                    - link [ref=e1479] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/jeringa-desechable-21x32-3-ml-marca-del-ahorro.html
+                      - text: Jeringa Desechable 21X32 3 ml Marca del Ahorro
+                    - generic [ref=e1484]:
+                      - generic [ref=e1486]:
+                        - generic [ref=e1487]: MXN
+                        - generic [ref=e1488]:
+                          - text: $7
+                          - generic [ref=e1489]: ".00"
+                      - generic [ref=e1490]: $2.33 x 3 meses sin intereses
+                    - generic [ref=e1499]:
+                      - button [ref=e1500] [cursor=pointer]:
+                        - generic [ref=e1501]: Agregar al carrito
+                      - button [ref=e1502] [cursor=pointer]
+                      - spinbutton [ref=e1503]
+                      - button [ref=e1504] [cursor=pointer]
+            - tabpanel [ref=e1505]:
+              - listitem [ref=e1507]:
+                - generic [ref=e1508]:
+                  - link [ref=e1509] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/suero-hidratante-sabor-uva-500-ml-marca-del-ahorro.html
+                  - generic [ref=e1522]:
+                    - link [ref=e1525] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/suero-hidratante-sabor-uva-500-ml-marca-del-ahorro.html
+                      - text: Suero Hidratante Sabor Uva 500 ml Marca del Ahorro
+                    - generic [ref=e1530]:
+                      - generic [ref=e1532]:
+                        - generic [ref=e1533]: MXN
+                        - generic [ref=e1534]:
+                          - text: $20
+                          - generic [ref=e1535]: ".00"
+                      - generic [ref=e1536]: $6.67 x 3 meses sin intereses
+                    - generic [ref=e1545]:
+                      - button [ref=e1546] [cursor=pointer]:
+                        - generic [ref=e1547]: Agregar al carrito
+                      - button [ref=e1548] [cursor=pointer]
+                      - spinbutton [ref=e1549]
+                      - button [ref=e1550] [cursor=pointer]
+            - tabpanel [ref=e1551]:
+              - listitem [ref=e1553]:
+                - generic [ref=e1554]:
+                  - link [ref=e1555] [cursor=pointer]:
+                    - /url: https://mcstaging.fahorro.com/cubrebocas-sr-voit-oxford.html
+                  - generic [ref=e1568]:
+                    - link [ref=e1571] [cursor=pointer]:
+                      - /url: https://mcstaging.fahorro.com/cubrebocas-sr-voit-oxford.html
+                      - text: Cubrebocas Sr Voit Oxford
+                    - generic [ref=e1573]: Exclusivo en línea
+                    - generic [ref=e1577]:
+                      - generic [ref=e1580]:
+                        - generic [ref=e1581]: MXN
+                        - generic [ref=e1582]:
+                          - text: $29
+                          - generic [ref=e1583]: ".00"
+                      - generic [ref=e1584]: $9.67 x 3 meses sin intereses
+                    - generic [ref=e1593]:
+                      - button [ref=e1594] [cursor=pointer]:
+                        - generic [ref=e1595]: Agregar al carrito
+                      - button [ref=e1596] [cursor=pointer]
+                      - spinbutton [ref=e1597]
+                      - button [ref=e1598] [cursor=pointer]
+          - button "Next" [ref=e1599] [cursor=pointer]
+          - tablist [ref=e1600]:
+            - tab "1 of 12" [selected] [ref=e1601] [cursor=pointer]: • 1
+            - tab "2 of 12" [ref=e1602] [cursor=pointer]: • 2
+            - tab "3 of 12" [ref=e1603] [cursor=pointer]: • 3
+            - tab "4 of 12" [ref=e1604] [cursor=pointer]: • 4
+        - generic [ref=e1608]:
+          - figure [ref=e1610]:
+            - link [ref=e1611] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/promociones
+              - img "Imagen Promociones Farmacia del Ahorro" [ref=e1612]
+          - figure [ref=e1614]:
+            - img "Melascreen Ducray" [ref=e1615]
+        - generic [ref=e1617]:
+          - link [ref=e1624] [cursor=pointer]:
+            - /url: https://mcstaging.fahorro.com/monedero-del-ahorro/acumula-y-gana
+            - generic [ref=e1625]:
+              - generic [ref=e1626]:
+                - generic "Imagen Productos Gratis Farmacia del Ahorro"
+                - generic "Imagen Productos Gratis Farmacia del Ahorro"
+                - img "Imagen Productos Gratis Farmacia del Ahorro" [ref=e1627]
+              - generic "Imagen Productos Gratis Farmacia del Ahorro" [ref=e1628]
+          - figure [ref=e1631]:
+            - link [ref=e1632] [cursor=pointer]:
+              - /url: https://mcstaging.fahorro.com/ayuda-ceac?utm_source=HomeFahorro&utm_medium=banner/
+              - img "Imagen Tutoriales Farmacia del Ahorro" [ref=e1633]
+    - link "Volver a Inicio de página" [ref=e1634] [cursor=pointer]:
+      - /url: "#"
+    - contentinfo [ref=e1635]:
+      - generic [ref=e1636]:
+        - generic [ref=e1640]:
+          - generic [ref=e1641]:
+            - heading "Ayuda y Servicios" [level=3] [ref=e1642]
+            - list [ref=e1644]:
+              - listitem [ref=e1645]:
+                - link "Sobre nosotros" [ref=e1646] [cursor=pointer]:
+                  - /url: /quienessomos
+              - listitem [ref=e1647]:
+                - link "Promolocales" [ref=e1648] [cursor=pointer]:
+                  - /url: http://www.promolocales.com/
+              - listitem [ref=e1649]:
+                - link "Bolsa de Trabajo" [ref=e1650] [cursor=pointer]:
+                  - /url: https://bolsadetrabajo.fahorro.com/
+              - listitem [ref=e1651]:
+                - link "Requisitos de recetas" [ref=e1652] [cursor=pointer]:
+                  - /url: /requisitos-recetas
+          - generic [ref=e1653]:
+            - heading "Servicios" [level=3] [ref=e1654]
+            - list [ref=e1656]:
+              - listitem [ref=e1657]:
+                - link "Sucursales" [ref=e1658] [cursor=pointer]:
+                  - /url: /find-a-store.html
+              - listitem [ref=e1659]:
+                - link "Servicio a domicilio" [ref=e1660] [cursor=pointer]:
+                  - /url: /servicio-a-domicilio
+              - listitem [ref=e1661]:
+                - link "Nuestros servicios" [ref=e1662] [cursor=pointer]:
+                  - /url: /ahorropagos
+              - listitem [ref=e1663]:
+                - link "Monedero del Ahorro" [ref=e1664] [cursor=pointer]:
+                  - /url: /monedero-del-ahorro
+              - listitem [ref=e1665]:
+                - link "Alianzas" [ref=e1666] [cursor=pointer]:
+                  - /url: https://www.monederodelahorro.com.mx:448/alianzas.php
+              - listitem [ref=e1667]:
+                - link "Orientación médica gratuita" [ref=e1668] [cursor=pointer]:
+                  - /url: /orientacion-medica
+              - listitem [ref=e1669]:
+                - link "Teleorientación médica gratuita" [ref=e1670] [cursor=pointer]:
+                  - /url: https://www.teleorientacion.com/
+          - generic [ref=e1671]:
+            - heading "Compra en Línea" [level=3] [ref=e1672]
+            - list [ref=e1674]:
+              - listitem [ref=e1675]:
+                - link "Facturación" [ref=e1676] [cursor=pointer]:
+                  - /url: /facturacion
+              - listitem [ref=e1677]:
+                - link "Horarios y Entregas" [ref=e1678] [cursor=pointer]:
+                  - /url: /horarios-entregas
+              - listitem [ref=e1679]:
+                - link "Formas de Pago" [ref=e1680] [cursor=pointer]:
+                  - /url: /formas-de-pago
+          - generic [ref=e1681]:
+            - heading "Servicio al Cliente" [level=3] [ref=e1682]
+            - generic [ref=e1683]:
+              - list [ref=e1684]:
+                - listitem [ref=e1685]:
+                  - link "Preguntas frecuentes" [ref=e1686] [cursor=pointer]:
+                    - /url: /preguntas-frecuentes
+                - listitem [ref=e1687]:
+                  - link "Aviso de Privacidad" [ref=e1688] [cursor=pointer]:
+                    - /url: /aviso-de-privacidad
+                - listitem [ref=e1689]:
+                  - link "Recepción de facturas" [ref=e1690] [cursor=pointer]:
+                    - /url: http://facturas.fahorro.com.mx/Facturas/Loggin.aspx?sesion=0
+                - listitem [ref=e1691]:
+                  - link "Medios de contacto" [ref=e1692] [cursor=pointer]:
+                    - /url: /medios-de-contacto
+                - listitem [ref=e1693]:
+                  - link "Aviso de Privacidad Bolsa de Trabajo" [ref=e1694] [cursor=pointer]:
+                    - /url: /aviso-privacidad-bolsa-de-trabajo
+                - listitem [ref=e1695]:
+                  - link "Aviso de Privacidad Proveedores" [ref=e1696] [cursor=pointer]:
+                    - /url: /aviso-privacidad-proveedores
+                  - link "Contacto Código de Conducta, solo Empleados y Proveedor":
+                    - /url: /contacto-codigo-conducta-empleados-proveedores
+              - list [ref=e1697]:
+                - listitem [ref=e1698]:
+                  - link "Tutoriales Para Nuestros Clientes" [ref=e1699] [cursor=pointer]:
+                    - /url: /ayuda-ceac
+              - paragraph [ref=e1700]
+              - list [ref=e1701]:
+                - listitem [ref=e1702]:
+                  - link "Línea de Denuncia (Violación al Código de Conducta)" [ref=e1703] [cursor=pointer]:
+                    - /url: /contacto-codigo-conducta-empleados-proveedores/
+        - generic [ref=e1707]:
+          - heading "Síguenos" [level=4] [ref=e1709]
+          - generic [ref=e1710]:
+            - figure [ref=e1711]:
+              - link [ref=e1712] [cursor=pointer]:
+                - /url: https://www.facebook.com/FAhorro
+                - img "Icon facebook farmacia del ahorro" [ref=e1713]
+            - figure [ref=e1714]:
+              - link [ref=e1715] [cursor=pointer]:
+                - /url: https://www.instagram.com/fahorro/
+                - img "Icon instagram farmacia del ahorro" [ref=e1716]
+            - figure [ref=e1717]:
+              - link [ref=e1718] [cursor=pointer]:
+                - /url: https://twitter.com/FAhorro
+                - img "Icon twitter farmacia del ahorro" [ref=e1719]
+            - figure [ref=e1720]:
+              - link [ref=e1721] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/fahorromx
+                - img "Icon youtube farmacia del ahorro" [ref=e1722]
+            - figure [ref=e1723]:
+              - link [ref=e1724] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@fahorro
+                - img "Icon tiktok farmacia del ahorro" [ref=e1725]
+    - figure [ref=e1729]:
+      - link [ref=e1730] [cursor=pointer]:
+        - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+        - img "Ir al chat" [ref=e1731]
+    - generic [ref=e1733]:
+      - paragraph [ref=e1734]: TODOS LOS DERECHOS RESERVADOS POR COMERCIALIZADORA FARMACÉUTICA DE CHIAPAS S.A.P.I. DE C.V., MÉXICO D.F. 2024
+      - paragraph [ref=e1735]: "COFEPRIS: 143300201 B1447 | NO. DE LICENCIA SANITARIA: 09 011 09 0096"
+      - generic [ref=e1736]:
+        - link "Aviso de Privacidad" [ref=e1737] [cursor=pointer]:
+          - /url: /aviso-de-privacidad
+        - text: "|"
+        - link "Términos y Condiciones" [ref=e1738] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-de-compra

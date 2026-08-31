@@ -1,0 +1,44 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - button "Atrás" [ref=e293] [cursor=pointer]
+    - generic [ref=e5]:
+      - img "FDA Seller Onboarding logo featuring stylized text FDA Seller Onboarding in blue and green, set against a clean white background, conveying a professional and welcoming tone" [ref=e6]
+      - heading "Marketplace" [level=1] [ref=e7]
+    - button "Cerrar sesión" [ref=e27] [cursor=pointer]
+  - generic [ref=e298]:
+    - generic [ref=e299] [cursor=pointer]: "1"
+    - generic: "2"
+    - generic: "3"
+    - generic: "4"
+  - generic [ref=e304]:
+    - paragraph [ref=e305]: Información personal
+    - generic [ref=e306]:
+      - generic [ref=e307]: Por favor completa la siguiente información
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - generic [ref=e310]: Nombre*
+          - textbox "Ingresa tu nombre" [disabled] [ref=e311]: Ana
+        - generic [ref=e312]:
+          - generic [ref=e313]: Apellido*
+          - textbox "Ingresa tu apellido" [disabled] [ref=e314]: Garcia
+        - generic [ref=e315]:
+          - generic [ref=e316]: Correo electrónico*
+          - textbox "ejemplo@correo.com" [disabled] [ref=e317]: psamal+full1787808808795001@kognivera.com
+        - generic [ref=e319]:
+          - generic [ref=e320]: Rol en la empresa *
+          - combobox [ref=e321]:
+            - generic [ref=e322]: Dueño
+        - generic [ref=e326]:
+          - generic [ref=e327]: Número telefónico*
+          - generic [ref=e328]:
+            - textbox "Número telefónico*" [disabled] [ref=e329]:
+              - /placeholder: 1 (702) 123-4567
+              - text: +52 551 234 5678
+            - 'button "Mexico: + 52" [ref=e331] [cursor=pointer]'
+        - generic [ref=e334]:
+          - generic [ref=e335]: País *
+          - combobox [ref=e336]:
+            - generic [ref=e337]: Mexico
+        - button "Continuar" [ref=e344] [cursor=pointer]
+  - generic [ref=e24]: ©2026 Todos los derechos reservados
+  - region "Notifications Alt+T"

@@ -1,0 +1,32 @@
+- generic [ref=f7e1]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - img "Organization background image" [ref=f7e2]
+          - generic [ref=f7e4]:
+            - generic [ref=f7e6]:
+              - img "Organization header logo"
+            - generic [ref=f7e12]:
+              - img "Organization banner logo" [ref=f7e15]
+              - main [ref=f7e16]:
+                - generic [ref=f7e17]:
+                  - generic "psamal@kognivera.com" [ref=f7e21]
+                  - generic [ref=f7e23]:
+                    - heading "Stay signed in?" [level=1] [ref=f7e24]
+                    - generic [ref=f7e25]: Do this to reduce the number of times you are asked to sign in.
+                    - generic [ref=f7e27]:
+                      - generic [ref=f7e30] [cursor=pointer]:
+                        - checkbox "Don't show this again" [ref=f7e31]
+                        - text: Don't show this again
+                      - generic [ref=f7e32]:
+                        - button "No" [ref=f7e34] [cursor=pointer]
+                        - button "Yes" [active] [ref=f7e36] [cursor=pointer]
+                    - paragraph [ref=f7e38]: Please sign in to KogniVera
+            - contentinfo [ref=f7e39]:
+              - generic [ref=f7e40]:
+                - link "Terms of use" [ref=f7e41] [cursor=pointer]:
+                  - /url: https://www.microsoft.com/en-US/servicesagreement/
+                - link "Privacy & cookies" [ref=f7e42] [cursor=pointer]:
+                  - /url: https://privacy.microsoft.com/en-US/privacystatement
+                - button "Click here for troubleshooting information" [ref=f7e43] [cursor=pointer]: ...

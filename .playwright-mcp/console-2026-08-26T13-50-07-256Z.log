@@ -1,0 +1,14 @@
+[    7867ms] [LOG] Will not send fingerprint @ https://mcstaging.fahorro.com/marketplace/provider/form:565
+[    7867ms] [LOG] undefined @ https://mcstaging.fahorro.com/marketplace/provider/form:565
+[    8654ms] Uncaught TypeError: Cannot read properties of null (reading 'cancelled')
+    at a.finish (https://js-agent.newrelic.com/nr-spa-1216.min.js:0:29558)
+    at <anonymous> (https://js-agent.newrelic.com/nr-spa-1216.min.js:1:2400)
+    at <anonymous> (https://js-agent.newrelic.com/nr-spa-1216.min.js:0:4336)
+    at r (https://js-agent.newrelic.com/nr-spa-1216.min.js:1:17448)
+    at r (https://js-agent.newrelic.com/nr-spa-1216.min.js:0:4260)
+    at n.exports (https://js-agent.newrelic.com/nr-spa-1216.min.js:0:4473)
+    at n.exports (https://js-agent.newrelic.com/nr-spa-1216.min.js:0:5506)
+    at <anonymous> (https://bam.nr-data.net/1/NRJS-df86b166cb1c30a043b?a=1036878683&v=1216.487a282&to=YFNbNhRSV0pSVUdQX1kZeAESWlZXHENdUl5YQVc%3D&rst=8101&ck=1&ref=https://mcstaging.fahorro.com/marketplace/provider/form&ap=1537&be=3218&fe=8059&dc=3244&af=err,xhr,stn,ins,spa&perf=%7B%22timing%22:%7B%22of%22:1787752207273,%22n%22:0,%22u%22:1958,%22ue%22:1958,%22f%22:2,%22dn%22:2,%22dne%22:2,%22c%22:2,%22ce%22:2,%22rq%22:51,%22rp%22:1922,%22rpe%22:1967,%22dl%22:1965,%22di%22:3231,%22ds%22:3232,%22de%22:3245,%22dc%22:8057,%22l%22:8057,%22le%22:8060%7D,%22navigation%22:%7B%7D%7D&fp=2956&fcp=3788&at=TBRYQFxIREQ%3D&jsonp=NREUM.setToken:0:6)
+[   15032ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://mcstaging.fahorro.com/static/version1787751639/frontend/Magento/base/default/Fda_Marketplace/css/images/ui-icons_777777_256x240.png:0
+[   30869ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://mcstaging.fahorro.com/static/version1787751639/frontend/Magento/base/default/Fda_Marketplace/css/images/ui-icons_555555_256x240.png:0
+[   30869ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://mcstaging.fahorro.com/static/version1787751639/frontend/Magento/base/default/Fda_Marketplace/css/images/ui-icons_ffffff_256x240.png:0

@@ -1,0 +1,23 @@
+- generic [ref=f6e2]:
+  - banner [ref=f6e3]:
+    - figure [ref=f6e7]
+  - main [ref=f6e8]:
+    - generic [ref=f6e10]:
+      - text: o * *
+      - generic [ref=f6e12]:
+        - text: "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+        - generic [ref=f6e978]:
+          - heading "¡Oh no! No pudimos enviar la información" [level=2] [ref=f6e979]: ¡Oh no!No pudimos enviar la información
+          - paragraph [ref=f6e980]: Por favor recarga la página o inténtalo más tarde
+  - contentinfo [ref=f6e21]:
+    - generic [ref=f6e24]:
+      - paragraph [ref=f6e25]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f6e26] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f6e27]: ©2026 Todos los derechos reservados.
+  - figure [ref=f6e31]:
+    - link [ref=f6e32] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f6e33]

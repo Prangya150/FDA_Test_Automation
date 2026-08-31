@@ -21,6 +21,7 @@
     <poi.version>5.3.0</poi.version>
     <log4j.version>2.24.3</log4j.version>
     <jackson.version>2.18.2</jackson.version>
+    <extentreports.version>5.1.2</extentreports.version>
     <!-- Override on CLI: mvn test -DsuiteXmlFile=src/test/resources/testng_021.xml -->
     <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
   </properties>
@@ -89,6 +90,13 @@
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
       <version>${jackson.version}</version>
+    </dependency>
+
+    <!-- ExtentReports (Spark reporter) - human-readable HTML test report -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>${extentreports.version}</version>
     </dependency>
   </dependencies>
 

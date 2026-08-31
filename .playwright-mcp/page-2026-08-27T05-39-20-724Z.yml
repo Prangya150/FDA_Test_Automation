@@ -1,0 +1,65 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - button "Atrás" [ref=e293] [cursor=pointer]
+    - generic [ref=e5]:
+      - img "FDA Seller Onboarding logo featuring stylized text FDA Seller Onboarding in blue and green, set against a clean white background, conveying a professional and welcoming tone" [ref=e6]
+      - heading "Marketplace" [level=1] [ref=e7]
+    - button "Cerrar sesión" [ref=e27] [cursor=pointer]
+  - generic [ref=e298]:
+    - generic [ref=e299] [cursor=pointer]: "1"
+    - generic: "2"
+    - generic: "3"
+    - generic: "4"
+  - generic [ref=e345]:
+    - paragraph [ref=e346]: Información de Empresa/s
+    - generic [ref=e347]:
+      - paragraph [ref=e349]: Ingresa la información de tu empresa
+      - generic [ref=e350]:
+        - generic [ref=e351]:
+          - generic [ref=e352]:
+            - generic [ref=e353]: Nombre comercial*
+            - textbox [disabled] [ref=e354]: Bienestar Kognivera 1787808808797002
+          - generic [ref=e355]:
+            - generic [ref=e356]: Razón Social*
+            - textbox [disabled] [ref=e357]: Bienestar Kognivera 1787808808797002 SA de CV
+        - generic [ref=e358]:
+          - generic [ref=e359]:
+            - generic [ref=e360]: RFC*
+            - textbox [disabled] [ref=e361]: GODE041211XC3
+          - generic [ref=e362]:
+            - generic [ref=e363]: Tipo de empresa *
+            - combobox [ref=e364]:
+              - generic [ref=e365]: Empresa Privada
+    - generic [ref=e369]:
+      - paragraph [ref=e371]: Dirección fiscal
+      - generic [ref=e372]:
+        - generic [ref=e373]:
+          - generic [ref=e374]:
+            - generic [ref=e375]: Calle*
+            - textbox [disabled] [ref=e376]: Av. Insurgentes Sur
+          - generic [ref=e377]:
+            - generic [ref=e378]: Código postal*
+            - textbox [disabled] [ref=e379]: "03100"
+        - generic [ref=e380]:
+          - generic [ref=e382]:
+            - generic [ref=e383]: Colonia *
+            - combobox [ref=e384]:
+              - generic [ref=e385]: Del Valle Centro
+          - generic [ref=e390]:
+            - generic [ref=e391]: Municipio o Alcaldía *
+            - combobox [ref=e392]:
+              - generic [ref=e393]: Benito Juárez
+        - generic [ref=e397]:
+          - generic [ref=e398]:
+            - generic [ref=e399]: Número interior (opcional)
+            - textbox [disabled] [ref=e400]
+          - generic [ref=e401]:
+            - generic [ref=e402]: Número exterior*
+            - textbox [disabled] [ref=e403]: "123"
+        - generic [ref=e406]:
+          - generic [ref=e407]: Estado *
+          - combobox [ref=e408]:
+            - generic [ref=e409]: Ciudad de México
+    - button "Continuar" [ref=e415] [cursor=pointer]
+  - generic [ref=e24]: ©2026 Todos los derechos reservados
+  - region "Notifications Alt+T"

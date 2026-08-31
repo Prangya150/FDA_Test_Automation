@@ -1,0 +1,77 @@
+- generic [ref=f14e2]:
+  - banner [ref=f14e3]:
+    - figure [ref=f14e7]
+  - main [ref=f14e8]:
+    - generic [ref=f14e23]:
+      - text: o * *
+      - generic [ref=f14e24]:
+        - list "Progress steps" [ref=f14e26]:
+          - listitem [ref=f14e27] [cursor=pointer]:
+            - generic [ref=f14e28]: Información personal
+          - listitem [ref=f14e29]:
+            - generic [ref=f14e30]: Información de la Empresa
+          - listitem [ref=f14e31]:
+            - generic [ref=f14e32]: Información de la Tienda
+          - listitem [ref=f14e33]:
+            - generic [ref=f14e34]: Información de Producto
+        - generic [ref=f14e35]:
+          - text: "* * * * * *"
+          - generic [ref=f14e596]:
+            - strong [ref=f14e598]: Información de Empresa/s
+            - group [ref=f14e600]:
+              - generic [ref=f14e601]:
+                - strong [ref=f14e603]: Ingresa la información de tu empresa
+                - group [ref=f14e605]:
+                  - generic [ref=f14e606]:
+                    - generic [ref=f14e607]: Nombre comercial*
+                    - textbox "Nombre comercial*" [ref=f14e609]
+                  - generic [ref=f14e610]:
+                    - generic [ref=f14e611]: Denominación / Razón social*
+                    - textbox "Denominación / Razón social*" [ref=f14e613]
+                  - generic [ref=f14e614]:
+                    - generic [ref=f14e615]: RFC*
+                    - textbox "RFC*" [ref=f14e617]
+                  - generic [ref=f14e618]:
+                    - generic [ref=f14e619]: Tipo de empresa*
+                    - combobox [ref=f14e621] [cursor=pointer]:
+                      - generic [ref=f14e622]: Seleccione una opción
+              - generic [ref=f14e623]:
+                - strong [ref=f14e625]: Dirección fiscal
+                - group [ref=f14e627]:
+                  - generic [ref=f14e628]:
+                    - generic [ref=f14e629]: Calle*
+                    - textbox "Calle*" [ref=f14e631]
+                  - generic [ref=f14e632]:
+                    - generic [ref=f14e633]: Código postal*
+                    - textbox "Código postal*" [ref=f14e635]
+                  - generic [ref=f14e636]:
+                    - generic [ref=f14e637]: Colonia*
+                    - textbox "Colonia*" [ref=f14e639]
+                  - text: "*"
+                  - generic [ref=f14e640]:
+                    - generic [ref=f14e641]: Municipio o alcaldía*
+                    - textbox "Municipio o alcaldía*" [ref=f14e643]
+                  - generic [ref=f14e644]:
+                    - generic [ref=f14e645]: Número exterior*
+                    - textbox "Número exterior*" [ref=f14e647]
+                  - generic [ref=f14e648]:
+                    - generic [ref=f14e649]: Número interior (opcional)
+                    - textbox "Número interior (opcional)" [ref=f14e651]
+                  - generic [ref=f14e652]:
+                    - generic [ref=f14e653]: Estado*
+                    - combobox [ref=f14e655] [cursor=pointer]:
+                      - generic [ref=f14e656]: Seleccione una opción
+              - button "Continuar" [ref=f14e657] [cursor=pointer]
+          - text: "* * * * * * * * * * * * *"
+  - contentinfo [ref=f14e9]:
+    - generic [ref=f14e12]:
+      - paragraph [ref=f14e13]:
+        - text: Consulta nuestros
+        - link "Términos y Condiciones" [ref=f14e14] [cursor=pointer]:
+          - /url: /terminos-y-condiciones-vendedores
+        - text: para vendedores de Farmacias del Ahorro
+      - paragraph [ref=f14e15]: ©2026 Todos los derechos reservados.
+  - figure [ref=f14e19]:
+    - link [ref=f14e20] [cursor=pointer]:
+      - /url: https://wa.me/5218007112222?text=Te damos la bienvenida al canal oficial de Farmacias del Ahorro, envía este mensaje para continuar
+      - img "Ir al chat" [ref=f14e21]
