@@ -1,5 +1,6 @@
 package com.fda.automation.base;
 
+import com.fda.automation.reporting.StepLogger;
 import com.fda.automation.utils.DriverFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,6 +21,7 @@ public class BaseTest {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0)); // rely on explicit waits only
         driverHolder.set(driver);
+        StepLogger.setDriver(driver);
         log.info("Browser started [thread={}]", Thread.currentThread().getId());
     }
 
@@ -27,6 +29,7 @@ public class BaseTest {
     public void tearDown() {
         WebDriver driver = driverHolder.get();
         if (driver != null) {
+            StepLogger.clearDriver();
             driver.quit();
             driverHolder.remove();
             log.info("Browser closed [thread={}]", Thread.currentThread().getId());

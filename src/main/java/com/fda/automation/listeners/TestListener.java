@@ -70,8 +70,8 @@ public class TestListener implements ITestListener, ISuiteListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        StepLogger.init();
         String testId = extractTestId(result);
+        StepLogger.init(testId);
         System.out.println();
         System.out.println(SEP);
         System.out.printf("TEST CASE : %s%n", testId);

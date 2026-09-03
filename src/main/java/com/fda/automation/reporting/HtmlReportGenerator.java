@@ -138,9 +138,19 @@ public final class HtmlReportGenerator {
                     if (step.getErrorMessage() != null) sb.append("            <p><b>Exception:</b> <code class='err'>").append(esc(step.getErrorMessage())).append("</code></p>\n");
                     if (step.getScreenshotBase64() != null) {
                         sb.append("            <div class='ss-section'><b>Failure Screenshot:</b><br>\n");
-                        sb.append("            <img src='data:image/png;base64,").append(step.getScreenshotBase64()).append("' class='ss'/></div>\n");
+                        sb.append("            <img src='data:image/png;base64,").append(step.getScreenshotBase64()).append("' class='ss' loading='lazy'/></div>\n");
                     }
                     sb.append("          </div>\n");
+                    sb.append("        </td></tr>\n");
+                }
+
+                // Pass step screenshot row (collapsed by default)
+                if (step.getStatus() != StepStatus.FAIL && step.getScreenshotBase64() != null) {
+                    sb.append("        <tr class='s-pass-ss'><td colspan='5'>\n");
+                    sb.append("          <details class='ss-toggle'>\n");
+                    sb.append("            <summary>&#128247; Step ").append(String.format("%02d", step.getNumber())).append(" Screenshot</summary>\n");
+                    sb.append("            <img src='data:image/png;base64,").append(step.getScreenshotBase64()).append("' class='ss-thumb' loading='lazy'/>\n");
+                    sb.append("          </details>\n");
                     sb.append("        </td></tr>\n");
                 }
             }
@@ -164,7 +174,7 @@ public final class HtmlReportGenerator {
                 sb.append("      </table>\n");
                 if (r.getScreenshotBase64() != null) {
                     sb.append("      <div class='ss-section'><b>Failure Screenshot:</b><br>\n");
-                    sb.append("      <img src='data:image/png;base64,").append(r.getScreenshotBase64()).append("' class='ss'/></div>\n");
+                    sb.append("      <img src='data:image/png;base64,").append(r.getScreenshotBase64()).append("' class='ss' loading='lazy'/></div>\n");
                 }
                 sb.append("    </div>\n");
             }
@@ -174,7 +184,7 @@ public final class HtmlReportGenerator {
         if ("PASS".equals(r.getStatus()) && r.getScreenshotBase64() != null) {
             sb.append("    <div class='ss-section'>\n");
             sb.append("      <h3>Final Screenshot</h3>\n");
-            sb.append("      <img src='data:image/png;base64,").append(r.getScreenshotBase64()).append("' class='ss'/>\n");
+            sb.append("      <img src='data:image/png;base64,").append(r.getScreenshotBase64()).append("' class='ss' loading='lazy'/>\n");
             sb.append("    </div>\n");
         }
 
@@ -330,10 +340,22 @@ public final class HtmlReportGenerator {
                             color:#991b1b;border:1px solid #fecaca;font-size:12px}
                 .fsm-tbl td{padding:8px 12px;border:1px solid #fecaca;word-break:break-word}
 
-                /* Screenshot */
+                /* Screenshot — final/failure */
                 .ss-section{margin-top:14px}
                 .ss{max-width:100%;border:2px solid #e5e7eb;border-radius:8px;margin-top:8px;
                     box-shadow:0 4px 12px rgba(0,0,0,.12);display:block}
+
+                /* Step screenshot (collapsible thumbnail) */
+                .s-pass-ss td{background:#f8fafc;padding:4px 12px 8px}
+                .ss-toggle{padding:0}
+                .ss-toggle summary{font-size:12px;color:#3b82f6;cursor:pointer;padding:2px 0;
+                                   user-select:none;list-style:none;display:flex;align-items:center;gap:4px}
+                .ss-toggle summary::-webkit-details-marker{display:none}
+                .ss-toggle summary::before{content:'\\25BA';font-size:9px;transition:transform .15s}
+                .ss-toggle[open] summary::before{transform:rotate(90deg)}
+                .ss-toggle summary:hover{text-decoration:underline}
+                .ss-thumb{max-width:100%;border:1px solid #e5e7eb;border-radius:6px;margin-top:8px;
+                          box-shadow:0 2px 8px rgba(0,0,0,.10);display:block}
 
                 .footer{text-align:center;padding:28px;color:#9ca3af;font-size:12px}
               </style>
