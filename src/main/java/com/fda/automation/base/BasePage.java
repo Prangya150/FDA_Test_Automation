@@ -41,15 +41,32 @@ public abstract class BasePage {
      * expanded by a previous action can transiently overlap a target's click point, intercepting
      * a native click - fall back to a JS click on interception rather than fixing this
      * call-by-call at every affected locator.
+     *
+     * CONFIRMED live on 2026-09-01 (TC_FBS_004): on the FDA storefront's client-side (SPA-style)
+     * navigation between products, an element located by {@code waitForClickable} can go stale in
+     * the gap before {@code .click()} actually fires, as the DOM keeps re-rendering after landing
+     * on the new page. Retries a few times (re-locating fresh each time) instead of fixing this
+     * call-by-call at every affected locator, same rationale as the click-intercepted fallback.
      */
     protected void click(By locator) {
         log.debug("Click: {}", locator);
-        WebElement element = waitForClickable(locator);
-        try {
-            element.click();
-        } catch (ElementClickInterceptedException e) {
-            log.debug("Native click intercepted for {}, falling back to JS click", locator);
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        final int maxAttempts = 3;
+        for (int attempt = 1; attempt <= maxAttempts; attempt++) {
+            try {
+                WebElement element = waitForClickable(locator);
+                try {
+                    element.click();
+                } catch (ElementClickInterceptedException e) {
+                    log.debug("Native click intercepted for {}, falling back to JS click", locator);
+                    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+                }
+                return;
+            } catch (StaleElementReferenceException e) {
+                if (attempt == maxAttempts) {
+                    throw e;
+                }
+                log.debug("Element went stale for {} on attempt {}, retrying", locator, attempt);
+            }
         }
     }
 

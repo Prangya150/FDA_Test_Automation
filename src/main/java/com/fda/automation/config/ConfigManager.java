@@ -83,6 +83,60 @@ public class ConfigManager {
         return get("fda.order.initial.status", "Pendiente");
     }
 
+    // --- TC_FBS_002 (2 products, 1 quantity each, single 3P seller) ---
+    public String getFbs002Product1Sku() {
+        return get("fbs002.product1.sku");
+    }
+
+    public String getFbs002Product2Sku() {
+        return get("fbs002.product2.sku");
+    }
+
+    // --- TC_FBS_003 (1 product, 2 quantity, single 3P seller) ---
+    public String getFbs003ProductSku() {
+        return get("fbs003.product.sku");
+    }
+
+    // --- TC_FBS_004 (2 products, 2 quantity each, single 3P seller) ---
+    public String getFbs004Product1Sku() {
+        return get("fbs004.product1.sku");
+    }
+
+    public String getFbs004Product2Sku() {
+        return get("fbs004.product2.sku");
+    }
+
+    // --- TC_FBS_005 (2 products, 1 quantity each, two different 3P sellers) ---
+    public String getFbs005Product1Sku() {
+        return get("fbs005.product1.sku");
+    }
+
+    public String getFbs005Product2Sku() {
+        return get("fbs005.product2.sku");
+    }
+
+    // --- TC_FBS_006 (2 products, 2 quantity each, two different 3P sellers) ---
+    public String getFbs006Product1Sku() {
+        return get("fbs006.product1.sku");
+    }
+
+    public String getFbs006Product2Sku() {
+        return get("fbs006.product2.sku");
+    }
+
+    // --- TC_FBS_007 (1 product, 1 quantity, single 3P seller, PayPal payment) ---
+    public String getFbs007ProductSku() {
+        return get("fbs007.product.sku");
+    }
+
+    public String getFdaPaypalEmail() {
+        return get("fda.paypal.email");
+    }
+
+    public String getFdaPaypalPassword() {
+        return get("fda.paypal.password");
+    }
+
     // --- Mirakl (operator front office) ---
     public String getMiraklBaseUrl() {
         return get("mirakl.base.url");

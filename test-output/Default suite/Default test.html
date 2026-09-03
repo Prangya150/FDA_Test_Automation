@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 24 14:44:53 IST 2026</td>
+<td>Started on:</td><td>Thu Sep 03 14:28:55 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55584 ms)</td>
+<tr><td>Total time:</td><td>180 seconds (180406 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.fda.automation.tests.fbs.TC_FBS_001_Test.verifyFbsOrderLifecycle()'><b>verifyFbsOrderLifecycle</b><br>Test class: com.fda.automation.tests.fbs.TC_FBS_001_Test<br>Test method: Verify the complete FBS order lifecycle across FDA, Mirakl and Kibo</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Remote browser did not respond to getCurrentUrl
+<td title='com.fda.automation.tests.fbs.TC_FBS_007_Test.verifyFbsOrderLifecycleWithPayPal()'><b>verifyFbsOrderLifecycleWithPayPal</b><br>Test class: com.fda.automation.tests.fbs.TC_FBS_007_Test<br>Test method: Verify the complete FBS order lifecycle across FDA, Mirakl and Kibo, paid via PayPal</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(normalize-space(.),&apos;Pagar&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:326)
-	at com.fda.automation.pages.mirakl.MiraklLoginPage.lambda$waitForManualMfaCompletion$0(MiraklLoginPage.java:94)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.fda.automation.pages.mirakl.MiraklLoginPage.waitForManualMfaCompletion(MiraklLoginPage.java:94)
-	at com.fda.automation.tests.fbs.TC_FBS_001_Test.loginToMirakl(TC_FBS_001_Test.java:216)
-	at com.fda.automation.tests.fbs.TC_FBS_001_Test.verifyFbsOrderLifecycle(TC_FBS_001_Test.java:59)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.75, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\DARSHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65465}, goog:processID: 30092, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65465/devtoo..., se:cdpVersion: 152.0.7977.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da24c264aa1d37b18d89c1f2e08f0b92
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fda.automation.pages.fda.FdaPaymentPage.clickPayPalPagarButton(FdaPaymentPage.java:105)
+	at com.fda.automation.tests.fbs.TC_FBS_007_Test.completeCheckoutAndPlaceOrderWithPayPal(TC_FBS_007_Test.java:160)
+	at com.fda.automation.tests.fbs.TC_FBS_007_Test.verifyFbsOrderLifecycleWithPayPal(TC_FBS_007_Test.java:73)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -113,17 +114,18 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace314966354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace314966354'><pre>org.openqa.selenium.WebDriverException: Remote browser did not respond to getCurrentUrl
+</pre></div><a href='#' onClick='toggleBox("stack-trace499831151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499831151'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(normalize-space(.),&apos;Pagar&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:326)
-	at com.fda.automation.pages.mirakl.MiraklLoginPage.lambda$waitForManualMfaCompletion$0(MiraklLoginPage.java:94)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.fda.automation.pages.mirakl.MiraklLoginPage.waitForManualMfaCompletion(MiraklLoginPage.java:94)
-	at com.fda.automation.tests.fbs.TC_FBS_001_Test.loginToMirakl(TC_FBS_001_Test.java:216)
-	at com.fda.automation.tests.fbs.TC_FBS_001_Test.verifyFbsOrderLifecycle(TC_FBS_001_Test.java:59)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.75, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\DARSHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65465}, goog:processID: 30092, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65465/devtoo..., se:cdpVersion: 152.0.7977.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da24c264aa1d37b18d89c1f2e08f0b92
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fda.automation.pages.fda.FdaPaymentPage.clickPayPalPagarButton(FdaPaymentPage.java:105)
+	at com.fda.automation.tests.fbs.TC_FBS_007_Test.completeCheckoutAndPlaceOrderWithPayPal(TC_FBS_007_Test.java:160)
+	at com.fda.automation.tests.fbs.TC_FBS_007_Test.verifyFbsOrderLifecycleWithPayPal(TC_FBS_007_Test.java:73)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -151,8 +153,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>51</td>
-<td>com.fda.automation.tests.fbs.TC_FBS_001_Test@614df0a4</td></tr>
+<td>168</td>
+<td>com.fda.automation.tests.fbs.TC_FBS_007_Test@614df0a4</td></tr>
 </table><p>
 </body>
 </html>

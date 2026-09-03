@@ -6,10 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 /**
@@ -28,6 +31,22 @@ public class FdaPaymentPage extends BasePage {
 
     // Confirmed: <input type="radio" id="adyen_cc" value="adyen_cc" name="payment[method]">
     private static final By CREDIT_DEBIT_CARD_RADIO = By.id("adyen_cc");
+
+    // NOT YET CONFIRMED live (no PayPal run has happened yet, unlike adyen_cc above) - matched by
+    // id/value containing "paypal" rather than a guessed exact id, same defensive reasoning as
+    // PLACE_ORDER_BUTTON's text match below. Adjust once run against the real payment method list.
+    private static final By PAYPAL_RADIO =
+            By.xpath("//input[@type='radio' and (contains(@id,'paypal') or contains(@value,'paypal'))]");
+    // The test case's own "PayPal Pagar" button - distinct from PLACE_ORDER_BUTTON ("Completar
+    // pago"), which is clicked later, after control returns from the PayPal-hosted pages.
+    // NOT YET CONFIRMED live: a first real run (2026-09-03) timed out on this exact-text,
+    // main-document-only version - case-insensitive matched on "pagar"/"paypal" instead of the
+    // literal "Pagar" text, and also tried inside iframes in clickPayPalPagarButton() below, since
+    // PayPal's own checkout-button widgets are commonly iframe-embedded (unlike Adyen's card fields,
+    // whose iframe-per-field structure is separately confirmed above).
+    private static final By PAYPAL_PAGAR_BUTTON = By.xpath(
+            "//button[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'pagar')"
+                    + " or contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'paypal')]");
 
     private static final By CARD_NUMBER_IFRAME = By.cssSelector(".adyen-checkout__field--cardNumber iframe");
     private static final By CARD_EXPIRY_IFRAME = By.cssSelector(".adyen-checkout__field--expiryDate iframe");
@@ -63,10 +82,68 @@ public class FdaPaymentPage extends BasePage {
         return waitForVisible(paymentStepHeading).isDisplayed();
     }
 
+    /**
+     * CONFIRMED live on 2026-09-01 (TC_FBS_006, a two-seller x quantity-2 cart): the "Método de
+     * pago" heading checked by {@link #isDisplayed()} renders before the payment method list
+     * itself, which is populated by a follow-up ajax call - same skeleton-then-ajax pattern as the
+     * Adyen secured fields below, whose own doc notes this gap widens with more line items/sellers
+     * on the order. The default explicit wait (10s) wasn't enough for this bigger cart; use a
+     * longer, dedicated wait instead of the shared default.
+     */
     public void selectCreditDebitCardPayment() {
+        WebElement radio = new WebDriverWait(driver, Duration.ofSeconds(60))
+                .until(ExpectedConditions.presenceOfElementLocated(CREDIT_DEBIT_CARD_RADIO));
         // A plain click can miss this Magento-styled radio; the diagnostic run that worked used a JS click.
-        WebElement radio = waitForPresent(CREDIT_DEBIT_CARD_RADIO);
-        ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].click();", radio);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", radio);
+    }
+
+    /** Selects the PayPal radio button on the payment method list. */
+    public void selectPayPalPayment() {
+        WebElement radio = new WebDriverWait(driver, Duration.ofSeconds(60))
+                .until(ExpectedConditions.presenceOfElementLocated(PAYPAL_RADIO));
+        // Same JS-click fallback as selectCreditDebitCardPayment - a plain click can miss this
+        // Magento-styled radio.
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", radio);
+    }
+
+    /**
+     * Clicks the "PayPal Pagar" button, which redirects (same tab or a new popup) to PayPal.
+     *
+     * NOT YET CONFIRMED live which of three shapes this button actually takes, so all three are
+     * tried in order: (1) a distinct "Pagar"/"PayPal" button on the main checkout page, same as
+     * PLACE_ORDER_BUTTON's text-match approach; (2) the same button, but rendered inside an iframe
+     * (PayPal's own widgets are commonly iframe-embedded); (3) no distinct button at all - selecting
+     * the PayPal radio just changes what PLACE_ORDER_BUTTON ("Completar pago") itself does, same as
+     * every other payment method on this page.
+     */
+    public void clickPayPalPagarButton() {
+        wait.until(d -> d.findElements(LOADING_MASK).stream().noneMatch(WebElement::isDisplayed));
+        WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+        try {
+            shortWait.until(ExpectedConditions.elementToBeClickable(PAYPAL_PAGAR_BUTTON)).click();
+            return;
+        } catch (TimeoutException e) {
+            log.debug("No 'Pagar'/'PayPal' button on the main checkout document; scanning iframes");
+        }
+
+        for (WebElement frame : driver.findElements(By.tagName("iframe"))) {
+            driver.switchTo().frame(frame);
+            try {
+                List<WebElement> matches = driver.findElements(PAYPAL_PAGAR_BUTTON);
+                if (!matches.isEmpty() && matches.get(0).isDisplayed()) {
+                    matches.get(0).click();
+                    return;
+                }
+            } finally {
+                driver.switchTo().defaultContent();
+            }
+        }
+
+        log.warn("No distinct PayPal 'Pagar' button found (main document or iframes); "
+                + "falling back to the generic 'Completar pago' button");
+        new WebDriverWait(driver, Duration.ofSeconds(30))
+                .until(ExpectedConditions.elementToBeClickable(PLACE_ORDER_BUTTON)).click();
     }
 
     /** Fills the three Adyen secured-field iframes with the given card details. */
@@ -81,6 +158,12 @@ public class FdaPaymentPage extends BasePage {
      * (can go stale), and its loading spinner can still visually overlap the iframe for a moment
      * after that (click-intercepted). Waits for the spinner to clear first, then retries the fill
      * on either failure mode instead of failing the whole checkout on a one-off race.
+     *
+     * CONFIRMED live on 2026-08-31 (TC_FBS_002, a 2-item cart): with more line items the payment
+     * step recalculates pricing/marketplace offers before the Adyen form is interactive, so the
+     * secured field can still take longer than the default explicit.wait to become clickable -
+     * also retrying on that {@link TimeoutException} (previously only StaleElement/ClickIntercepted
+     * were retried) covers this instead of failing checkout on the first attempt.
      */
     private void fillSecuredField(By iframeLocator, String fieldType, String value) {
         wait.until(d -> d.findElements(ADYEN_SPINNER).stream().noneMatch(WebElement::isDisplayed));
@@ -95,7 +178,7 @@ public class FdaPaymentPage extends BasePage {
                 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", input);
                 input.sendKeys(value);
                 return;
-            } catch (StaleElementReferenceException | ElementClickInterceptedException e) {
+            } catch (StaleElementReferenceException | ElementClickInterceptedException | TimeoutException e) {
                 lastFailure = e;
                 log.debug("Secured field '{}' failed on attempt {} ({}), retrying", fieldType, attempt, e.getClass().getSimpleName());
             } finally {
