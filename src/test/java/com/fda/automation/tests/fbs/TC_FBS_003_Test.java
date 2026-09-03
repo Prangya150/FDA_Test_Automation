@@ -4,24 +4,23 @@ import com.fda.automation.api.kibo.KiboAuthService;
 import com.fda.automation.api.kibo.KiboOrdersService;
 import com.fda.automation.api.kibo.KiboShipmentService;
 import com.fda.automation.base.BaseTest;
+import com.fda.automation.base.SuiteSession;
 import com.fda.automation.config.ConfigManager;
+import com.fda.automation.listeners.SuiteLoginListener;
 import com.fda.automation.models.OrderContext;
 import com.fda.automation.pages.fda.FdaCartPage;
 import com.fda.automation.pages.fda.FdaHomePage;
-import com.fda.automation.pages.fda.FdaLoginPage;
 import com.fda.automation.pages.fda.FdaOrderHistoryPage;
 import com.fda.automation.pages.fda.FdaOrderSuccessPage;
 import com.fda.automation.pages.fda.FdaPaymentPage;
 import com.fda.automation.pages.fda.FdaProductDetailsPage;
 import com.fda.automation.pages.fda.FdaShippingPage;
 import com.fda.automation.pages.mirakl.MiraklDocumentsPage;
-import com.fda.automation.pages.mirakl.MiraklLoginPage;
 import com.fda.automation.pages.mirakl.MiraklOrderDetailsPage;
 import com.fda.automation.pages.mirakl.MiraklOrdersPage;
 import com.fda.automation.pages.mirakl.MiraklTrackingPage;
 import com.fda.automation.utils.PollingUtils;
 import com.fda.automation.utils.RandomDataUtils;
-import org.openqa.selenium.WindowType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -85,25 +84,14 @@ public class TC_FBS_003_Test extends BaseTest {
     // ------------------------------------------------------------------
 
     private void loginToFDA() {
-        // Using a persistent Chrome profile (see chrome.user.data.dir) so Mirakl's MFA-skip
-        // cookie survives across runs also carries over any existing FDA session on that same
-        // profile. Log out first so the login flow below always starts from a known-logged-out
-        // state regardless of what a previous run left behind.
-        getDriver().get(config.getFdaBaseUrl() + "/customer/account/logout/");
-
-        getDriver().get(config.getFdaBaseUrl());
-
-        FdaLoginPage loginPage = new FdaLoginPage(getDriver());
-        loginPage.openAccountMenu();
-        loginPage.clickLoginLink();
-        Assert.assertTrue(loginPage.isLoginFormDisplayed(), "FDA login page was not displayed");
-
-        loginPage.login(config.getFdaUsername(), config.getFdaPassword());
+        // Login now happens once for the whole suite (see SuiteLoginListener) instead of here -
+        // just switch to the already-authenticated FDA tab and make sure the shared account's cart
+        // is empty before this test's own "quantity is 2" assertions run.
+        fdaWindowHandle = SuiteSession.getFdaWindowHandle();
+        switchToFdaTab();
 
         fdaHomePage = new FdaHomePage(getDriver());
         fdaHomePage.waitUntilLoaded();
-
-        fdaWindowHandle = getDriver().getWindowHandle();
 
         ensureCartIsEmpty();
     }
@@ -198,11 +186,10 @@ public class TC_FBS_003_Test extends BaseTest {
     // Mirakl
     // ------------------------------------------------------------------
 
-    /** Opens Mirakl in a new tab in the same WebDriver session, per test-case requirement. */
+    /** Switches to Mirakl's already-open tab (opened once for the whole suite by SuiteLoginListener). */
     private void openMiraklInNewTab() {
-        getDriver().switchTo().newWindow(WindowType.TAB);
-        miraklWindowHandle = getDriver().getWindowHandle();
-        getDriver().get(config.getMiraklBaseUrl());
+        miraklWindowHandle = SuiteSession.getMiraklWindowHandle();
+        switchToMiraklTab();
     }
 
     private void switchToFdaTab() {
@@ -211,32 +198,15 @@ public class TC_FBS_003_Test extends BaseTest {
 
     private void switchToMiraklTab() {
         getDriver().switchTo().window(miraklWindowHandle);
+        // Mirakl's Auth0 session can expire mid-suite (a run now spans all 7 tests, not just one) -
+        // see SuiteLoginListener.reauthenticateIfExpired for why this check lives here.
+        SuiteLoginListener.reauthenticateIfExpired();
     }
 
     private void loginToMirakl() {
-        MiraklLoginPage loginPage = new MiraklLoginPage(getDriver());
-
-        // With a persistent Chrome profile (chrome.user.data.dir), a previous run's authenticated
-        // Mirakl session can still be active, landing directly on the dashboard instead of the
-        // login form. The login form is served from the same origin as the operator front office,
-        // so a URL-prefix check can't tell the two apart - check for the form itself instead.
-        if (!loginPage.isLoginFormPresent(Duration.ofSeconds(10))) {
-            log.info("Mirakl session already authenticated from a previous run; skipping login");
-            return;
-        }
-
-        Assert.assertTrue(loginPage.isDisplayed(), "Mirakl login page was not displayed");
-        // Calling Mirakl LoginPage method to log in with username and password
-        loginPage.login(config.getMiraklUsername(), config.getMiraklPassword());
-        loginPage.waitForPostLoginNavigation(config.getMiraklBaseUrl(), Duration.ofSeconds(20));
-
-        // Mirakl's Auth0 login can present an email MFA challenge; this framework has no email
-        // integration to read the code, so it is entered manually in the visible browser window.
-        if (loginPage.isMfaChallengeDisplayed()) {
-            loginPage.waitForManualMfaCompletion(Duration.ofMinutes(5));
-        }
-
-        loginPage.waitForRedirectToOperatorFrontOffice(config.getMiraklBaseUrl());
+        // No-op: login now happens once for the whole suite (see SuiteLoginListener), and
+        // switchToMiraklTab() already re-authenticates if that shared session expired mid-suite.
+        // Kept as a call site so this method's callers don't need to change.
     }
 
     private void verifyAndAcceptMiraklOrder() {
