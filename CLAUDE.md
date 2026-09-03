@@ -5,7 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-# Run all tests (default suite: testng.xml, parallel="methods" thread-count=2)
+# Run all tests (default suite: testng.xml). Runs sequentially, not in parallel - see
+# "Shared suite-level session" below for why.
 mvn test
 
 # Run a specific suite file (create your own testng_smoke.xml — none exists yet)
@@ -57,23 +58,37 @@ src/main/java/com/fda/automation/
   utils/RandomDataUtils.java     — generates random test data (names, addresses, etc.)
   models/OrderContext.java       — carries orderId, fdaOrderTotal, miraklOrderTotal, kiboAccessToken, kiboOrderId, deliveryType, trackingNumber across a test's three-system lifecycle; toString() omits kiboAccessToken
   base/BasePage.java             — abstract; wraps WebDriverWait; provides click/type/getText/isDisplayed/select helpers, with built-in retry on stale/intercepted clicks
+<<<<<<< Updated upstream
   base/BaseTest.java             — TestNG base; ThreadLocal<WebDriver> for parallel safety; @BeforeMethod/@AfterMethod (page load timeout 30s, implicit wait 0s)
   listeners/TestListener.java    — ITestListener; logs pass/fail/skip; auto-captures screenshot on failure; triggers HtmlReportGenerator (only active when wired via testng.xml, see Commands)
   reporting/                     — thread-safe HTML report generation: ReportManager (CopyOnWriteArrayList of TestRecord), StepLogger, HtmlReportGenerator; populated by TestListener
+=======
+  base/BaseTest.java             — TestNG base; exposes the suite-shared WebDriver (see SuiteSession below). No per-test driver lifecycle anymore.
+  base/SuiteSession.java         — plain static holder (driver + FDA/Mirakl tab handles) shared by every TC_FBS_00N_Test for the whole suite run
+  listeners/TestListener.java    — ITestListener + ISuiteListener; logs pass/fail/skip, collects StepLogger step records into TestRecord, and (onFinish) writes the HTML report (see reporting/ below)
+  reporting/                     — StepLogger (per-step tracking, matching each test's manual step numbers) + ReportManager/TestRecord/StepRecord/HtmlReportGenerator that TestListener uses to build target/surefire-reports/fda-report.html. Only TC_FBS_001 calls StepLogger.step(...) so far; the other TC_FBS_00N tests don't yet.
+>>>>>>> Stashed changes
 
 src/test/java/com/fda/automation/
   pages/fda/                     — Page Objects for the FDA storefront (Magento 2 + Adyen payment + Empathy search widget)
   pages/mirakl/                  — Page Objects for the Mirakl operator front office (marketplace/seller management)
   pages/paypal/                  — Page Object for the PayPal-hosted checkout pages
+  listeners/SuiteLoginListener.java — ISuiteListener; logs into FDA and Mirakl exactly once for the whole suite (onStart) and logs out/closes the browser once everything finishes (onFinish). Lives here, not next to TestListener in src/main, because it needs the FDA/Mirakl page objects and main sources cannot depend on src/test.
   tests/fbs/                     — TC_FBS_00N end-to-end order-lifecycle tests (see below)
 ```
 
 **Key design decisions:**
-- `BaseTest` uses `ThreadLocal<WebDriver>` — tests run in parallel (`parallel="methods"` in testng.xml) safely
 - Implicit waits are explicitly set to 0; all waits go through `WebDriverWait` in `BasePage`
+<<<<<<< Updated upstream
 - `BasePage.navigateTo(path)` prepends `base.url` from config — page objects use relative paths only. FDA storefront pages use `fda.base.url` (separate key from the fallback `base.url`)
 - `TestListener` is wired in `testng.xml`, not via annotation, so it applies to all tests automatically — but only when the suite is actually run through that file (see the IDE-runner caveat in Commands)
 - `chrome.user.data.dir` in config enables a persistent Chrome profile, useful for bypassing MFA or preserving cookies across runs; leave blank to use a fresh ephemeral profile
+=======
+- `BasePage.navigateTo(path)` prepends `base.url` from config — page objects use relative paths only
+- `TestListener` and `SuiteLoginListener` are both wired in `testng.xml`'s `<listeners>`, not via annotation, so they apply to all tests automatically — but only when the suite is actually run through that file (see the IDE-runner caveat in Commands)
+
+**Shared suite-level session**: all seven TC_FBS_00N tests share ONE browser session and ONE FDA/Mirakl login for the whole suite, rather than each test logging in independently. `SuiteLoginListener` (an `ISuiteListener`) does the actual login in `onStart` — TestNG guarantees `onStart`/`onFinish` run exactly once per suite, which is why this isn't a `@BeforeSuite`/`@AfterSuite` method on `BaseTest`: that's inherited by all seven `TC_FBS_00N_Test` subclasses, and TestNG does not guarantee an inherited `@BeforeSuite` only runs once across multiple subclasses in the same suite. The driver and FDA/Mirakl tab handles live in `SuiteSession` (a plain data holder in `src/main/java`, with no page-object dependency, so `BaseTest` can read it); the actual login logic lives in `SuiteLoginListener` (`src/test/java`, since it needs page objects). **This requires the suite to run sequentially** — no `parallel="methods"` in `testng.xml` — since a single shared `WebDriver` cannot safely be driven by more than one thread. Each test's `switchToMiraklTab()` also re-authenticates Mirakl if its Auth0 session expired mid-suite (`SuiteLoginListener.reauthenticateIfExpired()`) — with one login for a run spanning all 7 tests instead of a fresh login per test, later tests can be well past Mirakl's session lifetime by the time they reach it.
+>>>>>>> Stashed changes
 
 **Adding a new page:**
 1. Create `src/test/java/com/fda/automation/pages/<app>/FooPage.java` extending `BasePage`
@@ -101,7 +116,7 @@ src/test/java/com/fda/automation/
 | TC_FBS_006 | 2×2 | 2 different FBS sellers | card |
 | TC_FBS_007 | 1×1 | 1 (FBS) | PayPal |
 
-Each is **one `@Test` method**, not split into steps — `BaseTest` provisions a fresh `WebDriver` per `@BeforeMethod`/`@AfterMethod`, so splitting would lose the FDA session/cart/order state between steps. Mirakl/Kibo helper methods are mirrored (not shared/extracted) into each test class rather than factored into a common base, so read the specific test you're touching rather than assuming shared logic.
+Each is **one `@Test` method**, not split into steps — splitting would still lose the per-test FDA cart/order state that each scenario builds up as it runs (even though the browser/login is now suite-shared, not per-test — see "Shared suite-level session" above). Mirakl/Kibo helper methods are mirrored (not shared/extracted) into each test class rather than factored into a common base, so read the specific test you're touching rather than assuming shared logic. Each test's `loginToFDA()`/`openMiraklInNewTab()`/`loginToMirakl()` no longer actually log in (that now happens once, suite-wide) — they fetch the shared tab handles from `SuiteSession` and re-verify the Mirakl session hasn't expired; kept as same-named call sites in the `@Test` method body so the overall step sequence still reads the same.
 
 A single scenario spans two browser tabs in one `WebDriver` session (FDA + Mirakl opened via `driver.switchTo().newWindow(WindowType.TAB)`), plus REST Assured calls to Kibo. `OrderContext` (in `models/`) threads the order id and totals captured on the FDA side through to the Mirakl/Kibo assertions later in the same test.
 
