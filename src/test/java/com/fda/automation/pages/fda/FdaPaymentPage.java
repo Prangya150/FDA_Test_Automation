@@ -6,10 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 /**
@@ -28,6 +31,32 @@ public class FdaPaymentPage extends BasePage {
 
     // Confirmed: <input type="radio" id="adyen_cc" value="adyen_cc" name="payment[method]">
     private static final By CREDIT_DEBIT_CARD_RADIO = By.id("adyen_cc");
+
+    // NOT YET CONFIRMED live (no PayPal run has happened yet, unlike adyen_cc above) - matched by
+    // id/value containing "paypal" rather than a guessed exact id, same defensive reasoning as
+    // PLACE_ORDER_BUTTON's text match below. Adjust once run against the real payment method list.
+    private static final By PAYPAL_RADIO =
+            By.xpath("//input[@type='radio' and (contains(@id,'paypal') or contains(@value,'paypal'))]");
+    // The test case's own "PayPal Pagar" button - distinct from PLACE_ORDER_BUTTON ("Completar
+    // pago"), which is clicked later, after control returns from the PayPal-hosted pages.
+    // NOT YET CONFIRMED live: two real runs (2026-09-03) found neither a case-insensitive
+    // "pagar"/"paypal" <button> on the main document nor inside any iframe, within 15s of selecting
+    // the PayPal radio - CONFIRMED (by direct observation, not by this framework) that the button
+    // does exist and does read "PayPal Pagar", so the miss is a tag-type or timing problem, not a
+    // wrong label. Widened past <button> to <a>/<input>/[role='button'] (also checking @value, since
+    // <input type="submit"> puts its label there, not in text content) and given the same up-to-60s
+    // ajax-render allowance selectCreditDebitCardPayment already needed for this same payment list.
+    private static final By PAYPAL_PAGAR_BUTTON = By.xpath(
+            "//*[self::button or self::a or self::input or @role='button']["
+                    + "contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'pagar')"
+                    + " or contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'paypal')"
+                    + " or contains(translate(@value,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'pagar')"
+                    + " or contains(translate(@value,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'paypal')]");
+    // Any element that looks clickable, regardless of label - used only to build a diagnostic
+    // message if PAYPAL_PAGAR_BUTTON still can't be found, so a failure reports what labels/tags
+    // actually exist instead of just "not found".
+    private static final By ANY_CLICKABLE_CANDIDATE =
+            By.xpath("//button | //a | //input[@type='submit' or @type='button'] | //*[@role='button']");
 
     private static final By CARD_NUMBER_IFRAME = By.cssSelector(".adyen-checkout__field--cardNumber iframe");
     private static final By CARD_EXPIRY_IFRAME = By.cssSelector(".adyen-checkout__field--expiryDate iframe");
@@ -63,10 +92,88 @@ public class FdaPaymentPage extends BasePage {
         return waitForVisible(paymentStepHeading).isDisplayed();
     }
 
+    /**
+     * CONFIRMED live on 2026-09-01 (TC_FBS_006, a two-seller x quantity-2 cart): the "Método de
+     * pago" heading checked by {@link #isDisplayed()} renders before the payment method list
+     * itself, which is populated by a follow-up ajax call - same skeleton-then-ajax pattern as the
+     * Adyen secured fields below, whose own doc notes this gap widens with more line items/sellers
+     * on the order. The default explicit wait (10s) wasn't enough for this bigger cart; use a
+     * longer, dedicated wait instead of the shared default.
+     */
     public void selectCreditDebitCardPayment() {
+        WebElement radio = new WebDriverWait(driver, Duration.ofSeconds(60))
+                .until(ExpectedConditions.presenceOfElementLocated(CREDIT_DEBIT_CARD_RADIO));
         // A plain click can miss this Magento-styled radio; the diagnostic run that worked used a JS click.
-        WebElement radio = waitForPresent(CREDIT_DEBIT_CARD_RADIO);
-        ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].click();", radio);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", radio);
+    }
+
+    /** Selects the PayPal radio button on the payment method list. */
+    public void selectPayPalPayment() {
+        WebElement radio = new WebDriverWait(driver, Duration.ofSeconds(60))
+                .until(ExpectedConditions.presenceOfElementLocated(PAYPAL_RADIO));
+        // Same JS-click fallback as selectCreditDebitCardPayment - a plain click can miss this
+        // Magento-styled radio.
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", radio);
+    }
+
+    /**
+     * Clicks the "PayPal Pagar" button, which redirects (same tab or a new popup) to PayPal.
+     *
+     * Does NOT fall back to the generic "Completar pago" button on failure - that button belongs to
+     * the credit-card flow and clicking it instead would silently place the order the wrong way
+     * (confirmed live: it should click the PayPal button, not this one). If the PayPal button
+     * genuinely can't be found, this fails loudly with the actual tag/label of every clickable-looking
+     * element on the page, so the next fix is based on real data instead of another guess.
+     */
+    public void clickPayPalPagarButton() {
+        wait.until(d -> d.findElements(LOADING_MASK).stream().noneMatch(WebElement::isDisplayed));
+        WebDriverWait longWait = new WebDriverWait(driver, Duration.ofSeconds(60));
+
+        try {
+            longWait.until(ExpectedConditions.elementToBeClickable(PAYPAL_PAGAR_BUTTON)).click();
+            return;
+        } catch (TimeoutException e) {
+            log.debug("No 'Pagar'/'PayPal' clickable on the main checkout document; scanning iframes");
+        }
+
+        for (WebElement frame : driver.findElements(By.tagName("iframe"))) {
+            driver.switchTo().frame(frame);
+            try {
+                List<WebElement> matches = driver.findElements(PAYPAL_PAGAR_BUTTON);
+                if (!matches.isEmpty() && matches.get(0).isDisplayed()) {
+                    matches.get(0).click();
+                    return;
+                }
+            } finally {
+                driver.switchTo().defaultContent();
+            }
+        }
+
+        throw new TimeoutException("Could not find the 'PayPal Pagar' button, in the main document or any iframe. "
+                + "Visible clickable elements on the page: " + describeCandidateButtons());
+    }
+
+    /** Diagnostic only: tag name + visible label of every button/link/role=button on the page. */
+    private String describeCandidateButtons() {
+        StringBuilder description = new StringBuilder();
+        for (WebElement element : driver.findElements(ANY_CLICKABLE_CANDIDATE)) {
+            try {
+                if (!element.isDisplayed()) {
+                    continue;
+                }
+                String label = element.getText();
+                if (label == null || label.isBlank()) {
+                    label = element.getAttribute("value");
+                }
+                if (label != null && !label.isBlank()) {
+                    description.append('[').append(element.getTagName()).append("] '")
+                            .append(label.trim()).append("' ");
+                }
+            } catch (StaleElementReferenceException ignored) {
+                // Page mid-render; skip this one rather than fail the diagnostic itself.
+            }
+        }
+        return description.length() == 0 ? "(none found)" : description.toString();
     }
 
     /** Fills the three Adyen secured-field iframes with the given card details. */
@@ -81,6 +188,12 @@ public class FdaPaymentPage extends BasePage {
      * (can go stale), and its loading spinner can still visually overlap the iframe for a moment
      * after that (click-intercepted). Waits for the spinner to clear first, then retries the fill
      * on either failure mode instead of failing the whole checkout on a one-off race.
+     *
+     * CONFIRMED live on 2026-08-31 (TC_FBS_002, a 2-item cart): with more line items the payment
+     * step recalculates pricing/marketplace offers before the Adyen form is interactive, so the
+     * secured field can still take longer than the default explicit.wait to become clickable -
+     * also retrying on that {@link TimeoutException} (previously only StaleElement/ClickIntercepted
+     * were retried) covers this instead of failing checkout on the first attempt.
      */
     private void fillSecuredField(By iframeLocator, String fieldType, String value) {
         wait.until(d -> d.findElements(ADYEN_SPINNER).stream().noneMatch(WebElement::isDisplayed));
@@ -95,7 +208,7 @@ public class FdaPaymentPage extends BasePage {
                 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", input);
                 input.sendKeys(value);
                 return;
-            } catch (StaleElementReferenceException | ElementClickInterceptedException e) {
+            } catch (StaleElementReferenceException | ElementClickInterceptedException | TimeoutException e) {
                 lastFailure = e;
                 log.debug("Secured field '{}' failed on attempt {} ({}), retrying", fieldType, attempt, e.getClass().getSimpleName());
             } finally {
@@ -113,9 +226,40 @@ public class FdaPaymentPage extends BasePage {
     public FdaOrderSuccessPage completarPago() {
         log.info("Submitting payment / placing order");
         wait.until(d -> d.findElements(LOADING_MASK).stream().noneMatch(WebElement::isDisplayed));
-        wait.until(ExpectedConditions.elementToBeClickable(PLACE_ORDER_BUTTON)).click();
+        clickPlaceOrderButton();
         completeThreeDsChallengeIfPresent();
         return new FdaOrderSuccessPage(driver);
+    }
+
+    /**
+     * Clicks "Completar pago". Unlike every other click in this class, this one previously used a
+     * raw {@code WebElement.click()} instead of going through {@link BasePage#click}'s shared
+     * retry-on-stale/intercepted handling - a gap on exactly the button whose own locator comment
+     * notes the checkout-wide loading overlay "can briefly intercept clicks", and reported failing
+     * live in TC_FBS_001. Also widened the wait from the shared 10s default to 60s, matching the
+     * same ajax-driven-validation allowance already given to {@link #selectCreditDebitCardPayment}
+     * and {@link #fillSecuredField} on this same page - the button stays disabled until Adyen's
+     * client-side card validation finishes, which is not always instant.
+     */
+    private void clickPlaceOrderButton() {
+        WebDriverWait longWait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        StaleElementReferenceException lastFailure = null;
+        for (int attempt = 1; attempt <= 3; attempt++) {
+            try {
+                WebElement button = longWait.until(ExpectedConditions.elementToBeClickable(PLACE_ORDER_BUTTON));
+                try {
+                    button.click();
+                } catch (ElementClickInterceptedException e) {
+                    log.debug("Native click intercepted for 'Completar pago', falling back to JS click");
+                    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
+                }
+                return;
+            } catch (StaleElementReferenceException e) {
+                lastFailure = e;
+                log.debug("'Completar pago' button went stale on attempt {}, retrying", attempt);
+            }
+        }
+        throw lastFailure;
     }
 
     /**

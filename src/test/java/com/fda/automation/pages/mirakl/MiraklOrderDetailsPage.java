@@ -39,8 +39,16 @@ public class MiraklOrderDetailsPage extends BasePage {
     // asynchronously and unreliably (didn't happen within 30 min in one real run, took ~20 min in
     // another) - a separate "Mark as received" button (same direct-action pattern as "Mark as
     // shipped") makes the transition immediate and deterministic.
+    //
+    // BROADENED on 2026-09-01 after a live quantity-2 suborder (TC_FBS_006) timed out on the exact
+    // "mark as received" phrase: a multi-quantity line item's button label may include extra
+    // quantity/item wording in between (e.g. "Mark 2 items as received"), which the old exact
+    // substring match would miss. Falls back to any button mentioning both "mark" and "receiv"
+    // regardless of what sits between them.
     private static final By MARK_AS_RECEIVED_BUTTON = By.xpath(
-            "//button[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'mark as received')]");
+            "//button[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'mark as received')"
+                    + " or (contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'mark')"
+                    + " and contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'receiv'))]");
 
     private static final By MORE_ACTIONS_BUTTON = By.xpath("//button[contains(normalize-space(.),'More actions')]");
     private static final By MORE_ACTIONS_MENU = By.xpath("//*[@role='menu' or contains(@class,'dropdown-menu')]");
@@ -171,8 +179,37 @@ public class MiraklOrderDetailsPage extends BasePage {
         click(EDIT_ADDITIONAL_INFO_CONFIRM_BUTTON);
     }
 
+    /**
+     * CONFIRMED live on 2026-09-01 (TC_FBS_006): on a quantity-2 suborder, no "Mark as received"
+     * button exists on the page at all after confirming "Entregado" = Yes - a diagnostic dump of
+     * every visible button on the page at that point ({@code [Shops, Orders, Customer care,
+     * Catalog, Price and stock, Accounting, Settings, ..., More actions, Order information, View
+     * tracking information, Download, Payment details, Billing]}) contains nothing resembling it.
+     * So unlike the quantity-1 flow (where this button makes the Shipped -> Received transition
+     * immediate and deterministic - see the field doc above), a quantity>1 suborder apparently has
+     * no such direct action: the only path to "Received" is the async Entregado transition itself,
+     * confirmed to take up to ~20 minutes in a real run. The caller's subsequent
+     * {@code waitForStatus("Received", ...)} already budgets {@code mirakl.sync.timeout.seconds}
+     * (1200s / 20 min) for exactly that, so this just skips the click when the button isn't there
+     * instead of failing on a button that was never going to appear.
+     */
     public void markAsReceived() {
         log.info("Marking Mirakl order as Received");
+        if (!isElementVisible(MARK_AS_RECEIVED_BUTTON, Duration.ofSeconds(10))) {
+            log.info("No 'Mark as received' button present; relying on the async Entregado transition instead "
+                    + "(may take up to mirakl.sync.timeout.seconds to reach 'Received')");
+            return;
+        }
         click(MARK_AS_RECEIVED_BUTTON);
+    }
+
+    private boolean isElementVisible(By locator, Duration timeout) {
+        try {
+            new org.openqa.selenium.support.ui.WebDriverWait(driver, timeout)
+                    .until(ExpectedConditions.visibilityOfElementLocated(locator));
+            return true;
+        } catch (org.openqa.selenium.TimeoutException e) {
+            return false;
+        }
     }
 }

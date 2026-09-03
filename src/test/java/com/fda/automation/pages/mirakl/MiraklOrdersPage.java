@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -40,6 +41,12 @@ public class MiraklOrdersPage extends BasePage {
     private static final By ORDERS_GRID = By.cssSelector("table, [role='table']");
     // Confirmed suffix Mirakl appends to the FDA order number for its own "Order ID" field/search.
     private static final String MIRAKL_ORDER_ID_SUFFIX = "WEB-A";
+    // CONFIRMED live on 2026-09-01 (TC_FBS_005): when a single FDA checkout contains items from
+    // two different 3P sellers, Mirakl splits it into one suborder per seller, each with its own
+    // reference - the FDA order number plus an incrementing suffix (WEB-A for the first seller,
+    // WEB-B for the second, ...) rather than one combined order.
+    private static final String MIRAKL_ORDER_ID_BASE_SUFFIX = "WEB";
+    private static final java.util.regex.Pattern SUBORDER_REFERENCE_SUFFIX = java.util.regex.Pattern.compile("WEB-[A-Z]");
 
     private static By caseInsensitiveExactTextXpath(String text) {
         String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -55,10 +62,24 @@ public class MiraklOrdersPage extends BasePage {
     /**
      * The Orders menu can take a while to become interactive right after login while the
      * dashboard finishes loading; poll for clickability instead of a blind fixed sleep.
+     *
+     * CONFIRMED live on 2026-09-01 (TC_FBS_006): switching back to this tab after the several
+     * minutes the FDA checkout takes on the other tab can find the Auth0 session has expired in
+     * the background, silently dropping the page back to the login form - which has no "Orders"
+     * menu at all, so this times out no matter how long it waits. Logs the current URL and whether
+     * a login form is showing on timeout, so that is distinguishable from a genuinely slow-loading
+     * dashboard instead of just another unexplained timeout.
      */
     public MiraklOrdersPage openOrdersMenu(Duration timeout) {
-        new org.openqa.selenium.support.ui.WebDriverWait(driver, timeout)
-                .until(ExpectedConditions.elementToBeClickable(ORDERS_MENU)).click();
+        try {
+            new org.openqa.selenium.support.ui.WebDriverWait(driver, timeout)
+                    .until(ExpectedConditions.elementToBeClickable(ORDERS_MENU)).click();
+        } catch (org.openqa.selenium.TimeoutException e) {
+            boolean loginFormPresent = !driver.findElements(By.cssSelector("input[name='username'], input#username")).isEmpty();
+            log.error("'Orders' menu not clickable after {}s; current URL: {}, login form present: {}",
+                    timeout.getSeconds(), driver.getCurrentUrl(), loginFormPresent);
+            throw e;
+        }
         return this;
     }
 
@@ -68,10 +89,15 @@ public class MiraklOrdersPage extends BasePage {
         return this;
     }
 
-    public void searchByOrderId(String orderId) {
+    /** Searches using the exact, ready-to-match reference (no suffix appended). */
+    public void searchByOrderReference(String reference) {
         WebElement searchInput = waitForVisible(ORDER_SEARCH_INPUT);
         searchInput.clear();
-        searchInput.sendKeys(orderId + MIRAKL_ORDER_ID_SUFFIX, Keys.ENTER);
+        searchInput.sendKeys(reference, Keys.ENTER);
+    }
+
+    public void searchByOrderId(String orderId) {
+        searchByOrderReference(orderId + MIRAKL_ORDER_ID_SUFFIX);
     }
 
     private By rowForOrderId(String orderId) {
@@ -88,9 +114,9 @@ public class MiraklOrdersPage extends BasePage {
     }
 
     /**
-     * Searches for the order exactly once, then polls by reloading the page on each interval
-     * (per team direction: enter the Order ID a single time, then just refresh while waiting for
-     * FDA -> Mirakl sync) rather than re-typing into the search field on every tick.
+     * Searches for the given reference exactly once, then polls by reloading the page on each
+     * interval (per team direction: enter the Order ID a single time, then just refresh while
+     * waiting for FDA -> Mirakl sync) rather than re-typing into the search field on every tick.
      *
      * BUG FOUND (2026-08-19): checking immediately after {@code driver.navigate().refresh()} is a
      * race - this is a heavy SPA, and the grid hadn't finished re-rendering yet at the moment of
@@ -98,19 +124,77 @@ public class MiraklOrdersPage extends BasePage {
      * failure screenshot taken moments later showed the "missing" order sitting in the list).
      * Waiting for the grid to reappear after each refresh before checking fixes this.
      */
-    public void waitForOrderToAppear(String orderId, Duration timeout, Duration pollInterval) {
-        searchByOrderId(orderId);
+    public void waitForOrderReferenceToAppear(String reference, Duration timeout, Duration pollInterval) {
+        searchByOrderReference(reference);
         PollingUtils.pollUntil(
                 () -> {
                     driver.navigate().refresh();
                     waitForVisible(ORDERS_GRID);
-                    return isOrderDisplayed(orderId);
+                    return isOrderDisplayed(reference);
                 },
                 found -> found,
                 timeout,
                 pollInterval,
-                "FDA order " + orderId + " never appeared in Mirakl All Orders"
+                "Mirakl reference " + reference + " never appeared in Mirakl All Orders"
         );
+    }
+
+    public void waitForOrderToAppear(String orderId, Duration timeout, Duration pollInterval) {
+        waitForOrderReferenceToAppear(orderId + MIRAKL_ORDER_ID_SUFFIX, timeout, pollInterval);
+    }
+
+    /**
+     * CONFIRMED live on 2026-09-01 (TC_FBS_005): searching the bare "&lt;orderId&gt;WEB" (i.e.
+     * without a trailing -A/-B/-C suffix) returns every suborder for that FDA order in a single
+     * search - e.g. searching "4000299068WEB" surfaces both "4000299068WEB-A" and
+     * "4000299068WEB-B" together, rather than needing an exact, full-reference search per suffix.
+     * Searching once and polling the grid for {@code expectedCount} distinct references is also
+     * far faster than the previous approach of searching each suffix in turn, each spending its
+     * own full time budget waiting for a single row to sync.
+     */
+    public List<String> findSuborderReferences(String orderId, int expectedCount, Duration timeout, Duration pollInterval) {
+        String searchTerm = orderId + MIRAKL_ORDER_ID_BASE_SUFFIX;
+        searchByOrderReference(searchTerm);
+
+        java.util.regex.Pattern referencePattern = java.util.regex.Pattern.compile(
+                java.util.regex.Pattern.quote(orderId) + SUBORDER_REFERENCE_SUFFIX.pattern());
+
+        List<String> found;
+        try {
+            found = PollingUtils.pollUntil(
+                    () -> {
+                        driver.navigate().refresh();
+                        waitForVisible(ORDERS_GRID);
+                        return extractMatchingReferences(referencePattern);
+                    },
+                    refs -> refs.size() >= expectedCount,
+                    timeout,
+                    pollInterval,
+                    "Only found suborders matching '" + searchTerm + "-*' in Mirakl (expected " + expectedCount + ")");
+        } catch (IllegalStateException e) {
+            throw new IllegalStateException("Only found suborders matching '" + searchTerm
+                    + "-*' in Mirakl (expected " + expectedCount + ")", e);
+        }
+
+        // The grid's row order reflects Mirakl's own sync/display order, not the WEB-A/WEB-B
+        // suffix order (a live run returned WEB-B before WEB-A) - sort so callers can rely on
+        // processing suborders in suffix order (WEB-A fully, then WEB-B, ...).
+        found.sort(java.util.Comparator.naturalOrder());
+
+        log.info("Found {} Mirakl suborder reference(s) for FDA order {}: {}", found.size(), orderId, found);
+        return found;
+    }
+
+    /** Scans every visible grid row's text for occurrences of {@code referencePattern}. */
+    private List<String> extractMatchingReferences(java.util.regex.Pattern referencePattern) {
+        java.util.Set<String> references = new java.util.LinkedHashSet<>();
+        for (WebElement row : driver.findElements(By.xpath("//tr"))) {
+            java.util.regex.Matcher matcher = referencePattern.matcher(row.getText());
+            while (matcher.find()) {
+                references.add(matcher.group());
+            }
+        }
+        return new ArrayList<>(references);
     }
 
     public MiraklOrderDetailsPage openOrder(String orderId) {
